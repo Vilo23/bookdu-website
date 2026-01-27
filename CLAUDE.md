@@ -85,8 +85,8 @@ accent-dark: #878C76 — hover states
 - `v1-base-site` — site before visual enhancements (rollback point)
 
 ### Next Steps (TODO)
-1. **Deploy to Vercel** — connect GitHub repo, set custom domain to bookdu.co
-2. **Configure bookdu.co DNS** — point domain to Vercel
+1. ~~**Deploy to Vercel**~~ — **Done.** Live at bookdu.co via Vercel + GitHub auto-deploy
+2. ~~**Configure bookdu.co DNS**~~ — **Done.** Namecheap DNS pointing to Vercel
 3. ~~**After Apple approval**~~ — **Done.** App Store link added across Hero and CTA sections
 4. **OG image** — create and add public/og-image.png for social sharing
 5. **Analytics** — consider Vercel Analytics or Plausible (privacy-friendly)
