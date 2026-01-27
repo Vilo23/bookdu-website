@@ -76,8 +76,8 @@ export default function Features({
             <motion.div key={feature.title} variants={itemVariants}>
               <Card className="h-full">
                 <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center">
-                    <Icon name={feature.icon} className="w-6 h-6 text-accent-dark" />
+                  <div className="flex-shrink-0 w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center transition-colors duration-300 group-hover/card:bg-accent/20">
+                    <Icon name={feature.icon} className="w-6 h-6 text-accent-dark transition-transform duration-300 group-hover/card:scale-110" />
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-title mb-2">

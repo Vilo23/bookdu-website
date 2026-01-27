@@ -10,11 +10,24 @@ export default function Hero() {
     <section className="relative overflow-hidden">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32">
         <div className="text-center">
-          {/* App Logo */}
+          {/* App Logo - gentle floating animation */}
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5 }}
+            animate={{
+              opacity: 1,
+              scale: 1,
+              y: [0, -8, 0],
+            }}
+            transition={{
+              opacity: { duration: 0.5 },
+              scale: { duration: 0.5 },
+              y: {
+                duration: 4,
+                repeat: Infinity,
+                ease: "easeInOut",
+                delay: 0.8,
+              },
+            }}
             className="mb-8"
           >
             <Image
@@ -27,13 +40,13 @@ export default function Hero() {
             />
           </motion.div>
 
-          {/* Coming Soon Badge */}
+          {/* Coming Soon Badge with shimmer */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            <Badge variant="accent" className="mb-6">
+            <Badge variant="accent" className="mb-6" shimmer>
               Coming Soon to App Store
             </Badge>
           </motion.div>
@@ -77,7 +90,7 @@ export default function Hero() {
           >
             <Button href="/features">
               Explore Features
-              <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-4 h-4 ml-2 transition-transform duration-200 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
             </Button>
@@ -87,9 +100,20 @@ export default function Hero() {
           </motion.div>
         </div>
 
-        {/* Decorative gradient */}
+        {/* Decorative gradient - animated drift */}
         <div className="absolute inset-0 -z-10 overflow-hidden">
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-r from-accent/10 via-transparent to-accent/5 rounded-full blur-3xl" />
+          <motion.div
+            animate={{
+              x: [0, 30, -20, 0],
+              y: [0, -20, 10, 0],
+            }}
+            transition={{
+              duration: 20,
+              repeat: Infinity,
+              ease: "easeInOut",
+            }}
+            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-r from-accent/10 via-transparent to-accent/5 rounded-full blur-3xl"
+          />
         </div>
       </div>
     </section>

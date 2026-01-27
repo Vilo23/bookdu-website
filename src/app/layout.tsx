@@ -37,8 +37,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${jakarta.variable} antialiased`}>
+    <html lang="en" suppressHydrationWarning>
+      <body className={`${jakarta.variable} antialiased`} suppressHydrationWarning>
         <Header />
         <main className="min-h-screen">{children}</main>
         <Footer />

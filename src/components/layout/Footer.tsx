@@ -1,8 +1,14 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
 import { EXTERNAL_LINKS, NAV_LINKS } from "@/lib/constants";
 
 export default function Footer() {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <footer className="bg-surface border-t border-border">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -75,11 +81,25 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Copyright */}
-        <div className="mt-8 pt-8 border-t border-border text-center">
+        {/* Copyright + Back to top */}
+        <div className="mt-8 pt-8 border-t border-border flex items-center justify-between">
           <p className="text-text-muted text-sm">
             &copy; {new Date().getFullYear()} BOOKDU. All rights reserved.
           </p>
+          <button
+            onClick={scrollToTop}
+            className="text-text-muted hover:text-title transition-colors p-2 rounded-lg hover:bg-bg group"
+            aria-label="Back to top"
+          >
+            <svg
+              className="w-5 h-5 transition-transform duration-200 group-hover:-translate-y-0.5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" />
+            </svg>
+          </button>
         </div>
       </div>
     </footer>

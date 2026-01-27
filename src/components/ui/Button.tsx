@@ -1,5 +1,8 @@
+"use client";
+
 import Link from "next/link";
 import { ReactNode } from "react";
+import { motion } from "framer-motion";
 
 interface ButtonProps {
   children: ReactNode;
@@ -19,14 +22,23 @@ export default function Button({
   onClick,
 }: ButtonProps) {
   const baseStyles =
-    "inline-flex items-center justify-center px-6 py-3 rounded-xl font-semibold transition-all duration-200";
+    "inline-flex items-center justify-center px-6 py-3 rounded-xl font-semibold transition-all duration-200 group";
 
   const variants = {
-    primary: "bg-accent text-surface hover:bg-accent-dark shadow-sm hover:shadow-md",
-    secondary: "bg-surface text-title border border-border hover:border-accent hover:text-accent",
+    primary: "bg-accent text-surface hover:bg-accent-dark shadow-sm hover:shadow-md active:scale-[0.97]",
+    secondary: "bg-surface text-title border border-border hover:border-accent hover:text-accent active:scale-[0.97]",
   };
 
   const combinedStyles = `${baseStyles} ${variants[variant]} ${className}`;
+
+  const inner = (
+    <motion.span
+      className="inline-flex items-center gap-0"
+      whileHover={{ x: 0 }}
+    >
+      {children}
+    </motion.span>
+  );
 
   if (href) {
     if (external) {
@@ -37,21 +49,21 @@ export default function Button({
           rel="noopener noreferrer"
           className={combinedStyles}
         >
-          {children}
+          {inner}
         </a>
       );
     }
 
     return (
       <Link href={href} className={combinedStyles}>
-        {children}
+        {inner}
       </Link>
     );
   }
 
   return (
     <button onClick={onClick} className={combinedStyles}>
-      {children}
+      {inner}
     </button>
   );
 }

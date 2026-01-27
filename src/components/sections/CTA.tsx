@@ -15,13 +15,29 @@ export default function CTA() {
           transition={{ duration: 0.5 }}
           className="bg-surface rounded-3xl border border-border p-10 md:p-16 text-center relative overflow-hidden"
         >
-          {/* Background decoration */}
+          {/* Animated background blobs */}
           <div className="absolute inset-0 -z-10">
-            <div className="absolute top-0 right-0 w-64 h-64 bg-accent/5 rounded-full blur-3xl" />
-            <div className="absolute bottom-0 left-0 w-64 h-64 bg-accent/5 rounded-full blur-3xl" />
+            <motion.div
+              animate={{
+                x: [0, 40, -20, 0],
+                y: [0, -30, 20, 0],
+                scale: [1, 1.1, 0.95, 1],
+              }}
+              transition={{ duration: 15, repeat: Infinity, ease: "easeInOut" }}
+              className="absolute -top-20 -right-20 w-80 h-80 bg-accent/5 rounded-full blur-3xl"
+            />
+            <motion.div
+              animate={{
+                x: [0, -30, 20, 0],
+                y: [0, 20, -30, 0],
+                scale: [1, 0.95, 1.1, 1],
+              }}
+              transition={{ duration: 18, repeat: Infinity, ease: "easeInOut" }}
+              className="absolute -bottom-20 -left-20 w-80 h-80 bg-accent/5 rounded-full blur-3xl"
+            />
           </div>
 
-          <Badge variant="accent" className="mb-6">
+          <Badge variant="accent" className="mb-6" shimmer>
             Coming Soon
           </Badge>
 
@@ -37,7 +53,7 @@ export default function CTA() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button href="/features">
               Learn More
-              <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-4 h-4 ml-2 transition-transform duration-200 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
             </Button>
