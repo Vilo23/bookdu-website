@@ -4,6 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import Badge from "@/components/ui/Badge";
 import Button from "@/components/ui/Button";
+import { EXTERNAL_LINKS } from "@/lib/constants";
 
 export default function Hero() {
   return (
@@ -47,7 +48,7 @@ export default function Hero() {
             transition={{ duration: 0.5, delay: 0.1 }}
           >
             <Badge variant="accent" className="mb-6" shimmer>
-              Coming Soon to App Store
+              Available on the App Store
             </Badge>
           </motion.div>
 
@@ -88,14 +89,14 @@ export default function Hero() {
             transition={{ duration: 0.5, delay: 0.5 }}
             className="flex flex-col sm:flex-row gap-4 justify-center"
           >
-            <Button href="/features">
-              Explore Features
+            <Button href={EXTERNAL_LINKS.appStore} external>
+              Download on the App Store
               <svg className="w-4 h-4 ml-2 transition-transform duration-200 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
             </Button>
-            <Button href="/screenshots" variant="secondary">
-              View Screenshots
+            <Button href="/features" variant="secondary">
+              Explore Features
             </Button>
           </motion.div>
         </div>

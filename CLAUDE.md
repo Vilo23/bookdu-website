@@ -78,7 +78,7 @@ accent-dark: #878C76 — hover states
 - **No "Australian" branding** — positioned for global market. Only mention of Australia is in tax context on About page ("Currently supporting Australian tax brackets, with more regions coming soon")
 - **Target audience:** Freelancers, creatives, models who juggle multiple agencies/recruiters with long payment gaps
 - **Core messaging:** Track jobs, follow up on payments, know your tax, privacy first
-- **"Coming Soon to App Store"** — update to real App Store link after Apple approval
+- **App Store link** — live at https://apps.apple.com/us/app/bookdu/id6757381396
 - **Server/Client split** — pages with metadata are server components, animation content is extracted to client components (e.g. AboutContent.tsx, FeaturesContent.tsx)
 
 ### Git Tags
@@ -87,7 +87,7 @@ accent-dark: #878C76 — hover states
 ### Next Steps (TODO)
 1. **Deploy to Vercel** — connect GitHub repo, set custom domain to bookdu.co
 2. **Configure bookdu.co DNS** — point domain to Vercel
-3. **After Apple approval** — replace "Coming Soon" badge with real App Store link
+3. ~~**After Apple approval**~~ — **Done.** App Store link added across Hero and CTA sections
 4. **OG image** — create and add public/og-image.png for social sharing
 5. **Analytics** — consider Vercel Analytics or Plausible (privacy-friendly)
 6. **SEO** — add sitemap.xml, robots.txt

@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import Button from "@/components/ui/Button";
 import Badge from "@/components/ui/Badge";
+import { EXTERNAL_LINKS } from "@/lib/constants";
 
 export default function CTA() {
   return (
@@ -38,7 +39,7 @@ export default function CTA() {
           </div>
 
           <Badge variant="accent" className="mb-6" shimmer>
-            Coming Soon
+            Available Now
           </Badge>
 
           <h2 className="text-3xl md:text-4xl font-bold text-title mb-4">
@@ -46,13 +47,13 @@ export default function CTA() {
           </h2>
 
           <p className="text-lg text-text-muted mb-8 max-w-xl mx-auto">
-            BOOKDU is launching soon on the App Store. Built with privacy in mind,
+            BOOKDU is available now on the App Store. Built with privacy in mind,
             designed for freelancers, creatives, and models.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button href="/features">
-              Learn More
+            <Button href={EXTERNAL_LINKS.appStore} external>
+              Download on the App Store
               <svg className="w-4 h-4 ml-2 transition-transform duration-200 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
