@@ -2,6 +2,8 @@
 
 Marketing website for [BOOKDU](https://bookdu.co) — payment tracking for freelancers, creatives, and models.
 
+**App Store:** [Download BOOKDU](https://apps.apple.com/us/app/bookdu/id6757381396)
+
 ## Tech Stack
 
 - [Next.js 16](https://nextjs.org/) (App Router)

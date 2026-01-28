@@ -1,9 +1,9 @@
 # BOOKDU Marketing Website
 
-## Project Status: Live site ready for Vercel deployment
+## Project Status: Live at bookdu.co with App Store link
 
 ### What This Is
-Marketing website for the BOOKDU iOS app — a payment tracking tool for freelancers, creatives, and models. This is a static Next.js site, separate from the main app codebase.
+Marketing website for the BOOKDU iOS app — a payment tracking tool for freelancers, creatives, and models. The app is live on the [App Store](https://apps.apple.com/us/app/bookdu/id6757381396). This is a static Next.js site, separate from the main app codebase.
 
 ### Domain
 - **Purchased domain:** bookdu.co
