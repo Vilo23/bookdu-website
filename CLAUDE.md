@@ -1,68 +1,136 @@
 # BOOKDU Marketing Website
 
-## Project Status: Live at bookdu.co with App Store link
+## Project Status: IN DEVELOPMENT — Not yet deployed
+
+Website copy and structure have been rewritten to reflect new positioning. Ready for review before deploying to bookdu.co.
 
 ### What This Is
-Marketing website for the BOOKDU iOS app — a payment tracking tool for freelancers, creatives, and models. The app is live on the [App Store](https://apps.apple.com/us/app/bookdu/id6757381396). This is a static Next.js site, separate from the main app codebase.
+Marketing website for the BOOKDU iOS app — a payment tracking tool for models, talent, influencers, and creatives who work through agencies. The app is live on the [App Store](https://apps.apple.com/us/app/bookdu/id6757381396). This is a static Next.js site, separate from the main app codebase.
 
 ### Domain
-- **Purchased domain:** bookdu.co
+- **Purchased domain:** bookdu.co (currently shows old version)
 - **GitHub repo:** https://github.com/Vilo23/bookdu-website
 - **Legal pages (external):** https://vilo23.github.io/bookdu-legal/
 
-### Tech Stack
+---
+
+## NEW POSITIONING (Feb 2026)
+
+### Target Audience
+**Primary:** Models and talent who work through agencies
+**Secondary:** Influencers, creatives, freelancers with similar payment structures
+
+### Core Value Proposition
+> "Track every job. Know who owes you."
+> For people who work through agencies and get paid weeks or months later.
+
+### The Unique Problem We Solve
+- Jobs ≠ invoices (models don't send invoices, agencies pay them)
+- Payment ≠ immediate (weeks to months delay is normal)
+- One person = multiple agencies, multiple clients
+- Memory + follow-up + social friction = lost money
+
+**We are NOT:** A budget app, invoicing app, or timesheet tracker.
+**We ARE:** A memory, accountability, and money-recovery system.
+
+### Tone & Voice
+- **Demographic:** 18-29 year olds
+- **Style:** Casual, direct, confident without arrogance
+- **Avoid:** Corporate speak, "empower", "streamline", exclamation marks
+- **Good:** Short sentences, "yeah we get it", "dead simple"
+
+---
+
+## PAGE STRUCTURE
+
+### Homepage (`/`)
+1. **Hero** — "Track your jobs. Know who owes you."
+2. **Problem** — "Yeah, we get it." (relatable pain story)
+3. **How It Works** — "Dead simple." (3 steps: Log it → See what's owed → Get nudged)
+4. **Features** — "What you get." (4 feature cards)
+5. **CTA** — "Ready?"
+
+### About (`/about`)
+- "Why we built this." / "Built for how you actually work."
+- Sections: The problem, The fix, Who it's for, Tax, Expenses, Privacy
+- Values: Keep it simple, Respect privacy, Be honest
+
+### Features (`/features`)
+- "What's in the app."
+- All 6 feature cards + Privacy section + Tax/Expenses section
+- Multi-country tax: US, UK, AU, NZ, France, Italy
+- CSV export with custom date ranges
+
+### Screenshots (`/screenshots`)
+- "See how it works."
+- 15 screenshots showing full user flow
+- Lightbox modal on click
+
+---
+
+## SCREENSHOTS (15 files in /public/screenshots/)
+
+| File | Title | Caption |
+|------|-------|---------|
+| Home Screen.png | Dashboard | See what you've earned, what's owed, and what's waiting |
+| Home Screen Alert.png | Money waiting | Get alerted when payments have been sitting too long |
+| Jobs Confirmed list.png | Confirmed jobs | All your confirmed work in one place |
+| Waiting on payment.png | Waiting on payment | Track which jobs are overdue |
+| Job entry 1.png | Log a job | Agency, client, job details — the way you actually work |
+| Job entry 2.png | Add the rate | Day rate, project fee, whatever fits |
+| Job Confirmation.png | Job saved | Confirm the details before saving |
+| Job mark paid.png | Mark as paid | When the money lands, mark it done |
+| Payment received.png | Payment received | A little celebration when you get paid |
+| Job Paid list.png | Paid jobs | Everything that's been paid out |
+| Expenses List.png | Expenses | Track what you spend |
+| Expense Receipt.png | Snap receipts | Add photos and notes to expenses |
+| Job and Expense Export.png | Export to CSV | Jobs or expenses, custom date ranges |
+| Settings.png | Settings | Customise what you track |
+| Country Setting Tax.png | Multi-country tax | US, UK, AU, NZ, France, Italy |
+
+---
+
+## TECH STACK
+
 - Next.js 16 (App Router)
-- Tailwind CSS 4 (configured via `@theme` in globals.css, no tailwind.config.ts)
+- Tailwind CSS 4 (configured via `@theme` in globals.css)
 - Framer Motion (animations)
 - TypeScript
 - Plus Jakarta Sans font (via next/font/google)
-
-### Architecture
-Two separate deployments:
-1. **This site** → Vercel → bookdu.co
-2. **Legal pages** → GitHub Pages → vilo23.github.io/bookdu-legal/ (preserves Apple-submitted URLs for privacy policy and support)
 
 ### File Structure
 ```
 src/
 ├── app/
-│   ├── page.tsx                    # Landing (Hero + Features + CTA)
+│   ├── page.tsx                    # Landing (Hero + Problem + HowItWorks + Features + CTA)
 │   ├── layout.tsx                  # Root layout, metadata, font
-│   ├── globals.css                 # Tailwind config, design tokens, shimmer keyframe
-│   ├── icon.png                    # Favicon (auto-served by Next.js)
+│   ├── globals.css                 # Tailwind config, design tokens
 │   ├── features/
-│   │   ├── page.tsx                # Features page (server component, metadata)
-│   │   └── FeaturesContent.tsx     # Client component (animations, progress bar)
+│   │   ├── page.tsx                # Features page
+│   │   └── FeaturesContent.tsx     # Privacy + Tax/Expenses sections
 │   ├── screenshots/
-│   │   ├── page.tsx                # Screenshot gallery with lightbox (client)
-│   │   └── layout.tsx              # Metadata wrapper
+│   │   ├── page.tsx                # Screenshot gallery (15 images)
+│   │   └── layout.tsx              # Metadata
 │   └── about/
-│       ├── page.tsx                # About page (server component, metadata)
-│       └── AboutContent.tsx        # Client component (scroll animations)
+│       ├── page.tsx                # About page
+│       └── AboutContent.tsx        # Story + Values sections
 ├── components/
 │   ├── layout/
-│   │   ├── Header.tsx              # Sticky nav, mobile menu, active page underline
-│   │   └── Footer.tsx              # Links, back-to-top button
+│   │   ├── Header.tsx              # Sticky nav, mobile menu
+│   │   └── Footer.tsx              # Links, back-to-top
 │   ├── ui/
-│   │   ├── Button.tsx              # Primary/secondary with press effect
-│   │   ├── Card.tsx                # Hover lift + accent border
-│   │   ├── Badge.tsx               # With optional shimmer animation
-│   │   └── Icon.tsx                # SVG icons by name
+│   │   ├── Button.tsx, Card.tsx, Badge.tsx, Icon.tsx
 │   └── sections/
-│       ├── Hero.tsx                # Floating logo, badge, CTA buttons
-│       ├── Features.tsx            # Staggered feature grid
-│       └── CTA.tsx                 # Animated gradient blobs
+│       ├── Hero.tsx                # New: "Track your jobs. Know who owes you."
+│       ├── Problem.tsx             # NEW: "Yeah, we get it." section
+│       ├── HowItWorks.tsx          # NEW: 3-step flow
+│       ├── Features.tsx            # Feature grid (updated copy)
+│       └── CTA.tsx                 # "Ready?" section
 └── lib/
-    └── constants.ts                # Nav links, external URLs, feature data
-public/
-├── logo.png                        # 1024x1024 app logo (BB monogram)
-├── screenshots/                    # 6 app screenshots from bookd/Screenshots
-├── favicon-32.png, favicon-16.png
-├── apple-touch-icon.png
-└── app-store-badge.svg             # Placeholder badge
+    └── constants.ts                # Features data (updated copy)
 ```
 
-### Design System (defined in globals.css)
+### Design System (globals.css)
 ```
 bg: #F1ECE4        — warm off-white background
 surface: #FFFFFF   — cards, sections
@@ -74,31 +142,52 @@ accent: #A4AA8E    — sage green (buttons, highlights)
 accent-dark: #878C76 — hover states
 ```
 
-### Key Design Decisions
-- **No "Australian" branding** — positioned for global market. Only mention of Australia is in tax context on About page ("Currently supporting Australian tax brackets, with more regions coming soon")
-- **Target audience:** Freelancers, creatives, models who juggle multiple agencies/recruiters with long payment gaps
-- **Core messaging:** Track jobs, follow up on payments, know your tax, privacy first
-- **App Store link** — live at https://apps.apple.com/us/app/bookdu/id6757381396
-- **Server/Client split** — pages with metadata are server components, animation content is extracted to client components (e.g. AboutContent.tsx, FeaturesContent.tsx)
+---
 
-### Git Tags
-- `v1-base-site` — site before visual enhancements (rollback point)
+## APP FEATURES TO HIGHLIGHT
 
-### Next Steps (TODO)
-1. ~~**Deploy to Vercel**~~ — **Done.** Live at bookdu.co via Vercel + GitHub auto-deploy
-2. ~~**Configure bookdu.co DNS**~~ — **Done.** Namecheap DNS pointing to Vercel
-3. ~~**After Apple approval**~~ — **Done.** App Store link added across Hero and CTA sections
-4. **OG image** — create and add public/og-image.png for social sharing
-5. **Analytics** — consider Vercel Analytics or Plausible (privacy-friendly)
-6. **SEO** — add sitemap.xml, robots.txt
+1. **Job tracking with agency-client-job structure** — the unique data model
+2. **"Money Waiting" alerts** — reminders when payments are overdue
+3. **Payment celebration** — in-app celebration when you mark paid
+4. **Expense tracking with job tagging** — notes field to reference jobs
+5. **Multi-country tax** — US, UK, AU, NZ, France, Italy
+6. **CSV export** — jobs or expenses, custom date ranges
+7. **100% offline/private** — no accounts, no cloud, no tracking
 
-### Commands
+---
+
+## DEPLOYMENT
+
+### Current State
+- **Local development only** — not yet deployed
+- **bookdu.co** shows old version of site
+
+### To Deploy
+```bash
+npm run build    # Verify production build works
+vercel           # Deploy to Vercel (will update bookdu.co)
+```
+
+### Pre-Deploy Checklist
+- [ ] Review all page copy one more time
+- [ ] Test on mobile viewport
+- [ ] Verify all 15 screenshots load correctly
+- [ ] Check OG image / social sharing preview
+- [ ] Consider adding sitemap.xml, robots.txt
+
+---
+
+## COMMANDS
+
 ```bash
 npm run dev      # Start dev server (localhost:3000)
-npm run build    # Production build (static export)
+npm run build    # Production build
 npm run lint     # ESLint
 ```
 
-### Related Projects
+---
+
+## RELATED PROJECTS
+
 - **bookd/** — main iOS app (Expo/React Native)
 - **bookdu-legal/** — privacy policy and support pages (GitHub Pages)

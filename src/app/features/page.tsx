@@ -5,7 +5,7 @@ import FeaturesContent from "./FeaturesContent";
 
 export const metadata: Metadata = {
   title: "Features - BOOKDU",
-  description: "Discover all the features that make BOOKDU the perfect payment tracking app for freelancers, creatives, and models.",
+  description: "Track jobs, know who owes you, get reminded when payments are late. Built for models, talent, and creatives who work through agencies.",
 };
 
 export default function FeaturesPage() {
@@ -15,10 +15,10 @@ export default function FeaturesPage() {
       <section className="py-16 md:py-24 border-b border-border">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-title mb-4">
-            Features
+            What&apos;s in the app.
           </h1>
           <p className="text-lg text-text-muted max-w-2xl mx-auto">
-            Everything you need to track payments, manage expenses, and stay on top of your freelance finances.
+            Track jobs. Track expenses. Know what you&apos;re owed. Get reminded. Export everything.
           </p>
         </div>
       </section>
@@ -26,8 +26,8 @@ export default function FeaturesPage() {
       {/* All Features */}
       <Features
         showAll={true}
-        title="Built for Freelancers & Creatives"
-        subtitle="Simple, powerful tools that respect your privacy"
+        title="The basics."
+        subtitle="Everything works offline. Your data stays on your phone."
       />
 
       {/* Privacy + Tax sections with animations */}

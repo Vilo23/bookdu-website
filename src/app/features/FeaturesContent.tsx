@@ -49,18 +49,18 @@ export default function FeaturesContent() {
               transition={{ duration: 0.5 }}
             >
               <h2 className="text-3xl font-bold text-title mb-4">
-                Privacy First
+                Your data stays yours.
               </h2>
               <p className="text-text-muted mb-6">
-                Your financial data is sensitive. That&apos;s why BOOKDU is built with privacy at its core.
-                All data stays on your device - no accounts, no cloud sync, no tracking.
+                No accounts. No cloud. No tracking. Everything lives on your phone
+                and nowhere else. We don&apos;t want your data. We don&apos;t collect it.
               </p>
               <ul className="space-y-3">
                 {[
-                  "No account required",
-                  "100% offline operation",
-                  "No data collection or analytics",
-                  "Your data never leaves your device",
+                  "No sign-up or account needed",
+                  "Works completely offline",
+                  "Zero data collection",
+                  "Nothing leaves your device",
                 ].map((item, i) => (
                   <motion.li
                     key={item}
@@ -92,8 +92,8 @@ export default function FeaturesContent() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-title">Complete Privacy</h3>
-                  <p className="text-sm text-text-muted">Your data is yours alone</p>
+                  <h3 className="font-semibold text-title">100% Private</h3>
+                  <p className="text-sm text-text-muted">No one sees your money but you</p>
                 </div>
               </div>
               <AnimatedProgressBar />
@@ -112,7 +112,7 @@ export default function FeaturesContent() {
               viewport={{ once: true }}
               className="text-3xl font-bold text-title mb-4"
             >
-              Stay on Top of Tax & Expenses
+              Tax and expenses, handled.
             </motion.h2>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -121,14 +121,14 @@ export default function FeaturesContent() {
               transition={{ delay: 0.1 }}
               className="text-lg text-text-muted max-w-2xl mx-auto"
             >
-              As a freelancer, it&apos;s easy to forget about tax until it&apos;s too late. BOOKDU keeps you aware.
+              Know roughly what you&apos;ll owe. Track what you spend. Export it all when you need it.
             </motion.p>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
             {[
               {
-                title: "Tax Awareness",
-                description: "See your potential income tax at a glance (without deductions). Know how much to set aside before tax time.",
+                title: "Tax estimates",
+                description: "See a rough estimate of what you might owe — so you know what to set aside. Works in the US, UK, Australia, New Zealand, France, and Italy.",
                 icon: (
                   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
@@ -136,8 +136,8 @@ export default function FeaturesContent() {
                 ),
               },
               {
-                title: "Receipt Capture",
-                description: "Upload receipts, take photos, or add them from your camera roll. Keep everything in one place with notes.",
+                title: "Expense tracking",
+                description: "Log expenses. Snap receipts. Add notes to tag them to specific jobs. Categorise however you want.",
                 icon: (
                   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
@@ -146,8 +146,8 @@ export default function FeaturesContent() {
                 ),
               },
               {
-                title: "Easy CSV Export",
-                description: "Download a clean CSV of your expenses at the end of the tax year. Give your accountant exactly what they need.",
+                title: "CSV export",
+                description: "Export jobs or expenses as a CSV. Pick custom date ranges. Hand it to your accountant and you're done.",
                 icon: (
                   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />

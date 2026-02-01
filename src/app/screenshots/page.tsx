@@ -6,40 +6,94 @@ import Image from "next/image";
 
 const screenshots = [
   {
-    src: "/screenshots/homescreen.png",
+    src: "/screenshots/Home Screen.png",
     alt: "BOOKDU Home Screen",
     title: "Dashboard",
-    description: "See your financial overview at a glance",
+    description: "See what you've earned, what's owed, and what's waiting",
   },
   {
-    src: "/screenshots/jobs-list.png",
-    alt: "Jobs List View",
-    title: "Jobs List",
-    description: "All your jobs in one organised view",
+    src: "/screenshots/Home Screen Alert.png",
+    alt: "Home Screen with Alert",
+    title: "Money waiting",
+    description: "Get alerted when payments have been sitting too long",
   },
   {
-    src: "/screenshots/job-detail.png",
-    alt: "Job Detail View",
-    title: "Job Details",
-    description: "Track every detail of each job",
+    src: "/screenshots/Jobs Confirmed list.png",
+    alt: "Confirmed Jobs List",
+    title: "Confirmed jobs",
+    description: "All your confirmed work in one place",
   },
   {
-    src: "/screenshots/payslip-scan.png",
-    alt: "Payslip Scanning",
-    title: "Smart OCR",
-    description: "Scan payslips with your camera",
+    src: "/screenshots/Waiting on payment.png",
+    alt: "Waiting on Payment",
+    title: "Waiting on payment",
+    description: "Track which jobs are overdue",
   },
   {
-    src: "/screenshots/expenses.png",
-    alt: "Expense Tracking",
+    src: "/screenshots/Job entry 1.png",
+    alt: "Adding a Job - Step 1",
+    title: "Log a job",
+    description: "Agency, client, job details — the way you actually work",
+  },
+  {
+    src: "/screenshots/Job entry 2.png",
+    alt: "Adding a Job - Step 2",
+    title: "Add the rate",
+    description: "Day rate, project fee, whatever fits",
+  },
+  {
+    src: "/screenshots/Job Confirmation.png",
+    alt: "Job Confirmation",
+    title: "Job saved",
+    description: "Confirm the details before saving",
+  },
+  {
+    src: "/screenshots/Job mark paid.png",
+    alt: "Mark Job as Paid",
+    title: "Mark as paid",
+    description: "When the money lands, mark it done",
+  },
+  {
+    src: "/screenshots/Payment received.png",
+    alt: "Payment Received Celebration",
+    title: "Payment received",
+    description: "A little celebration when you get paid",
+  },
+  {
+    src: "/screenshots/Job Paid list.png",
+    alt: "Paid Jobs List",
+    title: "Paid jobs",
+    description: "Everything that's been paid out",
+  },
+  {
+    src: "/screenshots/Expenses List.png",
+    alt: "Expenses List",
     title: "Expenses",
-    description: "Track business expenses easily",
+    description: "Track what you spend",
   },
   {
-    src: "/screenshots/reports.png",
-    alt: "Reports View",
-    title: "Reports",
-    description: "Export-ready financial reports",
+    src: "/screenshots/Expense Receipt.png",
+    alt: "Expense with Receipt",
+    title: "Snap receipts",
+    description: "Add photos and notes to expenses",
+  },
+  {
+    src: "/screenshots/Job and Expense Export.png",
+    alt: "Export Options",
+    title: "Export to CSV",
+    description: "Jobs or expenses, custom date ranges",
+  },
+  {
+    src: "/screenshots/Settings.png",
+    alt: "Settings Screen",
+    title: "Settings",
+    description: "Customise what you track",
+  },
+  {
+    src: "/screenshots/Country Setting Tax.png",
+    alt: "Country and Tax Settings",
+    title: "Multi-country tax",
+    description: "US, UK, AU, NZ, France, Italy",
   },
 ];
 
@@ -52,10 +106,10 @@ export default function ScreenshotsPage() {
       <section className="py-16 md:py-24 border-b border-border">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-title mb-4">
-            Screenshots
+            See how it works.
           </h1>
           <p className="text-lg text-text-muted max-w-2xl mx-auto">
-            Take a look at BOOKDU in action. Clean design, powerful features.
+            Log jobs, track payments, follow up when things are late. Click any image to enlarge.
           </p>
         </div>
       </section>
@@ -90,12 +144,6 @@ export default function ScreenshotsPage() {
             ))}
           </div>
 
-          {/* Placeholder message */}
-          <div className="mt-12 text-center">
-            <p className="text-text-muted text-sm">
-              Screenshots shown are from the development version. Final design may vary.
-            </p>
-          </div>
         </div>
       </section>
 

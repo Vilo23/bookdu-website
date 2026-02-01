@@ -41,14 +41,14 @@ export default function Hero() {
             />
           </motion.div>
 
-          {/* Coming Soon Badge with shimmer */}
+          {/* Badge with shimmer */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
             <Badge variant="accent" className="mb-6" shimmer>
-              Available on the App Store
+              Free on the App Store
             </Badge>
           </motion.div>
 
@@ -57,9 +57,9 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="text-5xl md:text-7xl font-bold text-title mb-6"
+            className="text-4xl md:text-6xl font-bold text-title mb-6 max-w-3xl mx-auto leading-tight"
           >
-            BOOKDU
+            Track your jobs. Know who owes you.
           </motion.h1>
 
           {/* Tagline */}
@@ -67,36 +67,26 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
-            className="text-xl md:text-2xl text-text-muted mb-4 max-w-2xl mx-auto"
+            className="text-xl md:text-2xl text-text-muted mb-10 max-w-2xl mx-auto"
           >
-            Payment tracking for freelancers and creatives
-          </motion.p>
-
-          {/* Sub-text */}
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.4 }}
-            className="text-lg text-text-muted mb-10 max-w-xl mx-auto"
-          >
-            Track jobs, scan payslips, know your tax
+            For models, talent, and creatives who work through agencies and get paid... eventually.
           </motion.p>
 
           {/* CTA */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.5 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
             className="flex flex-col sm:flex-row gap-4 justify-center"
           >
             <Button href={EXTERNAL_LINKS.appStore} external>
-              Download on the App Store
+              Get the app
               <svg className="w-4 h-4 ml-2 transition-transform duration-200 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
             </Button>
-            <Button href="/features" variant="secondary">
-              Explore Features
+            <Button href="#how-it-works" variant="secondary">
+              How it works
             </Button>
           </motion.div>
         </div>

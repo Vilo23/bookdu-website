@@ -34,8 +34,8 @@ interface FeaturesProps {
 
 export default function Features({
   showAll = false,
-  title = "Everything you need",
-  subtitle = "Simple tools designed for freelancers, creatives, and models"
+  title = "What you get.",
+  subtitle
 }: FeaturesProps) {
   const displayFeatures = showAll ? FEATURES : FEATURES.slice(0, 4);
 
@@ -53,15 +53,17 @@ export default function Features({
           >
             {title}
           </motion.h2>
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.1 }}
-            className="text-lg text-text-muted max-w-2xl mx-auto"
-          >
-            {subtitle}
-          </motion.p>
+          {subtitle && (
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              className="text-lg text-text-muted max-w-2xl mx-auto"
+            >
+              {subtitle}
+            </motion.p>
+          )}
         </div>
 
         {/* Feature Grid */}

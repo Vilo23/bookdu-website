@@ -13,38 +13,33 @@ export const NAV_LINKS = [
 
 export const FEATURES = [
   {
-    title: "Smart Payslip OCR",
-    description: "Scan any payslip with your camera. Our smart OCR extracts all the important details automatically.",
-    icon: "scan",
-  },
-  {
-    title: "Money Buckets Dashboard",
-    description: "See your income organised into clear categories. Know exactly where your money is going.",
+    title: "See what's outstanding",
+    description: "Total owed. Number of jobs. How long you've been waiting. All right there.",
     icon: "chart",
   },
   {
-    title: "Tax Awareness View",
-    description: "See your potential income tax obligation at a glance. A simple reminder to set money aside before tax time catches you off guard.",
-    icon: "calculator",
+    title: "Log jobs properly",
+    description: "Agency. Client. Job. Rate. The way your income actually works — not some generic budget app.",
+    icon: "clipboard",
   },
   {
-    title: "Expense Tracking",
-    description: "Track expenses completely separately. Upload receipts, take photos, add notes. Download a clean CSV at the end of the tax year.",
-    icon: "receipt",
-  },
-  {
-    title: "Smart Reminders",
-    description: "Never miss a payment or deadline. Get notified when invoices are due or payments are late.",
+    title: "Reminders that help",
+    description: "We'll ping you when a payment's been waiting too long. So you actually follow up.",
     icon: "bell",
   },
   {
-    title: "CSV Export",
-    description: "Export your data anytime. Compatible with Excel, accounting software, and your accountant.",
-    icon: "download",
+    title: "Completely private",
+    description: "Everything stays on your phone. No accounts. No cloud. No one sees your money but you.",
+    icon: "shield",
   },
   {
-    title: "100% Offline & Private",
-    description: "Your data never leaves your device. No accounts, no cloud sync, no tracking. Complete privacy.",
-    icon: "shield",
+    title: "Expenses, sorted",
+    description: "Track what you spend and tag it to jobs. Export a CSV at tax time. Done.",
+    icon: "receipt",
+  },
+  {
+    title: "Scan your payslips",
+    description: "Photo of a voucher or payslip. We pull out the details. You check it. Easy.",
+    icon: "scan",
   },
 ] as const;
