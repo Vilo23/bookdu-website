@@ -26,7 +26,7 @@ export default function Footer() {
               <h3 className="text-xl font-bold text-title">BOOKDU</h3>
             </div>
             <p className="text-text-muted text-sm">
-              Payment tracking for freelancers, creatives, and models. Track jobs, scan payslips, know your tax.
+              Payment tracking for models and talent. Track jobs, scan payslips, know your tax.
             </p>
           </div>
 

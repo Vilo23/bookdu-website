@@ -61,7 +61,7 @@ export default function AboutContent() {
                 something&apos;s been sitting too long.
               </p>
               <p className="text-text-muted">
-                No bloat. No subscriptions. No accounts. Just a clean app that keeps track
+                No bloat. No accounts. Just a clean app that keeps track
                 so you don&apos;t have to.
               </p>
             </motion.div>
@@ -69,7 +69,7 @@ export default function AboutContent() {
             <motion.div {...fadeUp}>
               <h2 className="text-2xl font-bold text-title mb-6">Who it&apos;s for</h2>
               <p className="text-text-muted mb-4">
-                Models, talent, influencers, creatives — anyone who:
+                Models and talent — anyone who:
               </p>
               <ul className="space-y-3">
                 {[

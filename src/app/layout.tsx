@@ -11,18 +11,18 @@ const jakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "BOOKDU - Payment Tracking for Freelancers & Creatives",
-  description: "Track jobs, scan payslips, know your tax. Simple payment tracking designed for freelancers, creatives, and models.",
-  keywords: ["freelancer", "creative", "model", "payment tracking", "tax", "payslip", "invoice", "expenses"],
+  title: "BOOKDU - Payment Tracking for Models & Talent",
+  description: "Track jobs, scan payslips, know your tax. Simple payment tracking designed for models and talent.",
+  keywords: ["model", "talent", "agency", "payment tracking", "tax", "payslip", "invoice", "expenses"],
   authors: [{ name: "BOOKDU" }],
   openGraph: {
-    title: "BOOKDU - Payment Tracking for Freelancers & Creatives",
-    description: "Track jobs, scan payslips, know your tax. Simple payment tracking designed for freelancers, creatives, and models.",
+    title: "BOOKDU - Payment Tracking for Models & Talent",
+    description: "Track jobs, scan payslips, know your tax. Simple payment tracking designed for models and talent.",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "BOOKDU - Payment Tracking for Freelancers & Creatives",
+    title: "BOOKDU - Payment Tracking for Models & Talent",
     description: "Track jobs, scan payslips, know your tax.",
   },
   icons: {

@@ -59,7 +59,7 @@ export default function Hero() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-4xl md:text-6xl font-bold text-title mb-6 max-w-3xl mx-auto leading-tight"
           >
-            Track your jobs. Know who owes you.
+            You did the work. Don&apos;t let them forget.
           </motion.h1>
 
           {/* Tagline */}
@@ -69,7 +69,7 @@ export default function Hero() {
             transition={{ duration: 0.5, delay: 0.3 }}
             className="text-xl md:text-2xl text-text-muted mb-10 max-w-2xl mx-auto"
           >
-            For models, talent, and creatives who work through agencies and get paid... eventually.
+            For models and talent who work through agencies — and wait months to get paid.
           </motion.p>
 
           {/* CTA */}

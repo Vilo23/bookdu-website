@@ -43,7 +43,7 @@ export default function CTA() {
           </h2>
 
           <p className="text-lg text-text-muted mb-8 max-w-xl mx-auto">
-            BOOKDU is free on the App Store. No accounts. No subscriptions. Just download and start tracking.
+            BOOKDU is free on the App Store. No accounts. No sign-up. Just download and start tracking.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

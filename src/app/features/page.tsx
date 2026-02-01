@@ -5,7 +5,7 @@ import FeaturesContent from "./FeaturesContent";
 
 export const metadata: Metadata = {
   title: "Features - BOOKDU",
-  description: "Track jobs, know who owes you, get reminded when payments are late. Built for models, talent, and creatives who work through agencies.",
+  description: "Track jobs, know who owes you, get reminded when payments are late. Built for models and talent who work through agencies.",
 };
 
 export default function FeaturesPage() {
@@ -15,7 +15,7 @@ export default function FeaturesPage() {
       <section className="py-16 md:py-24 border-b border-border">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-title mb-4">
-            What&apos;s in the app.
+            Built for how you actually get paid.
           </h1>
           <p className="text-lg text-text-muted max-w-2xl mx-auto">
             Track jobs. Track expenses. Know what you&apos;re owed. Get reminded. Export everything.

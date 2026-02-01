@@ -7,21 +7,21 @@ const steps = [
     number: "1",
     title: "Log it",
     description:
-      "Finished a job? Add it. Agency, client, what you did, what you're getting paid. Takes 30 seconds.",
+      "Finished a job? Add it. Agency, client, rate, date. Takes 30 seconds.",
     example: "Vivians → Louis Vuitton → Campaign shoot → $1,000/day",
   },
   {
     number: "2",
     title: "See what's owed",
     description:
-      "All your unpaid jobs in one place. How much. How long it's been. No guessing.",
+      "All your unpaid jobs in one place. How much. How long you've been waiting. No guessing.",
     example: "$5,000 across 2 jobs. Oldest: 62 days.",
   },
   {
     number: "3",
     title: "Get nudged",
     description:
-      "We'll remind you when something's been sitting too long. You follow up. You get paid.",
+      "We'll ping you when a payment's been waiting too long. You follow up. You get paid.",
     example: null,
   },
 ];

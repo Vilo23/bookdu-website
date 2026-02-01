@@ -15,7 +15,7 @@ const screenshots = [
     src: "/screenshots/Home Screen Alert.png",
     alt: "Home Screen with Alert",
     title: "Money waiting",
-    description: "Get alerted when payments have been sitting too long",
+    description: "Get alerted when payments have been waiting too long",
   },
   {
     src: "/screenshots/Jobs Confirmed list.png",
