@@ -9,7 +9,25 @@ const screenshots = [
     src: "/screenshots/Home Screen.png",
     alt: "BOOKDU Home Screen",
     title: "Dashboard",
-    description: "See what you've earned, what's owed, and what's waiting",
+    description: "Money owed, upcoming jobs, and alerts — one screen",
+  },
+  {
+    src: "/screenshots/Home Screen Dash Calendar.png",
+    alt: "BOOKDU Dashboard with Calendar",
+    title: "Dashboard & Calendar",
+    description: "Your dashboard with calendar view — jobs and payments at a glance",
+  },
+  {
+    src: "/screenshots/Calendar Month View.png",
+    alt: "Calendar Month View",
+    title: "Calendar",
+    description: "Your jobs on a calendar — confirmed vs unconfirmed at a glance",
+  },
+  {
+    src: "/screenshots/Contracts list.png",
+    alt: "Contracts List",
+    title: "Contracts",
+    description: "All your agency contracts with expiry countdowns",
   },
   {
     src: "/screenshots/Home Screen Alert.png",

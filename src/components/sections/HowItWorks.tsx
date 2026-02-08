@@ -12,16 +12,16 @@ const steps = [
   },
   {
     number: "2",
-    title: "See what's owed",
+    title: "See everything",
     description:
-      "All your unpaid jobs in one place. How much. How long you've been waiting. No guessing.",
-    example: "$5,000 across 2 jobs. Oldest: 62 days.",
+      "Jobs on your calendar. Money you're owed on your dashboard. Contracts in your vault. One glance, full clarity.",
+    example: "$5,000 owed. 3 jobs this week. 1 contract ending soon.",
   },
   {
     number: "3",
     title: "Get nudged",
     description:
-      "We'll ping you when a payment's been waiting too long. You follow up. You get paid.",
+      "Payment overdue? Contract expiring? Job still unconfirmed? We'll ping you at the right moment. You decide what to do.",
     example: null,
   },
 ];
@@ -85,7 +85,7 @@ export default function HowItWorks() {
           transition={{ duration: 0.5, delay: 0.4 }}
           className="text-center text-lg text-text-muted mt-16"
         >
-          You focus on work. We&apos;ll watch the money.
+          You focus on work. We&apos;ll watch everything else.
         </motion.p>
       </div>
     </section>

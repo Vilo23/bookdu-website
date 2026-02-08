@@ -14,7 +14,7 @@ export default function Problem() {
           className="text-center"
         >
           <h2 className="text-2xl md:text-3xl font-bold text-title mb-8">
-            Yeah, we get it.
+            Your brain shouldn&apos;t be your filing cabinet.
           </h2>
         </motion.div>
 
@@ -25,7 +25,7 @@ export default function Problem() {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            You do a job. Agency says you&apos;ll get paid &quot;soon.&quot;
+            You&apos;re juggling agencies, clients, rates, contracts, and payments that take months to arrive.
           </motion.p>
 
           <motion.p
@@ -34,9 +34,7 @@ export default function Problem() {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            Three weeks later — nothing. You&apos;ve done five more jobs since then.
-            Different agencies. Different clients. You&apos;re not even sure which ones
-            have paid anymore.
+            You&apos;re trying to remember which jobs are confirmed, which invoices are overdue, when your contract ends.
           </motion.p>
 
           <motion.p
@@ -45,7 +43,7 @@ export default function Problem() {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.3 }}
           >
-            And asking feels weird.
+            That&apos;s exhausting. And things slip through.
           </motion.p>
 
           <motion.p
@@ -53,18 +51,9 @@ export default function Problem() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.4 }}
-          >
-            So some payments just... disappear.
-          </motion.p>
-
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.5 }}
             className="text-title font-semibold text-xl pt-4"
           >
-            BOOKDU fixes that.
+            BOOKDU carries it for you.
           </motion.p>
         </div>
       </div>

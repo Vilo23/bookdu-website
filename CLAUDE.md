@@ -2,10 +2,10 @@
 
 ## Project Status: IN DEVELOPMENT — Not yet deployed
 
-Website copy and structure have been rewritten to reflect new positioning. Ready for review before deploying to bookdu.co.
+Website copy and structure updated to v1.3.0 — three pillars positioning (Payments, Contracts, Calendar). Ready for review before deploying to bookdu.co.
 
 ### What This Is
-Marketing website for the BOOKDU iOS app — a payment tracking tool for models, talent, influencers, and creatives who work through agencies. The app is live on the [App Store](https://apps.apple.com/us/app/bookdu/id6757381396). This is a static Next.js site, separate from the main app codebase.
+Marketing website for the BOOKDU iOS app — a payment tracking, contract management, and scheduling tool for models, talent, influencers, and creatives who work through agencies. The app is live on the [App Store](https://apps.apple.com/us/app/bookdu/id6757381396). This is a static Next.js site, separate from the main app codebase.
 
 ### Domain
 - **Purchased domain:** bookdu.co (currently shows old version)
@@ -14,24 +14,31 @@ Marketing website for the BOOKDU iOS app — a payment tracking tool for models,
 
 ---
 
-## NEW POSITIONING (Feb 2026)
+## POSITIONING v1.3.0 (Feb 2026) — Three Pillars + Cognitive Freedom
 
 ### Target Audience
 **Primary:** Models and talent who work through agencies
 **Secondary:** Influencers, creatives, freelancers with similar payment structures
 
 ### Core Value Proposition
-> "Track every job. Know who owes you."
-> For people who work through agencies and get paid weeks or months later.
+> "Stop carrying it all in your head."
+> Payments. Contracts. Schedule. One app tracks everything — so you don't have to.
+
+### The Three Pillars
+1. **Your Money** — Track payments. Get reminded. Get paid.
+2. **Your Contracts** — Store them. Track expiry. Never get locked in.
+3. **Your Schedule** — See your week. Know what's confirmed.
 
 ### The Unique Problem We Solve
 - Jobs ≠ invoices (models don't send invoices, agencies pay them)
 - Payment ≠ immediate (weeks to months delay is normal)
+- Contracts get buried in emails and forgotten
+- Schedule pieced together from texts, emails, and memory
 - One person = multiple agencies, multiple clients
-- Memory + follow-up + social friction = lost money
+- Mental load + follow-up + social friction = lost money and missed deadlines
 
 **We are NOT:** A budget app, invoicing app, or timesheet tracker.
-**We ARE:** A memory, accountability, and money-recovery system.
+**We ARE:** A memory, accountability, and protection system.
 
 ### Tone & Voice
 - **Demographic:** 18-29 year olds
@@ -44,36 +51,39 @@ Marketing website for the BOOKDU iOS app — a payment tracking tool for models,
 ## PAGE STRUCTURE
 
 ### Homepage (`/`)
-1. **Hero** — "Track your jobs. Know who owes you."
-2. **Problem** — "Yeah, we get it." (relatable pain story)
-3. **How It Works** — "Dead simple." (3 steps: Log it → See what's owed → Get nudged)
-4. **Features** — "What you get." (4 feature cards)
-5. **CTA** — "Ready?"
+1. **Hero** — "Stop carrying it all in your head."
+2. **Problem** — "Your brain shouldn't be your filing cabinet."
+3. **How It Works** — "Dead simple." (3 steps: Log it → See everything → Get nudged)
+4. **Features** — "Three things protected." (3 pillar cards + 2 extras)
+5. **CTA** — "Ready to stop worrying?"
 
 ### About (`/about`)
-- "Why we built this." / "Built for how you actually work."
-- Sections: The problem, The fix, Who it's for, Tax, Expenses, Privacy
+- "Why we built this." / "Your brain shouldn't be your filing cabinet."
+- Sections: The problem, The fix, Who it's for, What BOOKDU protects, Tax, Expenses, Privacy
 - Values: Keep it simple, Respect privacy, Be honest
 
 ### Features (`/features`)
-- "What's in the app."
-- All 6 feature cards + Privacy section + Tax/Expenses section
+- "One app. Everything protected."
+- Three pillars section (Get Paid, Guard Contracts, See Your Schedule)
+- Privacy section + Smart reminders (7 types) + Tax/Expenses section
 - Multi-country tax: US, UK, AU, NZ, France, Italy
 - CSV export with custom date ranges
 
 ### Screenshots (`/screenshots`)
 - "See how it works."
-- 15 screenshots showing full user flow
+- 17 screenshots showing full user flow (including Calendar + Contracts)
 - Lightbox modal on click
 
 ---
 
-## SCREENSHOTS (15 files in /public/screenshots/)
+## SCREENSHOTS (17 files in /public/screenshots/)
 
 | File | Title | Caption |
 |------|-------|---------|
-| Home Screen.png | Dashboard | See what you've earned, what's owed, and what's waiting |
-| Home Screen Alert.png | Money waiting | Get alerted when payments have been sitting too long |
+| Home Screen.png | Dashboard | Money owed, upcoming jobs, and alerts — one screen |
+| Calendar Month View.png | Calendar | Your jobs on a calendar — confirmed vs unconfirmed at a glance |
+| Contracts List.png | Contracts | All your agency contracts with expiry countdowns |
+| Home Screen Alert.png | Money waiting | Get alerted when payments have been waiting too long |
 | Jobs Confirmed list.png | Confirmed jobs | All your confirmed work in one place |
 | Waiting on payment.png | Waiting on payment | Track which jobs are overdue |
 | Job entry 1.png | Log a job | Agency, client, job details — the way you actually work |
@@ -87,6 +97,8 @@ Marketing website for the BOOKDU iOS app — a payment tracking tool for models,
 | Job and Expense Export.png | Export to CSV | Jobs or expenses, custom date ranges |
 | Settings.png | Settings | Customise what you track |
 | Country Setting Tax.png | Multi-country tax | US, UK, AU, NZ, France, Italy |
+
+**Note:** `Calendar Month View.png` and `Contracts List.png` need to be added to `/public/screenshots/`. The new `Home Screen.png` should replace the old dashboard screenshot.
 
 ---
 
@@ -107,13 +119,13 @@ src/
 │   ├── globals.css                 # Tailwind config, design tokens
 │   ├── features/
 │   │   ├── page.tsx                # Features page
-│   │   └── FeaturesContent.tsx     # Privacy + Tax/Expenses sections
+│   │   └── FeaturesContent.tsx     # Three pillars + Privacy + Reminders + Tax/Expenses
 │   ├── screenshots/
-│   │   ├── page.tsx                # Screenshot gallery (15 images)
+│   │   ├── page.tsx                # Screenshot gallery (17 images)
 │   │   └── layout.tsx              # Metadata
 │   └── about/
 │       ├── page.tsx                # About page
-│       └── AboutContent.tsx        # Story + Values sections
+│       └── AboutContent.tsx        # Story + What BOOKDU protects + Values sections
 ├── components/
 │   ├── layout/
 │   │   ├── Header.tsx              # Sticky nav, mobile menu
@@ -121,13 +133,13 @@ src/
 │   ├── ui/
 │   │   ├── Button.tsx, Card.tsx, Badge.tsx, Icon.tsx
 │   └── sections/
-│       ├── Hero.tsx                # New: "Track your jobs. Know who owes you."
-│       ├── Problem.tsx             # NEW: "Yeah, we get it." section
-│       ├── HowItWorks.tsx          # NEW: 3-step flow
-│       ├── Features.tsx            # Feature grid (updated copy)
-│       └── CTA.tsx                 # "Ready?" section
+│       ├── Hero.tsx                # "Stop carrying it all in your head."
+│       ├── Problem.tsx             # "Your brain shouldn't be your filing cabinet."
+│       ├── HowItWorks.tsx          # 3-step flow (Log it → See everything → Get nudged)
+│       ├── Features.tsx            # Three pillars + extras (inline data, no constants)
+│       └── CTA.tsx                 # "Ready to stop worrying?"
 └── lib/
-    └── constants.ts                # Features data (updated copy)
+    └── constants.ts                # Nav links, external links
 ```
 
 ### Design System (globals.css)
@@ -148,11 +160,14 @@ accent-dark: #878C76 — hover states
 
 1. **Job tracking with agency-client-job structure** — the unique data model
 2. **"Money Waiting" alerts** — reminders when payments are overdue
-3. **Payment celebration** — in-app celebration when you mark paid
-4. **Expense tracking with job tagging** — notes field to reference jobs
-5. **Multi-country tax** — US, UK, AU, NZ, France, Italy
-6. **CSV export** — jobs or expenses, custom date ranges
-7. **100% offline/private** — no accounts, no cloud, no tracking
+3. **Contract management** — PDF upload, expiry tracking, renewal reminders
+4. **Calendar view** — confirmed vs unconfirmed jobs, week/month views
+5. **Smart reminders** — 7 types (payment, contract, unconfirmed, weekly summary)
+6. **Payment celebration** — in-app celebration when you mark paid
+7. **Expense tracking with job tagging** — notes field to reference jobs
+8. **Multi-country tax** — US, UK, AU, NZ, France, Italy
+9. **CSV export** — jobs or expenses, custom date ranges
+10. **100% offline/private** — no accounts, no cloud, no tracking
 
 ---
 
@@ -170,8 +185,9 @@ vercel           # Deploy to Vercel (will update bookdu.co)
 
 ### Pre-Deploy Checklist
 - [ ] Review all page copy one more time
+- [ ] Add new screenshots (Calendar Month View.png, Contracts List.png, updated Home Screen.png)
 - [ ] Test on mobile viewport
-- [ ] Verify all 15 screenshots load correctly
+- [ ] Verify all 17 screenshots load correctly
 - [ ] Check OG image / social sharing preview
 - [ ] Consider adding sitemap.xml, robots.txt
 

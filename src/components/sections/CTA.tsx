@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import Button from "@/components/ui/Button";
-import Badge from "@/components/ui/Badge";
 import { EXTERNAL_LINKS } from "@/lib/constants";
 
 export default function CTA() {
@@ -39,11 +38,11 @@ export default function CTA() {
           </div>
 
           <h2 className="text-3xl md:text-4xl font-bold text-title mb-4">
-            Ready?
+            Ready to stop worrying?
           </h2>
 
           <p className="text-lg text-text-muted mb-8 max-w-xl mx-auto">
-            BOOKDU is free on the App Store. No accounts. No sign-up. Just download and start tracking.
+            BOOKDU is free on the App Store. No accounts. No sign-up. Download and let the app do the remembering.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

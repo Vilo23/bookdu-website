@@ -29,7 +29,7 @@ export default function AboutContent() {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-lg text-text-muted max-w-2xl mx-auto"
           >
-            Built for how you actually work.
+            Your brain shouldn&apos;t be your filing cabinet.
           </motion.p>
         </div>
       </section>
@@ -41,43 +41,55 @@ export default function AboutContent() {
             <motion.div {...fadeUp}>
               <h2 className="text-2xl font-bold text-title mb-6">The problem</h2>
               <p className="text-text-muted mb-4">
-                You work through agencies. They book you for clients. You do the job.
-                Then you wait. And wait. Sometimes weeks. Sometimes months.
+                You&apos;re carrying too much in your head.
               </p>
               <p className="text-text-muted mb-4">
-                Meanwhile, you&apos;ve done ten more jobs. Different agencies. Different clients.
-                Different rates. Some have paid. Some haven&apos;t. You&apos;re not really sure anymore.
+                Which jobs are confirmed. Which payments are overdue. When your contract ends.
+                What you spent on that Uber last month.
+              </p>
+              <p className="text-text-muted mb-4">
+                You&apos;re piecing together your schedule from emails, texts, and memory.
+                You&apos;re checking bank statements trying to figure out which jobs actually paid.
+              </p>
+              <p className="text-text-muted mb-4">
+                That&apos;s exhausting. And when you&apos;re tired, things slip through.
+                Payments. Deadlines. Contract renewals.
               </p>
               <p className="text-text-muted">
-                And chasing feels awkward. So some payments just... get forgotten.
+                You did the work. You shouldn&apos;t have to work this hard to get what you&apos;re owed.
               </p>
             </motion.div>
 
             <motion.div {...fadeUp}>
               <h2 className="text-2xl font-bold text-title mb-6">The fix</h2>
               <p className="text-text-muted mb-4">
-                BOOKDU is built for exactly this. Log your jobs the way they actually work —
-                agency, client, job, rate. See what&apos;s outstanding. Get reminded when
-                something&apos;s been sitting too long.
+                BOOKDU takes the mental load off your plate.
+              </p>
+              <p className="text-text-muted mb-4">
+                Log your jobs once. The app tracks payments, shows your calendar,
+                guards your contracts, reminds you when something needs attention.
+              </p>
+              <p className="text-text-muted mb-4">
+                You focus on the work. BOOKDU remembers everything else.
               </p>
               <p className="text-text-muted">
-                No bloat. No accounts. Just a clean app that keeps track
-                so you don&apos;t have to.
+                No bloat. No accounts. Just one app that watches out for you.
               </p>
             </motion.div>
 
             <motion.div {...fadeUp}>
               <h2 className="text-2xl font-bold text-title mb-6">Who it&apos;s for</h2>
               <p className="text-text-muted mb-4">
-                Models and talent — anyone who:
+                Models, talent, influencers — anyone who:
               </p>
               <ul className="space-y-3">
                 {[
                   "Works through agencies (one or several)",
                   "Gets paid weeks or months after the job",
-                  "Juggles multiple clients and rates at once",
-                  "Needs to track what's paid and what's still outstanding",
-                  "Wants to keep their financial data private",
+                  "Has contracts that expire and need renewing",
+                  "Juggles confirmed and unconfirmed bookings",
+                  "Needs one place for schedule, payments, and contracts",
+                  "Wants to stop carrying it all in their head",
                 ].map((item, i) => (
                   <motion.li
                     key={item}
@@ -94,6 +106,36 @@ export default function AboutContent() {
                   </motion.li>
                 ))}
               </ul>
+            </motion.div>
+
+            {/* What BOOKDU protects */}
+            <motion.div {...fadeUp}>
+              <h2 className="text-2xl font-bold text-title mb-6">What BOOKDU protects.</h2>
+              <div className="space-y-6">
+                <div className="bg-surface rounded-xl border border-border p-6">
+                  <h3 className="font-semibold text-title mb-2">Your Money</h3>
+                  <p className="text-text-muted text-sm">
+                    Every job tracked. Every payment watched. Reminders at 35 and 56 days.
+                    Weekly summaries every Monday. No more forgotten invoices.
+                  </p>
+                </div>
+                <div className="bg-surface rounded-xl border border-border p-6">
+                  <h3 className="font-semibold text-title mb-2">Your Contracts</h3>
+                  <p className="text-text-muted text-sm">
+                    Stored in one place. PDF uploads. Reminders 90 days before expiry,
+                    on notice deadlines, day before end. No more getting locked into
+                    terms you forgot to check.
+                  </p>
+                </div>
+                <div className="bg-surface rounded-xl border border-border p-6">
+                  <h3 className="font-semibold text-title mb-2">Your Schedule</h3>
+                  <p className="text-text-muted text-sm">
+                    Every job on your calendar. Confirmed vs unconfirmed at a glance.
+                    Nudges 3 days before if something&apos;s still unconfirmed. No more
+                    piecing it together from emails.
+                  </p>
+                </div>
+              </div>
             </motion.div>
 
             <motion.div {...fadeUp}>
