@@ -1,8 +1,8 @@
 # BOOKDU Marketing Website
 
-## Project Status: IN DEVELOPMENT — Not yet deployed
+## Project Status: LIVE — v1.3.0 deployed to bookdu.co
 
-Website copy and structure updated to v1.3.0 — three pillars positioning (Payments, Contracts, Calendar). Ready for review before deploying to bookdu.co.
+Website copy and structure updated to v1.3.0 — three pillars positioning (Payments, Contracts, Calendar). Deployed Feb 2026.
 
 ### What This Is
 Marketing website for the BOOKDU iOS app — a payment tracking, contract management, and scheduling tool for models, talent, influencers, and creatives who work through agencies. The app is live on the [App Store](https://apps.apple.com/us/app/bookdu/id6757381396). This is a static Next.js site, separate from the main app codebase.
@@ -174,22 +174,14 @@ accent-dark: #878C76 — hover states
 ## DEPLOYMENT
 
 ### Current State
-- **Local development only** — not yet deployed
-- **bookdu.co** shows old version of site
+- **Live at:** https://bookdu.co (Vercel)
+- **v1.3.0** deployed Feb 2026
 
 ### To Deploy
 ```bash
 npm run build    # Verify production build works
-vercel           # Deploy to Vercel (will update bookdu.co)
+vercel --prod    # Deploy to Vercel production (bookdu.co)
 ```
-
-### Pre-Deploy Checklist
-- [ ] Review all page copy one more time
-- [ ] Add new screenshots (Calendar Month View.png, Contracts List.png, updated Home Screen.png)
-- [ ] Test on mobile viewport
-- [ ] Verify all 17 screenshots load correctly
-- [ ] Check OG image / social sharing preview
-- [ ] Consider adding sitemap.xml, robots.txt
 
 ---
 
