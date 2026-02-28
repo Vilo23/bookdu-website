@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { ReactNode } from "react";
-import { motion } from "framer-motion";
 
 interface ButtonProps {
   children: ReactNode;
@@ -32,12 +31,9 @@ export default function Button({
   const combinedStyles = `${baseStyles} ${variants[variant]} ${className}`;
 
   const inner = (
-    <motion.span
-      className="inline-flex items-center gap-0"
-      whileHover={{ x: 0 }}
-    >
+    <span className="inline-flex items-center gap-0">
       {children}
-    </motion.span>
+    </span>
   );
 
   if (href) {

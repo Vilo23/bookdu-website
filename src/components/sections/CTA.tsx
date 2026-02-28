@@ -1,10 +1,12 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 import Button from "@/components/ui/Button";
 import { EXTERNAL_LINKS } from "@/lib/constants";
 
 export default function CTA() {
+  const prefersReduced = useReducedMotion();
+
   return (
     <section className="py-20 md:py-28">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -18,31 +20,48 @@ export default function CTA() {
           {/* Animated background blobs */}
           <div className="absolute inset-0 -z-10">
             <motion.div
-              animate={{
-                x: [0, 40, -20, 0],
-                y: [0, -30, 20, 0],
-                scale: [1, 1.1, 0.95, 1],
-              }}
-              transition={{ duration: 15, repeat: Infinity, ease: "easeInOut" }}
+              animate={
+                prefersReduced
+                  ? {}
+                  : {
+                      x: [0, 40, -20, 0],
+                      y: [0, -30, 20, 0],
+                      scale: [1, 1.1, 0.95, 1],
+                    }
+              }
+              transition={
+                prefersReduced
+                  ? {}
+                  : { duration: 15, repeat: Infinity, ease: "easeInOut" }
+              }
               className="absolute -top-20 -right-20 w-80 h-80 bg-accent/5 rounded-full blur-3xl"
             />
             <motion.div
-              animate={{
-                x: [0, -30, 20, 0],
-                y: [0, 20, -30, 0],
-                scale: [1, 0.95, 1.1, 1],
-              }}
-              transition={{ duration: 18, repeat: Infinity, ease: "easeInOut" }}
+              animate={
+                prefersReduced
+                  ? {}
+                  : {
+                      x: [0, -30, 20, 0],
+                      y: [0, 20, -30, 0],
+                      scale: [1, 0.95, 1.1, 1],
+                    }
+              }
+              transition={
+                prefersReduced
+                  ? {}
+                  : { duration: 18, repeat: Infinity, ease: "easeInOut" }
+              }
               className="absolute -bottom-20 -left-20 w-80 h-80 bg-accent/5 rounded-full blur-3xl"
             />
           </div>
 
+          <div className="section-dash mx-auto mb-6" />
           <h2 className="text-3xl md:text-4xl font-bold text-title mb-4">
-            Ready to stop worrying?
+            Your money. Your contracts. Your schedule. <span className="accent-highlight">Handled</span>.
           </h2>
 
           <p className="text-lg text-text-muted mb-8 max-w-xl mx-auto">
-            BOOKDU is free on the App Store. No accounts. No sign-up. Download and let the app do the remembering.
+            BOOKDU is free on the App Store. Download it, log your first job, and let the app take it from there.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

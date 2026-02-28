@@ -10,14 +10,14 @@ function AnimatedProgressBar() {
   return (
     <div ref={ref} className="space-y-4">
       <div className="flex justify-between text-sm">
-        <span className="text-text-muted">Data stored on device</span>
+        <span className="text-text-muted">Data stored on your device</span>
         <motion.span
           className="font-medium text-accent tabular-nums"
           initial={{ opacity: 0 }}
           animate={isInView ? { opacity: 1 } : {}}
           transition={{ delay: 0.5 }}
         >
-          100%
+          by default
         </motion.span>
       </div>
       <div className="w-full h-2 bg-border rounded-full overflow-hidden">
@@ -29,7 +29,7 @@ function AnimatedProgressBar() {
         />
       </div>
       <p className="text-xs text-text-muted text-center">
-        Zero data sent to external servers
+        Nothing leaves your phone unless you choose to back it up
       </p>
     </div>
   );
@@ -39,14 +39,14 @@ const pillarDetails = [
   {
     title: "Get Paid",
     body: [
-      "Log every job \u2014 agency, client, rate, date. See exactly what you\u2019re owed.",
-      "When payments are overdue, we ping you:",
+      "Got a booking? Log it \u2014 agency, client, rate, date. It stays in BOOKDU until you tag it paid. No disappearing, no forgetting.",
+      "When payments are late, we remind you:",
     ],
     bullets: [
       "35 days: \u2018Waiting on $1,200 from Viviens. 35 days.\u2019",
       "56 days: \u2018$1,200 from Viviens. 56 days.\u2019",
     ],
-    footer: "No lectures. Just the facts.",
+    footer: "Two reminders. Enough to prompt a follow-up, not enough to nag.",
     icon: (
       <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
@@ -56,7 +56,7 @@ const pillarDetails = [
   {
     title: "Guard Contracts",
     body: [
-      "Agency contracts get buried in emails and forgotten. Until it\u2019s too late.",
+      "Agency contracts get buried in emails and forgotten. Until it\u2019s too late and you\u2019re auto-renewed into terms you didn\u2019t check.",
       "Store contracts in BOOKDU. Upload the PDF. Set start and end dates. We remind you:",
     ],
     bullets: [
@@ -64,7 +64,7 @@ const pillarDetails = [
       "On your notice deadline",
       "Day before it ends",
     ],
-    footer: "Never get locked into forgotten terms.",
+    footer: "Enough time to renegotiate or walk away on your terms.",
     icon: (
       <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -74,10 +74,10 @@ const pillarDetails = [
   {
     title: "See Your Schedule",
     body: [
-      "Every job you enter appears on your calendar. Week view. Month view. Your choice.",
+      "Your next 3 days on the dashboard. Every job on your calendar. Week view or month view.",
     ],
     bullets: [
-      "Confirmed jobs: solid colour",
+      "Confirmed jobs: one colour",
       "Unconfirmed jobs: different colour",
       "Multi-day shoots: shown clearly",
     ],
@@ -193,7 +193,7 @@ export default function FeaturesContent() {
         </div>
       </section>
 
-      {/* Privacy Section */}
+      {/* Privacy Section — updated for lock + backup */}
       <section className="py-20 bg-surface border-y border-border">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -204,18 +204,21 @@ export default function FeaturesContent() {
               transition={{ duration: 0.5 }}
             >
               <h2 className="text-3xl font-bold text-title mb-4">
-                Your data stays yours.
+                Locked. Backed up. Yours.
               </h2>
               <p className="text-text-muted mb-6">
-                No accounts. No cloud. No tracking. Everything lives on your phone
-                and nowhere else. We don&apos;t want your data. We don&apos;t collect it.
+                BOOKDU locks so nobody can open it and look at your data. Everything stays on your
+                phone by default. If you want a secure backup — so you can restore everything if
+                you lose or break your phone — just sign in. Nothing leaves your device unless
+                you choose it.
               </p>
               <ul className="space-y-3">
                 {[
-                  "No sign-up or account needed",
-                  "Works completely offline",
-                  "Zero data collection",
-                  "Nothing leaves your device",
+                  "App locks \u2014 your finances are private",
+                  "Data stored on your phone by default",
+                  "Optional cloud backup for peace of mind",
+                  "Restore your data on a new device",
+                  "We don\u2019t sell or share your data. Ever.",
                 ].map((item, i) => (
                   <motion.li
                     key={item}
@@ -243,12 +246,12 @@ export default function FeaturesContent() {
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center">
                   <svg className="w-6 h-6 text-accent-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
                   </svg>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-title">100% Private</h3>
-                  <p className="text-sm text-text-muted">No one sees your money but you</p>
+                  <h3 className="font-semibold text-title">Private by default</h3>
+                  <p className="text-sm text-text-muted">Backed up when you choose</p>
                 </div>
               </div>
               <AnimatedProgressBar />
@@ -311,7 +314,7 @@ export default function FeaturesContent() {
               viewport={{ once: true }}
               className="text-3xl font-bold text-title mb-4"
             >
-              Tax and expenses, handled.
+              Tax and expenses. Done before you think about it.
             </motion.h2>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -320,14 +323,15 @@ export default function FeaturesContent() {
               transition={{ delay: 0.1 }}
               className="text-lg text-text-muted max-w-2xl mx-auto"
             >
-              Know roughly what you&apos;ll owe. Track what you spend. Export it all when you need it.
+              You&apos;re focused on shows and bookings — not spreadsheets.
+              If you log as you go, tax time is just an export.
             </motion.p>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
             {[
               {
                 title: "Tax estimates",
-                description: "See a rough estimate of what you might owe — so you know what to set aside. Works in the US, UK, Australia, New Zealand, France, and Italy.",
+                description: "See roughly what you might owe so you can set money aside during the year. No surprises in April. Works in the US, UK, Australia, New Zealand, France, and Italy.",
                 icon: (
                   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
@@ -336,7 +340,7 @@ export default function FeaturesContent() {
               },
               {
                 title: "Expense tracking",
-                description: "Log expenses. Snap receipts. Tag to specific jobs. Search and filter when you need to find something.",
+                description: "Log expenses. Snap receipts. Tag to specific jobs if you want. Search and filter when you need to find something.",
                 icon: (
                   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
@@ -346,7 +350,7 @@ export default function FeaturesContent() {
               },
               {
                 title: "CSV export",
-                description: "Export jobs or expenses as a CSV. Pick custom date ranges. Hand it to your accountant and you're done.",
+                description: "Export paid jobs or expenses as a CSV. Custom date ranges. Hand it to your accountant and you\u2019re done.",
                 icon: (
                   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />

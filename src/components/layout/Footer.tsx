@@ -26,7 +26,7 @@ export default function Footer() {
               <h3 className="text-xl font-bold text-title">BOOKDU</h3>
             </div>
             <p className="text-text-muted text-sm">
-              Stop carrying it all in your head. Payments, contracts, and schedule — protected.
+              Finance tracking for models. Payments, contracts, schedule, tax — handled.
             </p>
           </div>
 

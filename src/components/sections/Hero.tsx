@@ -1,33 +1,37 @@
 "use client";
 
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 import Badge from "@/components/ui/Badge";
 import Button from "@/components/ui/Button";
 import { EXTERNAL_LINKS } from "@/lib/constants";
 
 export default function Hero() {
+  const prefersReduced = useReducedMotion();
+
   return (
     <section className="relative overflow-hidden">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32">
         <div className="text-center">
-          {/* App Logo - gentle floating animation */}
+          {/* App Logo */}
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{
               opacity: 1,
               scale: 1,
-              y: [0, -8, 0],
+              y: prefersReduced ? 0 : [0, -8, 0],
             }}
             transition={{
               opacity: { duration: 0.5 },
               scale: { duration: 0.5 },
-              y: {
-                duration: 4,
-                repeat: Infinity,
-                ease: "easeInOut",
-                delay: 0.8,
-              },
+              y: prefersReduced
+                ? { duration: 0 }
+                : {
+                    duration: 4,
+                    repeat: Infinity,
+                    ease: "easeInOut",
+                    delay: 0.8,
+                  },
             }}
             className="mb-8"
           >
@@ -41,14 +45,14 @@ export default function Hero() {
             />
           </motion.div>
 
-          {/* Badge with shimmer */}
+          {/* Badge */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
             <Badge variant="accent" className="mb-6" shimmer>
-              Free on the App Store
+              Finance tracking for models
             </Badge>
           </motion.div>
 
@@ -59,7 +63,9 @@ export default function Hero() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-4xl md:text-6xl font-bold text-title mb-6 max-w-3xl mx-auto leading-tight"
           >
-            Stop carrying it all in your head.
+            You did the work.{" "}
+            <br className="hidden sm:block" />
+            We&apos;ll make sure you <span className="accent-highlight">get paid</span>.
           </motion.h1>
 
           {/* Tagline */}
@@ -69,7 +75,7 @@ export default function Hero() {
             transition={{ duration: 0.5, delay: 0.3 }}
             className="text-xl md:text-2xl text-text-muted mb-10 max-w-2xl mx-auto"
           >
-            Payments. Contracts. Schedule. One app tracks everything — so you don&apos;t have to.
+            Track payments, guard contracts, see your schedule — one app, nothing slips through.
           </motion.p>
 
           {/* CTA */}
@@ -86,23 +92,31 @@ export default function Hero() {
               </svg>
             </Button>
             <Button href="#how-it-works" variant="secondary">
-              How it works
+              See how it works
             </Button>
           </motion.div>
         </div>
 
-        {/* Decorative gradient - animated drift */}
+        {/* Decorative gradient */}
         <div className="absolute inset-0 -z-10 overflow-hidden">
           <motion.div
-            animate={{
-              x: [0, 30, -20, 0],
-              y: [0, -20, 10, 0],
-            }}
-            transition={{
-              duration: 20,
-              repeat: Infinity,
-              ease: "easeInOut",
-            }}
+            animate={
+              prefersReduced
+                ? {}
+                : {
+                    x: [0, 30, -20, 0],
+                    y: [0, -20, 10, 0],
+                  }
+            }
+            transition={
+              prefersReduced
+                ? {}
+                : {
+                    duration: 20,
+                    repeat: Infinity,
+                    ease: "easeInOut",
+                  }
+            }
             className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-r from-accent/10 via-transparent to-accent/5 rounded-full blur-3xl"
           />
         </div>

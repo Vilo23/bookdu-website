@@ -11,10 +11,10 @@ export default function Problem() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="text-center"
+          className="text-center mb-10"
         >
-          <h2 className="text-2xl md:text-3xl font-bold text-title mb-8">
-            Your brain shouldn&apos;t be your filing cabinet.
+          <h2 className="text-2xl md:text-3xl font-bold text-title">
+            Shows, castings, fittings — and somewhere in between, you&apos;re supposed to track it all.
           </h2>
         </motion.div>
 
@@ -25,7 +25,7 @@ export default function Problem() {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            You&apos;re juggling agencies, clients, rates, contracts, and payments that take months to arrive.
+            Which agency owes you what. Which payments are weeks overdue. When your contract runs out. Whether that job next Tuesday is actually confirmed.
           </motion.p>
 
           <motion.p
@@ -34,7 +34,7 @@ export default function Problem() {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            You&apos;re trying to remember which jobs are confirmed, which invoices are overdue, when your contract ends.
+            You&apos;re not getting paid on the spot. It&apos;s weeks. Sometimes months. And if you don&apos;t chase it, nobody else will.
           </motion.p>
 
           <motion.p
@@ -43,18 +43,22 @@ export default function Problem() {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.3 }}
           >
-            That&apos;s exhausting. And things slip through.
+            Then tax time hits and you&apos;re digging through bank statements and email threads trying to piece together a year of work.
           </motion.p>
 
-          <motion.p
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.4 }}
-            className="text-title font-semibold text-xl pt-4"
+            className="pt-6"
           >
-            BOOKDU carries it for you.
-          </motion.p>
+            <div className="border-l-3 border-accent pl-6">
+              <p className="text-title font-semibold text-xl">
+                We built BOOKDU so you don&apos;t have to carry any of that.
+              </p>
+            </div>
+          </motion.div>
         </div>
       </div>
     </section>

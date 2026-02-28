@@ -29,7 +29,7 @@ export default function AboutContent() {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-lg text-text-muted max-w-2xl mx-auto"
           >
-            Your brain shouldn&apos;t be your filing cabinet.
+            Our daughter is a model. We watched her deal with all of this. So we built something to help.
           </motion.p>
         </div>
       </section>
@@ -39,57 +39,60 @@ export default function AboutContent() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="space-y-12">
             <motion.div {...fadeUp}>
-              <h2 className="text-2xl font-bold text-title mb-6">The problem</h2>
+              <h2 className="text-2xl font-bold text-title mb-6">We know this world.</h2>
               <p className="text-text-muted mb-4">
-                You&apos;re carrying too much in your head.
+                We watched our daughter come home from shoots, castings, runway shows — exhausted
+                but buzzing. Then we watched her try to figure out which agencies owed her what,
+                chase payments that were weeks overdue, and scramble at tax time because nothing
+                was written down.
               </p>
               <p className="text-text-muted mb-4">
-                Which jobs are confirmed. Which payments are overdue. When your contract ends.
-                What you spent on that Uber last month.
-              </p>
-              <p className="text-text-muted mb-4">
-                You&apos;re piecing together your schedule from emails, texts, and memory.
-                You&apos;re checking bank statements trying to figure out which jobs actually paid.
-              </p>
-              <p className="text-text-muted mb-4">
-                That&apos;s exhausting. And when you&apos;re tired, things slip through.
-                Payments. Deadlines. Contract renewals.
+                She&apos;d get paid months after a job. Sometimes she&apos;d forget a payment
+                entirely. Sometimes a contract would auto-renew because she didn&apos;t know
+                it was ending.
               </p>
               <p className="text-text-muted">
-                You did the work. You shouldn&apos;t have to work this hard to get what you&apos;re owed.
+                She&apos;s not bad with money. She&apos;s busy. And the system isn&apos;t built
+                to make it easy. So we built something that is.
               </p>
             </motion.div>
 
             <motion.div {...fadeUp}>
-              <h2 className="text-2xl font-bold text-title mb-6">The fix</h2>
+              <h2 className="text-2xl font-bold text-title mb-6">What BOOKDU actually does.</h2>
               <p className="text-text-muted mb-4">
-                BOOKDU takes the mental load off your plate.
+                Agency says you&apos;ve got a booking? Log it. Confirmed or not — get it
+                in there. BOOKDU reminds you when it&apos;s coming up, nudges you if it&apos;s
+                still unconfirmed. After the job, it tracks the payment until it lands.
+                If the money doesn&apos;t come, we remind you — at 35 days and again at 56.
+                Weekly summary every Monday morning.
               </p>
               <p className="text-text-muted mb-4">
-                Log your jobs once. The app tracks payments, shows your calendar,
-                guards your contracts, reminds you when something needs attention.
+                Your contracts are stored with end dates. We remind you 90 days out,
+                on your notice deadline, and the day before it ends. No more getting
+                locked into terms you forgot to review.
               </p>
               <p className="text-text-muted mb-4">
-                You focus on the work. BOOKDU remembers everything else.
+                Your next 3 days show up on the dashboard. If a job is unconfirmed
+                and it&apos;s coming up, we&apos;ll nudge you to follow up.
               </p>
               <p className="text-text-muted">
-                No bloat. No accounts. Just one app that watches out for you.
+                That&apos;s it. We track your money, guard your contracts, and keep
+                your schedule clear. Finance tracking for models — not accountants.
               </p>
             </motion.div>
 
             <motion.div {...fadeUp}>
-              <h2 className="text-2xl font-bold text-title mb-6">Who it&apos;s for</h2>
+              <h2 className="text-2xl font-bold text-title mb-6">Who it&apos;s for.</h2>
               <p className="text-text-muted mb-4">
-                Models, talent, influencers — anyone who:
+                Models, talent, influencers, creatives — anyone who:
               </p>
               <ul className="space-y-3">
                 {[
-                  "Works through agencies (one or several)",
-                  "Gets paid weeks or months after the job",
-                  "Has contracts that expire and need renewing",
+                  "Works through agencies and gets paid weeks or months later",
                   "Juggles confirmed and unconfirmed bookings",
-                  "Needs one place for schedule, payments, and contracts",
-                  "Wants to stop carrying it all in their head",
+                  "Has agency contracts that expire and need watching",
+                  "Wants their money tracked until it actually lands",
+                  "Needs tax and expenses sorted without becoming an accountant",
                 ].map((item, i) => (
                   <motion.li
                     key={item}
@@ -108,67 +111,42 @@ export default function AboutContent() {
               </ul>
             </motion.div>
 
-            {/* What BOOKDU protects */}
+            {/* Tax & Expenses */}
             <motion.div {...fadeUp}>
-              <h2 className="text-2xl font-bold text-title mb-6">What BOOKDU protects.</h2>
-              <div className="space-y-6">
-                <div className="bg-surface rounded-xl border border-border p-6">
-                  <h3 className="font-semibold text-title mb-2">Your Money</h3>
-                  <p className="text-text-muted text-sm">
-                    Every job tracked. Every payment watched. Reminders at 35 and 56 days.
-                    Weekly summaries every Monday. No more forgotten invoices.
-                  </p>
-                </div>
-                <div className="bg-surface rounded-xl border border-border p-6">
-                  <h3 className="font-semibold text-title mb-2">Your Contracts</h3>
-                  <p className="text-text-muted text-sm">
-                    Stored in one place. PDF uploads. Reminders 90 days before expiry,
-                    on notice deadlines, day before end. No more getting locked into
-                    terms you forgot to check.
-                  </p>
-                </div>
-                <div className="bg-surface rounded-xl border border-border p-6">
-                  <h3 className="font-semibold text-title mb-2">Your Schedule</h3>
-                  <p className="text-text-muted text-sm">
-                    Every job on your calendar. Confirmed vs unconfirmed at a glance.
-                    Nudges 3 days before if something&apos;s still unconfirmed. No more
-                    piecing it together from emails.
-                  </p>
-                </div>
-              </div>
-            </motion.div>
-
-            <motion.div {...fadeUp}>
-              <h2 className="text-2xl font-bold text-title mb-6">Tax? Sorted.</h2>
+              <h2 className="text-2xl font-bold text-title mb-6">Tax doesn&apos;t have to be a scramble.</h2>
               <p className="text-text-muted mb-4">
-                Easy to forget you need to set money aside for tax when it&apos;s not
-                deducted automatically. BOOKDU shows you a rough estimate of what you
-                might owe — so you&apos;re not caught off guard at the end of the year.
+                You&apos;re focused on shows, bookings, runways, travel — and then tax
+                time hits and you&apos;re digging through bank statements trying to
+                piece together a year of work.
+              </p>
+              <p className="text-text-muted mb-4">
+                If you log your jobs and expenses in BOOKDU, it&apos;s already done.
+                Export your paid jobs as a CSV. Export your expenses as a CSV. Hand
+                them to your accountant. That&apos;s it.
               </p>
               <p className="text-text-muted">
+                BOOKDU also estimates what you might owe in tax so you can set money
+                aside during the year instead of getting hit with a surprise bill.
                 Works in the US, UK, Australia, New Zealand, France, and Italy.
-                We handle the different tax years and brackets for each country.
               </p>
             </motion.div>
 
+            {/* Security & Privacy — updated */}
             <motion.div {...fadeUp}>
-              <h2 className="text-2xl font-bold text-title mb-6">Expenses too.</h2>
+              <h2 className="text-2xl font-bold text-title mb-6">Secure. Private. Backed up if you want.</h2>
               <p className="text-text-muted mb-4">
-                Track what you spend. Tag it to specific jobs in the notes if you want.
-                Snap photos of receipts. Add categories.
+                BOOKDU locks. Nobody can open it and see your data unless you unlock
+                the app. Your finances are your business.
+              </p>
+              <p className="text-text-muted mb-4">
+                Everything lives on your phone by default. No cloud. No tracking.
+                But if you want a backup — in case you lose or break your phone —
+                you can sign in and we&apos;ll keep a secure copy. Your data doesn&apos;t
+                leave your device unless you choose it.
               </p>
               <p className="text-text-muted">
-                When tax time comes, export everything as a CSV — jobs or expenses,
-                custom date ranges, whatever you need. Hand it to your accountant and
-                you&apos;re done.
-              </p>
-            </motion.div>
-
-            <motion.div {...fadeUp}>
-              <h2 className="text-2xl font-bold text-title mb-6">Your data stays yours.</h2>
-              <p className="text-text-muted">
-                Everything lives on your phone. No accounts. No cloud. No tracking.
-                No one sees your money but you. That&apos;s it.
+                We don&apos;t sell data. We don&apos;t share data. We built this for
+                our daughter and her friends — not for advertisers.
               </p>
             </motion.div>
           </div>
@@ -187,8 +165,8 @@ export default function AboutContent() {
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                title: "Keep it simple",
-                description: "One job: help you track payments. No feature creep. No complexity for the sake of it.",
+                title: "Built for models, not accountants",
+                description: "From the moment a job comes in to the moment you get paid. We track it all so you don\u2019t have to think like a bookkeeper.",
                 icon: (
                   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
@@ -196,8 +174,8 @@ export default function AboutContent() {
                 ),
               },
               {
-                title: "Respect privacy",
-                description: "Your financial data is yours. We don't want it. We don't collect it. End of story.",
+                title: "Your data, your rules",
+                description: "Everything stays on your phone unless you choose to back it up. The app locks. Nobody sees your finances but you.",
                 icon: (
                   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
@@ -205,8 +183,8 @@ export default function AboutContent() {
                 ),
               },
               {
-                title: "Be honest",
-                description: "No dark patterns. No manipulation. No surprise charges. Just software that does what it says.",
+                title: "Honest. Always.",
+                description: "No dark patterns. No surprise charges. No manipulation. We built this for someone we love. We treat every user the same way.",
                 icon: (
                   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 
@@ -118,6 +118,18 @@ const screenshots = [
 export default function ScreenshotsPage() {
   const [selectedImage, setSelectedImage] = useState<typeof screenshots[0] | null>(null);
 
+  const closeModal = useCallback(() => setSelectedImage(null), []);
+
+  // Escape key handler for lightbox
+  useEffect(() => {
+    if (!selectedImage) return;
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") closeModal();
+    };
+    document.addEventListener("keydown", handleKeyDown);
+    return () => document.removeEventListener("keydown", handleKeyDown);
+  }, [selectedImage, closeModal]);
+
   return (
     <>
       {/* Page Header */}
@@ -140,8 +152,9 @@ export default function ScreenshotsPage() {
               <motion.div
                 key={screenshot.src}
                 initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: (index % 3) * 0.1 }}
                 className="group cursor-pointer"
                 onClick={() => setSelectedImage(screenshot)}
               >
@@ -173,7 +186,10 @@ export default function ScreenshotsPage() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-text/80 backdrop-blur-sm"
-            onClick={() => setSelectedImage(null)}
+            onClick={closeModal}
+            role="dialog"
+            aria-modal="true"
+            aria-label={selectedImage.title}
           >
             <motion.div
               initial={{ scale: 0.9, opacity: 0 }}
@@ -183,7 +199,8 @@ export default function ScreenshotsPage() {
               onClick={(e) => e.stopPropagation()}
             >
               <button
-                onClick={() => setSelectedImage(null)}
+                onClick={closeModal}
+                aria-label="Close image"
                 className="absolute -top-12 right-0 text-surface hover:text-accent transition-colors"
               >
                 <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
