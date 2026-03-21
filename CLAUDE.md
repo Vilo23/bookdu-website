@@ -1,16 +1,17 @@
 # BOOKDU Marketing Website
 
-## Project Status: LIVE — v1.3.0 deployed to bookdu.co
+## Project Status: LIVE — v1.3.0 + SEO deployed to bookdu.co
 
-Website copy and structure updated to v1.3.0 — three pillars positioning (Payments, Contracts, Calendar). Deployed Feb 2026.
+Website copy and structure updated to v1.3.0 — three pillars positioning (Payments, Contracts, Calendar). Deployed Feb 2026. Comprehensive SEO added Mar 2026.
 
 ### What This Is
 Marketing website for the BOOKDU iOS app — a payment tracking, contract management, and scheduling tool for models, talent, influencers, and creatives who work through agencies. The app is live on the [App Store](https://apps.apple.com/us/app/bookdu/id6757381396). This is a static Next.js site, separate from the main app codebase.
 
 ### Domain
-- **Purchased domain:** bookdu.co (currently shows old version)
+- **Live at:** https://bookdu.co (Vercel)
 - **GitHub repo:** https://github.com/Vilo23/bookdu-website
 - **Legal pages (external):** https://vilo23.github.io/bookdu-legal/
+- **Google Search Console:** verified, sitemap submitted
 
 ---
 
@@ -68,15 +69,16 @@ Marketing website for the BOOKDU iOS app — a payment tracking, contract manage
 - Privacy section + Smart reminders (7 types) + Tax/Expenses section
 - Multi-country tax: US, UK, AU, NZ, France, Italy
 - CSV export with custom date ranges
+- FAQ section (4 questions with FAQPage schema)
 
 ### Screenshots (`/screenshots`)
-- "See how it works."
-- 17 screenshots showing full user flow (including Calendar + Contracts)
+- "See BOOKDU in action."
+- 18 screenshots grouped by category (Dashboard, Job Management, Payment Tracking, Expenses & Tax, Settings)
 - Lightbox modal on click
 
 ---
 
-## SCREENSHOTS (17 files in /public/screenshots/)
+## SCREENSHOTS (18 files in /public/screenshots/)
 
 | File | Title | Caption |
 |------|-------|---------|
@@ -114,17 +116,24 @@ Marketing website for the BOOKDU iOS app — a payment tracking, contract manage
 ```
 src/
 ├── app/
-│   ├── page.tsx                    # Landing (Hero + Problem + HowItWorks + Features + CTA)
-│   ├── layout.tsx                  # Root layout, metadata, font
+│   ├── page.tsx                    # Landing + MobileApplication JSON-LD
+│   ├── layout.tsx                  # Root layout, metadata, font, Organization+WebSite JSON-LD
 │   ├── globals.css                 # Tailwind config, design tokens
+│   ├── robots.ts                   # Generates /robots.txt
+│   ├── sitemap.ts                  # Generates /sitemap.xml
+│   ├── manifest.ts                 # Generates /manifest.webmanifest
+│   ├── opengraph-image.tsx         # Dynamic OG image (root)
 │   ├── features/
-│   │   ├── page.tsx                # Features page
+│   │   ├── page.tsx                # Features page + FAQPage + Breadcrumb JSON-LD
+│   │   ├── opengraph-image.tsx     # Features OG image
 │   │   └── FeaturesContent.tsx     # Three pillars + Privacy + Reminders + Tax/Expenses
 │   ├── screenshots/
-│   │   ├── page.tsx                # Screenshot gallery (17 images)
-│   │   └── layout.tsx              # Metadata
+│   │   ├── page.tsx                # Screenshot gallery (18 images, grouped by category)
+│   │   ├── layout.tsx              # Metadata + Breadcrumb JSON-LD
+│   │   └── opengraph-image.tsx     # Screenshots OG image
 │   └── about/
-│       ├── page.tsx                # About page
+│       ├── page.tsx                # About page + Breadcrumb JSON-LD
+│       ├── opengraph-image.tsx     # About OG image
 │       └── AboutContent.tsx        # Story + What BOOKDU protects + Values sections
 ├── components/
 │   ├── layout/
@@ -133,7 +142,7 @@ src/
 │   ├── ui/
 │   │   ├── Button.tsx, Card.tsx, Badge.tsx, Icon.tsx
 │   └── sections/
-│       ├── Hero.tsx                # "Stop carrying it all in your head."
+│       ├── Hero.tsx                # "You did the work. We'll make sure you get paid."
 │       ├── Problem.tsx             # "Your brain shouldn't be your filing cabinet."
 │       ├── HowItWorks.tsx          # 3-step flow (Log it → See everything → Get nudged)
 │       ├── Features.tsx            # Three pillars + extras (inline data, no constants)
@@ -171,15 +180,41 @@ accent-dark: #878C76 — hover states
 
 ---
 
+## SEO
+
+### What's Configured
+- **robots.txt** — allows all crawlers, references sitemap
+- **sitemap.xml** — all 4 pages with priorities
+- **manifest.webmanifest** — PWA metadata
+- **OG images** — dynamic per-page via `opengraph-image.tsx` (1200x630)
+- **metadataBase** — `https://bookdu.co` (resolves all relative URLs)
+- **title.template** — `%s | BOOKDU` (keyword-first titles)
+- **Canonical URLs** — set on every page via `alternates.canonical`
+- **JSON-LD structured data:**
+  - Organization + WebSite (root layout)
+  - MobileApplication with price "Free" (homepage)
+  - FAQPage with 4 questions (features page)
+  - BreadcrumbList (all sub-pages)
+- **Breadcrumb navigation** — visible on features, about, screenshots
+- **Google Search Console** — verified, sitemap submitted (Mar 2026)
+
+### SEO Keywords (primary)
+`finance app for models`, `model payment tracking`, `modeling agency payments`, `freelance model finance`, `modeling contract management`
+
+---
+
 ## DEPLOYMENT
 
 ### Current State
 - **Live at:** https://bookdu.co (Vercel)
-- **v1.3.0** deployed Feb 2026
+- **v1.3.0 + SEO** deployed Mar 2026
+- **Deploys via:** push to `main` branch on GitHub (auto-deploys on Vercel)
 
 ### To Deploy
 ```bash
 npm run build    # Verify production build works
+git push         # Push to GitHub, Vercel auto-deploys
+# Or manually:
 vercel --prod    # Deploy to Vercel production (bookdu.co)
 ```
 
