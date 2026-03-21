@@ -75,7 +75,7 @@ export default function Hero() {
             transition={{ duration: 0.5, delay: 0.3 }}
             className="text-xl md:text-2xl text-text-muted mb-10 max-w-2xl mx-auto"
           >
-            Track payments, guard contracts, see your schedule — one app, nothing slips through.
+            The finance tracking app built for models and talent. Track payments, guard contracts, see your schedule — one app, nothing slips through.
           </motion.p>
 
           {/* CTA */}

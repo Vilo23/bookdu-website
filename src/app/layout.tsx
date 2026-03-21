@@ -11,30 +11,42 @@ const jakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "BOOKDU — Finance tracking for models",
-  description: "Track payments, guard contracts, manage your schedule, and sort tax — built for models who work through agencies. Free on the App Store.",
-  keywords: ["model", "talent", "agency", "payment tracking", "contracts", "calendar", "tax", "expenses", "freelance"],
+  metadataBase: new URL("https://bookdu.co"),
+  title: {
+    default: "BOOKDU - Finance Tracking App for Models & Talent",
+    template: "%s | BOOKDU",
+  },
+  description: "Track agency payments, guard modeling contracts, manage casting schedules, and sort freelance taxes. The only finance app built specifically for models and talent. Free on iOS.",
+  keywords: [
+    "finance app for models",
+    "model payment tracking",
+    "talent payment tracker",
+    "modeling agency payments",
+    "freelance model finance",
+    "modeling contract management",
+    "casting schedule app",
+    "model tax tracking",
+    "expense tracker for models",
+    "freelance talent app",
+    "agency payment reminder",
+    "modeling income tracker",
+  ],
   authors: [{ name: "BOOKDU" }],
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
-    title: "BOOKDU — You did the work. We'll make sure you get paid.",
-    description: "Track payments, guard contracts, manage your schedule, and sort tax — built for models who work through agencies.",
+    title: "BOOKDU - Finance Tracking App for Models & Talent",
+    description: "Track agency payments, guard contracts, manage your schedule, and sort tax. Built for models.",
     type: "website",
     url: "https://bookdu.co",
     siteName: "BOOKDU",
-    images: [
-      {
-        url: "https://bookdu.co/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "BOOKDU — Finance tracking for models",
-      },
-    ],
+    locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "BOOKDU — Finance tracking for models",
-    description: "Track payments, guard contracts, manage your schedule. Built for models who work through agencies.",
-    images: ["https://bookdu.co/og-image.png"],
+    title: "BOOKDU - Finance Tracking App for Models & Talent",
+    description: "Track agency payments, guard contracts, manage your schedule. Built for models who work through agencies.",
   },
   icons: {
     icon: "/favicon-32.png",
@@ -50,6 +62,32 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${jakarta.variable} antialiased`} suppressHydrationWarning>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@graph": [
+                {
+                  "@type": "Organization",
+                  name: "BOOKDU",
+                  url: "https://bookdu.co",
+                  logo: "https://bookdu.co/logo.png",
+                  description: "Finance tracking app for models and talent who work through agencies.",
+                  sameAs: [
+                    "https://apps.apple.com/us/app/bookdu/id6757381396",
+                  ],
+                },
+                {
+                  "@type": "WebSite",
+                  name: "BOOKDU",
+                  url: "https://bookdu.co",
+                  description: "Track agency payments, guard modeling contracts, manage casting schedules, and sort freelance taxes.",
+                },
+              ],
+            }).replace(/</g, "\\u003c"),
+          }}
+        />
         <Header />
         <main className="min-h-screen">{children}</main>
         <Footer />

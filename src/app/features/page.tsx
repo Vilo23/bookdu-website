@@ -3,13 +3,102 @@ import CTA from "@/components/sections/CTA";
 import FeaturesContent from "./FeaturesContent";
 
 export const metadata: Metadata = {
-  title: "Features - BOOKDU",
-  description: "Payments tracked. Contracts guarded. Calendar organised. Tax sorted. All on your phone.",
+  title: "Payment Tracking, Contract Management & Tax Tools for Models",
+  description: "Track overdue payments from agencies, store and guard modeling contracts, organise castings and fittings, estimate taxes, and export expenses. All in one privacy-first iOS app.",
+  keywords: [
+    "model payment tracking features",
+    "modeling contract storage app",
+    "casting schedule organiser",
+    "freelance model tax calculator",
+    "expense tracking for models",
+    "agency payment reminder app",
+  ],
+  alternates: { canonical: "/features" },
+  openGraph: {
+    title: "BOOKDU Features - Payment Tracking, Contracts & Tax for Models",
+    description: "Track overdue payments, guard contracts, organise castings, estimate taxes. Privacy-first and free on iOS.",
+    url: "https://bookdu.co/features",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "BOOKDU Features - Payment Tracking, Contracts & Tax for Models",
+    description: "Track overdue payments, guard contracts, organise castings, estimate taxes. Privacy-first and free on iOS.",
+  },
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "How do models track payments from agencies?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "BOOKDU lets you log each job with the agency, client, and rate. When the job is done, track whether payment has arrived and get reminded when it's overdue. No invoicing needed — just mark it paid when the money lands.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Is BOOKDU free to download?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes, BOOKDU is completely free on the iOS App Store. There are no hidden fees, subscriptions, or in-app purchases.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Does BOOKDU store my data privately?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "BOOKDU is 100% offline and private. Your data stays on your device — no accounts, no cloud storage, no tracking. Nothing leaves your phone.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Can BOOKDU help with taxes for freelance models?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. BOOKDU includes multi-country tax estimation for the US, UK, Australia, New Zealand, France, and Italy. Track expenses, snap receipts, and export everything to CSV for your accountant.",
+      },
+    },
+  ],
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://bookdu.co" },
+    { "@type": "ListItem", position: 2, name: "Features", item: "https://bookdu.co/features" },
+  ],
 };
 
 export default function FeaturesPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqSchema).replace(/</g, "\\u003c"),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbSchema).replace(/</g, "\\u003c"),
+        }}
+      />
+
+      {/* Breadcrumb Navigation */}
+      <nav aria-label="Breadcrumb" className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-6">
+        <ol className="flex items-center gap-2 text-sm text-text-muted">
+          <li><a href="/" className="hover:text-accent transition-colors">Home</a></li>
+          <li aria-hidden="true">/</li>
+          <li aria-current="page" className="text-title font-medium">Features</li>
+        </ol>
+      </nav>
+
       {/* Page Header */}
       <section className="py-16 md:py-24 border-b border-border">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -17,13 +106,40 @@ export default function FeaturesPage() {
             One app. Everything protected.
           </h1>
           <p className="text-lg text-text-muted max-w-2xl mx-auto">
-            Payments tracked. Contracts guarded. Calendar organised. Tax sorted. All on your phone.
+            Payment tracking, contract management and scheduling for models — all on your phone.
           </p>
         </div>
       </section>
 
       {/* All feature sections */}
       <FeaturesContent />
+
+      {/* FAQ Section */}
+      <section className="py-16 border-t border-border">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl md:text-3xl font-bold text-title mb-8 text-center">
+            Frequently asked questions
+          </h2>
+          <div className="space-y-6">
+            <div>
+              <h3 className="font-semibold text-title mb-2">How do models track payments from agencies?</h3>
+              <p className="text-text-muted">Log each job with the agency, client, and rate. When the job is done, track whether payment has arrived and get reminded when it&apos;s overdue. No invoicing needed — just mark it paid when the money lands.</p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-title mb-2">Is BOOKDU free to download?</h3>
+              <p className="text-text-muted">Yes, BOOKDU is completely free on the iOS App Store. There are no hidden fees, subscriptions, or in-app purchases.</p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-title mb-2">Does BOOKDU store my data privately?</h3>
+              <p className="text-text-muted">BOOKDU is 100% offline and private. Your data stays on your device — no accounts, no cloud storage, no tracking. Nothing leaves your phone.</p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-title mb-2">Can BOOKDU help with taxes for freelance models?</h3>
+              <p className="text-text-muted">Yes. BOOKDU includes multi-country tax estimation for the US, UK, Australia, New Zealand, France, and Italy. Track expenses, snap receipts, and export everything to CSV for your accountant.</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <CTA />
     </>
