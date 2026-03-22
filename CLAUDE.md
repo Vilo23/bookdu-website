@@ -1,8 +1,8 @@
 # BOOKDU Marketing Website
 
-## Project Status: LIVE — v1.3.0 + SEO deployed to bookdu.co
+## Project Status: LIVE — v2.0 (Dark Editorial Redesign) deployed to bookdu.co
 
-Website copy and structure updated to v1.3.0 — three pillars positioning (Payments, Contracts, Calendar). Deployed Feb 2026. Comprehensive SEO added Mar 2026.
+Website redesigned Mar 2026 with a dark editorial fashion aesthetic. Flipped colour palette (dark olive bg, cream text), new typography (Archivo Black, Inter, JetBrains Mono), editorial layout with data cards, structural background characters, and fashion photography image strips. All content and SEO preserved from v1.3.0.
 
 ### What This Is
 Marketing website for the BOOKDU iOS app — a payment tracking, contract management, and scheduling tool for models, talent, influencers, and creatives who work through agencies. The app is live on the [App Store](https://apps.apple.com/us/app/bookdu/id6757381396). This is a static Next.js site, separate from the main app codebase.
@@ -52,28 +52,26 @@ Marketing website for the BOOKDU iOS app — a payment tracking, contract manage
 ## PAGE STRUCTURE
 
 ### Homepage (`/`)
-1. **Hero** — "Stop carrying it all in your head."
-2. **Problem** — "Your brain shouldn't be your filing cabinet."
-3. **How It Works** — "Dead simple." (3 steps: Log it → See everything → Get nudged)
-4. **Features** — "Three things protected." (3 pillar cards + 2 extras)
-5. **CTA** — "Ready to stop worrying?"
+1. **Hero** — "YOU DID THE WORK" (giant Archivo Black headline, side nav cluster, micro data block, download CTA)
+2. **Problem** — Section "01" with 4 data cards (3 problems + 1 solution)
+3. **Image Strips** — 3 full-bleed fashion photos (grayscale → colour on hover) with overlay labels
+4. **How It Works** — Section "02" with 3 data cards (Log It → We Remind You → We Watch The Money)
+5. **Features** — Section "03" with 5 module data cards (Payments, Contracts, Schedule, Tax, Privacy)
+6. **CTA** — "YOUR MONEY. YOUR CONTRACTS. YOUR SCHEDULE."
 
 ### About (`/about`)
-- "Why we built this." / "Your brain shouldn't be your filing cabinet."
-- Sections: The problem, The fix, Who it's for, What BOOKDU protects, Tax, Expenses, Privacy
-- Values: Keep it simple, Respect privacy, Be honest
+- "WHY WE BUILT THIS" — editorial long-form layout
+- Sections: Story, What BOOKDU does, Who it's for, Tax, Security/Privacy
+- Values: 3 data cards (For Models, Your Data, Honesty)
 
 ### Features (`/features`)
-- "One app. Everything protected."
-- Three pillars section (Get Paid, Guard Contracts, See Your Schedule)
-- Privacy section + Smart reminders (7 types) + Tax/Expenses section
-- Multi-country tax: US, UK, AU, NZ, France, Italy
-- CSV export with custom date ranges
+- "THE THREE PILLARS" — detailed breakdown
+- Privacy section, Smart reminders (7 types), Tax/Expenses section
 - FAQ section (4 questions with FAQPage schema)
 
 ### Screenshots (`/screenshots`)
-- "See BOOKDU in action."
-- 18 screenshots grouped by category (Dashboard, Job Management, Payment Tracking, Expenses & Tax, Settings)
+- "SEE BOOKDU IN ACTION"
+- 18 screenshots grouped by category with dark gallery cards
 - Lightbox modal on click
 
 ---
@@ -100,25 +98,33 @@ Marketing website for the BOOKDU iOS app — a payment tracking, contract manage
 | Settings.png | Settings | Customise what you track |
 | Country Setting Tax.png | Multi-country tax | US, UK, AU, NZ, France, Italy |
 
-**Note:** `Calendar Month View.png` and `Contracts List.png` need to be added to `/public/screenshots/`. The new `Home Screen.png` should replace the old dashboard screenshot.
+---
+
+## IMAGE STRIPS (3 files in /public/)
+
+| File | Subject | Overlay Label |
+|------|---------|---------------|
+| strip-backstage.png | Backstage prep — clothing racks, look sheets, model being fitted | The work // Logged |
+| strip-runway.png | Models walking the runway in couture gowns | The money // Watched |
+| strip-models.png | Models getting ready backstage before a show | The contracts // Guarded |
 
 ---
 
 ## TECH STACK
 
 - Next.js 16 (App Router)
-- Tailwind CSS 4 (configured via `@theme` in globals.css)
+- Tailwind CSS 4 (configured via `@theme inline` in globals.css)
 - Framer Motion (animations)
 - TypeScript
-- Plus Jakarta Sans font (via next/font/google)
+- Fonts: Archivo Black (display), Inter (body), JetBrains Mono (mono) — via next/font/google
 
 ### File Structure
 ```
 src/
 ├── app/
 │   ├── page.tsx                    # Landing + MobileApplication JSON-LD
-│   ├── layout.tsx                  # Root layout, metadata, font, Organization+WebSite JSON-LD
-│   ├── globals.css                 # Tailwind config, design tokens
+│   ├── layout.tsx                  # Root layout, metadata, fonts, Organization+WebSite JSON-LD
+│   ├── globals.css                 # Tailwind config, design tokens, utility classes
 │   ├── robots.ts                   # Generates /robots.txt
 │   ├── sitemap.ts                  # Generates /sitemap.xml
 │   ├── manifest.ts                 # Generates /manifest.webmanifest
@@ -137,31 +143,42 @@ src/
 │       └── AboutContent.tsx        # Story + What BOOKDU protects + Values sections
 ├── components/
 │   ├── layout/
-│   │   ├── Header.tsx              # Sticky nav, mobile menu
-│   │   └── Footer.tsx              # Links, back-to-top
+│   │   ├── Header.tsx              # Mobile-only hamburger menu (desktop nav is in Hero)
+│   │   └── Footer.tsx              # Minimal editorial footer — brand left, mono links right
 │   ├── ui/
-│   │   ├── Button.tsx, Card.tsx, Badge.tsx, Icon.tsx
+│   │   ├── Button.tsx              # Primary (cream bg) and secondary (outlined) variants
+│   │   └── Badge.tsx               # Monospace uppercase, sharp edges
 │   └── sections/
-│       ├── Hero.tsx                # "You did the work. We'll make sure you get paid."
-│       ├── Problem.tsx             # "Your brain shouldn't be your filing cabinet."
-│       ├── HowItWorks.tsx          # 3-step flow (Log it → See everything → Get nudged)
-│       ├── Features.tsx            # Three pillars + extras (inline data, no constants)
-│       └── CTA.tsx                 # "Ready to stop worrying?"
+│       ├── Hero.tsx                # Full-viewport hero with side nav cluster, structural chars
+│       ├── Problem.tsx             # Section "01" — 4 data cards (problems + solution)
+│       ├── ImageStrip.tsx          # 3 fashion photo strips (grayscale → colour hover)
+│       ├── HowItWorks.tsx          # Section "02" — 3 step data cards
+│       ├── Features.tsx            # Section "03" — 5 module data cards
+│       └── CTA.tsx                 # Bold download CTA
 └── lib/
     └── constants.ts                # Nav links, external links
 ```
 
 ### Design System (globals.css)
 ```
-bg: #F1ECE4        — warm off-white background
-surface: #FFFFFF   — cards, sections
-border: #D1CEC4    — hairline borders
-text: #4D5045      — primary body text
-text-muted: #878C76 — secondary text
-title: #6E725F     — headings, brand
-accent: #A4AA8E    — sage green (buttons, highlights)
-accent-dark: #878C76 — hover states
+bg: #4D5045        — dark olive background
+bg-deep: #3D4037   — deeper olive for section contrast
+surface: #5A5E4E   — slightly lighter olive for cards
+border: #7A7E6E    — olive border (visible against bg)
+text: #F1ECE4      — cream (primary text, headings)
+text-muted: #C5C0B6 — muted cream (NOT olive — stays readable)
+accent: #BEC4A8    — lighter sage green
+accent-dark: #A4AA8E — sage for hover states
 ```
+
+### Design Patterns
+- **Data cards**: Top border, monospace `.data-label`, Inter heading, muted description
+- **Section numbers**: Giant decorative numbers ("01", "02", "03") via `.section-num`
+- **Structural characters**: Fixed giant "B" and "D" letterforms behind hero
+- **Image strips**: Full-bleed photos, grayscale by default, colour on hover
+- **Micro data**: System-style monospace labels (e.g. "PAYMENTS // TRACKED")
+- **Crosshair cursor**: Desktop only (reverts to default on touch devices)
+- **Grain texture**: Subtle noise overlay at 0.04 opacity
 
 ---
 
@@ -184,9 +201,9 @@ accent-dark: #878C76 — hover states
 
 ### What's Configured
 - **robots.txt** — allows all crawlers, references sitemap
-- **sitemap.xml** — all 4 pages with priorities
-- **manifest.webmanifest** — PWA metadata
-- **OG images** — dynamic per-page via `opengraph-image.tsx` (1200x630)
+- **sitemap.xml** — all 4 pages with priorities and static lastModified dates
+- **manifest.webmanifest** — PWA metadata (dark olive theme)
+- **OG images** — dynamic per-page via `opengraph-image.tsx` (1200x630, dark olive bg)
 - **metadataBase** — `https://bookdu.co` (resolves all relative URLs)
 - **title.template** — `%s | BOOKDU` (keyword-first titles)
 - **Canonical URLs** — set on every page via `alternates.canonical`
@@ -195,6 +212,8 @@ accent-dark: #878C76 — hover states
   - MobileApplication with price "Free" (homepage)
   - FAQPage with 4 questions (features page)
   - BreadcrumbList (all sub-pages)
+- **Heading hierarchy** — sr-only H1 keyword span, sr-only H2s on homepage sections, proper H2/H3 nesting
+- **Meta descriptions** — all under 160 chars
 - **Breadcrumb navigation** — visible on features, about, screenshots
 - **Google Search Console** — verified, sitemap submitted (Mar 2026)
 
@@ -207,7 +226,7 @@ accent-dark: #878C76 — hover states
 
 ### Current State
 - **Live at:** https://bookdu.co (Vercel)
-- **v1.3.0 + SEO** deployed Mar 2026
+- **v2.0 (Dark Editorial Redesign)** deployed Mar 2026
 - **Deploys via:** push to `main` branch on GitHub (auto-deploys on Vercel)
 
 ### To Deploy
