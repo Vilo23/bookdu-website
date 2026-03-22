@@ -148,22 +148,34 @@ export default function ScreenshotsPage() {
     return () => document.removeEventListener("keydown", handleKeyDown);
   }, [selectedImage, closeModal]);
 
+  // Lock body scroll when modal is open
+  useEffect(() => {
+    if (selectedImage) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [selectedImage]);
+
   return (
     <>
       {/* Page Header */}
-      <section className="py-16 md:py-24 border-b border-border">
+      <section className="pt-24 pb-16 md:pt-32 md:pb-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-title mb-4">
-            See BOOKDU in action.
+          <h1 className="font-display text-4xl md:text-6xl lg:text-7xl text-text uppercase tracking-tight leading-none">
+            SEE BOOKDU IN ACTION
           </h1>
-          <p className="text-lg text-text-muted max-w-2xl mx-auto">
+          <p className="font-mono text-xs sm:text-sm uppercase tracking-[0.15em] text-text-muted mt-6 max-w-xl mx-auto">
             App screenshots of payment tracking, contract management, scheduling, and tax tools for models. Click any image to enlarge.
           </p>
         </div>
       </section>
 
       {/* Screenshot Grid — grouped by category */}
-      <section className="py-20">
+      <section className="pb-24">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           {Object.entries(
             screenshots.reduce<Record<string, typeof screenshots>>((groups, screenshot) => {
@@ -173,31 +185,37 @@ export default function ScreenshotsPage() {
               return groups;
             }, {})
           ).map(([category, items]) => (
-            <div key={category} className="mb-12 last:mb-0">
-              <h2 className="text-xl font-semibold text-title mb-6">{category}</h2>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div key={category} className="mb-16 last:mb-0">
+              <span className="data-label">{category}</span>
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
                 {items.map((screenshot, index) => (
                   <motion.div
                     key={screenshot.src}
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    transition={{ duration: 0.4, delay: (index % 3) * 0.1 }}
+                    transition={{ duration: 0.4, delay: (index % 4) * 0.08 }}
                     className="group cursor-pointer"
                     onClick={() => setSelectedImage(screenshot)}
                   >
-                    <div className="bg-surface rounded-2xl border border-border p-4 transition-all duration-300 group-hover:shadow-lg group-hover:border-accent/30">
-                      <div className="relative aspect-[9/19] rounded-xl overflow-hidden bg-bg mb-4">
+                    <div className="bg-bg-deep border border-border p-3 transition-colors duration-300 group-hover:border-accent-dark">
+                      <div className="relative aspect-[9/19] overflow-hidden bg-surface">
                         <Image
                           src={screenshot.src}
                           alt={screenshot.alt}
                           fill
                           className="object-cover transition-transform duration-300 group-hover:scale-105"
-                          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                          sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
                         />
                       </div>
-                      <h3 className="font-semibold text-title mb-1">{screenshot.title}</h3>
-                      <p className="text-sm text-text-muted">{screenshot.description}</p>
+                      <div className="mt-3">
+                        <h3 className="text-text font-medium text-sm leading-snug">
+                          {screenshot.title}
+                        </h3>
+                        <p className="text-text-muted text-sm mt-0.5 leading-snug">
+                          {screenshot.description}
+                        </p>
+                      </div>
                     </div>
                   </motion.div>
                 ))}
@@ -214,40 +232,52 @@ export default function ScreenshotsPage() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-text/80 backdrop-blur-sm"
+            transition={{ duration: 0.2 }}
+            className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-bg-deep/90 backdrop-blur-md"
             onClick={closeModal}
             role="dialog"
             aria-modal="true"
             aria-label={selectedImage.title}
           >
             <motion.div
-              initial={{ scale: 0.9, opacity: 0 }}
+              initial={{ scale: 0.95, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
-              exit={{ scale: 0.9, opacity: 0 }}
-              className="relative max-w-sm w-full bg-surface rounded-2xl p-4"
+              exit={{ scale: 0.95, opacity: 0 }}
+              transition={{ duration: 0.2 }}
+              className="relative max-w-sm w-full bg-surface p-3"
               onClick={(e) => e.stopPropagation()}
             >
+              {/* Close button */}
               <button
                 onClick={closeModal}
                 aria-label="Close image"
-                className="absolute -top-12 right-0 text-surface hover:text-accent transition-colors"
+                className="absolute -top-10 right-0 text-text-muted hover:text-text transition-colors z-10"
               >
-                <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M6 18L18 6M6 6l12 12" />
                 </svg>
               </button>
-              <div className="relative aspect-[9/19] rounded-xl overflow-hidden bg-bg">
+
+              {/* Image */}
+              <div className="relative aspect-[9/19] overflow-hidden bg-bg-deep">
                 <Image
                   src={selectedImage.src}
                   alt={selectedImage.alt}
                   fill
                   className="object-cover"
                   sizes="400px"
+                  priority
                 />
               </div>
-              <div className="mt-4 text-center">
-                <h3 className="font-semibold text-title">{selectedImage.title}</h3>
-                <p className="text-sm text-text-muted">{selectedImage.description}</p>
+
+              {/* Text */}
+              <div className="mt-3">
+                <h3 className="text-text font-medium text-sm">
+                  {selectedImage.title}
+                </h3>
+                <p className="text-text-muted text-sm mt-0.5">
+                  {selectedImage.description}
+                </p>
               </div>
             </motion.div>
           </motion.div>

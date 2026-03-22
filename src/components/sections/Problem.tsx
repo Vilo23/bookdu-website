@@ -2,63 +2,54 @@
 
 import { motion } from "framer-motion";
 
+const cards = [
+  {
+    label: "Problem 01 // Payments",
+    value: "Agency statements are deliberately opaque.",
+    desc: "Which agency owes you what. Which payments are weeks overdue. You\u2019re not getting paid on the spot. It\u2019s weeks. Sometimes months. And if you don\u2019t chase it, nobody else will.",
+  },
+  {
+    label: "Problem 02 // Contracts",
+    value: "Contracts get buried in emails and forgotten.",
+    desc: "When your contract runs out. Whether it auto-renews into terms you didn\u2019t check. One person, multiple agencies, multiple clients.",
+  },
+  {
+    label: "Problem 03 // Schedule",
+    value: "Your schedule is pieced together from texts and memory.",
+    desc: "Whether that job next Tuesday is actually confirmed. Shows, castings, fittings \u2014 and somewhere in between, you\u2019re supposed to track it all.",
+  },
+  {
+    label: "Solution // BOOKDU",
+    value: "We built BOOKDU so you don\u2019t have to carry any of that.",
+    desc: "Then tax time hits and you\u2019re digging through bank statements and email threads trying to piece together a year of work. Not anymore.",
+  },
+];
+
 export default function Problem() {
   return (
-    <section className="py-20 md:py-28">
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-          className="text-center mb-10"
-        >
-          <h2 className="text-2xl md:text-3xl font-bold text-title">
-            Shows, castings, fittings — and somewhere in between, you&apos;re supposed to track it all.
-          </h2>
-        </motion.div>
+    <section className="py-[10vw] px-[5vw]">
+      <div className="grid grid-cols-1 lg:grid-cols-[1fr_2fr] gap-[5vw]">
+        {/* Left column: section number */}
+        <div>
+          <div className="section-num">01</div>
+        </div>
 
-        <div className="space-y-6 text-lg text-text-muted">
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.1 }}
-          >
-            Which agency owes you what. Which payments are weeks overdue. When your contract runs out. Whether that job next Tuesday is actually confirmed.
-          </motion.p>
-
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-          >
-            You&apos;re not getting paid on the spot. It&apos;s weeks. Sometimes months. And if you don&apos;t chase it, nobody else will.
-          </motion.p>
-
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.3 }}
-          >
-            Then tax time hits and you&apos;re digging through bank statements and email threads trying to piece together a year of work.
-          </motion.p>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.4 }}
-            className="pt-6"
-          >
-            <div className="border-l-3 border-accent pl-6">
-              <p className="text-title font-semibold text-xl">
-                We built BOOKDU so you don&apos;t have to carry any of that.
-              </p>
-            </div>
-          </motion.div>
+        {/* Right column: data cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {cards.map((card, index) => (
+            <motion.div
+              key={card.label}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              className="data-card"
+            >
+              <span className="data-label">{card.label}</span>
+              <p className="data-card-value">{card.value}</p>
+              <p className="data-card-desc">{card.desc}</p>
+            </motion.div>
+          ))}
         </div>
       </div>
     </section>

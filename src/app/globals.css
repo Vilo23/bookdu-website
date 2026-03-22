@@ -1,18 +1,21 @@
 @import "tailwindcss";
 
 :root {
-  --bg: #F1ECE4;
-  --surface: #FFFFFF;
-  --border: #D1CEC4;
-  --text: #4D5045;
-  --text-muted: #878C76;
-  --title: #6E725F;
-  --accent: #A4AA8E;
-  --accent-dark: #878C76;
+  --bg: #4D5045;
+  --bg-deep: #3D4037;
+  --surface: #5A5E4E;
+  --border: #7A7E6E;
+  --text: #F1ECE4;
+  --text-muted: #C5C0B6;
+  --title: #F1ECE4;
+  --accent: #BEC4A8;
+  --accent-dark: #A4AA8E;
+  --border-thick: 1.5vw;
 }
 
 @theme inline {
   --color-bg: var(--bg);
+  --color-bg-deep: var(--bg-deep);
   --color-surface: var(--surface);
   --color-border: var(--border);
   --color-text: var(--text);
@@ -20,110 +23,175 @@
   --color-title: var(--title);
   --color-accent: var(--accent);
   --color-accent-dark: var(--accent-dark);
-  --font-sans: var(--font-jakarta);
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-display: "Archivo Black", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--bg);
   color: var(--text);
-  font-family: var(--font-jakarta), system-ui, sans-serif;
+  font-family: var(--font-inter), "Inter", system-ui, sans-serif;
+  overflow-x: hidden;
+  cursor: crosshair;
 }
 
-/* Subtle grain texture for warmth */
+/* Grain texture — adjusted for dark bg */
 body::before {
   content: "";
   position: fixed;
   inset: 0;
   z-index: 1;
   pointer-events: none;
-  opacity: 0.025;
+  opacity: 0.04;
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
   background-repeat: repeat;
   background-size: 256px 256px;
 }
 
-/* Smooth scrolling */
-html {
-  scroll-behavior: smooth;
-}
-
 /* Selection color */
 ::selection {
   background-color: var(--accent);
-  color: var(--surface);
+  color: var(--bg-deep);
 }
 
-/* Badge shimmer animation */
-@keyframes shimmer {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(100%);
-  }
+/* ── Structural characters (giant background letterforms) ── */
+.structural-char {
+  font-family: var(--font-archivo), "Archivo Black", sans-serif;
+  font-size: 28vw;
+  line-height: 0.75;
+  color: var(--text);
+  position: fixed;
+  z-index: 0;
+  pointer-events: none;
+  user-select: none;
+  opacity: 0.03;
 }
 
-/* Arrow slide on button hover */
-.group:hover .group-hover\:translate-x-1 {
-  transform: translateX(0.25rem);
+/* ── Data label (monospace section labels) ── */
+.data-label {
+  font-family: var(--font-jetbrains), "JetBrains Mono", monospace;
+  font-size: clamp(0.65rem, 0.8vw, 0.85rem);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--text-muted);
+  display: block;
+  margin-bottom: 1rem;
 }
 
-/* Subtle notification glow pulse */
-@keyframes glow-pulse {
-  0%, 100% {
-    box-shadow: 0 0 0 0 rgba(164, 170, 142, 0);
-  }
-  50% {
-    box-shadow: 0 0 20px 4px rgba(164, 170, 142, 0.15);
-  }
+/* ── Section number (giant decorative numbers) ── */
+.section-num {
+  font-family: var(--font-archivo), "Archivo Black", sans-serif;
+  font-size: clamp(6rem, 15vw, 20rem);
+  line-height: 0.8;
+  color: var(--text);
+  opacity: 0.06;
 }
 
-.notification-glow {
-  animation: glow-pulse 3s ease-in-out infinite;
+/* ── Data card ── */
+.data-card {
+  border-top: 1px solid var(--border);
+  padding-top: 1.5rem;
 }
 
-/* Respect reduced motion preferences */
+.data-card-value {
+  font-family: var(--font-inter), "Inter", sans-serif;
+  font-size: clamp(1.1rem, 2vw, 1.5rem);
+  font-weight: 500;
+  line-height: 1.3;
+  color: var(--text);
+}
+
+.data-card-desc {
+  font-size: clamp(0.85rem, 1vw, 1rem);
+  color: var(--text-muted);
+  margin-top: 0.75rem;
+  line-height: 1.6;
+}
+
+/* ── Image strip (grayscale → color on hover) ── */
+.strip-container {
+  position: relative;
+  width: 100%;
+  height: 45vh;
+  overflow: hidden;
+  background: var(--bg-deep);
+}
+
+.strip-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.75;
+  filter: grayscale(100%) contrast(1.2);
+  transition: filter 0.5s ease, opacity 0.5s ease;
+}
+
+.strip-container:hover .strip-img {
+  filter: grayscale(0%) contrast(1.1);
+  opacity: 1;
+}
+
+.strip-overlay-data {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: var(--font-jetbrains), "JetBrains Mono", monospace;
+  font-size: clamp(0.6rem, 0.8vw, 0.85rem);
+  color: var(--text);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  background: rgba(61, 64, 55, 0.7);
+  padding: 0.5rem 1rem;
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(241, 236, 228, 0.1);
+  pointer-events: none;
+}
+
+/* ── Micro data (system-style labels in hero) ── */
+.micro-data {
+  font-family: var(--font-jetbrains), "JetBrains Mono", monospace;
+  font-size: clamp(0.6rem, 0.75vw, 0.75rem);
+  text-transform: uppercase;
+  color: var(--text-muted);
+  letter-spacing: 0.05em;
+}
+
+.micro-data span {
+  color: var(--text);
+}
+
+/* ── Respect reduced motion ── */
 @media (prefers-reduced-motion: reduce) {
-  .notification-glow {
-    animation: none;
-  }
-
   html {
     scroll-behavior: auto;
   }
+
+  .strip-img {
+    transition: none;
+  }
 }
 
-/* Accent underline highlight */
-.accent-highlight {
-  position: relative;
-  display: inline;
-  z-index: 1;
+/* ── Touch devices: restore default cursor ── */
+@media (hover: none) and (pointer: coarse) {
+  body {
+    cursor: default;
+  }
 }
 
-.accent-highlight::after {
-  content: "";
-  position: absolute;
-  bottom: 2px;
-  left: -2px;
-  right: -2px;
-  height: 35%;
-  background: var(--accent);
-  opacity: 0.35;
-  border-radius: 4px;
-  z-index: -1;
-}
-
-/* Vertical step connector line */
-@keyframes draw-line {
-  from { height: 0; }
-  to { height: 100%; }
-}
-
-/* Section divider accent dash */
-.section-dash {
-  width: 48px;
-  height: 3px;
-  background: var(--accent);
-  border-radius: 2px;
-  opacity: 0.5;
+/* ── Responsive: hide structural chars on mobile ── */
+@media (max-width: 1024px) {
+  .structural-char {
+    display: none;
+  }
 }

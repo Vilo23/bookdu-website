@@ -1,13 +1,25 @@
 import type { Metadata } from "next";
-import { Plus_Jakarta_Sans } from "next/font/google";
+import { Archivo_Black, Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 
-const jakarta = Plus_Jakarta_Sans({
-  variable: "--font-jakarta",
+const archivoBlack = Archivo_Black({
+  variable: "--font-archivo",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  weight: "400",
+});
+
+const inter = Inter({
+  variable: "--font-inter",
+  subsets: ["latin"],
+  weight: ["400", "500", "600"],
+});
+
+const jetbrainsMono = JetBrains_Mono({
+  variable: "--font-jetbrains",
+  subsets: ["latin"],
+  weight: ["400", "500", "700"],
 });
 
 export const metadata: Metadata = {
@@ -54,39 +66,40 @@ export const metadata: Metadata = {
   },
 };
 
+// JSON-LD structured data — static, developer-controlled content (safe)
+const jsonLd = JSON.stringify({
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      name: "BOOKDU",
+      url: "https://bookdu.co",
+      logo: "https://bookdu.co/logo.png",
+      description: "Finance tracking app for models and talent who work through agencies.",
+      sameAs: [
+        "https://apps.apple.com/us/app/bookdu/id6757381396",
+      ],
+    },
+    {
+      "@type": "WebSite",
+      name: "BOOKDU",
+      url: "https://bookdu.co",
+      description: "Track agency payments, guard modeling contracts, manage casting schedules, and sort freelance taxes.",
+    },
+  ],
+}).replace(/</g, "\\u003c");
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={`${jakarta.variable} antialiased`} suppressHydrationWarning>
+    <html lang="en" className={`${archivoBlack.variable} ${inter.variable} ${jetbrainsMono.variable}`} suppressHydrationWarning>
+      <body className="antialiased" suppressHydrationWarning>
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@graph": [
-                {
-                  "@type": "Organization",
-                  name: "BOOKDU",
-                  url: "https://bookdu.co",
-                  logo: "https://bookdu.co/logo.png",
-                  description: "Finance tracking app for models and talent who work through agencies.",
-                  sameAs: [
-                    "https://apps.apple.com/us/app/bookdu/id6757381396",
-                  ],
-                },
-                {
-                  "@type": "WebSite",
-                  name: "BOOKDU",
-                  url: "https://bookdu.co",
-                  description: "Track agency payments, guard modeling contracts, manage casting schedules, and sort freelance taxes.",
-                },
-              ],
-            }).replace(/</g, "\\u003c"),
-          }}
+          dangerouslySetInnerHTML={{ __html: jsonLd }}
         />
         <Header />
         <main className="min-h-screen">{children}</main>

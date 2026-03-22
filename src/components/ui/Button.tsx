@@ -20,21 +20,17 @@ export default function Button({
   className = "",
   onClick,
 }: ButtonProps) {
-  const baseStyles =
-    "inline-flex items-center justify-center px-6 py-3 rounded-xl font-semibold transition-all duration-200 group";
+  const base =
+    "inline-flex items-center gap-4 uppercase transition-transform duration-150 active:scale-[0.97]";
 
   const variants = {
-    primary: "bg-accent text-surface hover:bg-accent-dark shadow-sm hover:shadow-md active:scale-[0.97]",
-    secondary: "bg-surface text-title border border-border hover:border-accent hover:text-accent active:scale-[0.97]",
+    primary:
+      "bg-text text-bg-deep font-[family-name:var(--font-archivo)] px-[clamp(1.5rem,2vw,2.5rem)] py-[clamp(0.75rem,1vw,1.25rem)] hover:scale-[0.98]",
+    secondary:
+      "border border-text text-text font-[family-name:var(--font-inter)] px-[clamp(1.5rem,2vw,2.5rem)] py-[clamp(0.75rem,1vw,1.25rem)] hover:bg-text/10",
   };
 
-  const combinedStyles = `${baseStyles} ${variants[variant]} ${className}`;
-
-  const inner = (
-    <span className="inline-flex items-center gap-0">
-      {children}
-    </span>
-  );
+  const combinedStyles = `${base} ${variants[variant]} ${className}`;
 
   if (href) {
     if (external) {
@@ -45,21 +41,21 @@ export default function Button({
           rel="noopener noreferrer"
           className={combinedStyles}
         >
-          {inner}
+          {children}
         </a>
       );
     }
 
     return (
       <Link href={href} className={combinedStyles}>
-        {inner}
+        {children}
       </Link>
     );
   }
 
   return (
     <button onClick={onClick} className={combinedStyles}>
-      {inner}
+      {children}
     </button>
   );
 }

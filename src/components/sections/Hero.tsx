@@ -1,126 +1,114 @@
 "use client";
 
-import Image from "next/image";
-import { motion, useReducedMotion } from "framer-motion";
-import Badge from "@/components/ui/Badge";
-import Button from "@/components/ui/Button";
-import { EXTERNAL_LINKS } from "@/lib/constants";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { motion } from "framer-motion";
+import { NAV_LINKS } from "@/lib/constants";
 
 export default function Hero() {
-  const prefersReduced = useReducedMotion();
+  const pathname = usePathname();
 
   return (
-    <section className="relative overflow-hidden">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32">
-        <div className="text-center">
-          {/* App Logo */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{
-              opacity: 1,
-              scale: 1,
-              y: prefersReduced ? 0 : [0, -8, 0],
-            }}
-            transition={{
-              opacity: { duration: 0.5 },
-              scale: { duration: 0.5 },
-              y: prefersReduced
-                ? { duration: 0 }
-                : {
-                    duration: 4,
-                    repeat: Infinity,
-                    ease: "easeInOut",
-                    delay: 0.8,
-                  },
-            }}
-            className="mb-8"
-          >
-            <Image
-              src="/logo.png"
-              alt="BOOKDU logo"
-              width={120}
-              height={120}
-              className="mx-auto rounded-[28px] shadow-lg"
-              priority
-            />
-          </motion.div>
-
-          {/* Badge */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.1 }}
-          >
-            <Badge variant="accent" className="mb-6" shimmer>
-              Finance tracking for models
-            </Badge>
-          </motion.div>
-
-          {/* Headline */}
-          <motion.h1
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            className="text-4xl md:text-6xl font-bold text-title mb-6 max-w-3xl mx-auto leading-tight"
-          >
-            You did the work.{" "}
-            <br className="hidden sm:block" />
-            We&apos;ll make sure you <span className="accent-highlight">get paid</span>.
-          </motion.h1>
-
-          {/* Tagline */}
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.3 }}
-            className="text-xl md:text-2xl text-text-muted mb-10 max-w-2xl mx-auto"
-          >
-            The finance tracking app built for models and talent. Track payments, guard contracts, see your schedule — one app, nothing slips through.
-          </motion.p>
-
-          {/* CTA */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.4 }}
-            className="flex flex-col sm:flex-row gap-4 justify-center"
-          >
-            <Button href={EXTERNAL_LINKS.appStore} external>
-              Get the app
-              <svg className="w-4 h-4 ml-2 transition-transform duration-200 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-              </svg>
-            </Button>
-            <Button href="#how-it-works" variant="secondary">
-              See how it works
-            </Button>
-          </motion.div>
-        </div>
-
-        {/* Decorative gradient */}
-        <div className="absolute inset-0 -z-10 overflow-hidden">
-          <motion.div
-            animate={
-              prefersReduced
-                ? {}
-                : {
-                    x: [0, 30, -20, 0],
-                    y: [0, -20, 10, 0],
-                  }
-            }
-            transition={
-              prefersReduced
-                ? {}
-                : {
-                    duration: 20,
-                    repeat: Infinity,
-                    ease: "easeInOut",
-                  }
-            }
-            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-r from-accent/10 via-transparent to-accent/5 rounded-full blur-3xl"
-          />
-        </div>
+    <section className="relative min-h-screen grid grid-cols-1 lg:grid-cols-[1fr_1fr] grid-rows-[auto_1fr_auto] overflow-hidden px-[5vw] py-[2vw]">
+      {/* Structural background chars */}
+      <div
+        className="structural-char"
+        style={{ top: "-2vw", left: "-2vw" }}
+        aria-hidden="true"
+      >
+        B
       </div>
+      <div
+        className="structural-char"
+        style={{ bottom: "5vh", right: "-2vw" }}
+        aria-hidden="true"
+      >
+        D
+      </div>
+
+      {/* Nav cluster — top-right, desktop only */}
+      <motion.nav
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.6, delay: 0.2 }}
+        className="hidden lg:flex flex-col items-end gap-[0.5vh] col-start-2 row-start-1 mt-[2vh] relative z-10"
+      >
+        <span className="font-[family-name:var(--font-jetbrains)] text-[0.8vw] uppercase tracking-[0.1em] text-text mb-[2vh]">
+          Menu // System
+        </span>
+        {NAV_LINKS.map((link) => {
+          const isActive = pathname === link.href;
+          return (
+            <Link
+              key={link.href}
+              href={link.href}
+              className={`font-[family-name:var(--font-inter)] text-[clamp(1.2rem,2.2vw,2.5rem)] font-medium tracking-[-0.02em] capitalize transition-colors duration-300 ${
+                isActive ? "text-text" : "text-text-muted hover:text-text"
+              }`}
+            >
+              {link.label}
+            </Link>
+          );
+        })}
+      </motion.nav>
+
+      {/* Center content — spans full width */}
+      <div className="relative z-10 flex flex-col items-center justify-center col-span-1 lg:col-span-2 row-start-2">
+        <motion.h1
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.8, delay: 0.1 }}
+          className="font-[family-name:var(--font-archivo)] text-[clamp(3rem,10vw,12rem)] uppercase leading-[0.9] text-center text-text mix-blend-difference"
+        >
+          You Did
+          <br />
+          The Work
+        </motion.h1>
+
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+          className="mt-6 font-[family-name:var(--font-jetbrains)] text-[clamp(0.65rem,0.9vw,0.9rem)] uppercase tracking-[0.2em] text-text-muted text-center"
+        >
+          Finance tracking for the fashion industry
+        </motion.p>
+      </div>
+
+      {/* CTA cluster at bottom — spans full width */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.6, delay: 0.7 }}
+        className="relative z-10 flex flex-col sm:flex-row justify-between items-end col-span-1 lg:col-span-2 row-start-3 pb-[3vh] gap-8"
+      >
+        {/* Left: micro data block */}
+        <div className="micro-data flex flex-col gap-1">
+          <div>
+            PAYMENTS //{" "}
+            <span>TRACKED</span>
+          </div>
+          <div>
+            CONTRACTS //{" "}
+            <span>GUARDED</span>
+          </div>
+          <div>
+            SCHEDULE //{" "}
+            <span>CONFIRMED</span>
+          </div>
+        </div>
+
+        {/* Right: download button */}
+        <a
+          href="https://apps.apple.com/us/app/bookdu/id6757381396"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-4 bg-text text-bg-deep font-[family-name:var(--font-archivo)] uppercase px-[clamp(1.5rem,2vw,2.5rem)] py-[clamp(0.75rem,1vw,1.25rem)] hover:scale-[0.98] transition-transform duration-150 active:scale-[0.97]"
+        >
+          Download BOOKDU
+          <span aria-hidden="true">&#8599;</span>
+        </a>
+      </motion.div>
     </section>
   );
 }

@@ -18,7 +18,7 @@ export default async function Image() {
           flexDirection: 'column',
           alignItems: 'center',
           justifyContent: 'center',
-          background: '#F1ECE4',
+          background: '#4D5045',
           fontFamily: 'sans-serif',
         }}
       >
@@ -33,8 +33,9 @@ export default async function Image() {
           <div
             style={{
               fontSize: 48,
-              fontWeight: 700,
-              color: '#6E725F',
+              fontWeight: 900,
+              color: '#F1ECE4',
+              textTransform: 'uppercase',
             }}
           >
             BOOKDU
@@ -42,25 +43,26 @@ export default async function Image() {
           <div
             style={{
               fontSize: 40,
-              fontWeight: 600,
-              color: '#4D5045',
+              fontWeight: 900,
+              color: '#F1ECE4',
               maxWidth: '700px',
               textAlign: 'center',
               lineHeight: 1.3,
+              textTransform: 'uppercase',
             }}
           >
             Why we built a finance app for models
           </div>
           <div
             style={{
-              fontSize: 22,
-              color: '#878C76',
-              maxWidth: '600px',
-              textAlign: 'center',
+              fontSize: 20,
+              color: '#C5C0B6',
+              letterSpacing: '4px',
+              textTransform: 'uppercase',
               marginTop: '8px',
             }}
           >
-            Your brain shouldn&apos;t be your filing cabinet.
+            About // Origin Story
           </div>
         </div>
       </div>

@@ -18,7 +18,7 @@ export default async function Image() {
           flexDirection: 'column',
           alignItems: 'center',
           justifyContent: 'center',
-          background: '#F1ECE4',
+          background: '#4D5045',
           fontFamily: 'sans-serif',
         }}
       >
@@ -33,20 +33,20 @@ export default async function Image() {
           <div
             style={{
               fontSize: 80,
-              fontWeight: 700,
-              color: '#6E725F',
+              fontWeight: 900,
+              color: '#F1ECE4',
               letterSpacing: '-2px',
+              textTransform: 'uppercase',
             }}
           >
             BOOKDU
           </div>
           <div
             style={{
-              fontSize: 32,
-              color: '#878C76',
-              maxWidth: '600px',
-              textAlign: 'center',
-              lineHeight: 1.4,
+              fontSize: 28,
+              color: '#C5C0B6',
+              letterSpacing: '6px',
+              textTransform: 'uppercase',
             }}
           >
             Finance tracking for models
@@ -58,42 +58,22 @@ export default async function Image() {
               marginTop: '16px',
             }}
           >
-            <div
-              style={{
-                fontSize: 18,
-                color: '#A4AA8E',
-                background: '#FFFFFF',
-                padding: '8px 20px',
-                borderRadius: '20px',
-                border: '1px solid #D1CEC4',
-              }}
-            >
-              Payments
-            </div>
-            <div
-              style={{
-                fontSize: 18,
-                color: '#A4AA8E',
-                background: '#FFFFFF',
-                padding: '8px 20px',
-                borderRadius: '20px',
-                border: '1px solid #D1CEC4',
-              }}
-            >
-              Contracts
-            </div>
-            <div
-              style={{
-                fontSize: 18,
-                color: '#A4AA8E',
-                background: '#FFFFFF',
-                padding: '8px 20px',
-                borderRadius: '20px',
-                border: '1px solid #D1CEC4',
-              }}
-            >
-              Schedule
-            </div>
+            {['Payments', 'Contracts', 'Schedule'].map((label) => (
+              <div
+                key={label}
+                style={{
+                  fontSize: 16,
+                  color: '#F1ECE4',
+                  background: '#5A5E4E',
+                  padding: '8px 20px',
+                  border: '1px solid #7A7E6E',
+                  letterSpacing: '2px',
+                  textTransform: 'uppercase',
+                }}
+              >
+                {label}
+              </div>
+            ))}
           </div>
         </div>
       </div>

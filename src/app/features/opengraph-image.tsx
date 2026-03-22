@@ -18,7 +18,7 @@ export default async function Image() {
           flexDirection: 'column',
           alignItems: 'center',
           justifyContent: 'center',
-          background: '#F1ECE4',
+          background: '#4D5045',
           fontFamily: 'sans-serif',
         }}
       >
@@ -33,8 +33,9 @@ export default async function Image() {
           <div
             style={{
               fontSize: 48,
-              fontWeight: 700,
-              color: '#6E725F',
+              fontWeight: 900,
+              color: '#F1ECE4',
+              textTransform: 'uppercase',
             }}
           >
             BOOKDU
@@ -42,11 +43,12 @@ export default async function Image() {
           <div
             style={{
               fontSize: 40,
-              fontWeight: 600,
-              color: '#4D5045',
+              fontWeight: 900,
+              color: '#F1ECE4',
               maxWidth: '800px',
               textAlign: 'center',
               lineHeight: 1.3,
+              textTransform: 'uppercase',
             }}
           >
             One app. Everything protected.
@@ -58,39 +60,21 @@ export default async function Image() {
               marginTop: '16px',
             }}
           >
-            <div
-              style={{
-                fontSize: 20,
-                color: '#FFFFFF',
-                background: '#A4AA8E',
-                padding: '12px 28px',
-                borderRadius: '24px',
-              }}
-            >
-              Payments
-            </div>
-            <div
-              style={{
-                fontSize: 20,
-                color: '#FFFFFF',
-                background: '#A4AA8E',
-                padding: '12px 28px',
-                borderRadius: '24px',
-              }}
-            >
-              Contracts
-            </div>
-            <div
-              style={{
-                fontSize: 20,
-                color: '#FFFFFF',
-                background: '#A4AA8E',
-                padding: '12px 28px',
-                borderRadius: '24px',
-              }}
-            >
-              Schedule
-            </div>
+            {['Payments', 'Contracts', 'Schedule'].map((label) => (
+              <div
+                key={label}
+                style={{
+                  fontSize: 18,
+                  color: '#3D4037',
+                  background: '#BEC4A8',
+                  padding: '12px 28px',
+                  textTransform: 'uppercase',
+                  letterSpacing: '2px',
+                }}
+              >
+                {label}
+              </div>
+            ))}
           </div>
         </div>
       </div>
