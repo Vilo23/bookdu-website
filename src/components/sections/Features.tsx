@@ -41,6 +41,7 @@ export default function Features() {
 
         {/* Right column: 2-col grid of data cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <h2 className="sr-only">BOOKDU Features: Payments, Contracts, Schedule, Tax and Privacy</h2>
           {modules.map((mod, index) => (
             <motion.div
               key={mod.label}

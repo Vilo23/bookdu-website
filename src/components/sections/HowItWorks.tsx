@@ -34,6 +34,7 @@ export default function HowItWorks() {
 
         {/* Right column: stacked data cards */}
         <div className="flex flex-col gap-8">
+          <h2 className="sr-only">How BOOKDU Payment Tracking Works</h2>
           {steps.map((step, index) => (
             <motion.div
               key={step.label}

@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const strips = [
   {
     src: "/strip-backstage.png",
@@ -28,13 +30,13 @@ export default function ImageStrip() {
       <div className="flex flex-col gap-[var(--border-thick)]">
         {strips.map((strip) => (
           <div key={strip.label} className="strip-container">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
+            <Image
               src={strip.src}
               alt={strip.alt}
+              fill
               className="strip-img"
               style={{ objectPosition: strip.objectPosition }}
-              loading="lazy"
+              sizes="100vw"
             />
             <div className="strip-overlay-data">{strip.label}</div>
           </div>

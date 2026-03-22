@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     default: "BOOKDU - Finance Tracking App for Models & Talent",
     template: "%s | BOOKDU",
   },
-  description: "Track agency payments, guard modeling contracts, manage casting schedules, and sort freelance taxes. The only finance app built specifically for models and talent. Free on iOS.",
+  description: "Track agency payments, guard contracts, manage schedules, and sort taxes. The only finance app built for models and talent. Free on iOS.",
   keywords: [
     "finance app for models",
     "model payment tracking",

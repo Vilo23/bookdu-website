@@ -7,7 +7,8 @@ import Features from "@/components/sections/Features";
 import CTA from "@/components/sections/CTA";
 
 export const metadata: Metadata = {
-  description: "Track agency payments, guard modeling contracts, manage casting schedules, and sort freelance taxes. The only finance app built specifically for models and talent. Free on iOS.",
+  title: "BOOKDU - Finance Tracking App for Models & Talent",
+  description: "Track agency payments, guard contracts, manage schedules, and sort taxes. The only finance app built for models and talent. Free on iOS.",
   keywords: [
     "finance app for models",
     "model payment tracking",

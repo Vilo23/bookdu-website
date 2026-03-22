@@ -3,7 +3,7 @@ import { ReactNode } from "react";
 
 export const metadata: Metadata = {
   title: "App Screenshots - See BOOKDU Payment Tracking in Action",
-  description: "Browse 18 screenshots of the BOOKDU iOS app: dashboard, payment tracking, contract management, calendar scheduling, expense logging, and tax estimation features for models.",
+  description: "Browse 18 screenshots of BOOKDU: dashboard, payment tracking, contracts, calendar, expenses, and tax tools for models.",
   keywords: [
     "bookdu app screenshots",
     "model payment tracking app interface",

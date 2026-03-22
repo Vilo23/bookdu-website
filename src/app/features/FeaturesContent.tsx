@@ -195,9 +195,9 @@ export default function FeaturesContent() {
             className="data-card"
           >
             <span className="data-label">Module // Privacy</span>
-            <h2 className="data-card-value text-2xl md:text-3xl font-display uppercase tracking-tight text-text mb-6">
+            <h3 className="data-card-value text-2xl md:text-3xl font-display uppercase tracking-tight text-text mb-6">
               Locked. Backed up. Yours.
-            </h2>
+            </h3>
             <div className="max-w-3xl">
               <p className="data-card-desc mb-8">
                 BOOKDU locks so nobody can open it and look at your data.

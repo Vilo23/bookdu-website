@@ -186,7 +186,7 @@ export default function ScreenshotsPage() {
             }, {})
           ).map(([category, items]) => (
             <div key={category} className="mb-16 last:mb-0">
-              <span className="data-label">{category}</span>
+              <h2 className="data-label">{category}</h2>
               <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
                 {items.map((screenshot, index) => (
                   <motion.div

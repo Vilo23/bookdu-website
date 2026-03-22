@@ -63,6 +63,7 @@ export default function Hero() {
           You Did
           <br />
           The Work
+          <span className="sr-only"> — Finance Tracking App for Models</span>
         </motion.h1>
 
         <motion.p

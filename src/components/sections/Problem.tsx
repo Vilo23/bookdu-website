@@ -36,6 +36,7 @@ export default function Problem() {
 
         {/* Right column: data cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <h2 className="sr-only">The Problems Models Face With Payments and Contracts</h2>
           {cards.map((card, index) => (
             <motion.div
               key={card.label}

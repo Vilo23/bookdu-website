@@ -4,7 +4,7 @@ import FeaturesContent from "./FeaturesContent";
 
 export const metadata: Metadata = {
   title: "Payment Tracking, Contract Management & Tax Tools for Models",
-  description: "Track overdue payments from agencies, store and guard modeling contracts, organise castings and fittings, estimate taxes, and export expenses. All in one privacy-first iOS app.",
+  description: "Track overdue agency payments, guard modeling contracts, organise castings, estimate taxes, and export expenses. One privacy-first iOS app.",
   keywords: [
     "model payment tracking features",
     "modeling contract storage app",
