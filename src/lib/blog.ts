@@ -62,12 +62,171 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "track-payments-multiple-modeling-agencies",
+    title:
+      "How to Track Payments When You Work With Multiple Modeling Agencies",
+    description:
+      "Working across agencies means payments coming from different places at different times. Here's how to keep track of what's owed, what's paid, and what's overdue.",
+    date: "2026-04-11",
+    author: "Roman Feldman",
+    pillar: "Your Money",
+    readTime: "6 min read",
+    metaTitle:
+      "How to Track Payments Across Multiple Modeling Agencies",
+    metaDescription:
+      "Working with multiple agencies? Learn how to track every payment, spot overdue invoices, and stop money slipping through the cracks.",
+    content: [
+      {
+        type: "heading",
+        level: "h2",
+        text: "The Problem With Multiple Agencies",
+      },
+      {
+        type: "paragraph",
+        text: "You finished a job in February through one agency. A three-day shoot in March through another. A casting callback turned confirmed booking in April through a third. Each agency has its own payment timeline, its own process, and its own definition of \u201Cit\u2019s coming.\u201D",
+      },
+      {
+        type: "paragraph",
+        text: "Now multiply that across a year. Dozens of jobs. Three or four agencies. Maybe two countries. The money is real, but keeping track of where it all sits becomes a job in itself.",
+      },
+      {
+        type: "paragraph",
+        text: "Most models track this in their heads, or in a Notes app, or not at all. The result is the same: money slips through the cracks. Not because anyone did the wrong thing. Because nobody was keeping track.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "How Modeling Agency Payments Actually Work",
+      },
+      {
+        type: "paragraph",
+        text: "Before talking about tracking, it helps to understand the timeline. When you do a job, the payment does not come straight to you. It follows a chain:",
+      },
+      {
+        type: "list",
+        style: "numbered",
+        items: [
+          "You do the job.",
+          "The agency invoices the client.",
+          "The client pays the agency (often net 30 or net 60 from invoice date).",
+          "The agency takes their commission and pays you.",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "That last step \u2014 agency to you \u2014 is where visibility disappears. Some agencies pay within days of receiving the client\u2019s payment. Others batch payments monthly. Some hold funds longer. The point is: the delay between your shoot date and your pay date is often 60 to 90 days. Sometimes longer.",
+      },
+      {
+        type: "paragraph",
+        text: "When you work with one agency, this is manageable. You remember the jobs, you have a rough sense of what\u2019s coming. When you work with three or four, it gets out of hand fast.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "What Falls Through the Cracks",
+      },
+      {
+        type: "paragraph",
+        text: "From talking to models and watching my daughter navigate this, the same patterns come up again and again:",
+      },
+      {
+        type: "list",
+        style: "bullet",
+        items: [
+          "A job gets done but never logged anywhere. Three months later, you have a vague memory that you\u2019re owed money from a shoot but can\u2019t remember the details.",
+          "A payment is overdue but you don\u2019t realise it because you lost track of when the job was. Was it 45 days ago or 75?",
+          "Two agencies owe you money at the same time. You follow up with one and forget the other.",
+          "You switch agencies or move markets and the outstanding payments from your previous agency get lost in the transition.",
+          "Tax time arrives and you have no clear record of what you earned, from whom, and when.",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "None of this is because models are careless. It\u2019s because there is no system for it. There is no shared dashboard. No portal. You are expected to just know.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "What a Good Tracking System Looks Like",
+      },
+      {
+        type: "paragraph",
+        text: "You do not need accounting software. You do not need spreadsheets. You need something that does three things:",
+      },
+      {
+        type: "list",
+        style: "numbered",
+        items: [
+          "Logs every job with the agency, client, date, and rate \u2014 in under 30 seconds.",
+          "Turns each job into a payment to track, so you know what\u2019s outstanding at any moment.",
+          "Reminds you when a payment is overdue so you don\u2019t have to remember.",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "That\u2019s it. If your tracking system does those three things, you will never lose sight of money again.",
+      },
+      {
+        type: "paragraph",
+        text: "This is exactly why we built payment tracking into BOOKDU. Every job you log becomes a payment to follow. BOOKDU sends a reminder at 35 days and again at 56 days if it\u2019s still outstanding. Every Monday morning, you get a summary of everything you\u2019re waiting on \u2014 across every agency.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "The Monday Morning Check",
+      },
+      {
+        type: "paragraph",
+        text: "Here is a habit that takes two minutes and keeps you informed all year. Every Monday morning, glance at three things:",
+      },
+      {
+        type: "list",
+        style: "numbered",
+        items: [
+          "Outstanding payments \u2014 what\u2019s still waiting to land. You don\u2019t need to chase anything. Just know where things stand.",
+          "Your calendar for the next three days \u2014 what\u2019s coming up, what\u2019s confirmed, what\u2019s not.",
+          "Anything that landed \u2014 check your bank account or payslip and mark off what\u2019s been paid.",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "That\u2019s it. No chasing required. Your jobs sit in the system until you mark them paid. Nothing disappears. Nothing gets forgotten. When a payment arrives, you mark it off. When one hasn\u2019t, you can see exactly how long it\u2019s been and decide if it\u2019s worth a follow-up.",
+      },
+      {
+        type: "paragraph",
+        text: "The models who stay on top of their finances are not the ones who chase the hardest. They are the ones who always know where they stand.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "What You Can Do Today",
+      },
+      {
+        type: "paragraph",
+        text: "You do not need to overhaul your life. Start with these three steps:",
+      },
+      {
+        type: "list",
+        style: "numbered",
+        items: [
+          "List every agency you work with and any jobs from the last 90 days that you have not been paid for yet.",
+          "For each unpaid job, note the date, the client, and the rate. Check if any are past 60 days.",
+          "Set a recurring reminder for Monday mornings to review your outstanding payments. Two minutes. Every week.",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "If you want to skip the manual list and have it all tracked automatically, that is what BOOKDU does. Log a job in 30 seconds, get reminded when payment is overdue, and see everything you are owed in one place \u2014 across every agency. Free on iOS.",
+      },
+    ],
+  },
+  {
     slug: "one-place-for-all-of-it",
     title: "One Place for All of It: Why We Built BOOKDU",
     description:
       "Jobs, payments, contracts, calendar, expenses, tax — BOOKDU keeps it all in one place. Here's why we built it and what it does.",
     date: "2026-04-12",
-    author: "The BOOKDU Team",
+    author: "Roman Feldman",
     pillar: "Product",
     readTime: "5 min read",
     metaTitle:
@@ -172,7 +331,7 @@ const posts: BlogPost[] = [
     description:
       "We are building a space to talk about the business side of modeling. Payments, contracts, tax, admin — the stuff nobody teaches you.",
     date: "2026-04-04",
-    author: "The BOOKDU Team",
+    author: "Roman Feldman",
     pillar: "Product",
     readTime: "2 min read",
     metaTitle: "Coming Soon: The BOOKDU Blog — Model Finance, Career Admin & More",
