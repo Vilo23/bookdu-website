@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getAllPosts, getPostBySlug } from "@/lib/blog";
 import CTA from "@/components/sections/CTA";
@@ -53,7 +54,7 @@ export default async function BlogPostPage({ params }: Props) {
     headline: post.title,
     description: post.description,
     datePublished: post.date,
-    author: { "@type": "Organization", name: "BOOKDU" },
+    author: { "@type": "Person", name: post.author },
     publisher: {
       "@type": "Organization",
       name: "BOOKDU",
@@ -105,15 +106,15 @@ export default async function BlogPostPage({ params }: Props) {
       >
         <ol className="flex items-center gap-2 text-sm text-text-muted">
           <li>
-            <a href="/" className="hover:text-accent transition-colors">
+            <Link href="/" className="hover:text-accent transition-colors">
               Home
-            </a>
+            </Link>
           </li>
           <li aria-hidden="true">/</li>
           <li>
-            <a href="/blog" className="hover:text-accent transition-colors">
+            <Link href="/blog" className="hover:text-accent transition-colors">
               Blog
-            </a>
+            </Link>
           </li>
           <li aria-hidden="true">/</li>
           <li

@@ -66,14 +66,14 @@ export default function Hero() {
           <span className="sr-only"> — Finance Tracking App for Models</span>
         </motion.h1>
 
-        <motion.p
+        <motion.h2
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.4 }}
           className="mt-6 font-[family-name:var(--font-jetbrains)] text-[clamp(0.65rem,0.9vw,0.9rem)] uppercase tracking-[0.2em] text-text-muted text-center"
         >
-          Finance tracking for the fashion industry
-        </motion.p>
+          Finance tracking for freelance models &amp; talent
+        </motion.h2>
       </div>
 
       {/* CTA cluster at bottom — spans full width */}

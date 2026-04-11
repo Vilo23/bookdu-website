@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Link from "next/link";
 import { getAllPosts } from "@/lib/blog";
 import CTA from "@/components/sections/CTA";
 import BlogListContent from "./BlogListContent";
@@ -67,9 +68,9 @@ export default function BlogPage() {
       >
         <ol className="flex items-center gap-2 text-sm text-text-muted">
           <li>
-            <a href="/" className="hover:text-accent transition-colors">
+            <Link href="/" className="hover:text-accent transition-colors">
               Home
-            </a>
+            </Link>
           </li>
           <li aria-hidden="true">/</li>
           <li aria-current="page" className="text-title font-medium">

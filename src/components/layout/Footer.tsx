@@ -1,6 +1,10 @@
 "use client";
 
+import Link from "next/link";
 import { EXTERNAL_LINKS } from "@/lib/constants";
+
+const linkStyle =
+  "font-[family-name:var(--font-jetbrains)] text-xs uppercase tracking-wider text-text-muted hover:text-text transition-colors duration-200";
 
 export default function Footer() {
   return (
@@ -18,23 +22,36 @@ export default function Footer() {
           </div>
 
           {/* Links */}
-          <div className="flex items-center gap-6">
-            <a
-              href={EXTERNAL_LINKS.privacyPolicy}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-[family-name:var(--font-jetbrains)] text-xs uppercase tracking-wider text-text-muted hover:text-text transition-colors duration-200"
-            >
-              Privacy
-            </a>
-            <a
-              href={EXTERNAL_LINKS.support}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-[family-name:var(--font-jetbrains)] text-xs uppercase tracking-wider text-text-muted hover:text-text transition-colors duration-200"
-            >
-              Support
-            </a>
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6">
+            <div className="flex items-center gap-6">
+              <Link href="/features" className={linkStyle}>
+                Features
+              </Link>
+              <Link href="/about" className={linkStyle}>
+                About
+              </Link>
+              <Link href="/blog" className={linkStyle}>
+                Blog
+              </Link>
+            </div>
+            <div className="flex items-center gap-6">
+              <a
+                href={EXTERNAL_LINKS.privacyPolicy}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={linkStyle}
+              >
+                Privacy
+              </a>
+              <a
+                href={EXTERNAL_LINKS.support}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={linkStyle}
+              >
+                Support
+              </a>
+            </div>
           </div>
         </div>
       </div>
