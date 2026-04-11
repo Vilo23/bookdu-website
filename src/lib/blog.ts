@@ -62,6 +62,70 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "test-publish-delete-me",
+    title:
+      "Test Blog Post — Delete After Verification",
+    description:
+      "This is a test post to verify the publish automation works.",
+    date: "2026-04-11",
+    author: "Roman Feldman",
+    pillar: "Product",
+    readTime: "2 min read",
+    metaTitle:
+      "Test Blog Post",
+    metaDescription:
+      "This is a test post to verify the publish automation works.",
+    content: [
+      {
+        type: "heading",
+        level: "h2",
+        text: "Test Heading",
+      },
+      {
+        type: "paragraph",
+        text: "This is a test paragraph to verify the markdown-to-content-block conversion works correctly.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "Second Section",
+      },
+      {
+        type: "paragraph",
+        text: "Here is a numbered list:",
+      },
+      {
+        type: "list",
+        style: "numbered",
+        items: [
+          "First item in the list.",
+          "Second item in the list.",
+          "Third item in the list.",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "And a bullet list:",
+      },
+      {
+        type: "list",
+        style: "bullet",
+        items: [
+          "Bullet point one.",
+          "Bullet point two.",
+        ],
+      },
+      {
+        type: "quote",
+        text: "This is a blockquote for testing.",
+      },
+      {
+        type: "paragraph",
+        text: "Final paragraph of the test post.",
+      },
+    ],
+  },
+  {
     slug: "track-payments-multiple-modeling-agencies",
     title:
       "How to Track Payments When You Work With Multiple Modeling Agencies",
