@@ -5,8 +5,8 @@ import { motion } from "framer-motion";
 const cards = [
   {
     label: "Problem 01 // Payments",
-    value: "Agency statements are deliberately opaque.",
-    desc: "Which agency owes you what. Which payments are weeks overdue. You\u2019re not getting paid on the spot. It\u2019s weeks. Sometimes months. And if you don\u2019t chase it, nobody else will.",
+    value: "Payments take time. Visibility shouldn\u2019t.",
+    desc: "Which agency owes you what. Which payments are weeks overdue. You\u2019re not getting paid on the spot \u2014 it\u2019s weeks, sometimes months. Without a system, money slips through the cracks.",
   },
   {
     label: "Problem 02 // Contracts",

@@ -21,7 +21,7 @@ const pillarDetails = [
     label: "Pillar 02 // Guard Contracts",
     title: "Guard Contracts",
     body: [
-      "Agency contracts get buried in emails and forgotten. Until it\u2019s too late and you\u2019re auto-renewed into terms you didn\u2019t check.",
+      "Contracts end up scattered across emails and inboxes. Easy to lose track of when they expire \u2014 or when they auto-renew into terms you didn\u2019t review.",
       "Store contracts in BOOKDU. Upload the PDF. Set start and end dates. We remind you:",
     ],
     bullets: [

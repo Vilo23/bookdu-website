@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const modules = [
   {
     label: "Module // Payments",
-    value: "No more chasing payments in your head.",
+    value: "Always know where your money stands.",
     desc: "Agency says you\u2019ve got a booking? Log it. It stays in BOOKDU until you tag it paid. If the money\u2019s late, 35 days, 56 days, we\u2019ll remind you. Twice. Weekly summaries every Monday.",
   },
   {
