@@ -4,6 +4,23 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { BlogPost, ContentBlock, formatDate } from "@/lib/blog";
 
+// Render inline markdown: **bold**, [text](url)
+function renderInline(text: string) {
+  // Split on **bold** and [link](url) patterns, preserving delimiters
+  const parts = text.split(/(\*\*[^*]+\*\*|\[[^\]]+\]\([^)]+\))/g);
+  return parts.map((part, i) => {
+    const boldMatch = part.match(/^\*\*(.+)\*\*$/);
+    if (boldMatch) {
+      return <strong key={i} className="font-semibold text-text">{boldMatch[1]}</strong>;
+    }
+    const linkMatch = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
+    if (linkMatch) {
+      return <a key={i} href={linkMatch[2]} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 hover:text-accent transition-colors">{linkMatch[1]}</a>;
+    }
+    return part;
+  });
+}
+
 const fadeUp = {
   initial: { opacity: 0, y: 24 },
   whileInView: { opacity: 1, y: 0 },
@@ -42,7 +59,7 @@ function renderBlock(block: ContentBlock, index: number) {
           {...fadeUp}
           className="text-text-muted leading-relaxed mb-5"
         >
-          {block.text}
+          {renderInline(block.text)}
         </motion.p>
       );
 
@@ -56,7 +73,7 @@ function renderBlock(block: ContentBlock, index: number) {
           >
             {block.items.map((item, i) => (
               <li key={i} className="text-text-muted leading-relaxed">
-                {item}
+                {renderInline(item)}
               </li>
             ))}
           </motion.ol>
@@ -69,7 +86,7 @@ function renderBlock(block: ContentBlock, index: number) {
               key={i}
               className="text-text-muted leading-relaxed pl-6 relative before:content-['—'] before:absolute before:left-0 before:text-accent"
             >
-              {item}
+              {renderInline(item)}
             </li>
           ))}
         </motion.ul>
