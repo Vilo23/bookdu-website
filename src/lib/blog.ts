@@ -499,10 +499,6 @@ const posts: BlogPost[] = [
         type: "paragraph",
         text: "BOOKDU tracks your jobs, payments, expenses, and contracts in one place. Export your full financial year to CSV and hand it to your accountant. Free on iOS.",
       },
-      {
-        type: "paragraph",
-        text: "--- **Founder Feedback (12/04/2026, 1:28:58 pm):** CAn we include some funny or intresting things about what you think you can claim and what you cant claim. Maybe we say you still need to check. BUt if you can find only 1 or 2 strange or intresting items for what a model thought she could claim and can you belive you likely cant claim this.... speak toyour accountant",
-      },
     ],
   },
   {
