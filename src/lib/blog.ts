@@ -62,6 +62,450 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "australian-model-tax-guide",
+    title:
+      "The Australian Model's Tax Guide: ABN, GST, BAS, Deductions and Super",
+    description:
+      "ABN, GST, BAS, super, deductions — the complete tax guide for freelance models working in Australia. What to claim, when to lodge, and how to stay ahead of EOFY.",
+    date: "2026-04-12",
+    author: "Bec",
+    pillar: "Career Admin",
+    readTime: "7 min read",
+    metaTitle:
+      "Australian Model Tax Guide: ABN, GST, BAS & Deductions",
+    metaDescription:
+      "ABN, GST, BAS, super, deductions — the complete tax guide for freelance models working in Australia. What to claim, when to lodge, and how to stay ahead of EOFY.",
+    content: [
+      {
+        type: "heading",
+        level: "h2",
+        text: "Tax Season Does Not Have to Be a Scramble",
+      },
+      {
+        type: "paragraph",
+        text: "You have been working all year. Shoots in Sydney, castings in Melbourne, maybe a campaign interstate. You have earned real money — but it arrived in chunks, at odd times, from different agencies. Now it is June and your accountant is asking for records you never kept.",
+      },
+      {
+        type: "paragraph",
+        text: "This is not a failure of discipline. It is an information gap. Nobody sits you down when you start modelling and explains ABN, GST, BAS, super, or what you can claim. You figure it out the hard way, usually the week before your tax return is due.",
+      },
+      {
+        type: "paragraph",
+        text: "This guide covers the essentials. Not everything — your accountant handles the detail. But enough to walk into that meeting prepared, and enough to stop tax season from catching you off guard.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "Two Structures: Know Which One You Are",
+      },
+      {
+        type: "paragraph",
+        text: "Not every model works under the same arrangement. How your tax works depends on whether you are operating as an independent contractor or as an employee of your agency.",
+      },
+      {
+        type: "heading",
+        level: "h3",
+        text: "Freelance and Contractor Models (Most Common)",
+      },
+      {
+        type: "paragraph",
+        text: "Most models in Australia — whether freelance or signed to an agency — work as independent contractors. You have your own ABN, you invoice (or your agency issues a recipient-created tax invoice on your behalf), and you are responsible for your own tax, super, and record-keeping.",
+      },
+      {
+        type: "paragraph",
+        text: "This applies to you if:",
+      },
+      {
+        type: "list",
+        style: "bullet",
+        items: [
+          "You have your own ABN and quote it to agencies",
+          "You can accept or decline individual jobs",
+          "You work with more than one agency or take direct bookings",
+          "Your agency does not withhold tax from your pay",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Under this structure, you are running a sole trader business. The income is yours, the expenses are yours, and the ATO treats you as self-employed.",
+      },
+      {
+        type: "heading",
+        level: "h3",
+        text: "Agency-Employed Models",
+      },
+      {
+        type: "paragraph",
+        text: "Some models — particularly those on exclusive contracts or working through larger agencies — may be classified as employees. This is less common, but it changes everything about how your tax works.",
+      },
+      {
+        type: "paragraph",
+        text: "If you are an employee:",
+      },
+      {
+        type: "list",
+        style: "bullet",
+        items: [
+          "Your agency withholds PAYG tax from your pay before it reaches you",
+          "Your agency pays superannuation on top of your earnings (currently 11.5%)",
+          "You may be entitled to workers' compensation coverage and paid leave",
+          "You do not need to register for GST or lodge a BAS",
+          "You claim work-related expenses as an employee on your tax return, not as business deductions",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "The ATO determines your classification based on the terms of your contract — not what your agency calls you. Key factors include how much control the agency has over your work, whether you can delegate or subcontract, and who bears the financial risk. If you are unsure which structure applies to you, the ATO has a clear guide: [Employee or independent contractor](https://www.ato.gov.au/businesses-and-organisations/hiring-and-paying-your-workers/employee-or-independent-contractor/difference-between-employees-and-independent-contractors).",
+      },
+      {
+        type: "paragraph",
+        text: "**The rest of this guide focuses primarily on contractor and freelance models, since that is the most common structure — and the one where you carry the most responsibility.**",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "Do You Need an ABN?",
+      },
+      {
+        type: "paragraph",
+        text: "If you work as an independent contractor (which most models do), yes. An Australian Business Number is what makes you a sole trader. Most agencies will not pay you without one.",
+      },
+      {
+        type: "paragraph",
+        text: "Applying is free and takes about ten minutes through the [Australian Business Register](https://www.abr.gov.au/business-super-funds-charities/applying-abn). You will need your Tax File Number and a few personal details.",
+      },
+      {
+        type: "paragraph",
+        text: "Once you have an ABN:",
+      },
+      {
+        type: "list",
+        style: "bullet",
+        items: [
+          "Agencies pay you as a contractor, not an employee",
+          "You are responsible for your own tax, super, and record-keeping",
+          "You invoice agencies (or they generate a recipient-created tax invoice on your behalf)",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "If you are under 18, a parent or guardian can register the ABN on your behalf.",
+      },
+      {
+        type: "paragraph",
+        text: "One thing to be clear about: having an ABN does not automatically mean you pay GST. That is a separate registration.",
+      },
+      {
+        type: "paragraph",
+        text: "For more on what starting as a sole trader means for tax, see the ATO's [business structures and key tax obligations](https://www.ato.gov.au/businesses-and-organisations/starting-registering-or-closing-a-business/starting-your-own-business/business-structures-key-tax-obligations).",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "GST: Do You Need to Register?",
+      },
+      {
+        type: "paragraph",
+        text: "You need to register for GST if your annual turnover reaches $75,000. Below that threshold, registration is optional.",
+      },
+      {
+        type: "paragraph",
+        text: "For models starting out, most will not hit $75,000 in their first year. But it can creep up, especially if you are working across multiple agencies and a few bigger campaigns land in the same financial year.",
+      },
+      {
+        type: "paragraph",
+        text: "If you are registered for GST:",
+      },
+      {
+        type: "list",
+        style: "bullet",
+        items: [
+          "You charge 10% GST on top of your rate (agencies handle this on the invoice)",
+          "You can claim GST credits on business expenses",
+          "You must lodge a Business Activity Statement (BAS) — usually quarterly",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "If you are not registered:",
+      },
+      {
+        type: "list",
+        style: "bullet",
+        items: [
+          "You do not charge GST",
+          "You do not lodge BAS",
+          "You still lodge an annual tax return as a sole trader",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Keep an eye on your total income across all agencies. If you are approaching $75,000, talk to your accountant before you cross it — not after.",
+      },
+      {
+        type: "paragraph",
+        text: "Full details on the threshold and how to register: [ATO GST registration](https://www.ato.gov.au/businesses-and-organisations/gst-excise-and-indirect-taxes/gst/registering-for-gst).",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "BAS: What It Is and When to Lodge",
+      },
+      {
+        type: "paragraph",
+        text: "A Business Activity Statement is how you report your GST to the ATO. If you are GST-registered, you lodge a BAS — typically every quarter.",
+      },
+      {
+        type: "paragraph",
+        text: "The quarterly deadlines are:",
+      },
+      {
+        type: "list",
+        style: "bullet",
+        items: [
+          "July–September: due 28 October",
+          "October–December: due 28 February",
+          "January–March: due 28 April",
+          "April–June: due 28 July",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Your BAS reports the GST you collected on your income and the GST you paid on business expenses. The difference is what you owe the ATO (or what they owe you).",
+      },
+      {
+        type: "paragraph",
+        text: "The key to painless BAS lodgement is keeping your expenses logged throughout the quarter, not scrambling in the last week. If every receipt is already captured and categorised, BAS takes minutes. If you have to dig through bank statements and email inboxes, it takes hours.",
+      },
+      {
+        type: "paragraph",
+        text: "This is one of the reasons we built expense tracking into BOOKDU. Snap a receipt, categorise it, and when BAS or tax time arrives, export everything as a CSV. No digging. No guessing.",
+      },
+      {
+        type: "paragraph",
+        text: "For more on how BAS works: [ATO Business Activity Statements](https://www.ato.gov.au/businesses-and-organisations/preparing-lodging-and-paying/business-activity-statements-bas).",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "What You Can Claim as a Model",
+      },
+      {
+        type: "paragraph",
+        text: "This is where most models leave money on the table. If an expense is directly related to earning your modelling income, you can generally claim it as a tax deduction.",
+      },
+      {
+        type: "paragraph",
+        text: "The ATO has a specific guide for performing artists (which covers models): [Performing artists — income and work-related deductions](https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/guides-for-occupations-and-industries/l-q/performing-artists-income-and-work-related-deductions). Here are the common categories:",
+      },
+      {
+        type: "paragraph",
+        text: "**Travel**",
+      },
+      {
+        type: "list",
+        style: "bullet",
+        items: [
+          "Flights and transport to jobs, castings, and go-sees (not your daily commute to a regular agency, but travel to specific job locations)",
+          "Accommodation for interstate or international work",
+          "Meals during overnight travel for work",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "**Appearance and grooming**",
+      },
+      {
+        type: "list",
+        style: "bullet",
+        items: [
+          "Haircuts and colour when required for a specific job",
+          "Skincare products used specifically for work",
+          "Gym memberships — only if your agency or contract requires you to maintain a specific fitness level, and you can demonstrate it",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "**Professional expenses**",
+      },
+      {
+        type: "list",
+        style: "bullet",
+        items: [
+          "Comp cards and professional portfolio photos",
+          "Agency commissions (these are already deducted from your pay, but worth confirming they appear in your records)",
+          "Modelling classes or workshops",
+          "Union or association fees",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "**Equipment and tools**",
+      },
+      {
+        type: "list",
+        style: "bullet",
+        items: [
+          "Phone and internet — the work-related portion",
+          "Laptop or tablet used for bookings, emails, and admin",
+          "Apps used for managing your modelling career",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "**Wardrobe**",
+      },
+      {
+        type: "list",
+        style: "bullet",
+        items: [
+          "Clothing purchased specifically for a job (not everyday wear)",
+          "Shoes and accessories required for shoots or events",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "**Insurance**",
+      },
+      {
+        type: "list",
+        style: "bullet",
+        items: [
+          "Public liability insurance",
+          "Income protection insurance premiums",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "The ATO's general rule: if the expense is directly connected to earning your modelling income and you can prove it, you can claim it. Keep the receipt. Keep the record. If you cannot prove it, you cannot claim it.",
+      },
+      {
+        type: "paragraph",
+        text: "For the full list of what you can and cannot claim: [ATO deductions you can claim](https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/deductions-you-can-claim).",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "\"Can I Claim That?\" — The Ones That Catch Models Out",
+      },
+      {
+        type: "paragraph",
+        text: "This is where it gets interesting. Some deductions feel like they should be obvious for models — but the ATO does not agree.",
+      },
+      {
+        type: "paragraph",
+        text: "**Gym memberships.** You would think maintaining your physique is a work expense when your body is literally your job. The ATO says no. Gym provides a \"general health benefit,\" so it is personal. The only exception is if your contract explicitly requires a specific fitness regime and you can prove it. The ATO has rejected this claim so many times they specifically mention it in their performing artists guide. Talk to your accountant, but do not assume it will fly.",
+      },
+      {
+        type: "paragraph",
+        text: "**Cosmetic procedures.** Botox, teeth whitening, cosmetic surgery — the ATO's test is blunt: \"Would you have done this anyway?\" If the answer is yes, or even maybe, it is personal. The rare exception is a procedure contractually required for a specific job. But \"I need to look good for castings\" is not enough. Always check with your accountant before claiming anything in this category.",
+      },
+      {
+        type: "paragraph",
+        text: "**That designer dress for the event.** A $4,000 outfit for a red carpet appearance or an agency launch? Personal. The ATO only allows clothing deductions for compulsory uniforms, occupation-specific gear, or protective clothing. A branded agency polo you are required to wear? Yes. A designer outfit you chose for an industry event? No, even if you would never wear it in your own life.",
+      },
+      {
+        type: "paragraph",
+        text: "**Skincare and makeup.** This one actually goes your way — partially. The ATO allows models to claim makeup, skincare, and hair products used specifically for work. The catch: you must separate personal and work use. Claiming 100% of your skincare routine will get knocked back. Keeping a record of what you use for shoots versus what you use at home is what makes this deduction stick.",
+      },
+      {
+        type: "paragraph",
+        text: "The pattern here: the ATO does not care what your job is. They care whether the expense is exclusively for work and whether you can prove it. When in doubt, ask your accountant before you claim it.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "Superannuation: The One Most Models Miss",
+      },
+      {
+        type: "paragraph",
+        text: "Here is the part that catches people out.",
+      },
+      {
+        type: "paragraph",
+        text: "**If you are a contractor or freelance model** (sole trader), nobody is paying super for you. No employer contributions. No safety net building in the background. You are responsible for your own super contributions. They are not compulsory for sole traders, but they are tax-deductible — and skipping them entirely means retirement savings are not growing while you work.",
+      },
+      {
+        type: "paragraph",
+        text: "**If you are employed by your agency**, they are legally required to pay super on top of your earnings at the current guarantee rate of 11.5% (2024-25 financial year). Check your pay slips — if super is not appearing, raise it with your agency.",
+      },
+      {
+        type: "paragraph",
+        text: "For sole traders, even contributing something is better than nothing. Many models make a lump-sum contribution before June 30 each year. It reduces your taxable income and builds long-term savings at the same time.",
+      },
+      {
+        type: "paragraph",
+        text: "More on super for sole traders: [ATO super for sole traders and partnerships](https://www.ato.gov.au/businesses-and-organisations/super-for-employers/work-out-if-you-have-to-pay-super/super-for-sole-traders-and-partnerships).",
+      },
+      {
+        type: "paragraph",
+        text: "To claim a deduction for personal super contributions: [ATO personal super contributions](https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/super/growing-and-keeping-track-of-your-super/how-to-save-more-in-your-super/personal-super-contributions).",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "Five Things to Do Before June 30",
+      },
+      {
+        type: "paragraph",
+        text: "You do not need to become a tax expert. But doing these five things before EOFY will save you time, money, and stress:",
+      },
+      {
+        type: "list",
+        style: "numbered",
+        items: [
+          "**Check your total income across all agencies.** Add it up. Know the number. If you are near $75,000, check your GST status now.",
+          "**Gather your receipts.** Every business expense from the last 12 months. Digital or paper — just get them in one place.",
+          "**Separate business and personal.** If you have not already, open a separate bank account for modelling income and expenses. It makes everything cleaner.",
+          "**Consider a super contribution.** Even a small one. It reduces your taxable income and builds your future.",
+          "**Book your accountant now.** Do not wait until September. EOFY accountant availability disappears fast. Book the appointment today.",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "If you are already using BOOKDU, steps one and two are done for you. Your income is tracked by agency, your expenses are categorised, and you can export a full summary for your accountant in one tap.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "Not in Australia? This Still Applies to You",
+      },
+      {
+        type: "paragraph",
+        text: "BOOKDU is used by models around the world, and the fundamentals are the same everywhere: you need to track your income, log your expenses, understand your tax obligations, and know whether you are operating as a contractor or an employee.",
+      },
+      {
+        type: "paragraph",
+        text: "The specifics — tax rates, registration thresholds, deduction rules, retirement savings schemes — vary by country. Australia has ABN and GST. The UK has Self Assessment and VAT. The US has 1099s and quarterly estimated tax. The structure is different but the problem is identical: nobody teaches models how to handle the business side.",
+      },
+      {
+        type: "paragraph",
+        text: "We are building country-specific guides. If you want us to cover your market next, reach out at hello@bookdu.co and tell us where you are based. We will prioritise the next guide based on where our users are working.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "Your Accountant Will Thank You",
+      },
+      {
+        type: "paragraph",
+        text: "The difference between a model who walks into their tax appointment with \"I think I earned about this much\" and one who hands over a clean export of every job, every payment, and every categorised expense is the difference between a stressful hour and a quick conversation.",
+      },
+      {
+        type: "paragraph",
+        text: "You do not need to understand every rule. You need to keep records throughout the year so the person who does understand the rules can do their job properly.",
+      },
+      {
+        type: "paragraph",
+        text: "BOOKDU tracks your jobs, payments, expenses, and contracts in one place. Export your full financial year to CSV and hand it to your accountant. Free on iOS.",
+      },
+      {
+        type: "paragraph",
+        text: "--- **Founder Feedback (12/04/2026, 1:28:58 pm):** CAn we include some funny or intresting things about what you think you can claim and what you cant claim. Maybe we say you still need to check. BUt if you can find only 1 or 2 strange or intresting items for what a model thought she could claim and can you belive you likely cant claim this.... speak toyour accountant",
+      },
+    ],
+  },
+  {
     slug: "track-payments-multiple-modeling-agencies",
     title:
       "How to Track Payments When You Work With Multiple Modeling Agencies",
