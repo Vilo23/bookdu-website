@@ -55,6 +55,7 @@ export interface BlogPost {
   readTime: string;
   metaTitle: string;
   metaDescription: string;
+  noIndex?: boolean;
   content: ContentBlock[];
 }
 
@@ -83,7 +84,7 @@ const posts: BlogPost[] = [
       },
       {
         type: "paragraph",
-        text: "You have been working all year. Shoots in Sydney, castings in Melbourne, maybe a campaign interstate. You have earned real money — but it arrived in chunks, at odd times, from different agencies. Now it is June and your accountant is asking for records you never kept.",
+        text: "You have been working all year. Shoots in Sydney, castings in Melbourne, maybe a campaign interstate. You have earned real money — but it arrived in chunks, at odd times, from [different agencies](/blog/track-payments-multiple-modeling-agencies). Now it is June and your accountant is asking for records you never kept.",
       },
       {
         type: "paragraph",
@@ -279,7 +280,7 @@ const posts: BlogPost[] = [
       },
       {
         type: "paragraph",
-        text: "This is one of the reasons we built expense tracking into BOOKDU. Snap a receipt, categorise it, and when BAS or tax time arrives, export everything as a CSV. No digging. No guessing.",
+        text: "This is one of the reasons we built [expense tracking into BOOKDU](/features). Snap a receipt, categorise it, and when BAS or tax time arrives, export everything as a CSV. No digging. No guessing.",
       },
       {
         type: "paragraph",
@@ -577,7 +578,7 @@ const posts: BlogPost[] = [
           "A payment is overdue but you don\u2019t realise it because you lost track of when the job was. Was it 45 days ago or 75?",
           "Two agencies owe you money at the same time. You follow up with one and forget the other.",
           "You switch agencies or move markets and the outstanding payments from your previous agency get lost in the transition.",
-          "Tax time arrives and you have no clear record of what you earned, from whom, and when.",
+          "Tax time arrives and you have no clear record of what you earned, from whom, and when. (If this sounds familiar, read our [Australian model tax guide](/blog/australian-model-tax-guide).)",
         ],
       },
       {
@@ -656,7 +657,7 @@ const posts: BlogPost[] = [
       },
       {
         type: "paragraph",
-        text: "If you want to skip the manual list and have it all tracked automatically, that is what BOOKDU does. Log a job in 30 seconds, get reminded when payment is overdue, and see everything you are owed in one place \u2014 across every agency. Free on iOS.",
+        text: "If you want to skip the manual list and have it all tracked automatically, that is what BOOKDU does. Log a job in 30 seconds, get reminded when payment is overdue, and see everything you are owed in one place \u2014 across every agency. See [all BOOKDU features](/features) or download free on iOS.",
       },
     ],
   },
@@ -670,7 +671,7 @@ const posts: BlogPost[] = [
     pillar: "Product",
     readTime: "5 min read",
     metaTitle:
-      "One Place for All of It: Why We Built BOOKDU — Finance App for Models",
+      "Why We Built BOOKDU | Model Finance App",
     metaDescription:
       "Jobs, payments, contracts, calendar, expenses, tax — BOOKDU keeps it all in one place. Built for models who work across agencies and countries.",
     content: [
@@ -744,7 +745,7 @@ const posts: BlogPost[] = [
       },
       {
         type: "paragraph",
-        text: "BOOKDU doesn\u2019t speed up the payment cycle. It gives you visibility into it. You know what\u2019s outstanding, how long it\u2019s been, and when to follow up.",
+        text: "BOOKDU doesn\u2019t speed up the payment cycle. It gives you visibility into it. You know what\u2019s outstanding, how long it\u2019s been, and when to follow up. For a deeper look at how this works, read [how to track payments across multiple agencies](/blog/track-payments-multiple-modeling-agencies).",
       },
       {
         type: "heading",
@@ -777,6 +778,7 @@ const posts: BlogPost[] = [
     metaTitle: "Coming Soon: The BOOKDU Blog — Model Finance, Career Admin & More",
     metaDescription:
       "The BOOKDU blog is launching. Expect honest writing about payments, contracts, tax, and the admin side of modeling that nobody talks about.",
+    noIndex: true,
     content: [
       {
         type: "heading",
