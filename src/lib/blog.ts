@@ -63,6 +63,211 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "how-long-to-get-paid-as-a-model",
+    title:
+      "How Long Does It Take to Get Paid as a Model? The Real Timeline",
+    description:
+      "Models typically wait 60-120 days to get paid after a job. Here's why, what's normal, and how to stay on top of every payment across every agency.",
+    date: "2026-04-12",
+    author: "Roman Feldman",
+    pillar: "Your Money",
+    readTime: "4 min read",
+    metaTitle:
+      "How Long to Get Paid as a Model? The Real Timeline",
+    metaDescription:
+      "Models typically wait 60-120 days to get paid after a job. Here's why, what's normal, and how to stay on top of every payment across every agency.",
+    content: [
+      {
+        type: "heading",
+        level: "h2",
+        text: "The Short Answer: Longer Than You Think",
+      },
+      {
+        type: "paragraph",
+        text: "You finished a shoot on a Tuesday. You were great. The client was happy. The agency confirmed the booking was done. Now you wait.",
+      },
+      {
+        type: "paragraph",
+        text: "If you are new to modelling, you might expect to be paid within a week or two. That is not how this works. The standard payment timeline in modelling is **60 to 120 days** from the date of the job. Some payments take even longer. And nobody warns you about this before your first booking.",
+      },
+      {
+        type: "paragraph",
+        text: "This is not an agency problem. This is how the payment chain works in the modelling industry — and once you understand it, you can plan around it instead of being caught off guard by it.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "Why It Takes So Long: The Payment Chain",
+      },
+      {
+        type: "paragraph",
+        text: "When you do a job, the money does not come straight to you. It moves through a chain, and every link in that chain adds time.",
+      },
+      {
+        type: "list",
+        style: "numbered",
+        items: [
+          "**You do the job.** A voucher is signed on set confirming the work, the rate, and the usage terms.",
+          "**The agency invoices the client.** This might happen the same week, or it might take a few days depending on the agency's billing cycle.",
+          "**The client processes the invoice.** Most clients operate on net 30 or net 60 payment terms — meaning they pay the agency 30 or 60 days after receiving the invoice. In fashion, net 90 is not unusual.",
+          "**The agency receives the payment, deducts commission, and pays you.** Some agencies pay within days of receiving the client's payment. Others batch payments weekly or monthly.",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "So if the client pays on net 60 terms and the agency batches payments monthly, you are looking at 60 to 90 days minimum from the date of the shoot. Add a slow-invoicing cycle or a client that pays late, and you are past 100 days easily.",
+      },
+      {
+        type: "paragraph",
+        text: "This is the part nobody explains when you sign with an agency. The money is real. It is coming. But the timeline between doing the work and holding the payment is measured in months, not days.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "What Is Normal and What Is Not",
+      },
+      {
+        type: "paragraph",
+        text: "From talking to models and watching my daughter navigate this across agencies in three countries, here is what we have seen:",
+      },
+      {
+        type: "paragraph",
+        text: "**Normal:**",
+      },
+      {
+        type: "list",
+        style: "bullet",
+        items: [
+          "30-60 days for commercial and e-commerce work",
+          "60-90 days for editorial, fashion, and larger campaigns",
+          "90-120 days when the client is a large corporation with slow accounts payable",
+          "Monthly payment batches from the agency, meaning your payment might sit for an extra 1-3 weeks after the client has paid",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "**Worth a follow-up:**",
+      },
+      {
+        type: "list",
+        style: "bullet",
+        items: [
+          "Past 90 days with no communication from the agency about the status",
+          "The agency cannot tell you whether the client has paid yet",
+          "A pattern of payments consistently arriving later than the agency's stated timeline",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "**A real concern:**",
+      },
+      {
+        type: "list",
+        style: "bullet",
+        items: [
+          "Past 120 days with no clear explanation",
+          "The agency avoids giving you any timeline or status update",
+          "Other models at the same agency are reporting similar delays",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "The important distinction: a payment taking 90 days through the normal chain is not the same as a payment that has been sitting with the agency after the client paid. The first is how the industry works. The second is worth a conversation.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "The Maths Models Do Not Do (But Should)",
+      },
+      {
+        type: "paragraph",
+        text: "Here is what makes the payment timeline difficult in practice. It is not one payment you are waiting on — it is many, all on different timelines, all from different agencies.",
+      },
+      {
+        type: "paragraph",
+        text: "Say you did five jobs in January and February across two agencies:",
+      },
+      {
+        type: "list",
+        style: "bullet",
+        items: [
+          "Job 1 (Agency A, Jan 8): $1,200 — might land in March or April",
+          "Job 2 (Agency B, Jan 22): $800 — different agency, different payment cycle",
+          "Job 3 (Agency A, Feb 3): $2,500 — same agency as Job 1 but a different client",
+          "Job 4 (Agency B, Feb 14): $600 — might arrive with Job 2 in the same batch, might not",
+          "Job 5 (Agency A, Feb 28): $1,800 — newest job, longest wait ahead",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "That is $6,900 you have earned but have not received. Some of it will land in March. Some in April. Some not until May. If you are not tracking each one, you will not know what is outstanding, what is overdue, and what has quietly been paid.",
+      },
+      {
+        type: "paragraph",
+        text: "A $10,000 booking sounds incredible — until you realise $2,000 goes to the agency, $3,000-5,000 goes to tax, and expenses come on top. You might take home $4,000. That is still great. But you need to know the real number, not the headline number.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "What You Can Do About It",
+      },
+      {
+        type: "paragraph",
+        text: "You cannot speed up the payment chain. What you can do is never lose sight of what is owed.",
+      },
+      {
+        type: "paragraph",
+        text: "**1. Log every job the day it happens.** Agency, client, date, rate. If you do not write it down, you will forget it within a week — and three months later you will have a vague memory of money owed but no details.",
+      },
+      {
+        type: "paragraph",
+        text: "**2. Know the expected timeline for each agency.** Ask your agency upfront: \"What are your standard payment terms? How often do you batch payments?\" A good agency will answer clearly. This sets your expectations from day one.",
+      },
+      {
+        type: "paragraph",
+        text: "**3. Mark the 90-day point.** If a payment has not arrived and you have had no update, day 90 is a reasonable moment to send a polite email. Something like: \"Just checking in on the payment for [job] on [date] — wanted to make sure it is on track.\" No aggression. Just awareness.",
+      },
+      {
+        type: "paragraph",
+        text: "**4. Check your payments weekly.** Two minutes every Monday morning. What has landed? What is still outstanding? How long has each one been waiting? This is not chasing — it is staying informed.",
+      },
+      {
+        type: "paragraph",
+        text: "This is exactly what we built [BOOKDU](/features) to do. Every job you log becomes a payment to track. BOOKDU marks checkpoints at 35 days and 56 days so you can see where each payment sits in the cycle — not because anything is wrong, but so you always know the status. Every Monday morning, you get a summary of everything you are waiting on — across every agency.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "The Monday Morning Habit",
+      },
+      {
+        type: "paragraph",
+        text: "The models who stay on top of their finances are not the ones who chase the hardest. They are the ones who always know where they stand.",
+      },
+      {
+        type: "paragraph",
+        text: "Every Monday, glance at three things:",
+      },
+      {
+        type: "list",
+        style: "numbered",
+        items: [
+          "**What is outstanding** — which payments are still waiting to land, and how long each one has been.",
+          "**What landed last week** — check your bank account and mark off anything that came through.",
+          "**What is coming up** — any jobs this week that will become new payments to track.",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Two minutes. Every week. That is it. No spreadsheet required. No chasing. Just clarity.",
+      },
+      {
+        type: "paragraph",
+        text: "If you want that in one place — across every agency, every country, every payment — that is what BOOKDU does. Log a job in 30 seconds, see where every payment sits in the cycle, and know the moment something is actually overdue. Free on iOS.",
+      },
+    ],
+  },
+  {
     slug: "australian-model-tax-guide",
     title:
       "The Australian Model's Tax Guide: ABN, GST, BAS, Deductions and Super",
