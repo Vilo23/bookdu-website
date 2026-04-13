@@ -68,7 +68,7 @@ const posts: BlogPost[] = [
       "How Long Does It Take to Get Paid as a Model? The Real Timeline",
     description:
       "Models typically wait 60-120 days to get paid after a job. Here's why, what's normal, and how to stay on top of every payment across every agency.",
-    date: "2026-04-12",
+    date: "2026-04-13",
     author: "Roman Feldman",
     pillar: "Your Money",
     readTime: "4 min read",
