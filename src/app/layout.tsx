@@ -3,6 +3,7 @@ import { Archivo_Black, Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import { PostHogProvider } from "@/components/PostHogProvider";
 
 const archivoBlack = Archivo_Black({
   variable: "--font-archivo",
@@ -101,9 +102,11 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: jsonLd }}
         />
-        <Header />
-        <main className="min-h-screen">{children}</main>
-        <Footer />
+        <PostHogProvider>
+          <Header />
+          <main className="min-h-screen">{children}</main>
+          <Footer />
+        </PostHogProvider>
       </body>
     </html>
   );
