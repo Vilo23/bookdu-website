@@ -63,6 +63,236 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "what-is-a-modeling-voucher",
+    title:
+      "What Is a Modeling Voucher and Why It Matters for Getting Paid",
+    description:
+      "A modeling voucher is the document that confirms your work, your rate, and what the client can do with your images. Here's what to check before you sign one.",
+    date: "2026-04-26",
+    author: "Bec",
+    pillar: "Your Money",
+    readTime: "4 min read",
+    metaTitle:
+      "What Is a Modeling Voucher? Why It Matters for Payment",
+    metaDescription:
+      "A modeling voucher is the document that confirms your work, your rate, and what the client can do with your images. Here's what to check before you sign one.",
+    content: [
+      {
+        type: "heading",
+        level: "h2",
+        text: "The Most Important Piece of Paper on Set",
+      },
+      {
+        type: "paragraph",
+        text: "At the end of a job, someone will hand you a piece of paper — or pull up a form on a tablet — and ask you to sign it. This is a voucher. It might also be called a booking sheet, a job sheet, or a confirmation form. Whatever the name, it serves the same purpose: it is the official record that you showed up, did the work, and agreed to the terms.",
+      },
+      {
+        type: "paragraph",
+        text: "Most models sign without reading carefully — and most of the time, it's fine. But the few times it isn't, the voucher is what everyone goes back to. Agency, client, sometimes a lawyer. That's why slowing down for 60 seconds before you sign is one of the highest-leverage habits in this industry.",
+      },
+      {
+        type: "paragraph",
+        text: "A voucher is not just paperwork. It is the foundation of your payment. If something goes wrong down the line, the voucher is what everyone — your agency, the client, and potentially a lawyer — will look at first.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "What a Voucher Typically Includes",
+      },
+      {
+        type: "paragraph",
+        text: "Vouchers vary in format, but most cover the same core information:",
+      },
+      {
+        type: "list",
+        style: "bullet",
+        items: [
+          "**Your name and agency**",
+          "**The client's name** (the brand, publication, or company that booked the job)",
+          "**The date and location** of the job",
+          "**The hours worked** — start time and end time. This matters for overtime calculations and half-day versus full-day rates.",
+          "**The rate** — your agreed fee for the job. This should match what your agency confirmed when the booking was made.",
+          "**Usage terms** — how the client is permitted to use the images from the shoot. This is the clause that matters most long-term.",
+          "**Your signature** — confirming you agree to everything above",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Some vouchers also include notes about wardrobe provided, travel reimbursement, or any special conditions discussed on set.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "Why Usage Terms Are the Part to Read Carefully",
+      },
+      {
+        type: "paragraph",
+        text: "The rate gets your attention. The usage terms should get more of it.",
+      },
+      {
+        type: "paragraph",
+        text: "Usage terms define what the client can do with the images from the shoot — where they can appear, for how long, and in what formats. The difference between a local digital campaign for one year and a global buyout with perpetual rights is enormous, and it is spelled out (or not) on the voucher.",
+      },
+      {
+        type: "paragraph",
+        text: "Here is what to watch for:",
+      },
+      {
+        type: "paragraph",
+        text: "**Scope:** Is this for a specific region (Australia, North America, global) or \"worldwide\"? A worldwide licence is worth significantly more than a local one.",
+      },
+      {
+        type: "paragraph",
+        text: "**Duration:** Is the usage for one year, two years, or \"in perpetuity\"? Perpetuity means forever — the client can use your images indefinitely with no further payment.",
+      },
+      {
+        type: "paragraph",
+        text: "**Medium:** Print only? Digital only? All media including broadcast, outdoor, and packaging? Each medium carries different value, and a shoot for Instagram content should not automatically include billboard rights.",
+      },
+      {
+        type: "paragraph",
+        text: "**Exclusivity:** Does the client expect you to avoid working with competitors during the usage period? Exclusivity restricts your earning potential and should come with a premium.",
+      },
+      {
+        type: "paragraph",
+        text: "A **buyout** — where the client pays a flat fee for unlimited, perpetual use — commands a 70-100% premium over standard rates. If a voucher says \"buyout\" or \"all rights, all media, in perpetuity,\" that changes the economics of the entire job. Make sure the rate reflects it.",
+      },
+      {
+        type: "paragraph",
+        text: "In our experience, usage rights are where most new models leave the most money on the table. A single day's shoot can produce images a brand monetises for years. Understanding what you're signing away is as important as the day rate itself.",
+      },
+      {
+        type: "paragraph",
+        text: "If the usage terms on the voucher are different from what your agency originally discussed, do not sign until you have spoken to your agent. This is not being difficult — it is protecting your work and your income.",
+      },
+      {
+        type: "paragraph",
+        text: "**For US-based readers:** New York's Fashion Workers Act (effective June 2025) requires separate written consent for any AI or digital-replica use of your image. Pre-existing power-of-attorney clauses no longer cover it. If your voucher includes broad usage language and you work in New York, raise it with your agent before signing.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "What Happens If You Do Not Get a Voucher",
+      },
+      {
+        type: "paragraph",
+        text: "Not every job comes with a formal voucher, especially smaller or less structured bookings. But the absence of a voucher does not mean the work did not happen — it means you have no paper trail.",
+      },
+      {
+        type: "paragraph",
+        text: "This becomes a problem when:",
+      },
+      {
+        type: "list",
+        style: "bullet",
+        items: [
+          "A payment is late and the agency needs proof of the booking details",
+          "The client uses images beyond what was verbally agreed",
+          "There is a dispute about the rate or the hours worked",
+          "Tax time arrives and you need records of what you earned and from whom",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "If a client does not offer a voucher, create your own record. Note the date, hours, rate, client, and any usage discussion. Send a summary email to your agency after the job: \"Confirming today's shoot — [client], [date], [rate], [usage as discussed].\" That email becomes your receipt.",
+      },
+      {
+        type: "paragraph",
+        text: "In our experience, the models who keep records — even informal ones — are the ones who never find themselves in a \"he said, she said\" situation months later. It takes 30 seconds after a job. It saves hours when something does not add up.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "The Voucher Is Where Payment Tracking Starts",
+      },
+      {
+        type: "paragraph",
+        text: "A voucher is the first link in the payment chain. Once signed, it confirms the work happened and triggers the invoicing process:",
+      },
+      {
+        type: "list",
+        style: "numbered",
+        items: [
+          "You sign the voucher on set",
+          "The agency uses it to invoice the client",
+          "The client processes the invoice (typically [net 30-90 days](/blog/how-long-to-get-paid-as-a-model))",
+          "The agency deducts commission and pays you",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "If you lose track of the voucher details — the rate, the date, the client — you lose track of the payment. And when you are doing multiple jobs a month across multiple agencies, that is when money starts slipping through the cracks.",
+      },
+      {
+        type: "paragraph",
+        text: "This is one of the reasons we built job logging into [BOOKDU](/features). Every job you log — agency, client, date, rate — becomes a payment to track. Take a quick photo of the voucher too — the signed document carries legal weight if there is ever a dispute. Log it once in BOOKDU, and the app tracks the payment until it lands. If it does not land, you will know.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "A Quick Note on Paperwork in AU, UK, and US",
+      },
+      {
+        type: "paragraph",
+        text: "Different markets handle the documentation slightly differently, but the voucher plays the same role in each:",
+      },
+      {
+        type: "list",
+        style: "bullet",
+        items: [
+          "**Australia:** your signed voucher typically becomes the basis for an RCTI (Recipient-Created Tax Invoice) issued by your agency.",
+          "**United Kingdom:** it feeds into self-billing, where the agency creates the invoice on your behalf.",
+          "**United States:** it supports the income that ends up on your year-end 1099-NEC.",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Different paperwork, same role: the voucher is your proof of work.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "A Quick Checklist Before You Sign",
+      },
+      {
+        type: "paragraph",
+        text: "Next time someone hands you a voucher on set, take 60 seconds to check:",
+      },
+      {
+        type: "list",
+        style: "numbered",
+        items: [
+          "**Is your name and agency correct?** Sounds obvious. Errors happen.",
+          "**Does the rate match what your agency confirmed?** If it is different, pause and check with your agent before signing.",
+          "**Are the hours accurate?** If you worked 10 hours and the voucher says 8, that matters — especially if overtime applies.",
+          "**What do the usage terms say?** Read them. If they are broader than what was originally discussed (global instead of local, perpetuity instead of one year), flag it.",
+          "**Is there anything you did not agree to?** Additional usage, extended exclusivity, or conditions not discussed in the original booking.",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "You are not being difficult by reading a voucher carefully. You are being professional. The experienced models we hear from build this habit early. Good agencies expect it.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "Your Record, Your Protection",
+      },
+      {
+        type: "paragraph",
+        text: "A voucher exists to protect everyone involved — the client, the agency, and you. But it only protects you if you read it, understand it, and keep a record of it.",
+      },
+      {
+        type: "paragraph",
+        text: "The models who build long, financially stable careers treat every voucher like a receipt for work they have earned. Because that is exactly what it is.",
+      },
+      {
+        type: "paragraph",
+        text: "BOOKDU tracks your jobs, payments, contracts, and expenses in one place. Log the job when it happens. Let the app track the payment. Free on iOS.",
+      },
+    ],
+  },
+  {
     slug: "how-long-to-get-paid-as-a-model",
     title:
       "How Long Does It Take to Get Paid as a Model? The Real Timeline",
