@@ -146,7 +146,7 @@ export async function GET(request: Request, context: RouteContext): Promise<Resp
     return htmlResponse(200, "Approve draft", `
       <h1>Approve this draft?</h1>
       <p class="muted">Draft ID: ${escapeHtml(draftId)}</p>
-      <p>The draft will move to <code>content/approved/blog/</code>. You'll publish it to bookdu.co from your local dashboard.</p>
+      <p>Approving will publish this draft to bookdu.co automatically — live in ~2 minutes.</p>
       <form method="POST" action="">
         <button type="submit">✓ Confirm approve</button>
       </form>`);
@@ -208,7 +208,7 @@ export async function POST(request: Request, context: RouteContext): Promise<Res
   try {
     await dispatchToGithub({ draftId, action, body, kind: "blog", token: ghToken, repo });
     const confirmation = action === "approve"
-      ? "Approved. The draft is moving to content/approved/blog/. Publish it from your dashboard when ready."
+      ? "Approved. Publishing to bookdu.co now — live in ~2 minutes."
       : action === "reject"
       ? "Rejected. The keyword has been returned to the queue."
       : "Submitted. The pipeline is regenerating now — you'll get a fresh review email in a few minutes.";
