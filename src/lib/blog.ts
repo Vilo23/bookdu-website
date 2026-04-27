@@ -63,6 +63,188 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "how-much-commission-do-modeling-agencies-take",
+    title:
+      "How Much Commission Do Modeling Agencies Take — and What Happens to the Rest",
+    description:
+      "20% is the standard. But that's not the whole story. Here's what actually happens to your money between a booking and your bank account.",
+    date: "2026-04-27",
+    author: "Roman Feldman",
+    pillar: "Your Money",
+    readTime: "6 min read",
+    metaTitle:
+      "How Much Commission Do Modeling Agencies Take?",
+    metaDescription:
+      "20% is the standard. But that's not the whole story. Here's what actually happens to your money between a booking and your bank account.",
+    content: [
+      {
+        type: "paragraph",
+        text: "You booked a $5,000 job. Your agency calls it a win. Everyone's happy.",
+      },
+      {
+        type: "paragraph",
+        text: "Then the payment arrives and it's $3,800. Or $3,200. Or something else entirely that nobody quite explained.",
+      },
+      {
+        type: "paragraph",
+        text: "This is one of the most common sources of confusion for working models — not because agencies are hiding anything, but because nobody ever sits you down and walks through the maths. You're expected to figure it out as you go.",
+      },
+      {
+        type: "paragraph",
+        text: "So here it is, laid out plainly.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "The Standard Rate: 20%",
+      },
+      {
+        type: "paragraph",
+        text: "In most markets — Australia, the UK, the US, the EU — the standard agency commission is 20% of your gross earnings.",
+      },
+      {
+        type: "paragraph",
+        text: "On a $5,000 booking, that's $1,000 to the agency. You take home $4,000 before tax.",
+      },
+      {
+        type: "paragraph",
+        text: "That's the number you'll see cited most often, and for straightforward commercial work with a local agency in a single market, it's usually accurate. The 20% covers what the agency does: sourcing work, negotiating rates, managing client relationships, chasing payments, and handling the admin that would otherwise fall on you.",
+      },
+      {
+        type: "paragraph",
+        text: "New York's Fashion Workers Act, which came into effect in June 2025, put a legal cap on this at 20% for models working in New York. No agency can charge more. No signing fees. No deposits. That's the law.",
+      },
+      {
+        type: "paragraph",
+        text: "Outside New York, the 20% figure is industry standard rather than legally mandated, which means there's room for variation — and there often is.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "Where It Gets More Complicated",
+      },
+      {
+        type: "paragraph",
+        text: "The 20% commission is what the agency charges you. But agencies also typically charge the client a service fee on top of your rate. That can be another 15-20% added to the invoice the client receives.",
+      },
+      {
+        type: "paragraph",
+        text: "What does this mean in practice? On a $5,000 booking, the client might actually be billed $5,750 to $6,000. The agency collects both your fee and theirs. You receive your $5,000 minus 20%, and the agency pockets its service fee separately.",
+      },
+      {
+        type: "paragraph",
+        text: "This is legal, common, and how agencies stay in business. It's worth understanding because it explains why the total cost to a client for your work is often significantly higher than what ends up in your account.",
+      },
+      {
+        type: "paragraph",
+        text: "Then there's the mother agency.",
+      },
+      {
+        type: "paragraph",
+        text: "If you have a mother agency — the agency that first signed you and placed you with local agencies in other markets — they typically earn 5 to 10% of your gross earnings from every booking, regardless of where it happens. In most Western markets, this comes out of the local agency's 20%, split roughly 50/50. So you still lose 20% total, and the two agencies divide it between themselves. Your take doesn't change.",
+      },
+      {
+        type: "paragraph",
+        text: "In some Asian markets, the structure is different. The mother agency's commission of 10 to 15% can be charged on top of the local agency's cut rather than from it. That brings total deductions to 30 to 35% of your gross fee before you've paid a cent of tax. If you're working internationally or considering placements in Japan, South Korea, or China, this is something to understand before you sign anything.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "The Tax Layer (This Is Where It Gets Real)",
+      },
+      {
+        type: "paragraph",
+        text: "Commission is deducted before you ever see the money. Tax comes after, but it's owed on what you earned before commission in some countries and on what you received in others — the specifics depend on where you're based and how your income is classified.",
+      },
+      {
+        type: "paragraph",
+        text: "What's consistent across Australia, the UK, and the US is this: as an independent contractor, nothing is withheld on your behalf. Every dollar that arrives in your account has tax owing on it. The agency isn't your employer. They are not sending anything to the ATO, HMRC, or the IRS on your behalf. That's entirely your responsibility.",
+      },
+      {
+        type: "paragraph",
+        text: "In the US, the self-employment tax alone runs to around 15.3% on top of income tax. Australian models operating as sole traders need to account for income tax and potentially GST once they cross $75,000 in annual turnover. UK models registered as self-employed have income tax plus Class 2 and Class 4 National Insurance contributions.",
+      },
+      {
+        type: "paragraph",
+        text: "The practical rule that holds across all three markets: set aside 25 to 35% of every net payment into a separate account immediately. Don't touch it. The money feels like yours. Some of it is not.",
+      },
+      {
+        type: "paragraph",
+        text: "When you run the full calculation — 20% to the agency, 25 to 35% in tax, plus business expenses — a $5,000 booking can realistically net you $2,500 to $3,000. That's still meaningful income. But the headline number and the real number are very different, and working to the headline is how models end up in trouble.",
+      },
+      {
+        type: "paragraph",
+        text: "This is exactly where having a system matters. BOOKDU lets you log each job with the agency, track the expected net payment after commission, and flag when it's overdue — so the number you're watching is the number that actually hits your account, not the figure on the original booking confirmation.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "What You're Paying For (and What to Watch For)",
+      },
+      {
+        type: "paragraph",
+        text: "Agency commission isn't a tax or a penalty. It's a fee for a real service. A good agency negotiates your rates upward, fights for usage fees you wouldn't know to ask for, maintains client relationships that bring you repeat bookings, and handles the slow administrative work of chasing invoices across multiple clients.",
+      },
+      {
+        type: "paragraph",
+        text: "The 20% is often worth it.",
+      },
+      {
+        type: "paragraph",
+        text: "That said, there are structures that warrant a closer look.",
+      },
+      {
+        type: "paragraph",
+        text: "Commission above 25% is outside the standard range. Not automatically wrong — some specialist agencies or niche markets operate differently — but it's worth understanding exactly what justifies the higher rate before signing.",
+      },
+      {
+        type: "paragraph",
+        text: "In-house photography requirements are a red flag that's been documented by the FTC and the Model Alliance for decades. Legitimate agencies make money when you work. They don't need to charge you for a portfolio shoot before they'll represent you.",
+      },
+      {
+        type: "paragraph",
+        text: "If you're moving into a new market and a local agency is proposing fees or charges beyond their commission on bookings, that's worth questioning carefully. The standard model is simple: you work, you get paid, they take their percentage. Everything else needs a clear explanation.",
+      },
+      {
+        type: "paragraph",
+        text: "Multi-market arrangements — where you have a mother agency placing you with local agencies internationally — are legitimate and common. Just make sure you understand the full commission structure before you agree to placements. Ask directly: is your cut coming from the local agency's commission, or on top of it?",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "Knowing Your Numbers",
+      },
+      {
+        type: "paragraph",
+        text: "The models who manage their finances well aren't necessarily the ones earning the most. They're the ones who know their numbers.",
+      },
+      {
+        type: "paragraph",
+        text: "That means knowing the gross fee for every booking. Knowing what the agency will deduct. Knowing when payment is expected and what the typical client-to-agency-to-you timeline looks like in that market (60 to 120 days is normal — the money isn't late, the industry is slow). And setting aside enough for tax before you start spending what arrived.",
+      },
+      {
+        type: "paragraph",
+        text: "It's not complicated in principle. It's just easy to lose track of when you're working across two or three agencies, in multiple countries, with bookings at different stages of the payment cycle all at once.",
+      },
+      {
+        type: "paragraph",
+        text: "Keeping a clear record of every booking — agency, gross fee, expected net, payment status, due date — is the single most useful habit a working model can build. Whether you use BOOKDU or a spreadsheet that you actually check, the system matters less than having one. The models who end up chasing phantom payments or hitting a surprise tax bill in June are almost always the ones who were tracking it in their head.",
+      },
+      {
+        type: "paragraph",
+        text: "---",
+      },
+      {
+        type: "paragraph",
+        text: "**Roman Feldman** is the father of a working model. He built BOOKDU because he watched his daughter chase payments across three countries.",
+      },
+      {
+        type: "paragraph",
+        text: "BOOKDU tracks your payments, contracts, expenses, and schedule in one app — including net payment amounts per agency so you always know what you're actually owed, not just what was booked. [Download BOOKDU from the App Store.](https://apps.apple.com/app/bookdu)",
+      },
+    ],
+  },
+  {
     slug: "what-is-a-modeling-voucher",
     title:
       "What Is a Modeling Voucher and Why It Matters for Getting Paid",
