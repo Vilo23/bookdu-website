@@ -45,6 +45,24 @@ export type ContentBlock =
 
 export type Pillar = "Your Money" | "Model Life" | "Career Admin" | "Product";
 
+export const AUTHORS = {
+  "Roman Feldman": {
+    name: "Roman Feldman",
+    url: "https://bookdu.co/about/roman-feldman",
+  },
+  Bec: { name: "Bec" },
+} as const;
+
+export function getAuthorSchema(author: string) {
+  const entry = (AUTHORS as Record<string, { name: string; url?: string }>)[
+    author
+  ];
+  if (!entry) return { "@type": "Person" as const, name: author };
+  return entry.url
+    ? { "@type": "Person" as const, name: entry.name, url: entry.url }
+    : { "@type": "Person" as const, name: entry.name };
+}
+
 export interface BlogPost {
   slug: string;
   title: string;
@@ -55,6 +73,7 @@ export interface BlogPost {
   readTime: string;
   metaTitle: string;
   metaDescription: string;
+  image?: string;
   noIndex?: boolean;
   content: ContentBlock[];
 }
