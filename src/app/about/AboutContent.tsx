@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { motion } from "framer-motion";
 
 const fadeUp = {
@@ -83,6 +84,20 @@ export default function AboutContent() {
           >
             Our daughter is a model. We watched her deal with all of this. So
             we built something to help.
+          </motion.p>
+          <motion.p
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.15 }}
+            className="mt-3 font-mono text-xs uppercase tracking-[0.15em] text-text-muted"
+          >
+            Founder:{" "}
+            <Link
+              href="/about/roman-feldman"
+              className="underline underline-offset-4 hover:text-text transition-colors"
+            >
+              Roman Feldman
+            </Link>
           </motion.p>
         </div>
       </section>

@@ -54,17 +54,12 @@ export default function Hero() {
 
       {/* Center content — spans full width */}
       <div className="relative z-10 flex flex-col items-center justify-center col-span-1 lg:col-span-2 row-start-2">
-        <motion.h1
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.8, delay: 0.1 }}
-          className="font-[family-name:var(--font-archivo)] text-[clamp(3rem,10vw,12rem)] uppercase leading-[0.9] text-center text-text mix-blend-difference"
-        >
+        <h1 className="font-[family-name:var(--font-archivo)] text-[clamp(3rem,10vw,12rem)] uppercase leading-[0.9] text-center text-text mix-blend-difference">
           You Did
           <br />
           The Work
           <span className="sr-only"> — Finance Tracking App for Models</span>
-        </motion.h1>
+        </h1>
 
         <motion.h2
           initial={{ opacity: 0 }}

@@ -1,7 +1,10 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getAllPosts, getPostBySlug } from "@/lib/blog";
+import { getAllPosts, getAuthorSchema, getPostBySlug } from "@/lib/blog";
+
+// TODO(seo): swap site-wide OG fallback for per-post images when content has them.
+const FALLBACK_OG_IMAGE = "https://bookdu.co/opengraph-image";
 import CTA from "@/components/sections/CTA";
 import BlogPostContent from "./BlogPostContent";
 
@@ -34,6 +37,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       type: "article",
       publishedTime: post.date,
       authors: [post.author],
+      images: [post.image ?? FALLBACK_OG_IMAGE],
     },
     twitter: {
       card: "summary_large_image",
@@ -54,8 +58,9 @@ export default async function BlogPostPage({ params }: Props) {
     "@type": "Article",
     headline: post.title,
     description: post.description,
+    image: post.image ?? FALLBACK_OG_IMAGE,
     datePublished: post.date,
-    author: { "@type": "Person", name: post.author },
+    author: getAuthorSchema(post.author),
     publisher: {
       "@type": "Organization",
       name: "BOOKDU",
