@@ -63,6 +63,231 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "model-abn-sole-trader-australia",
+    title:
+      "Model ABN and Sole Trader: What Working Models in Australia Need to Know",
+    description:
+      "Working as a freelance model in Australia? Here's what an ABN means, when you need one, and how to manage the sole trader side of your career.",
+    date: "2026-04-28",
+    author: "Roman Feldman",
+    pillar: "Career Admin",
+    readTime: "5 min read",
+    metaTitle:
+      "Model ABN Sole Trader Australia: What You Need to Know",
+    metaDescription:
+      "Working as a freelance model in Australia? Here's what an ABN means, when you need one, and how to manage the sole trader side of your career.",
+    content: [
+      {
+        type: "paragraph",
+        text: "I built BOOKDU because I watched my daughter chase payments across three countries. Along the way, I learned a lot about how models actually get paid — the agency structures, the timelines, the paperwork — and how much of that knowledge most models pick up by accident, long after they needed it.",
+      },
+      {
+        type: "paragraph",
+        text: "The ABN conversation is one of those things. Most working models in Australia find out it needed to happen before the work started, not after.",
+      },
+      {
+        type: "paragraph",
+        text: "This post is for anyone who is freelancing as a model in Australia right now — or about to — and wants to understand what the sole trader structure means in practice. Not theory. Not scare tactics. Just what it is, how it works, and what it means for you.",
+      },
+      {
+        type: "paragraph",
+        text: "---",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "What an ABN Actually Is",
+      },
+      {
+        type: "paragraph",
+        text: "ABN stands for Australian Business Number. It is an 11-digit number that identifies your business to the government and to the businesses you work with. When you register for one, you are formally telling the ATO that you are operating as a business in your own right.",
+      },
+      {
+        type: "paragraph",
+        text: "For models working as independent contractors — which is most freelance models in Australia — this is the standard structure. You are not an employee of the agency. You are a sole trader providing services to them, and they pay you accordingly.",
+      },
+      {
+        type: "paragraph",
+        text: "The practical effect of this is that nothing is withheld from your payments. The agency does not take out income tax on your behalf. The full amount lands in your account, and the tax owing on it is your responsibility to track, set aside, and pay.",
+      },
+      {
+        type: "paragraph",
+        text: "That is not a bad thing. It gives you flexibility and control. But it does mean the financial admin is genuinely yours to manage.",
+      },
+      {
+        type: "paragraph",
+        text: "---",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "Do You Actually Need One?",
+      },
+      {
+        type: "paragraph",
+        text: "Almost certainly yes, if you are working as a freelance model in Australia and being paid directly or through an agency as a contractor.",
+      },
+      {
+        type: "paragraph",
+        text: "The clearest sign is your contract or the way you get paid. If you are invoicing an agency, if you receive payments without tax withheld, or if your agency has asked for your ABN, you are operating as a sole trader and you need one.",
+      },
+      {
+        type: "paragraph",
+        text: "Without an ABN, businesses paying you are legally required to withhold 47% of your payment under no-ABN withholding rules. That money goes to the ATO rather than to you. You can eventually claim it back through your tax return, but it is not a great system to rely on.",
+      },
+      {
+        type: "paragraph",
+        text: "Registering for an ABN is free and takes about 15 minutes through the ABN registration portal on the Australian Business Register website. You will need your tax file number and some basic details about your business activity. For most models, the business activity is simply modelling services.",
+      },
+      {
+        type: "paragraph",
+        text: "---",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "What the Sole Trader Structure Means Day to Day",
+      },
+      {
+        type: "paragraph",
+        text: "Being a sole trader does not mean running a company. It does not mean quarterly BAS lodgements (unless you register for GST). It does not mean complicated bookkeeping.",
+      },
+      {
+        type: "paragraph",
+        text: "What it does mean:",
+      },
+      {
+        type: "paragraph",
+        text: "**Your income is business income.** Every dollar you earn from modelling work goes on your tax return as business income. You report it, you pay income tax and Medicare levy on it at your marginal rate.",
+      },
+      {
+        type: "paragraph",
+        text: "**You pay your own superannuation.** There is no employer making super contributions for you. The ATO does not require sole traders to pay themselves super, but it is tax-deductible if you choose to, up to the concessional contributions cap. A lot of models do not think about super until much later than they should. Starting early makes a real difference.",
+      },
+      {
+        type: "paragraph",
+        text: "**GST is only a factor above $75,000 turnover.** If your annual model income goes over $75,000, you are required to register for GST, charge it on your services, and lodge quarterly BAS statements. Below that threshold, you do not need to worry about it. If you are approaching that number, it is worth getting across the requirements before you cross the line.",
+      },
+      {
+        type: "paragraph",
+        text: "**You keep your own records.** Invoices, receipts, contracts, payment dates. Not because anyone is watching, but because EOFY arrives every 30 June and you will need to know exactly what you earned, what you spent, and what you can claim.",
+      },
+      {
+        type: "paragraph",
+        text: "---",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "What You Can Deduct as a Model Sole Trader",
+      },
+      {
+        type: "paragraph",
+        text: "This is where the sole trader structure genuinely works in your favour. The expenses you incur in earning your modelling income are generally deductible. That means they reduce your taxable income, which reduces the tax you pay.",
+      },
+      {
+        type: "paragraph",
+        text: "Things that are commonly deductible for working models:",
+      },
+      {
+        type: "list",
+        style: "bullet",
+        items: [
+          "**Agency commissions.** The percentage your agency takes is a cost of earning your income.",
+          "**Comp cards and portfolio photos.** The cost of producing marketing materials for your business.",
+          "**Travel for work.** Getting to castings, jobs, and fittings. The ATO has specific rules here — commuting from home to a regular workplace generally does not count, but travel to different locations for work often does.",
+          "**Grooming costs.** The portion directly related to your work, not general personal grooming. This is a grey area and worth getting specific advice on.",
+          "**Phone and internet.** The work-related percentage of your bills.",
+          "**Professional development.** Workshops, courses, industry memberships that relate to your modelling career.",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "The ATO does audit creative industry workers from time to time, particularly around grooming and clothing deductions. Keep records. If you claim it, be able to explain why it was a work expense.",
+      },
+      {
+        type: "paragraph",
+        text: "BOOKDU's expense tracking lets you log costs as they happen and categorise them by type — which makes it a lot easier at tax time when your accountant asks for the breakdown.",
+      },
+      {
+        type: "paragraph",
+        text: "---",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "The Part Nobody Mentions: The Tax You Need to Set Aside",
+      },
+      {
+        type: "paragraph",
+        text: "Because nothing is withheld from your payments, the tax owing accumulates quietly in the background until you lodge your return.",
+      },
+      {
+        type: "paragraph",
+        text: "A common pattern: a model earns well in their first active year, spends most of what comes in, lodges their tax return, and gets a bill they were not expecting.",
+      },
+      {
+        type: "paragraph",
+        text: "The way to avoid this is straightforward. Every time a payment lands, move a portion into a separate account and do not touch it. How much depends on your total income for the year, but setting aside 25-30% is a reasonable starting point for most sole traders. If you earn at the higher end of the range, that percentage needs to go up.",
+      },
+      {
+        type: "paragraph",
+        text: "If your expected tax liability is $1,000 or more, the ATO will put you on a pay-as-you-go (PAYG) instalments system after your first year, which means you pay quarterly rather than in one lump sum at the end. That is actually easier to manage — but it only kicks in after your first return. In that first year, the discipline of setting money aside is entirely on you.",
+      },
+      {
+        type: "paragraph",
+        text: "Knowing what has been paid and what is still outstanding is the foundation of all of this. If you do not have a clear picture of your income — which payments have cleared, which are still due — it is very hard to know what to set aside. That is the practical reason payment tracking matters, not just for chasing what you are owed, but for managing your tax position through the year.",
+      },
+      {
+        type: "paragraph",
+        text: "---",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "A Practical Starting Point",
+      },
+      {
+        type: "paragraph",
+        text: "If you are working as a freelance model in Australia and you have not sorted this yet, here is a simple sequence:",
+      },
+      {
+        type: "list",
+        style: "numbered",
+        items: [
+          "Register for an ABN at abr.gov.au. Free, takes 15 minutes.",
+          "Set up a separate bank account for tax. Move 25-30% of every payment in as it arrives.",
+          "Keep a record of every job, every payment, and every work expense. A spreadsheet works. An app works better if you are across multiple agencies.",
+          "Talk to an accountant before your first EOFY. Even one session to understand your obligations is worth it.",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "BOOKDU tracks your payments, expenses, and income across multiple agencies in one place, and lets you export a clean CSV when your accountant asks for the numbers. It is built for models working across different markets, which often means different currencies, different agencies, and different payment timelines — all of which get complicated fast without a system.",
+      },
+      {
+        type: "paragraph",
+        text: "---",
+      },
+      {
+        type: "paragraph",
+        text: "Managing the business side of a modelling career is genuinely not that hard once you understand the structure. The ABN is the starting point. What comes after it — the tax, the deductions, the super — is manageable when you have got the basics in order.",
+      },
+      {
+        type: "paragraph",
+        text: "**Download BOOKDU from the App Store to track your income and expenses across every agency, in one place.**",
+      },
+      {
+        type: "paragraph",
+        text: "---",
+      },
+      {
+        type: "paragraph",
+        text: "*This post is for general information only. Tax rules are specific to your circumstances, and they change. Talk to a registered tax professional or accountant before making decisions about your tax obligations.*",
+      },
+    ],
+  },
+  {
     slug: "how-much-commission-do-modeling-agencies-take",
     title:
       "How Much Commission Do Modeling Agencies Take — and What Happens to the Rest",
