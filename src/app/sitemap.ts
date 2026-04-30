@@ -37,6 +37,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     {
+      url: 'https://bookdu.co/about/roman-feldman',
+      lastModified: new Date('2026-04-28'),
+      changeFrequency: 'monthly',
+      priority: 0.5,
+    },
+    {
+      url: 'https://bookdu.co/about/bec',
+      lastModified: new Date('2026-04-30'),
+      changeFrequency: 'monthly',
+      priority: 0.5,
+    },
+    {
       url: 'https://bookdu.co/screenshots',
       lastModified: new Date('2026-03-22'),
       changeFrequency: 'monthly',

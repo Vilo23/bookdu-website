@@ -50,7 +50,7 @@ export const AUTHORS = {
     name: "Roman Feldman",
     url: "https://bookdu.co/about/roman-feldman",
   },
-  Bec: { name: "Bec" },
+  Bec: { name: "Bec", url: "https://bookdu.co/about/bec" },
 } as const;
 
 export function getAuthorSchema(author: string) {
