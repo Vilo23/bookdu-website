@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { AUTHORS, BlogPost, ContentBlock, formatDate } from "@/lib/blog";
+import Disclaimer from "@/components/blog/Disclaimer";
 
 // Render inline markdown: **bold**, [text](url)
 function renderInline(text: string) {
@@ -200,7 +201,9 @@ export default function BlogPostContent({ post }: { post: BlogPost }) {
       {/* ── Article Body ── */}
       <article className="py-24 md:py-32">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          {post.disclaimer && <Disclaimer kind={post.disclaimer} />}
           {post.content.map((block, i) => renderBlock(block, i))}
+          {post.disclaimer && <Disclaimer kind={post.disclaimer} />}
         </div>
       </article>
 
