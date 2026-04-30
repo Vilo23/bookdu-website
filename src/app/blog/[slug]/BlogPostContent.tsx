@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { BlogPost, ContentBlock, formatDate } from "@/lib/blog";
+import { AUTHORS, BlogPost, ContentBlock, formatDate } from "@/lib/blog";
 
 // Render inline markdown: **bold**, [text](url)
 function renderInline(text: string) {
@@ -168,14 +168,32 @@ export default function BlogPostContent({ post }: { post: BlogPost }) {
             {post.description}
           </motion.p>
 
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.4, delay: 0.15 }}
-            className="mt-6 font-mono text-xs text-text-muted"
-          >
-            By {post.author}
-          </motion.div>
+          {(() => {
+            const authorEntry = (
+              AUTHORS as Record<string, { name: string; url?: string }>
+            )[post.author];
+            const authorUrl = authorEntry?.url;
+            return (
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.4, delay: 0.15 }}
+                className="mt-6 font-mono text-xs text-text-muted"
+              >
+                By{" "}
+                {authorUrl ? (
+                  <Link
+                    href={authorUrl}
+                    className="underline underline-offset-2 hover:text-accent transition-colors"
+                  >
+                    {post.author}
+                  </Link>
+                ) : (
+                  post.author
+                )}
+              </motion.div>
+            );
+          })()}
         </div>
       </section>
 

@@ -68,6 +68,7 @@ export interface BlogPost {
   title: string;
   description: string;
   date: string; // YYYY-MM-DD
+  dateModified?: string; // YYYY-MM-DD
   author: string;
   pillar: Pillar;
   readTime: string;
@@ -75,6 +76,7 @@ export interface BlogPost {
   metaDescription: string;
   image?: string;
   noIndex?: boolean;
+  disclaimer?: "tax-au";
   content: ContentBlock[];
 }
 
