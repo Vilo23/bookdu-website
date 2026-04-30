@@ -93,6 +93,7 @@ const posts: BlogPost[] = [
     author: "Roman Feldman",
     pillar: "Career Admin",
     readTime: "5 min read",
+    disclaimer: "tax-au",
     metaTitle:
       "Model ABN Sole Trader Australia: What You Need to Know",
     metaDescription:
@@ -935,6 +936,7 @@ const posts: BlogPost[] = [
     author: "Bec",
     pillar: "Career Admin",
     readTime: "7 min read",
+    disclaimer: "tax-au",
     metaTitle:
       "Australian Model Tax Guide: ABN, GST, BAS & Deductions",
     metaDescription:
