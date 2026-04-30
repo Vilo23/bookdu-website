@@ -2,11 +2,13 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getAllPosts, getAuthorSchema, getPostBySlug } from "@/lib/blog";
-
-// TODO(seo): swap site-wide OG fallback for per-post images when content has them.
-const FALLBACK_OG_IMAGE = "https://bookdu.co/opengraph-image";
 import CTA from "@/components/sections/CTA";
 import BlogPostContent from "./BlogPostContent";
+
+// Per-post OG image route. Crawlable (no robots.txt block at this path).
+function postOgImage(slug: string) {
+  return `https://bookdu.co/blog/${slug}/opengraph-image`;
+}
 
 // Note: dangerouslySetInnerHTML below is used ONLY for JSON-LD structured data
 // with static, developer-controlled content from the blog data layer.
@@ -37,7 +39,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       type: "article",
       publishedTime: post.date,
       authors: [post.author],
-      images: [post.image ?? FALLBACK_OG_IMAGE],
+      images: [post.image ?? postOgImage(post.slug)],
     },
     twitter: {
       card: "summary_large_image",
@@ -53,18 +55,31 @@ export default async function BlogPostPage({ params }: Props) {
   if (!post) notFound();
 
   // JSON-LD — static, developer-controlled content only (safe)
+  const imageUrl = post.image ?? postOgImage(post.slug);
   const articleSchema = JSON.stringify({
     "@context": "https://schema.org",
-    "@type": "Article",
+    "@type": "BlogPosting",
     headline: post.title,
     description: post.description,
-    image: post.image ?? FALLBACK_OG_IMAGE,
+    image: {
+      "@type": "ImageObject",
+      url: imageUrl,
+      width: 1200,
+      height: 630,
+    },
     datePublished: post.date,
+    dateModified: post.dateModified ?? post.date,
     author: getAuthorSchema(post.author),
     publisher: {
       "@type": "Organization",
       name: "BOOKDU",
       url: "https://bookdu.co",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://bookdu.co/logo.png",
+        width: 1024,
+        height: 1024,
+      },
     },
     mainEntityOfPage: `https://bookdu.co/blog/${post.slug}`,
   }).replace(/</g, "\\u003c");
