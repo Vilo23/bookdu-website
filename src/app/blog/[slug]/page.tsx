@@ -120,10 +120,10 @@ export default async function BlogPostPage({ params }: Props) {
         dangerouslySetInnerHTML={{ __html: breadcrumbSchema }}
       />
 
-      {/* Breadcrumb */}
+      {/* Breadcrumb — pt-20 on mobile keeps it below the fixed Header (lg:hidden, ~56px tall) */}
       <nav
         aria-label="Breadcrumb"
-        className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-6"
+        className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 lg:pt-6"
       >
         <ol className="flex items-center gap-2 text-sm text-text-muted">
           <li>
