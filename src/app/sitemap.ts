@@ -2,7 +2,9 @@ import type { MetadataRoute } from 'next'
 import { getAllPosts } from '@/lib/blog'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const posts = getAllPosts()
+  const posts = getAllPosts().filter((post) => !post.noIndex)
+  const buildDate = new Date()
+  const latestPostDate = posts.length > 0 ? new Date(posts[0].date) : buildDate
 
   const blogEntries: MetadataRoute.Sitemap = posts.map((post) => ({
     url: `https://bookdu.co/blog/${post.slug}`,
@@ -14,43 +16,43 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
       url: 'https://bookdu.co',
-      lastModified: new Date('2026-04-05'),
+      lastModified: buildDate,
       changeFrequency: 'monthly',
       priority: 1,
     },
     {
       url: 'https://bookdu.co/features',
-      lastModified: new Date('2026-03-22'),
+      lastModified: buildDate,
       changeFrequency: 'monthly',
       priority: 0.9,
     },
     {
       url: 'https://bookdu.co/blog',
-      lastModified: new Date('2026-04-05'),
+      lastModified: latestPostDate,
       changeFrequency: 'weekly',
       priority: 0.8,
     },
     {
       url: 'https://bookdu.co/about',
-      lastModified: new Date('2026-03-22'),
+      lastModified: buildDate,
       changeFrequency: 'monthly',
       priority: 0.7,
     },
     {
       url: 'https://bookdu.co/about/roman-feldman',
-      lastModified: new Date('2026-04-28'),
+      lastModified: buildDate,
       changeFrequency: 'monthly',
       priority: 0.5,
     },
     {
       url: 'https://bookdu.co/about/bec',
-      lastModified: new Date('2026-04-30'),
+      lastModified: buildDate,
       changeFrequency: 'monthly',
       priority: 0.5,
     },
     {
       url: 'https://bookdu.co/screenshots',
-      lastModified: new Date('2026-03-22'),
+      lastModified: buildDate,
       changeFrequency: 'monthly',
       priority: 0.6,
     },

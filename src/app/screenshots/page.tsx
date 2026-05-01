@@ -11,6 +11,7 @@ const screenshots = [
     title: "Dashboard",
     description: "Money owed, upcoming jobs, and alerts — one screen",
     category: "Dashboard & Overview",
+    priority: true,
   },
   {
     src: "/screenshots/Home Screen Dash Calendar.png",
@@ -18,6 +19,7 @@ const screenshots = [
     title: "Dashboard & Calendar",
     description: "Your dashboard with calendar view — jobs and payments at a glance",
     category: "Dashboard & Overview",
+    priority: true,
   },
   {
     src: "/screenshots/Calendar Month View.png",
@@ -206,6 +208,7 @@ export default function ScreenshotsPage() {
                           fill
                           className="object-cover transition-transform duration-300 group-hover:scale-105"
                           sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
+                          priority={screenshot.priority}
                         />
                       </div>
                       <div className="mt-3">
