@@ -33,14 +33,11 @@ const profileSchema = {
   "@type": "ProfilePage",
   mainEntity: {
     "@type": "Person",
+    "@id": "https://bookdu.co/about/bec#person",
     name: "Bec",
     url: "https://bookdu.co/about/bec",
     jobTitle: "Researcher, BOOKDU",
-    worksFor: {
-      "@type": "Organization",
-      name: "BOOKDU",
-      url: "https://bookdu.co",
-    },
+    worksFor: { "@id": "https://bookdu.co/#organization" },
     description:
       "Researcher and mother of a working model. Writes for BOOKDU on the practical side of model career admin — payments, contracts, vouchers, tax basics.",
   },

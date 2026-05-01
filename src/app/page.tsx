@@ -37,6 +37,7 @@ export const metadata: Metadata = {
 const appSchema = {
   "@context": "https://schema.org",
   "@type": "MobileApplication",
+  "@id": "https://bookdu.co/#app",
   name: "BOOKDU",
   operatingSystem: "iOS",
   applicationCategory: "FinanceApplication",
@@ -44,6 +45,7 @@ const appSchema = {
   url: "https://bookdu.co",
   downloadUrl: "https://apps.apple.com/us/app/bookdu/id6757381396",
   installUrl: "https://apps.apple.com/us/app/bookdu/id6757381396",
+  publisher: { "@id": "https://bookdu.co/#organization" },
   offers: {
     "@type": "Offer",
     price: "0",

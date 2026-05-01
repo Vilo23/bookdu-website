@@ -73,9 +73,15 @@ const jsonLd = JSON.stringify({
   "@graph": [
     {
       "@type": "Organization",
+      "@id": "https://bookdu.co/#organization",
       name: "BOOKDU",
       url: "https://bookdu.co",
-      logo: "https://bookdu.co/logo.png",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://bookdu.co/logo.png",
+        width: 1024,
+        height: 1024,
+      },
       description: "Finance tracking app for models and talent who work through agencies.",
       sameAs: [
         "https://apps.apple.com/us/app/bookdu/id6757381396",
@@ -83,9 +89,11 @@ const jsonLd = JSON.stringify({
     },
     {
       "@type": "WebSite",
+      "@id": "https://bookdu.co/#website",
       name: "BOOKDU",
       url: "https://bookdu.co",
       description: "Track agency payments, guard modeling contracts, manage casting schedules, and sort freelance taxes.",
+      publisher: { "@id": "https://bookdu.co/#organization" },
     },
   ],
 }).replace(/</g, "\\u003c");

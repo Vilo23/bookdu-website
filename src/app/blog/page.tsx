@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
-import { getAllPosts } from "@/lib/blog";
+import { getAllPosts, getAuthorSchema } from "@/lib/blog";
 import CTA from "@/components/sections/CTA";
 import BlogListContent from "./BlogListContent";
 
@@ -52,13 +52,40 @@ const breadcrumbJson = JSON.stringify({
 }).replace(/</g, "\\u003c");
 
 export default function BlogPage() {
-  const posts = getAllPosts();
+  const posts = getAllPosts().filter((post) => !post.noIndex);
+
+  // Blog schema — listing of indexable posts. Static, developer-controlled.
+  const blogJson = JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "@id": "https://bookdu.co/blog#blog",
+    url: "https://bookdu.co/blog",
+    name: "BOOKDU Blog",
+    description:
+      "Practical advice on model payments, agency contracts, tax, expenses, and the business side of modeling.",
+    publisher: { "@id": "https://bookdu.co/#organization" },
+    blogPost: posts.map((post) => ({
+      "@type": "BlogPosting",
+      headline: post.title,
+      description: post.description,
+      url: `https://bookdu.co/blog/${post.slug}`,
+      datePublished: post.date,
+      dateModified: post.dateModified ?? post.date,
+      author: getAuthorSchema(post.author),
+      image: post.image ?? `https://bookdu.co/blog/${post.slug}/opengraph-image`,
+      mainEntityOfPage: `https://bookdu.co/blog/${post.slug}`,
+    })),
+  }).replace(/</g, "\\u003c");
 
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: breadcrumbJson }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: blogJson }}
       />
 
       {/* Breadcrumb Navigation */}
