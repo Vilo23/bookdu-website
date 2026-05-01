@@ -70,17 +70,7 @@ export default async function BlogPostPage({ params }: Props) {
     datePublished: post.date,
     dateModified: post.dateModified ?? post.date,
     author: getAuthorSchema(post.author),
-    publisher: {
-      "@type": "Organization",
-      name: "BOOKDU",
-      url: "https://bookdu.co",
-      logo: {
-        "@type": "ImageObject",
-        url: "https://bookdu.co/logo.png",
-        width: 1024,
-        height: 1024,
-      },
-    },
+    publisher: { "@id": "https://bookdu.co/#organization" },
     mainEntityOfPage: `https://bookdu.co/blog/${post.slug}`,
   }).replace(/</g, "\\u003c");
 

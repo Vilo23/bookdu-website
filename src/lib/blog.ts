@@ -53,14 +53,21 @@ export const AUTHORS = {
   Bec: { name: "Bec", url: "https://bookdu.co/about/bec" },
 } as const;
 
+// When the author has a profile page, return a Person node with @id so the
+// BlogPosting `author` references the canonical Person defined on /about/<slug>.
+// Otherwise, fall back to inline {@type: Person, name}.
 export function getAuthorSchema(author: string) {
   const entry = (AUTHORS as Record<string, { name: string; url?: string }>)[
     author
   ];
   if (!entry) return { "@type": "Person" as const, name: author };
-  return entry.url
-    ? { "@type": "Person" as const, name: entry.name, url: entry.url }
-    : { "@type": "Person" as const, name: entry.name };
+  if (!entry.url) return { "@type": "Person" as const, name: entry.name };
+  return {
+    "@type": "Person" as const,
+    "@id": `${entry.url}#person`,
+    name: entry.name,
+    url: entry.url,
+  };
 }
 
 export interface BlogPost {

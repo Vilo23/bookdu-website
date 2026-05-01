@@ -30,14 +30,11 @@ export const metadata: Metadata = {
 const personSchema = {
   "@context": "https://schema.org",
   "@type": "Person",
+  "@id": "https://bookdu.co/about/roman-feldman#person",
   name: "Roman Feldman",
   url: "https://bookdu.co/about/roman-feldman",
   jobTitle: "Founder, BOOKDU",
-  worksFor: {
-    "@type": "Organization",
-    name: "BOOKDU",
-    url: "https://bookdu.co",
-  },
+  worksFor: { "@id": "https://bookdu.co/#organization" },
   description:
     "Father of a working model. Built BOOKDU after watching his daughter chase payments across three countries.",
 };
