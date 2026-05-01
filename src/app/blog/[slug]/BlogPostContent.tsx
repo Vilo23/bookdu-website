@@ -132,7 +132,7 @@ export default function BlogPostContent({ post }: { post: BlogPost }) {
   return (
     <>
       {/* ── Article Header ── */}
-      <section className="pt-24 md:pt-32 pb-16 md:pb-20 border-b border-border">
+      <section className="pt-8 md:pt-32 pb-16 md:pb-20 border-b border-border">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0 }}
