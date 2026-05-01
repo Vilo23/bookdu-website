@@ -27,16 +27,20 @@ export const metadata: Metadata = {
   },
 };
 
-const personSchema = {
+// ProfilePage wraps Person per Google's author/profile guidance — mirrors /about/bec.
+const profileSchema = {
   "@context": "https://schema.org",
-  "@type": "Person",
-  "@id": "https://bookdu.co/about/roman-feldman#person",
-  name: "Roman Feldman",
-  url: "https://bookdu.co/about/roman-feldman",
-  jobTitle: "Founder, BOOKDU",
-  worksFor: { "@id": "https://bookdu.co/#organization" },
-  description:
-    "Father of a working model. Built BOOKDU after watching his daughter chase payments across three countries.",
+  "@type": "ProfilePage",
+  mainEntity: {
+    "@type": "Person",
+    "@id": "https://bookdu.co/about/roman-feldman#person",
+    name: "Roman Feldman",
+    url: "https://bookdu.co/about/roman-feldman",
+    jobTitle: "Founder, BOOKDU",
+    worksFor: { "@id": "https://bookdu.co/#organization" },
+    description:
+      "Father of a working model. Built BOOKDU after watching his daughter chase payments across three countries.",
+  },
 };
 
 const breadcrumbSchema = {
@@ -60,7 +64,7 @@ export default function RomanFeldmanPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(personSchema).replace(/</g, "\\u003c"),
+          __html: JSON.stringify(profileSchema).replace(/</g, "\\u003c"),
         }}
       />
       <script

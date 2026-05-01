@@ -300,7 +300,7 @@ const posts: BlogPost[] = [
       },
       {
         type: "paragraph",
-        text: "Managing the business side of a modelling career is genuinely not that hard once you understand the structure. The ABN is the starting point. What comes after it — the tax, the deductions, the super — is manageable when you have got the basics in order.",
+        text: "Managing the business side of a modelling career is genuinely not that hard once you understand the structure. The ABN is the starting point. What comes after it — [the tax, the deductions, the super](/blog/australian-model-tax-guide) — is manageable when you have got the basics in order.",
       },
       {
         type: "paragraph",
@@ -362,7 +362,7 @@ const posts: BlogPost[] = [
       },
       {
         type: "paragraph",
-        text: "That's the number you'll see cited most often, and for straightforward commercial work with a local agency in a single market, it's usually accurate. The 20% covers what the agency does: sourcing work, negotiating rates, managing client relationships, chasing payments, and handling the admin that would otherwise fall on you.",
+        text: "That's the number you'll see cited most often, and for straightforward commercial work with a local agency in a single market, it's usually accurate. The 20% covers what the agency does: sourcing work, negotiating rates, managing client relationships, [chasing payments](/blog/how-long-to-get-paid-as-a-model), and handling the admin that would otherwise fall on you.",
       },
       {
         type: "paragraph",
@@ -776,7 +776,7 @@ const posts: BlogPost[] = [
           "**You do the job.** A voucher is signed on set confirming the work, the rate, and the usage terms.",
           "**The agency invoices the client.** This might happen the same week, or it might take a few days depending on the agency's billing cycle.",
           "**The client processes the invoice.** Most clients operate on net 30 or net 60 payment terms — meaning they pay the agency 30 or 60 days after receiving the invoice. In fashion, net 90 is not unusual.",
-          "**The agency receives the payment, deducts commission, and pays you.** Some agencies pay within days of receiving the client's payment. Others batch payments weekly or monthly.",
+          "**The agency receives the payment, [deducts commission](/blog/how-much-commission-do-modeling-agencies-take), and pays you.** Some agencies pay within days of receiving the client's payment. Others batch payments weekly or monthly.",
         ],
       },
       {
@@ -960,7 +960,7 @@ const posts: BlogPost[] = [
       },
       {
         type: "paragraph",
-        text: "This is not a failure of discipline. It is an information gap. Nobody sits you down when you start modelling and explains ABN, GST, BAS, super, or what you can claim. You figure it out the hard way, usually the week before your tax return is due.",
+        text: "This is not a failure of discipline. It is an information gap. Nobody sits you down when you start modelling and explains [ABN](/blog/model-abn-sole-trader-australia), GST, BAS, super, or what you can claim. You figure it out the hard way, usually the week before your tax return is due.",
       },
       {
         type: "paragraph",
@@ -1422,7 +1422,7 @@ const posts: BlogPost[] = [
           "You do the job.",
           "The agency invoices the client.",
           "The client pays the agency (often net 30 or net 60 from invoice date).",
-          "The agency takes their commission and pays you.",
+          "The agency takes [their commission](/blog/how-much-commission-do-modeling-agencies-take) and pays you.",
         ],
       },
       {

@@ -59,6 +59,8 @@ export default async function BlogPostPage({ params }: Props) {
   const articleSchema = JSON.stringify({
     "@context": "https://schema.org",
     "@type": "BlogPosting",
+    "@id": `https://bookdu.co/blog/${post.slug}#article`,
+    isPartOf: { "@id": "https://bookdu.co/blog#blog" },
     headline: post.title,
     description: post.description,
     image: {
