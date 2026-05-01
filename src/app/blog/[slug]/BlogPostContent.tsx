@@ -7,7 +7,6 @@ import Disclaimer from "@/components/blog/Disclaimer";
 
 // Render inline markdown: **bold**, [text](url)
 function renderInline(text: string) {
-  // Split on **bold** and [link](url) patterns, preserving delimiters
   const parts = text.split(/(\*\*[^*]+\*\*|\[[^\]]+\]\([^)]+\))/g);
   return parts.map((part, i) => {
     const boldMatch = part.match(/^\*\*(.+)\*\*$/);
@@ -16,7 +15,13 @@ function renderInline(text: string) {
     }
     const linkMatch = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
     if (linkMatch) {
-      return <a key={i} href={linkMatch[2]} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 hover:text-accent transition-colors">{linkMatch[1]}</a>;
+      const [, label, href] = linkMatch;
+      const isInternal = href.startsWith("/") || href.startsWith("https://bookdu.co");
+      const className = "underline underline-offset-2 hover:text-accent transition-colors";
+      if (isInternal) {
+        return <Link key={i} href={href} className={className}>{label}</Link>;
+      }
+      return <a key={i} href={href} target="_blank" rel="noopener noreferrer" className={className}>{label}</a>;
     }
     return part;
   });
@@ -151,14 +156,10 @@ export default function BlogPostContent({ post }: { post: BlogPost }) {
             </span>
           </motion.div>
 
-          <motion.h1
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.05 }}
-            className="font-display text-4xl md:text-5xl lg:text-6xl uppercase tracking-tight text-text"
-          >
+          {/* H1 is the LCP element — render static. Animate description + byline below for polish. */}
+          <h1 className="font-display text-4xl md:text-5xl lg:text-6xl uppercase tracking-tight text-text">
             {post.title}
-          </motion.h1>
+          </h1>
 
           <motion.p
             initial={{ opacity: 0, y: 16 }}
