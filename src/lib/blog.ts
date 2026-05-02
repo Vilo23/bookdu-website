@@ -323,6 +323,7 @@ const posts: BlogPost[] = [
     description:
       "20% is the standard. But that's not the whole story. Here's what actually happens to your money between a booking and your bank account.",
     date: "2026-04-27",
+    dateModified: "2026-05-02",
     author: "Roman Feldman",
     pillar: "Your Money",
     readTime: "6 min read",
@@ -391,7 +392,7 @@ const posts: BlogPost[] = [
       },
       {
         type: "paragraph",
-        text: "New York's Fashion Workers Act, which came into effect in June 2025, put a legal cap on this at 20% for models working in New York. No agency can charge more. No signing fees. No deposits. That's the law.",
+        text: "New York's [Fashion Workers Act](https://www.nysenate.gov/legislation/bills/2023/S9832), which came into effect in June 2025, put a legal cap on this at 20% for models working in New York. No agency can charge more. No signing fees. No deposits. That's the law.",
       },
       {
         type: "paragraph",
@@ -571,9 +572,10 @@ const posts: BlogPost[] = [
     description:
       "A modeling voucher is the document that confirms your work, your rate, and what the client can do with your images. Here's what to check before you sign one.",
     date: "2026-04-26",
+    dateModified: "2026-05-02",
     author: "Bec",
     pillar: "Your Money",
-    readTime: "4 min read",
+    readTime: "6 min read",
     metaTitle:
       "What Is a Modeling Voucher? Why It Matters for Payment",
     metaDescription:
@@ -665,7 +667,7 @@ const posts: BlogPost[] = [
       },
       {
         type: "paragraph",
-        text: "**For US-based readers:** New York's Fashion Workers Act (effective June 2025) requires separate written consent for any AI or digital-replica use of your image. Pre-existing power-of-attorney clauses no longer cover it. If your voucher includes broad usage language and you work in New York, raise it with your agent before signing.",
+        text: "**For US-based readers:** New York's [Fashion Workers Act](https://www.nysenate.gov/legislation/bills/2023/S9832) (effective June 2025) requires separate written consent for any AI or digital-replica use of your image. Pre-existing power-of-attorney clauses no longer cover it. If your voucher includes broad usage language and you work in New York, raise it with your agent before signing.",
       },
       {
         type: "heading",
@@ -724,6 +726,60 @@ const posts: BlogPost[] = [
       {
         type: "paragraph",
         text: "This is one of the reasons we built job logging into [BOOKDU](/features). Every job you log — agency, client, date, rate — becomes a payment to track. Take a quick photo of the voucher too — the signed document carries legal weight if there is ever a dispute. Log it once in BOOKDU, and the app tracks the payment until it lands. If it does not land, you will know.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "What to Do When Something Goes Wrong",
+      },
+      {
+        type: "paragraph",
+        text: "Most jobs run smoothly. The voucher gets signed, the agency invoices the client, the payment lands a few months later, everyone moves on. But occasionally something does not match — and when it does, the voucher is your strongest piece of evidence. Here is how to handle the common failure modes.",
+      },
+      {
+        type: "heading",
+        level: "h3",
+        text: "The rate on the voucher does not match what was agreed",
+      },
+      {
+        type: "paragraph",
+        text: "Pause before signing. This happens more than people expect, especially on fast-paced shoots where the production assistant fills the form in late and pulls the rate from a different version of the booking. Call your agent from set if you can, or step aside and send a quick text confirming the rate. Do not sign a number you have not agreed to. If the client side insists on signing-then-correcting later, that is the wrong order — the signed document is the one that matters, and corrections after the fact are a negotiation with no leverage.",
+      },
+      {
+        type: "heading",
+        level: "h3",
+        text: "The usage terms are broader than what your agency discussed",
+      },
+      {
+        type: "paragraph",
+        text: "Local versus global. One year versus perpetuity. Single-medium versus all-media. These are not small differences. If the voucher widens the usage from what you originally agreed, that is a re-negotiation, and the rate should reflect it. Same approach as above: do not sign first and discuss later. A 60-second pause to call your agent is far cheaper than a worldwide buyout you signed away by accident.",
+      },
+      {
+        type: "heading",
+        level: "h3",
+        text: "The client did not provide a voucher at all",
+      },
+      {
+        type: "paragraph",
+        text: "Some bookings — small e-commerce shoots, social-media content jobs, last-minute replacements — never produce a formal voucher. The work still happened. Create your own record before you leave set: date, hours, rate, client, usage as discussed. Send a confirmation email to your agent on the way home: \"Confirming today's shoot at [client] — [date], [rate], [usage as discussed].\" That email is your voucher. If a payment dispute appears two months later, that timestamped email is what you point to.",
+      },
+      {
+        type: "heading",
+        level: "h3",
+        text: "The client is using the images outside the agreed terms",
+      },
+      {
+        type: "paragraph",
+        text: "You see your face on a billboard you never approved. Or your editorial shot is now an Instagram ad. This is where the voucher you signed becomes critical evidence. The first step is to flag it to your agency in writing — they manage the relationship with the client and have the leverage to enforce the original terms. If your agency is unresponsive, the next step varies by market. In New York, the Fashion Workers Act provides specific recourse for unauthorised image use, including for AI and digital-replica reproductions. In the UK and Australia, a letter from a media-rights solicitor often resolves it without needing a formal claim. Whatever the route, the voucher with its agreed usage terms is the document that anchors the case.",
+      },
+      {
+        type: "heading",
+        level: "h3",
+        text: "The voucher itself has gone missing on the agency side",
+      },
+      {
+        type: "paragraph",
+        text: "This sounds far-fetched, but it happens — paperwork moves through several hands between set, agency, and client accounts, and pieces occasionally go missing in the chain. If you are following up on a payment and the original voucher can not be located, your photo of the signed document on the day is what closes the gap. This is why we recommend snapping a photo of every voucher before you hand it back. It takes three seconds. It saves a week of back-and-forth months later.",
       },
       {
         type: "heading",
@@ -797,9 +853,10 @@ const posts: BlogPost[] = [
     description:
       "Models typically wait 60-120 days to get paid after a job. Here's why, what's normal, and how to stay on top of every payment across every agency.",
     date: "2026-04-13",
+    dateModified: "2026-05-02",
     author: "Roman Feldman",
     pillar: "Your Money",
-    readTime: "4 min read",
+    readTime: "6 min read",
     metaTitle:
       "How Long to Get Paid as a Model? The Real Timeline",
     metaDescription:
@@ -966,6 +1023,64 @@ const posts: BlogPost[] = [
       {
         type: "paragraph",
         text: "This is exactly what we built [BOOKDU](/features) to do. Every job you log becomes a payment to track. BOOKDU marks checkpoints at 35 days and 56 days so you can see where each payment sits in the cycle — not because anything is wrong, but so you always know the status. Every Monday morning, you get a summary of everything you are waiting on — across every agency.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "What to Do When a Payment Goes Past 120 Days",
+      },
+      {
+        type: "paragraph",
+        text: "A payment past 120 days with no clear explanation is the line where attention turns into action. The first 90 days, you wait. Day 90, you send a polite check-in. Past 120, the conversation needs to shift. Here is a calm, professional escalation path that protects the relationship and the payment.",
+      },
+      {
+        type: "heading",
+        level: "h3",
+        text: "Day 120: a direct conversation with your agent",
+      },
+      {
+        type: "paragraph",
+        text: "Not an email. Not a text. A call or in person, depending on the agency. Walk through the specific job: the date, the client, the amount. Ask three questions. \"Has the client paid the agency yet?\" \"If yes, when does the next payment cycle include this job?\" \"If no, what is the agency doing to follow up?\" A good agent will have answers ready or commit to having them within a week. The information you are after is whether the delay sits with the client or the agency — that determines what comes next.",
+      },
+      {
+        type: "heading",
+        level: "h3",
+        text: "Day 150: a written summary",
+      },
+      {
+        type: "paragraph",
+        text: "If 30 days after that direct conversation nothing has moved, write a single email summarising what was discussed, what was promised, and what has happened since. Keep it factual. No accusations, no emotional language. Something like: \"Following up on our [date] conversation about the [client] booking from [date] — you mentioned the client typically pays on net 90 and that you would chase. I have not seen any further update or payment. Could you let me know where things sit?\" Send it to your agent and CC the agency's accounts contact. The CC is the meaningful step — it widens the audience and creates a paper trail.",
+      },
+      {
+        type: "heading",
+        level: "h3",
+        text: "Day 180+: the harder conversations",
+      },
+      {
+        type: "paragraph",
+        text: "Past six months, the dynamic changes. If the agency cannot tell you whether the client has paid, that is a different problem from a slow client. Across Australia, the UK, and the US, agencies are expected to pass on your earnings once they receive the client payment — the specific legal framework varies by market (trust account requirements in AU and parts of the US, Conduct Regulations in the UK, the Fashion Workers Act in New York), but the principle is consistent. A payment that has been sitting with the agency for weeks after client receipt is worth a conversation. At this point, models we have spoken to have taken one of three paths.",
+      },
+      {
+        type: "list",
+        style: "bullet",
+        items: [
+          "**A formal demand letter through a media-rights solicitor.** Costs vary by market — typically a few hundred to a couple of thousand in your local currency depending on complexity. Often resolves within two weeks of receipt. Worth the cost when the unpaid amount is meaningful.",
+          "**Escalation through industry advocacy bodies.** The [Model Alliance](https://www.modelalliance.org/) in the US is the most prominent and has driven landmark legislation including the Fashion Workers Act. UK and Australian markets have smaller equivalents but agency reputation pressure works similarly across markets.",
+          "**Quiet exit at contract end.** Some models simply leave the agency when their representation contract expires and avoid the public confrontation. Not every fight is worth having, especially if the unpaid amount is small relative to your annual income.",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "None of these are wrong. The right move depends on the size of the unpaid amount, your relationship with the agent (versus the agency owners), and how much energy you have for the process. What we tell people: do not let it go silent. Whatever path you choose, choose it deliberately and act on it.",
+      },
+      {
+        type: "heading",
+        level: "h3",
+        text: "The discipline that prevents most of this",
+      },
+      {
+        type: "paragraph",
+        text: "Most payment problems compound because nobody noticed them early. A booking from January gets forgotten by May. The model assumes it landed quietly; the agency assumes it was followed up. Six months pass. The single best protection is the Monday morning habit — two minutes a week, every payment in one place, every status visible. The models who never end up here are the ones who never lost track in the first place.",
       },
       {
         type: "heading",
