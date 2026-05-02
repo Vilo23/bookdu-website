@@ -5,66 +5,29 @@ import { AppStoreBadge } from "@/components/AppStoreBadge";
 import FeaturesContent from "./FeaturesContent";
 
 export const metadata: Metadata = {
-  title: "Payment Tracking, Contract Management & Tax Tools for Models",
-  description: "Track overdue agency payments, guard modeling contracts, organise castings, estimate taxes, and export expenses. One privacy-first iOS app.",
+  title: "Fashion Model Payment, Expense & Tax Tracker | BOOKDU",
+  description: "Track payments across multiple agencies, log tax-ready expenses, store contracts, and estimate tax. Built for working fashion models. Free on iOS.",
   keywords: [
-    "model payment tracking features",
+    "fashion model payment tracker",
+    "model payment tracker",
+    "fashion model expenses",
+    "fashion model tax tracker",
+    "modeling agency payment app",
     "modeling contract storage app",
     "casting schedule organiser",
     "freelance model tax calculator",
-    "expense tracking for models",
-    "agency payment reminder app",
   ],
   alternates: { canonical: "/features" },
   openGraph: {
-    title: "BOOKDU Features - Payment Tracking, Contracts & Tax for Models",
-    description: "Track overdue payments, guard contracts, organise castings, estimate taxes. Privacy-first and free on iOS.",
+    title: "BOOKDU — Fashion Model Payment, Expense & Tax Tracker",
+    description: "Track payments across multiple agencies, log tax-ready expenses, store contracts, and estimate tax. Built for working fashion models. Free on iOS.",
     url: "https://bookdu.co/features",
   },
   twitter: {
     card: "summary_large_image",
-    title: "BOOKDU Features - Payment Tracking, Contracts & Tax for Models",
-    description: "Track overdue payments, guard contracts, organise castings, estimate taxes. Privacy-first and free on iOS.",
+    title: "BOOKDU — Fashion Model Payment, Expense & Tax Tracker",
+    description: "Track payments across multiple agencies, log tax-ready expenses, store contracts, and estimate tax. Built for working fashion models. Free on iOS.",
   },
-};
-
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: [
-    {
-      "@type": "Question",
-      name: "How do models track payments from agencies?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "BOOKDU lets you log each job with the agency, client, and rate. When the job is done, track whether payment has arrived and get reminded when it's overdue. No invoicing needed — just mark it paid when the money lands.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Is BOOKDU free to download?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Yes, BOOKDU is completely free on the iOS App Store. There are no hidden fees, subscriptions, or in-app purchases.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Does BOOKDU store my data privately?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "BOOKDU is 100% offline and private. Your data stays on your device — no accounts, no cloud storage, no tracking. Nothing leaves your phone.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Can BOOKDU help with taxes for freelance models?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Yes. BOOKDU includes multi-country tax estimation for the US, UK, Australia, New Zealand, France, and Italy. Track expenses, snap receipts, and export everything to CSV for your accountant.",
-      },
-    },
-  ],
 };
 
 const breadcrumbSchema = {
@@ -79,12 +42,6 @@ const breadcrumbSchema = {
 export default function FeaturesPage() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(faqSchema).replace(/</g, "\\u003c"),
-        }}
-      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -105,10 +62,10 @@ export default function FeaturesPage() {
       <section className="py-16 md:py-24 border-b border-border">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-title mb-4">
-            One app. Everything protected.
+            Everything a Fashion Model Needs to Track Payments, Expenses and Tax
           </h1>
           <p className="text-lg text-text-muted max-w-2xl mx-auto mb-8">
-            Payment tracking, contract management and scheduling for models — all on your phone.
+            One app. Everything protected. Payment tracking, contract management, and scheduling for fashion models — all on your phone.
           </p>
           <AppStoreBadge size="large" track="features-hero" />
         </div>
