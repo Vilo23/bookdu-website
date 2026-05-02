@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
 import { NAV_LINKS } from "@/lib/constants";
+import { AppStoreBadge } from "@/components/AppStoreBadge";
 
 export default function Hero() {
   const pathname = usePathname();
@@ -94,16 +95,8 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Right: download button */}
-        <a
-          href="https://apps.apple.com/us/app/bookdu/id6757381396"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-4 bg-text text-bg-deep font-[family-name:var(--font-archivo)] uppercase px-[clamp(1.5rem,2vw,2.5rem)] py-[clamp(0.75rem,1vw,1.25rem)] hover:scale-[0.98] transition-transform duration-150 active:scale-[0.97]"
-        >
-          Download BOOKDU
-          <span aria-hidden="true">&#8599;</span>
-        </a>
+        {/* Right: official App Store badge */}
+        <AppStoreBadge size="large" track="home-hero" />
       </motion.div>
     </section>
   );

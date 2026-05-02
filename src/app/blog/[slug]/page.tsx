@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { getAllPosts, getAuthorSchema, getPostBySlug } from "@/lib/blog";
 import CTA from "@/components/sections/CTA";
 import BlogPostContent from "./BlogPostContent";
+import StickyAppStoreBar from "@/components/blog/StickyAppStoreBar";
 
 // Per-post OG image route. Crawlable (no robots.txt block at this path).
 function postOgImage(slug: string) {
@@ -141,6 +142,7 @@ export default async function BlogPostPage({ params }: Props) {
 
       <BlogPostContent post={post} />
       <CTA />
+      <StickyAppStoreBar />
     </>
   );
 }

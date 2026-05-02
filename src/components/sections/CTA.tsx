@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { AppStoreBadge } from "@/components/AppStoreBadge";
 
 export default function CTA() {
   return (
@@ -24,19 +25,15 @@ export default function CTA() {
           Download BOOKDU. Log your first job. Let the app take it from there.
         </p>
 
-        <motion.a
-          href="https://apps.apple.com/us/app/bookdu/id6757381396"
-          target="_blank"
-          rel="noopener noreferrer"
+        <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.3 }}
-          className="mt-12 inline-flex items-center gap-4 bg-text text-bg-deep font-[family-name:var(--font-archivo)] uppercase px-[clamp(1.5rem,2vw,2.5rem)] py-[clamp(0.75rem,1vw,1.25rem)] hover:scale-[0.98] transition-transform duration-150 active:scale-[0.97]"
+          className="mt-12"
         >
-          Download BOOKDU
-          <span aria-hidden="true">&#8599;</span>
-        </motion.a>
+          <AppStoreBadge size="large" track="home-bottom" />
+        </motion.div>
       </motion.div>
     </section>
   );
