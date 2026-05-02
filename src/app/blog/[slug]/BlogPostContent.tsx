@@ -4,6 +4,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { AUTHORS, BlogPost, ContentBlock, formatDate } from "@/lib/blog";
 import Disclaimer from "@/components/blog/Disclaimer";
+import InlineAppStoreCTA from "@/components/blog/InlineAppStoreCTA";
 
 // Render inline markdown: **bold**, [text](url)
 function renderInline(text: string) {
@@ -205,6 +206,7 @@ export default function BlogPostContent({ post }: { post: BlogPost }) {
           {post.disclaimer && <Disclaimer kind={post.disclaimer} />}
           {post.content.map((block, i) => renderBlock(block, i))}
           {post.disclaimer && <Disclaimer kind={post.disclaimer} />}
+          <InlineAppStoreCTA />
         </div>
       </article>
 

@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import CTA from "@/components/sections/CTA";
+import { AppStoreBadge } from "@/components/AppStoreBadge";
 import FeaturesContent from "./FeaturesContent";
 
 export const metadata: Metadata = {
@@ -106,9 +107,10 @@ export default function FeaturesPage() {
           <h1 className="text-4xl md:text-5xl font-bold text-title mb-4">
             One app. Everything protected.
           </h1>
-          <p className="text-lg text-text-muted max-w-2xl mx-auto">
+          <p className="text-lg text-text-muted max-w-2xl mx-auto mb-8">
             Payment tracking, contract management and scheduling for models — all on your phone.
           </p>
+          <AppStoreBadge size="large" track="features-hero" />
         </div>
       </section>
 
