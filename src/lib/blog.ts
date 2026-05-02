@@ -779,7 +779,7 @@ const posts: BlogPost[] = [
       },
       {
         type: "paragraph",
-        text: "This sounds far-fetched, but it happens — particularly with smaller agencies that store paperwork inconsistently. If you are chasing a payment and the agency cannot produce the original voucher, your photo of the signed document on the day is what closes the gap. This is why we recommend snapping a photo of every voucher before you hand it back. It takes three seconds. It saves a week of back-and-forth months later.",
+        text: "This sounds far-fetched, but it happens — paperwork moves through several hands between set, agency, and client accounts, and pieces occasionally go missing in the chain. If you are following up on a payment and the original voucher can not be located, your photo of the signed document on the day is what closes the gap. This is why we recommend snapping a photo of every voucher before you hand it back. It takes three seconds. It saves a week of back-and-forth months later.",
       },
       {
         type: "heading",
@@ -1058,13 +1058,13 @@ const posts: BlogPost[] = [
       },
       {
         type: "paragraph",
-        text: "Past six months, the dynamic changes. If the agency cannot tell you whether the client has paid, that is a different problem from a slow client. In Australia, the UK, and the US, your agency has a fiduciary obligation to remit your earnings once received from the client. A payment that has been sitting with the agency for 60+ days after client receipt is a real concern. At this point, models we have spoken to have taken one of three paths.",
+        text: "Past six months, the dynamic changes. If the agency cannot tell you whether the client has paid, that is a different problem from a slow client. Across Australia, the UK, and the US, agencies are expected to pass on your earnings once they receive the client payment — the specific legal framework varies by market (trust account requirements in AU and parts of the US, Conduct Regulations in the UK, the Fashion Workers Act in New York), but the principle is consistent. A payment that has been sitting with the agency for weeks after client receipt is worth a conversation. At this point, models we have spoken to have taken one of three paths.",
       },
       {
         type: "list",
         style: "bullet",
         items: [
-          "**A formal demand letter through a media-rights solicitor.** Typically £400-1,500 depending on market. Often resolves within two weeks of receipt. Worth the cost when the unpaid amount is meaningful.",
+          "**A formal demand letter through a media-rights solicitor.** Costs vary by market — typically a few hundred to a couple of thousand in your local currency depending on complexity. Often resolves within two weeks of receipt. Worth the cost when the unpaid amount is meaningful.",
           "**Escalation through industry advocacy bodies.** The [Model Alliance](https://www.modelalliance.org/) in the US is the most prominent and has driven landmark legislation including the Fashion Workers Act. UK and Australian markets have smaller equivalents but agency reputation pressure works similarly across markets.",
           "**Quiet exit at contract end.** Some models simply leave the agency when their representation contract expires and avoid the public confrontation. Not every fight is worth having, especially if the unpaid amount is small relative to your annual income.",
         ],
