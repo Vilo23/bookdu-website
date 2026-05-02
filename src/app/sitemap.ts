@@ -1,8 +1,10 @@
 import type { MetadataRoute } from 'next'
 import { getAllPosts } from '@/lib/blog'
+import { getAllTerms } from '@/lib/glossary'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const posts = getAllPosts().filter((post) => !post.noIndex)
+  const terms = getAllTerms()
   const buildDate = new Date()
   const latestPostDate = posts.length > 0 ? new Date(posts[0].date) : buildDate
 
@@ -11,6 +13,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: new Date(post.date),
     changeFrequency: 'monthly' as const,
     priority: 0.7,
+  }))
+
+  const glossaryEntries: MetadataRoute.Sitemap = terms.map((t) => ({
+    url: `https://bookdu.co/glossary/${t.slug}`,
+    lastModified: new Date(t.lastUpdated),
+    changeFrequency: 'monthly' as const,
+    priority: 0.6,
   }))
 
   return [
@@ -62,6 +71,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.6,
     },
+    {
+      url: 'https://bookdu.co/glossary',
+      lastModified: buildDate,
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    ...glossaryEntries,
     ...blogEntries,
   ]
 }
