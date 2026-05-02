@@ -90,6 +90,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     ...glossaryEntries,
+    {
+      url: 'https://bookdu.co/guides/model-tax/australia',
+      lastModified: buildDate,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
     ...blogEntries,
   ]
 }
