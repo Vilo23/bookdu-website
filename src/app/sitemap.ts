@@ -42,6 +42,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
+      url: 'https://bookdu.co/expense-tracker',
+      lastModified: buildDate,
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
       url: 'https://bookdu.co/blog',
       lastModified: latestPostDate,
       changeFrequency: 'weekly',
