@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import { EXTERNAL_LINKS } from "@/lib/constants";
 
@@ -21,11 +23,20 @@ export function AppStoreBadge({ size = "medium", track, className = "" }: Props)
     ? `${EXTERNAL_LINKS.appStore}?cta=${encodeURIComponent(track)}`
     : EXTERNAL_LINKS.appStore;
 
+  const onClick = () => {
+    if (!track) return;
+    window.posthog?.capture?.("app_store_click", {
+      cta: track,
+      href,
+    });
+  };
+
   return (
     <a
       href={href}
       target="_blank"
       rel="noopener noreferrer"
+      onClick={onClick}
       aria-label="Download BOOKDU on the App Store"
       data-cta={track}
       className={`inline-block transition-opacity duration-150 hover:opacity-85 active:opacity-70 ${className}`}
