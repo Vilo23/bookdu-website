@@ -869,7 +869,7 @@ const posts: BlogPost[] = [
       },
       {
         type: "paragraph",
-        text: "Most models wait **60 to 120 days** to get paid after a job. That is the standard timeline across Australia, the UK, the US, and the EU — not because anything is wrong, but because of how the payment chain works. The client pays the agency on net 30, 60, or 90 terms. The agency batches its model payments weekly or monthly. By the time the money reaches you, two to four months have passed since you finished the shoot.",
+        text: "Most models wait **60 to 120 days** to get paid after a job. That is the standard timeline across Australia, the UK, the US, and the EU — not because anything is wrong, but because of how the payment chain works. The client pays the agency on net 30, 60, or 90 terms. The agency batches its model payments weekly or monthly. By the time the money reaches you, two to four months have passed since you finished the shoot. The models who handle this well are not the ones who chase hardest — they are the ones who use a [fashion model payment tracker](/payment-tracker) so they always know where things sit.",
       },
       {
         type: "paragraph",
@@ -1121,6 +1121,7 @@ const posts: BlogPost[] = [
     description:
       "ABN, GST, BAS, super, deductions — the complete tax guide for freelance models working in Australia. What to claim, when to lodge, and how to stay ahead of EOFY.",
     date: "2026-04-12",
+    dateModified: "2026-05-02",
     author: "Bec",
     pillar: "Career Admin",
     readTime: "7 min read",
@@ -1137,7 +1138,7 @@ const posts: BlogPost[] = [
       },
       {
         type: "paragraph",
-        text: "You have been working all year. Shoots in Sydney, castings in Melbourne, maybe a campaign interstate. You have earned real money — but it arrived in chunks, at odd times, from [different agencies](/blog/track-payments-multiple-modeling-agencies). Now it is June and your accountant is asking for records you never kept.",
+        text: "You have been working all year. Shoots in Sydney, castings in Melbourne, maybe a campaign interstate. You have earned real money — but it arrived in chunks, at odd times, from [different agencies](/blog/track-payments-multiple-modeling-agencies). Now it is June and your accountant is asking for records you never kept. If you want a single place to keep track of [fashion model tax and claiming](/tax-and-expenses) across countries, that is what BOOKDU was built for.",
       },
       {
         type: "paragraph",
@@ -1612,6 +1613,7 @@ const posts: BlogPost[] = [
     description:
       "Working across agencies means payments coming from different places at different times. Here's how to keep track of what's owed, what's paid, and what's overdue.",
     date: "2026-04-11",
+    dateModified: "2026-05-02",
     author: "Roman Feldman",
     pillar: "Your Money",
     readTime: "6 min read",
@@ -1627,7 +1629,7 @@ const posts: BlogPost[] = [
       },
       {
         type: "paragraph",
-        text: "You finished a job in February through one agency. A three-day shoot in March through another. A casting callback turned confirmed booking in April through a third. Each agency has its own payment timeline, its own process, and its own definition of \u201Cit\u2019s coming.\u201D",
+        text: "You finished a job in February through one agency. A three-day shoot in March through another. A casting callback turned confirmed booking in April through a third. Each agency has its own payment timeline, its own process, and its own definition of \u201Cit\u2019s coming.\u201D Without a [fashion model payment tracker](/payment-tracker) \u2014 even a basic one \u2014 keeping track of who owes what becomes its own job.",
       },
       {
         type: "paragraph",
