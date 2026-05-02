@@ -85,6 +85,8 @@ const jsonLd = JSON.stringify({
       description: "Finance tracking app for models and talent who work through agencies.",
       sameAs: [
         "https://apps.apple.com/us/app/bookdu/id6757381396",
+        "https://www.instagram.com/bookdu.co/",
+        "https://www.tiktok.com/@bookdu.co",
       ],
     },
     {
