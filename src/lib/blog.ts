@@ -332,6 +332,27 @@ const posts: BlogPost[] = [
       "20% is the standard. But that's not the whole story. Here's what actually happens to your money between a booking and your bank account.",
     content: [
       {
+        type: "heading",
+        level: "h2",
+        text: "How much commission do modeling agencies take?",
+      },
+      {
+        type: "paragraph",
+        text: "Most modeling agencies take **20% commission** on your gross fee. That is the industry standard across Australia, the UK, the US, and the EU, and it is now legally capped at 20% in New York under the Fashion Workers Act (effective June 2025). The actual range you will encounter:",
+      },
+      {
+        type: "list",
+        style: "numbered",
+        items: [
+          "**20% — the global standard** for most commercial, editorial, and fashion bookings. Legally capped at 20% in New York, with no signing fees or deposits permitted.",
+          "**25–35% — international and multi-agency placements**, particularly in some Asian markets where the mother agency's cut sits on top of the local agency's commission rather than coming out of it.",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Anything above 25% outside an international placement is worth a question — not automatically wrong, but the higher rate should come with a clear explanation of what it is buying you. And the 20% is just the agency's cut. On top of that comes tax (25–35% set-aside is the rule across AU, UK, and US), business expenses, and — if you have a mother agency placing you internationally — a second commission split. A $5,000 booking realistically nets a freelance model $2,500 to $3,000 after commission and tax. The rest of this post walks through where the gap goes.",
+      },
+      {
         type: "paragraph",
         text: "You booked a $5,000 job. Your agency calls it a win. Everyone's happy.",
       },
@@ -346,6 +367,10 @@ const posts: BlogPost[] = [
       {
         type: "paragraph",
         text: "So here it is, laid out plainly.",
+      },
+      {
+        type: "paragraph",
+        text: "Before any of this maths begins, there is a single document that captures the gross fee everyone is calculating from: the [voucher you sign on set](/blog/what-is-a-modeling-voucher). Every commission split, every tax calculation, and every payment timeline traces back to that signed form. If the voucher is wrong — wrong rate, wrong hours, wrong usage — the rest of the chain is wrong with it. So the maths below assumes a voucher that matches what was actually agreed.",
       },
       {
         type: "heading",
@@ -466,6 +491,47 @@ const posts: BlogPost[] = [
       {
         type: "heading",
         level: "h2",
+        text: "Common questions about modeling agency commission",
+      },
+      {
+        type: "heading",
+        level: "h3",
+        text: "Can a modeling agency charge more than 20%?",
+      },
+      {
+        type: "paragraph",
+        text: "Outside New York, yes — there is no legal cap, and some specialist or smaller agencies charge 25% or more. It is not automatically wrong, but anything above 25% should come with a clear explanation of what the higher rate is buying you. In New York, the Fashion Workers Act caps commission at 20%, with no signing fees or deposits permitted.",
+      },
+      {
+        type: "heading",
+        level: "h3",
+        text: "Do mother agencies charge commission on top of the local agency?",
+      },
+      {
+        type: "paragraph",
+        text: "In most Western markets, no — the mother agency's 5–10% comes out of the local agency's 20%, so your total deduction stays at 20%. In some Asian markets (notably Japan, South Korea, and parts of China), the mother agency's commission can sit on top, bringing your total deduction to 30–35%. Ask directly before signing any international placement: \"is your cut coming from the local agency's 20%, or on top of it?\"",
+      },
+      {
+        type: "heading",
+        level: "h3",
+        text: "Is the agency service fee separate from my commission?",
+      },
+      {
+        type: "paragraph",
+        text: "Yes. The 20% is what the agency deducts from your earnings. The service fee — typically 15–20% — is added to the client's invoice on top of your rate. You do not see it on your end, but it explains why a $5,000 booking costs the client closer to $5,750–$6,000. This is legal, common, and how agencies stay in business.",
+      },
+      {
+        type: "heading",
+        level: "h3",
+        text: "Are signing fees, registration fees, or in-house photography charges normal?",
+      },
+      {
+        type: "paragraph",
+        text: "No. Legitimate agencies make money when you work, not before. The FTC and Model Alliance have documented in-house photography requirements as a long-standing red flag in the industry. If a local agency is asking for fees beyond commission on actual bookings, that is worth questioning carefully.",
+      },
+      {
+        type: "heading",
+        level: "h2",
         text: "Knowing Your Numbers",
       },
       {
@@ -516,19 +582,15 @@ const posts: BlogPost[] = [
       {
         type: "heading",
         level: "h2",
-        text: "The Most Important Piece of Paper on Set",
+        text: "What is a modeling voucher and why does it matter?",
       },
       {
         type: "paragraph",
-        text: "At the end of a job, someone will hand you a piece of paper — or pull up a form on a tablet — and ask you to sign it. This is a voucher. It might also be called a booking sheet, a job sheet, or a confirmation form. Whatever the name, it serves the same purpose: it is the official record that you showed up, did the work, and agreed to the terms.",
+        text: "A modeling voucher is the document you sign at the end of a job that confirms three things: you did the work, the rate you agreed to, and how the client is allowed to use the resulting images. It might be called a booking sheet, a job sheet, or a confirmation form depending on the agency, but it serves the same role across every market. The voucher is the official record that the work happened and the terms everyone agreed to. It is the foundation of your payment.",
       },
       {
         type: "paragraph",
-        text: "Most models sign without reading carefully — and most of the time, it's fine. But the few times it isn't, the voucher is what everyone goes back to. Agency, client, sometimes a lawyer. That's why slowing down for 60 seconds before you sign is one of the highest-leverage habits in this industry.",
-      },
-      {
-        type: "paragraph",
-        text: "A voucher is not just paperwork. It is the foundation of your payment. If something goes wrong down the line, the voucher is what everyone — your agency, the client, and potentially a lawyer — will look at first.",
+        text: "Most models sign without reading carefully — and most of the time, that is fine. But when something goes wrong months later, the voucher is what everyone goes back to: the agency, the client, sometimes a lawyer. A late payment, a usage dispute, an hours discrepancy — every one of these resolves by checking what was signed on the day. Sixty seconds of attention before you sign is one of the highest-leverage habits in this industry.",
       },
       {
         type: "heading",
@@ -746,19 +808,23 @@ const posts: BlogPost[] = [
       {
         type: "heading",
         level: "h2",
-        text: "The Short Answer: Longer Than You Think",
+        text: "How long does it take to get paid as a model?",
       },
       {
         type: "paragraph",
-        text: "You finished a shoot on a Tuesday. You were great. The client was happy. The agency confirmed the booking was done. Now you wait.",
+        text: "Most models wait **60 to 120 days** to get paid after a job. That is the standard timeline across Australia, the UK, the US, and the EU — not because anything is wrong, but because of how the payment chain works. The client pays the agency on net 30, 60, or 90 terms. The agency batches its model payments weekly or monthly. By the time the money reaches you, two to four months have passed since you finished the shoot.",
       },
       {
         type: "paragraph",
-        text: "If you are new to modelling, you might expect to be paid within a week or two. That is not how this works. The standard payment timeline in modelling is **60 to 120 days** from the date of the job. Some payments take even longer. And nobody warns you about this before your first booking.",
+        text: "The first time you see a 90-day delay on a job you finished, it feels wrong. It is actually how the industry has always worked — the slowness sits in the client's accounts payable team, not with your agency.",
       },
       {
         type: "paragraph",
-        text: "This is not an agency problem. This is how the payment chain works in the modelling industry — and once you understand it, you can plan around it instead of being caught off guard by it.",
+        text: "A rough breakdown by job type: 30 to 60 days for commercial and e-commerce, 60 to 90 days for editorial and fashion campaigns, and 90 to 120 days when the client is a large corporation with slow accounts payable. Anything past 120 days with no explanation is worth a conversation with your agency. Anything inside that window is the industry working as it normally does.",
+      },
+      {
+        type: "paragraph",
+        text: "If you are new to modelling, this is the part nobody warns you about. Once you understand it, you can plan around it instead of being caught off guard.",
       },
       {
         type: "heading",
@@ -1354,6 +1420,56 @@ const posts: BlogPost[] = [
       {
         type: "paragraph",
         text: "We are building country-specific guides. If you want us to cover your market next, reach out at hello@bookdu.co and tell us where you are based. We will prioritise the next guide based on where our users are working.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "Common questions Australian models ask about tax",
+      },
+      {
+        type: "heading",
+        level: "h3",
+        text: "Do models pay tax in Australia?",
+      },
+      {
+        type: "paragraph",
+        text: "Yes. Modelling income is taxable in Australia regardless of how it is earned. As a freelance or contractor model, you report it as business income on your individual tax return. As an agency-employed model, tax is withheld by your employer through PAYG. The structure changes how you pay; it does not change whether you pay.",
+      },
+      {
+        type: "heading",
+        level: "h3",
+        text: "Is modelling income business income or personal income?",
+      },
+      {
+        type: "paragraph",
+        text: "For freelance and contractor models — the most common structure — modelling income is business income. You report it under business and professional items on your individual tax return, not as wages. This is what makes deductions, ABN registration, and the GST threshold relevant. Agency-employed models report the income as salary and wages.",
+      },
+      {
+        type: "heading",
+        level: "h3",
+        text: "Do I need to register for GST as a freelance model?",
+      },
+      {
+        type: "paragraph",
+        text: "Only once your modelling turnover crosses **$75,000** in any 12-month period. Below that threshold, GST registration is optional. Once you cross it, you have 21 days to register, charge GST on your invoices going forward, and start lodging BAS. See the [ATO GST registration page](https://www.ato.gov.au/businesses-and-organisations/gst-excise-and-indirect-taxes/gst/registering-for-gst) for the full rules.",
+      },
+      {
+        type: "heading",
+        level: "h3",
+        text: "What if I work overseas — do I still pay Australian tax?",
+      },
+      {
+        type: "paragraph",
+        text: "If you are an Australian tax resident, yes — Australia taxes you on your worldwide income, including any modelling work done overseas. You may be eligible for a foreign income tax offset for tax already paid in the country where the work happened, which prevents you from being taxed twice. International model tax is one of the most common areas where an accountant pays for itself.",
+      },
+      {
+        type: "heading",
+        level: "h3",
+        text: "When should I get an accountant?",
+      },
+      {
+        type: "paragraph",
+        text: "As soon as you are earning consistent freelance income — typically once you cross a few thousand dollars in any year — an accountant becomes worth the cost. The cost of a registered tax agent is itself deductible. The risk of getting it wrong (missed deductions, late lodgement, GST registration overdue) compounds over time. If your situation involves multiple agencies, international work, or expenses you are unsure about, an accountant pays for itself in the first year.",
       },
       {
         type: "heading",
