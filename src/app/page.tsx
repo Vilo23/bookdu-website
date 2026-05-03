@@ -3,6 +3,7 @@ import Hero from "@/components/sections/Hero";
 import Problem from "@/components/sections/Problem";
 import ImageStrip from "@/components/sections/ImageStrip";
 import HowItWorks from "@/components/sections/HowItWorks";
+import ForModelsStrip from "@/components/sections/ForModelsStrip";
 import Features from "@/components/sections/Features";
 import CTA from "@/components/sections/CTA";
 
@@ -76,6 +77,7 @@ export default function Home() {
       <Problem />
       <ImageStrip />
       <HowItWorks />
+      <ForModelsStrip />
       <Features />
       <CTA />
     </>

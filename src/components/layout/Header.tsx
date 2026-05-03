@@ -75,9 +75,49 @@ export default function Header() {
 
       {/* Mobile Menu — Full-screen overlay */}
       {isMenuOpen && (
-        <div className="fixed inset-0 top-14 z-40 bg-bg/95 backdrop-blur-lg">
-          <nav className="flex flex-col items-start justify-center h-full px-8 gap-2">
+        <div className="fixed inset-0 top-14 z-40 bg-bg/95 backdrop-blur-lg overflow-y-auto">
+          <nav className="flex flex-col items-start justify-start min-h-full px-8 py-12 gap-2">
             {NAV_LINKS.map((link) => {
+              if ("children" in link) {
+                const hasActiveChild = link.children.some(
+                  (child) => pathname === child.href
+                );
+                return (
+                  <div
+                    key={link.label}
+                    className="flex flex-col items-start gap-2 w-full"
+                  >
+                    <span
+                      className={`font-[family-name:var(--font-archivo)] text-[clamp(2rem,6vw,3.5rem)] leading-tight ${
+                        hasActiveChild
+                          ? "text-text opacity-100"
+                          : "text-text-muted opacity-70"
+                      }`}
+                    >
+                      {link.label}
+                    </span>
+                    <div className="flex flex-col items-start gap-1.5 pl-1 pb-2">
+                      {link.children.map((sub) => {
+                        const isActive = pathname === sub.href;
+                        return (
+                          <Link
+                            key={sub.href}
+                            href={sub.href}
+                            onClick={closeMenu}
+                            className={`font-[family-name:var(--font-inter)] text-[clamp(1rem,2.4vw,1.25rem)] leading-snug transition-opacity duration-200 ${
+                              isActive
+                                ? "text-text opacity-100"
+                                : "text-text-muted opacity-70 hover:text-text hover:opacity-100"
+                            }`}
+                          >
+                            {sub.label}
+                          </Link>
+                        );
+                      })}
+                    </div>
+                  </div>
+                );
+              }
               const isActive = pathname === link.href;
               return (
                 <Link

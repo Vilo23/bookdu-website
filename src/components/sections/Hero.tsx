@@ -3,11 +3,13 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
+import { useState } from "react";
 import { NAV_LINKS } from "@/lib/constants";
 import { AppStoreBadge } from "@/components/AppStoreBadge";
 
 export default function Hero() {
   const pathname = usePathname();
+  const [openGroup, setOpenGroup] = useState<string | null>(null);
 
   return (
     <section className="relative min-h-screen grid grid-cols-1 lg:grid-cols-[1fr_1fr] grid-rows-[auto_1fr_auto] overflow-hidden px-[5vw] py-[2vw]">
@@ -38,6 +40,60 @@ export default function Hero() {
           Menu // System
         </span>
         {NAV_LINKS.map((link) => {
+          if ("children" in link) {
+            const isOpen = openGroup === link.label;
+            const hasActiveChild = link.children.some(
+              (child) => pathname === child.href
+            );
+            return (
+              <div
+                key={link.label}
+                className="flex flex-col items-end"
+              >
+                <button
+                  type="button"
+                  onClick={() => setOpenGroup(isOpen ? null : link.label)}
+                  aria-expanded={isOpen}
+                  aria-haspopup="true"
+                  className={`font-[family-name:var(--font-inter)] text-[clamp(1.2rem,2.2vw,2.5rem)] font-medium tracking-[-0.02em] capitalize transition-colors duration-300 flex items-center gap-2 ${
+                    hasActiveChild
+                      ? "text-text"
+                      : "text-text-muted hover:text-text"
+                  }`}
+                >
+                  <span>{link.label}</span>
+                  <span
+                    aria-hidden="true"
+                    className={`text-[0.7em] transition-transform duration-200 ${
+                      isOpen ? "rotate-180" : ""
+                    }`}
+                  >
+                    ▾
+                  </span>
+                </button>
+                {isOpen && (
+                  <div className="flex flex-col items-end gap-[0.4vh] mt-1 mb-2 pr-1">
+                    {link.children.map((sub) => {
+                      const isActive = pathname === sub.href;
+                      return (
+                        <Link
+                          key={sub.href}
+                          href={sub.href}
+                          className={`font-[family-name:var(--font-inter)] text-[clamp(0.85rem,1.1vw,1.1rem)] font-normal tracking-[-0.01em] transition-colors duration-300 ${
+                            isActive
+                              ? "text-text"
+                              : "text-text-muted hover:text-text"
+                          }`}
+                        >
+                          {sub.label}
+                        </Link>
+                      );
+                    })}
+                  </div>
+                )}
+              </div>
+            );
+          }
           const isActive = pathname === link.href;
           return (
             <Link
