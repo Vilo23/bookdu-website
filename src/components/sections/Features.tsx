@@ -36,7 +36,7 @@ export default function Features() {
       <div className="grid grid-cols-1 lg:grid-cols-[1fr_2fr] gap-[5vw]">
         {/* Left column: section number */}
         <div>
-          <div className="section-num">03</div>
+          <div className="section-num">04</div>
         </div>
 
         {/* Right column: 2-col grid of data cards */}
