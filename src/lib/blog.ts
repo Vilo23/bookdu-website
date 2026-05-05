@@ -91,6 +91,204 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "model-new-to-industry-finance",
+    title:
+      "What Nobody Tells You About Money When You're New to the Industry",
+    description:
+      "Late payments, tax surprises, commission maths—here's the financial side of modelling nobody explains to you when you sign.",
+    date: "2026-05-04",
+    author: "Roman Feldman",
+    pillar: "Your Money",
+    readTime: "6 min read",
+    metaTitle:
+      "Model New to the Industry: What to Know About Money",
+    metaDescription:
+      "Late payments, tax surprises, commission maths—here's the financial side of modelling nobody explains to you when you sign.",
+    content: [
+      {
+        type: "paragraph",
+        text: "You signed with an agency. You did your first job. Someone told you the payment would take \"a few weeks.\" It's been two months and you're not sure if that's normal, if something went wrong, or if you're supposed to be chasing someone about it.",
+      },
+      {
+        type: "paragraph",
+        text: "Nobody told you what to expect. That's not unusual. The modelling industry is one of the few professions that puts people to work without explaining how any of the business side actually functions. Most of what you learn, you learn the hard way.",
+      },
+      {
+        type: "paragraph",
+        text: "This is an attempt to short-circuit some of that.",
+      },
+      {
+        type: "paragraph",
+        text: "---",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "The payment timeline is longer than you think",
+      },
+      {
+        type: "paragraph",
+        text: "Here is how the money moves when you book a job through an agency.",
+      },
+      {
+        type: "paragraph",
+        text: "You do the work. Your agency invoices the client. The client pays the agency — on net 30, net 60, or sometimes net 90 terms, counting from the invoice date, not the shoot date. Then the agency deducts their commission and pays you.",
+      },
+      {
+        type: "paragraph",
+        text: "By the time that chain completes, you are commonly looking at 60 to 120 days between the day you worked and the day the money arrives in your account. In fashion specifically, net 90 from invoice is not unusual. That invoice might not have been raised until a week or two after the job.",
+      },
+      {
+        type: "paragraph",
+        text: "So if you shot something in February and it is now May and you still have not been paid, that is not necessarily a crisis. It might be entirely normal. The problem is that without tracking it, you have no way to know whether it is normal or whether something has actually slipped.",
+      },
+      {
+        type: "paragraph",
+        text: "What I hear from models consistently is that the ones who handle finances well are not the ones who stress least about money. They are the ones who always know exactly where things stand. What was booked. What was invoiced. What has landed and what is still outstanding. When you do not know that, every week that passes without a payment feels like a problem, even when it is not.",
+      },
+      {
+        type: "paragraph",
+        text: "---",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "The commission maths you need to do before you feel rich",
+      },
+      {
+        type: "paragraph",
+        text: "Your agency takes 20%. That is the industry standard and has been for decades. In most markets, that comes out of your earnings — so on a $5,000 day rate, you receive $4,000.",
+      },
+      {
+        type: "paragraph",
+        text: "What often catches newer models off guard is that the headline rate on a booking is not your take-home. Before you budget around a number, run the maths. Commission off the top. Then tax — and we will get to that.",
+      },
+      {
+        type: "paragraph",
+        text: "If you work with a mother agency, there is an additional commission layer: typically 5 to 10% of your gross earnings. In most Western markets, this comes out of the local agency's 20% cut, so your take-home does not change. In some Asian markets, it is charged on top of the local agency commission, which means you might lose 30 to 35% before you even think about tax.",
+      },
+      {
+        type: "paragraph",
+        text: "The other thing worth understanding early is double commission. Your agency earns a fee from you (20% of your rate) and often charges the client a separate service fee — sometimes another 20% — on top of your rate. That is standard practice and does not affect your pay. But it tells you something about the economics of the agency business. They are running a real commercial operation. They are not sitting on your money for fun. Long payment timelines are usually the result of slow-paying clients, not slow-paying agencies.",
+      },
+      {
+        type: "paragraph",
+        text: "None of this is to make you suspicious of anyone. It is to give you the full picture so you are not surprised by it later.",
+      },
+      {
+        type: "paragraph",
+        text: "---",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "Tax will arrive before you are ready for it",
+      },
+      {
+        type: "paragraph",
+        text: "Most models operate as independent contractors. You are running a business. No employer is withholding tax from your payments. When the money hits your account, all of it arrives — including the portion that will eventually belong to the tax authority.",
+      },
+      {
+        type: "paragraph",
+        text: "In Australia, that means registering an ABN and lodging a return by October 31 after the June 30 financial year end. If you earn over $75,000, you will need to think about GST registration as well.",
+      },
+      {
+        type: "paragraph",
+        text: "In the UK, you register as self-employed with HMRC and submit a Self Assessment return for the tax year ending April 5. National Insurance contributions apply on top of income tax.",
+      },
+      {
+        type: "paragraph",
+        text: "In the US, you are an independent contractor receiving a 1099-NEC. No tax is withheld. You are also liable for self-employment tax — 15.3% on 92.35% of your net income — on top of income tax at your marginal rate. The practical rule most working models in the US eventually adopt: set aside 30 to 35% of every payment the moment it arrives, into a separate account you do not touch. Your quarterly estimated tax payments come out of that. Your end-of-year bill comes out of that. What is left is actually yours.",
+      },
+      {
+        type: "paragraph",
+        text: "The EU varies by country. France, Italy, Germany, and Spain all have different structures for freelancers. If you are based in or working extensively in one market, it is worth a consultation with a local accountant who understands the creative industries.",
+      },
+      {
+        type: "paragraph",
+        text: "What models can generally deduct varies by country but commonly includes: agency commissions, portfolio and comp card costs, professional photography, travel to castings and jobs, relevant training, and a work-use portion of your phone and internet. Grooming expenses that are specifically required for work — not general personal maintenance — can also qualify in many markets.",
+      },
+      {
+        type: "paragraph",
+        text: "The key habit is not knowing every rule. The key habit is keeping records. Every receipt. Every expense. Log it as you go, not three months later when you are trying to reconstruct it from memory before a deadline.",
+      },
+      {
+        type: "paragraph",
+        text: "---",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "What falls through the cracks",
+      },
+      {
+        type: "paragraph",
+        text: "The financial risk that actually hurts models is not the tax bill they expected. It is the payment they forgot to expect.",
+      },
+      {
+        type: "paragraph",
+        text: "When you are working across multiple agencies — which is common in commercial modelling — you have payments coming from different sources on different timelines. A casting in London led to a booking that went through your UK agency. A job in Milan was placed by your European agency. Something you shot for an Australian brand six months ago is still listed as outstanding.",
+      },
+      {
+        type: "paragraph",
+        text: "Each of those has its own payment cycle. Each of those has a point at which the delay crosses from normal into genuinely overdue. Without tracking, you have no visibility. Money slips through. Jobs you finished get mentally archived while the payment is still technically outstanding.",
+      },
+      {
+        type: "paragraph",
+        text: "This is exactly the problem BOOKDU was built to address. Track every payment against every job. Know its status. Get reminded when something has been sitting unpaid long enough to warrant a follow-up. If you are working across multiple agencies and multiple markets, having that in one place — rather than scattered across emails, spreadsheets, and memory — is the difference between a system and a hope.",
+      },
+      {
+        type: "paragraph",
+        text: "---",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "What a working model's financial system actually looks like",
+      },
+      {
+        type: "paragraph",
+        text: "You do not need anything complicated. You need something consistent.",
+      },
+      {
+        type: "paragraph",
+        text: "A few practical foundations that tend to hold up across markets and career stages:",
+      },
+      {
+        type: "paragraph",
+        text: "**Track every booking the moment it is confirmed.** Not when the invoice goes out. Not when the payment arrives. When the job is confirmed. That is when it enters your record with a date, a rate, an agency, and a status.",
+      },
+      {
+        type: "paragraph",
+        text: "**Know your notice periods.** Your agency contract will have one. If you do not know how many days' notice you need to give before the contract's expiry date, find out now. Auto-renewal is standard practice. Missing the notice window means staying in a contract you might have wanted to leave.",
+      },
+      {
+        type: "paragraph",
+        text: "**Separate your tax money immediately.** Every payment that arrives, move the tax portion into a separate account the same day. Do not give yourself the opportunity to spend it.",
+      },
+      {
+        type: "paragraph",
+        text: "**Keep receipts as you go.** The models who suffer most at tax time are the ones who did the work and spent the money but have no records. A photo of a receipt takes three seconds. Three seconds in March is worth an hour of stress in October.",
+      },
+      {
+        type: "paragraph",
+        text: "**Work with an accountant who knows freelancers.** Not just any accountant. Someone who understands variable income, contractor structures, and ideally the creative industries. They will find deductions you missed and save you more than their fee.",
+      },
+      {
+        type: "paragraph",
+        text: "The financial side of modelling is not complicated. But it is easy to ignore when you are starting out and there are other things demanding your attention. The cost of ignoring it shows up later — in tax surprises, in payments you never chased, in contracts you did not realise had renewed.",
+      },
+      {
+        type: "paragraph",
+        text: "---",
+      },
+      {
+        type: "paragraph",
+        text: "BOOKDU tracks your payments, contracts, expenses, and schedule in one app — built specifically for how working models actually earn. Download it from the App Store.",
+      },
+    ],
+  },
+  {
     slug: "model-abn-sole-trader-australia",
     title:
       "Model ABN and Sole Trader: What Working Models in Australia Need to Know",
