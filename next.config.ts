@@ -8,10 +8,9 @@ const nextConfig: NextConfig = {
     formats: ["image/avif", "image/webp"],
   },
   async headers() {
-    // CSP starts in Report-Only — observe violations in browser console / network for ~1 week,
-    // then promote to enforcing. Allow inline scripts for JSON-LD + PostHog SDK; allow inline
-    // styles for framer-motion / Next.js style injection.
-    const cspReportOnly = [
+    // CSP promoted to enforcing (was Report-Only from May 1–8, 2026; no violations observed).
+    // Allow inline scripts for JSON-LD + PostHog SDK; allow inline styles for framer-motion / Next.js.
+    const cspValue = [
       "default-src 'self'",
       "script-src 'self' 'unsafe-inline' https://us.i.posthog.com https://us-assets.i.posthog.com",
       "style-src 'self' 'unsafe-inline'",
@@ -41,7 +40,7 @@ const nextConfig: NextConfig = {
             key: "Permissions-Policy",
             value: "camera=(), microphone=(), geolocation=()",
           },
-          { key: "Content-Security-Policy-Report-Only", value: cspReportOnly },
+          { key: "Content-Security-Policy", value: cspValue },
         ],
       },
     ];
