@@ -91,6 +91,211 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "modeling-agency-payment-terms",
+    title:
+      "Modeling Agency Payment Terms: What Actually Happens to Your Money After a Job",
+    description:
+      "Net 30, net 60, net 90 — what modeling agency payment terms actually mean for your money, and how to stop losing track of what you're owed.",
+    date: "2026-05-11",
+    author: "Roman Feldman",
+    pillar: "Your Money",
+    readTime: "6 min read",
+    metaTitle:
+      "Modeling Agency Payment Terms Explained | BOOKDU",
+    metaDescription:
+      "Net 30, net 60, net 90 — what modeling agency payment terms actually mean for your money, and how to stop losing track of what you're owed.",
+    content: [
+      {
+        type: "paragraph",
+        text: "You finished the job. Wardrobe, hair, three location changes, a lunch break that turned into fifteen minutes. You did the work. Then you went home and waited.",
+      },
+      {
+        type: "paragraph",
+        text: "Thirty days passed. Sixty. You sent a message to your booker. \"Should be coming through soon.\" Ninety days in, you honestly can't remember if you even got paid or if it slipped past you in a busy week.",
+      },
+      {
+        type: "paragraph",
+        text: "That is not a failure of memory. That is a system that was never designed to be transparent. Understanding how modeling agency payment terms actually work — and why the timeline feels so long — is the first step to staying on top of what you are owed.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "Why Payments Take So Long",
+      },
+      {
+        type: "paragraph",
+        text: "The delay is not an accident and it is not (usually) your agency being difficult. It is the result of how money moves through the industry.",
+      },
+      {
+        type: "paragraph",
+        text: "Here is the actual sequence:",
+      },
+      {
+        type: "list",
+        style: "numbered",
+        items: [
+          "You do the job.",
+          "Your agency invoices the client. This might happen the same week or it might take a few weeks depending on how the booking was administered.",
+          "The client pays the agency. Their payment terms — net 30, net 60, sometimes net 90 — run from the date of invoice, not from the shoot date.",
+          "The agency deducts their commission (typically 20%) and processes your payment. That cycle takes another week or two in most cases.",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "By the time you see money in your account, you might be looking at 60 to 120 days from the day you stood in front of a camera. For larger commercial clients, editorial clients paying slowly, or jobs that ran over in administration, 90 to 120 days is not unusual. Some models report waiting six months for specific bookings.",
+      },
+      {
+        type: "paragraph",
+        text: "That is not an aberration. That is the system.",
+      },
+      {
+        type: "paragraph",
+        text: "What does matter — and what most models only learn the hard way — is that you need to know where every job sits in that cycle. Not approximately. Precisely.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "What \"Net 30,\" \"Net 60,\" and \"Net 90\" Actually Mean",
+      },
+      {
+        type: "paragraph",
+        text: "These terms show up in client contracts and agency agreements all the time. They refer to the number of days the client has to pay the invoice from the invoice date.",
+      },
+      {
+        type: "paragraph",
+        text: "**Net 30** means the client has 30 days from the invoice date to pay. In practice, many clients pay closer to the deadline than before it.",
+      },
+      {
+        type: "paragraph",
+        text: "**Net 60** gives the client 60 days. Fashion and editorial clients commonly operate on these terms because their own billing cycles are long.",
+      },
+      {
+        type: "paragraph",
+        text: "**Net 90** is increasingly common with larger brands and international clients. They have their own accounts payable processes, and a model booking is a small line item in a large budget.",
+      },
+      {
+        type: "paragraph",
+        text: "The invoice date and the shoot date are not the same thing. A shoot on March 1 might not be invoiced until March 10. If the client has net 60 terms, they have until May 10 to pay. Your agency then processes your payment. You might see it in late May or early June — 12 or 13 weeks after you did the work.",
+      },
+      {
+        type: "paragraph",
+        text: "This is why \"it's coming\" from your booker can feel maddeningly vague. It is not vague to them because they know exactly where the invoice sits. But if you have not tracked the original job date, the booking rate, and the expected payment window, you have no independent way to verify anything.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "The Double Commission Structure",
+      },
+      {
+        type: "paragraph",
+        text: "One thing that affects your net earnings — and your understanding of what you will actually receive — is how commission is calculated.",
+      },
+      {
+        type: "paragraph",
+        text: "Your agency typically charges you 20% of your gross booking fee. On a $3,000 day rate, they deduct $600 and you receive $2,400.",
+      },
+      {
+        type: "paragraph",
+        text: "What many models do not realize is that agencies also charge the client a separate service fee — often another 15 to 20% on top of your rate. On a $3,000 booking from your perspective, the client may have paid the agency $3,450 to $3,600 in total. The agency earns from both sides of the transaction.",
+      },
+      {
+        type: "paragraph",
+        text: "This structure is legal and industry-standard. What it means for you is that the number you need to track is your net rate — what the agency owes you after their commission — not the total client payment. Your agreement with the agency should specify the commission structure clearly. If it does not, ask.",
+      },
+      {
+        type: "paragraph",
+        text: "Understanding this helps avoid a common confusion: thinking a payment is short when it has actually been correctly calculated.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "When to Follow Up — and How",
+      },
+      {
+        type: "paragraph",
+        text: "Most models either follow up too early (before the payment cycle has had a chance to complete) or too late (after the payment has been so long outstanding that records are blurry on both sides). Neither is useful.",
+      },
+      {
+        type: "paragraph",
+        text: "A sensible framework:",
+      },
+      {
+        type: "paragraph",
+        text: "**At 35 days from the shoot date:** Make a note. If you have not seen payment and the job was on standard net 30 terms, it is early but worth checking that the invoice was sent. Not a chase — a quiet confirmation.",
+      },
+      {
+        type: "paragraph",
+        text: "**At 60 days:** If you are on net 60 terms, this is when payment should be arriving or imminent. If you have not seen it, a brief, professional message to your booker is appropriate. Not an accusation. Just: \"I wanted to check in on payment for the [client] job on [date] — can you confirm where it sits?\"",
+      },
+      {
+        type: "paragraph",
+        text: "**At 90 days:** If payment has not arrived and you have not received a clear explanation, this is when to escalate gently. Ask for an invoice reference number. Get a specific expected payment date in writing.",
+      },
+      {
+        type: "paragraph",
+        text: "**Beyond 90 days with no clear timeline:** At this point it is reasonable to ask your agency for documentation — the invoice date, the client's payment terms, confirmation that the client has paid the agency. You are not being difficult. You did the work. You deserve to know.",
+      },
+      {
+        type: "paragraph",
+        text: "The important thing in all of this is having the records to back up the conversation. If you can say \"I did this job on this date, the agreed rate was this, and I have not seen payment after 90 days,\" the conversation is clear. If you are working from memory, it gets murky quickly.",
+      },
+      {
+        type: "paragraph",
+        text: "This is exactly the problem BOOKDU was built to solve. When you log a job and its expected payment, you always know what is outstanding, what is overdue, and what has been paid — without having to scroll through months of emails or trust your memory across three agencies and two countries.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "Multi-Currency and Multi-Agency: Where Things Get Complicated",
+      },
+      {
+        type: "paragraph",
+        text: "If you work internationally — which many models do, particularly those based in Australia, the UK, or mainland Europe — the payment picture gets more complex.",
+      },
+      {
+        type: "paragraph",
+        text: "You might have bookings from an agency in Sydney, another in London, and one-off jobs handled by a mother agency in Milan. Each operates on different payment terms. Each invoices in a different currency. Each has its own internal processing timeline.",
+      },
+      {
+        type: "paragraph",
+        text: "The AUD/GBP/EUR exchange rate moves. A booking that was $4,200 AUD when you did the job might arrive as slightly more or less depending on when the conversion happens. If you are not tracking each booking individually, it is genuinely difficult to know whether you have been paid correctly.",
+      },
+      {
+        type: "paragraph",
+        text: "The other issue is volume. A working model might complete 40 to 60 jobs in a year across multiple agencies. Even if only 5% of payments are ever late or incorrect, that is 2 to 3 jobs that could silently fall through the cracks. At $1,500 to $3,000 per job, that adds up faster than it should.",
+      },
+      {
+        type: "paragraph",
+        text: "The models who stay on top of their money are not the ones who chase hardest when something goes wrong. They are the ones who always know where every job sits. The chase becomes easy when you have records. It becomes stressful when you do not.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "You Did the Work. Know What You're Owed.",
+      },
+      {
+        type: "paragraph",
+        text: "Modeling agency payment terms were not designed with your visibility in mind. They were designed for client billing cycles and agency cash flow. That is the reality, and it is not going to change.",
+      },
+      {
+        type: "paragraph",
+        text: "What you can change is how clearly you see your own finances. Every job logged. Every expected payment tracked. Every overdue balance surfaced before it disappears.",
+      },
+      {
+        type: "paragraph",
+        text: "BOOKDU tracks your payments, contracts, expenses, and calendar in one place — with automatic reminders at 35 and 56 days so nothing slips past you. Download it from the App Store.",
+      },
+      {
+        type: "paragraph",
+        text: "---",
+      },
+      {
+        type: "paragraph",
+        text: "*Roman Feldman is the father of a working model. He built BOOKDU because he watched his daughter chase payments across three countries.*",
+      },
+    ],
+  },
+  {
     slug: "model-new-to-industry-finance",
     title:
       "What Nobody Tells You About Money When You're New to the Industry",
