@@ -91,6 +91,343 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "modeling-agency-payments-guide",
+    title:
+      "Modeling Agency Payments: The Complete Guide",
+    description:
+      "How modeling agency payments actually work — commission rates, payment timelines by country, vouchers, late payments, and tracking across agencies.",
+    date: "2026-05-18",
+    author: "Roman Feldman",
+    pillar: "Your Money",
+    readTime: "8 min read",
+    metaTitle:
+      "Modeling Agency Payments: The Complete Guide",
+    metaDescription:
+      "How modeling agency payments actually work — commission rates, payment timelines by country, vouchers, late payments, and tracking across agencies.",
+    content: [
+      {
+        type: "paragraph",
+        text: "There is a version of modeling that looks like this: you do the job, you get paid, you move on. The reality is messier. Payments arrive weeks or months after the shoot. Commission is deducted before you ever see a dollar. Across multiple agencies in multiple countries, the numbers stop being easy to hold in your head. This guide exists to make the whole system legible.",
+      },
+      {
+        type: "paragraph",
+        text: "I built BOOKDU because my daughter was working across three countries and had no reliable way to know what she was owed, what had been paid, and what had quietly slipped through the cracks. What follows is everything I've learned since then about how modeling agency payments actually work.",
+      },
+      {
+        type: "paragraph",
+        text: "---",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "How Do Modeling Agency Payments Work?",
+      },
+      {
+        type: "paragraph",
+        text: "Modeling agencies do not pay models directly from their own funds. The agency invoices the client for the job, waits to receive that payment, then deducts their commission and passes the remainder to the model. From shoot day to your bank account, you are typically waiting 60 to 120 days. This is not a malfunction — it is how the industry has always operated.",
+      },
+      {
+        type: "paragraph",
+        text: "Understanding this cycle is the foundation of every other financial decision you make as a working model.",
+      },
+      {
+        type: "paragraph",
+        text: "---",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "The Payment Lifecycle: From Shoot to Bank Account",
+      },
+      {
+        type: "paragraph",
+        text: "Most of the confusion around modeling agency payments comes from not understanding the sequence. Here is how a typical payment moves.",
+      },
+      {
+        type: "paragraph",
+        text: "**Step 1 — The job happens.** You show up, you work, the shoot wraps. Before you leave set, you should be signing a model voucher — a document that confirms the hours worked, the agreed rate, and the usage terms. [Model vouchers](/blog/what-is-a-modeling-voucher) are the paper trail that protects you if a payment is ever disputed. Never skip this step.",
+      },
+      {
+        type: "paragraph",
+        text: "**Step 2 — The agency invoices the client.** Your agency sends an invoice to the client, usually within a few days of the job. This is where the clock starts — but it is the client's clock, not yours.",
+      },
+      {
+        type: "paragraph",
+        text: "**Step 3 — The client pays the agency.** Client payment terms vary. Net 30 is common for commercial work. Net 60 and net 90 are standard in editorial and fashion. Large retailers and brands often pay on their own schedules regardless of what the contract says. The agency is waiting, and so are you.",
+      },
+      {
+        type: "paragraph",
+        text: "**Step 4 — The agency processes payment to you.** Once the client pays, the agency deducts their commission and sends you the balance. This step can take an additional one to two weeks depending on the agency's internal payroll cycle.",
+      },
+      {
+        type: "paragraph",
+        text: "**Step 5 — The money arrives.** From shoot date to bank account, 60 to 90 days is normal for commercial work. Editorial and fashion can stretch to 90 to 120 days. Some models report waiting six months or longer on high-fashion bookings.",
+      },
+      {
+        type: "quote",
+        text: "The reason the delay exists is not that agencies are holding your money. Most of the time, they are waiting on the same clients you are. The system is slow. That is different from being broken.",
+      },
+      {
+        type: "paragraph",
+        text: "---",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "Commission Rates: What Agencies Actually Take",
+      },
+      {
+        type: "paragraph",
+        text: "The standard agency commission is 20% of your gross booking fee. This has been the industry norm for decades. On a $5,000 job, the agency earns $1,000. You receive $4,000 before tax.",
+      },
+      {
+        type: "paragraph",
+        text: "A few important layers on top of that.",
+      },
+      {
+        type: "paragraph",
+        text: "**Client-side commission.** Many agencies also charge the client a service fee — sometimes another 10 to 20% on top of your rate. This does not reduce what you receive. It is money the agency earns separately, on the client side of the transaction.",
+      },
+      {
+        type: "paragraph",
+        text: "**Mother agency commission.** If you have a mother agency — the first agency that signed and developed you — they typically earn 5 to 10% of your gross earnings from every booking, regardless of which local agency placed you. In Western markets, this usually comes out of the local agency's 20%, so your cut stays at 80%. In some Asian markets, the mother agency's 10 to 15% is charged in addition, reducing your take to as little as 65 to 70% of gross.",
+      },
+      {
+        type: "paragraph",
+        text: "**The New York cap.** The Fashion Workers Act, which took full effect in June 2025, caps agency commission at 20% for models working in New York. It also prohibits signing fees and non-refundable deposits. If you are working in the New York market, [understanding your commission rights](/blog/modeling-agency-payment-terms) is especially important.",
+      },
+      {
+        type: "paragraph",
+        text: "**When to raise an eyebrow.** Twenty percent is standard. Twenty-five percent is worth a question. Anything above that warrants careful scrutiny. Legitimate agencies earn their commission through network and negotiation — not by taking a larger cut.",
+      },
+      {
+        type: "paragraph",
+        text: "---",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "Payment Timelines by Country",
+      },
+      {
+        type: "paragraph",
+        text: "The 60-to-120-day window is a global norm, but local tax treatment, invoicing structures, and industry customs create real differences depending on where you are working.",
+      },
+      {
+        type: "heading",
+        level: "h3",
+        text: "Australia",
+      },
+      {
+        type: "paragraph",
+        text: "Australian models working as sole traders operate under an ABN (Australian Business Number). Payment is often processed via RCTI — a Recipient-Created Tax Invoice — meaning the agency generates the invoice on your behalf. This simplifies the invoicing process but does not speed up payment timelines. Commercial bookings typically settle in 30 to 60 days; editorial can run longer.",
+      },
+      {
+        type: "paragraph",
+        text: "If you are earning above $75,000 per year, you are required to register for GST. [The Australian model tax guide](/blog/australian-model-tax-guide) covers this in full, including deductions, BAS, and what to do before June 30.",
+      },
+      {
+        type: "heading",
+        level: "h3",
+        text: "United Kingdom",
+      },
+      {
+        type: "paragraph",
+        text: "UK models register as self-employed with HMRC and file annual Self Assessment returns. The UK tax year runs April 6 to April 5. Agencies typically process payments within 30 to 60 days of receiving client funds. VAT registration is required once your annual turnover exceeds approximately £90,000. VAT treatment for freelance models involves specific rules — a local accountant familiar with the creative industries is worth the cost.",
+      },
+      {
+        type: "heading",
+        level: "h3",
+        text: "United States",
+      },
+      {
+        type: "paragraph",
+        text: "US models receive a 1099-NEC at year end from any agency or client that paid them $600 or more. No tax is withheld. This means you are responsible for setting aside your own tax throughout the year — the IRS recommends quarterly estimated payments if you expect to owe $1,000 or more for the year (due April 15, June 15, September 15, and January 15).",
+      },
+      {
+        type: "paragraph",
+        text: "Self-employment tax alone runs 15.3% on most of your net self-employment income. Combined with federal income tax, the practical guidance is to set aside 25 to 35% of every payment as soon as it arrives. The IRS provides resources for self-employed individuals at [irs.gov/businesses/small-businesses-self-employed](https://www.irs.gov/businesses/small-businesses-self-employed).",
+      },
+      {
+        type: "paragraph",
+        text: "Models working across multiple states may need to file returns in each state where they performed work. This is an area where professional tax advice pays for itself.",
+      },
+      {
+        type: "heading",
+        level: "h3",
+        text: "Europe",
+      },
+      {
+        type: "paragraph",
+        text: "Payment terms and structures vary significantly across EU markets. France, Italy, Germany, and Spain each have their own tax treatment for freelance creative workers. Some markets operate hybrid employment structures through agencies. VAT obligations, social contributions, and filing deadlines differ by country — consult a local accountant familiar with freelance or creative industry work before filing anything for the first time.",
+      },
+      {
+        type: "paragraph",
+        text: "---",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "What a $10,000 Booking Actually Nets You",
+      },
+      {
+        type: "paragraph",
+        text: "This is a number most models do not calculate until it lands in their account and looks smaller than expected.",
+      },
+      {
+        type: "paragraph",
+        text: "Take a $10,000 booking in the US market.",
+      },
+      {
+        type: "list",
+        style: "bullet",
+        items: [
+          "Agency commission (20%): −$2,000. You now have $8,000 gross.",
+          "Federal income tax and self-employment tax: this varies by total annual income, filing status, and deductions, but roughly 30 to 40% of net self-employment income is a working estimate for many models. On $8,000 gross, that is somewhere in the range of $2,400 to $3,200 — though your actual liability depends on your full tax picture.",
+          "Expenses: comp card reprints, travel to set, grooming. Easily $200 to $500 on a single job.",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "In our experience, models who run these numbers for the first time are often surprised to find their take-home closer to $4,000 to $5,000 on a $10,000 booking — roughly half the headline rate after commission and tax. That is not a problem with the system. It is the reality of running a business. Knowing it means you plan around it instead of being blindsided by it.",
+      },
+      {
+        type: "paragraph",
+        text: "---",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "Late Payments: What's Normal, What Isn't, and What to Do",
+      },
+      {
+        type: "paragraph",
+        text: "[Late payments from modeling agencies](/blog/modeling-agency-late-payment) are one of the most common sources of stress for working models. The first thing to establish is the difference between late and overdue.",
+      },
+      {
+        type: "paragraph",
+        text: "**Under 60 days from shoot date:** In most cases, this is still within normal payment cycle territory. Depending on the client's payment terms, your agency may not have received anything yet.",
+      },
+      {
+        type: "paragraph",
+        text: "**60 to 90 days from shoot date:** This is the outer edge of normal for commercial work. If you have not received payment and have not heard anything, a polite check-in with your agency is reasonable.",
+      },
+      {
+        type: "paragraph",
+        text: "**90+ days from shoot date:** This warrants follow-up. Send a written request — email is fine — asking for an update on the payment status. Keep it professional. Reference the job, the date, and the agreed rate. In most cases, this is enough to prompt a response.",
+      },
+      {
+        type: "paragraph",
+        text: "**What documentation helps.** This is where [model vouchers](/blog/what-is-a-modeling-voucher) become critical. A signed voucher is your record that the work happened, at what rate, and under what terms. If a payment is ever disputed, the voucher is your evidence. Without it, you are relying on email threads and memory.",
+      },
+      {
+        type: "paragraph",
+        text: "BOOKDU sends automatic payment reminders at 35 days and again at 56 days after a job date, so you always know which payments are approaching or past due — without having to maintain a separate spreadsheet or rely on memory.",
+      },
+      {
+        type: "paragraph",
+        text: "---",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "Managing Payments Across Multiple Agencies",
+      },
+      {
+        type: "paragraph",
+        text: "Most working models are not signed exclusively to one agency. Commercial models often work with three, four, or five agencies across different markets, each booking different types of jobs on different payment schedules. The financial complexity compounds quickly.",
+      },
+      {
+        type: "paragraph",
+        text: "A model working with three agencies across two countries might have:",
+      },
+      {
+        type: "list",
+        style: "bullet",
+        items: [
+          "Six open payments at varying stages of the 60-to-120-day cycle",
+          "Commission rates that differ by agency",
+          "Tax obligations in multiple jurisdictions",
+          "Contracts at different stages of their term",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "[Managing multiple modeling agencies](/blog/how-to-track-payments-multiple-modeling-agencies) is genuinely complex. The models who handle it well are not the ones who are better at mental arithmetic — they are the ones who have a system. That system can be a well-maintained spreadsheet or a purpose-built tool. What it cannot be is your inbox and your memory.",
+      },
+      {
+        type: "paragraph",
+        text: "A [model payment tracker](/payment-tracker) gives you a single place to log every job, every agency, every expected payment date, and every amount. When something goes overdue, you know immediately. When tax time arrives, the data is already organised.",
+      },
+      {
+        type: "paragraph",
+        text: "---",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "Protecting Yourself: Vouchers, Contracts, and Records",
+      },
+      {
+        type: "paragraph",
+        text: "Beyond payment tracking, there are three documents every working model should have organised and accessible at all times.",
+      },
+      {
+        type: "paragraph",
+        text: "**Model vouchers.** Signed on set for every job. Store them. They are your primary evidence for every payment you are owed.",
+      },
+      {
+        type: "paragraph",
+        text: "**Agency contracts.** These set your commission rate, exclusivity terms, contract duration, notice periods, and auto-renewal conditions. [Modeling contract red flags](/blog/modeling-contract-red-flags) covers what to look for before you sign. What most models miss is the auto-renewal clause — many contracts renew automatically unless you give written notice 30 to 90 days before expiry. Missing that window means another term you did not actively choose.",
+      },
+      {
+        type: "paragraph",
+        text: "**Pay advice and remittance statements.** Every payment from an agency should come with a statement showing your gross fee, commission deducted, and net paid. Keep these. They are your tax records and your reconciliation tool.",
+      },
+      {
+        type: "paragraph",
+        text: "Digital storage of all three — accessible from your phone, backed up to the cloud — is the baseline. Losing paperwork is how unpaid jobs stay unpaid.",
+      },
+      {
+        type: "paragraph",
+        text: "---",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "The Models Who Stay on Top of Their Money",
+      },
+      {
+        type: "paragraph",
+        text: "Over the years of building and refining BOOKDU, one pattern has been consistent: the models who manage their finances well are not the ones who earn the most. They are the ones who know their numbers.",
+      },
+      {
+        type: "paragraph",
+        text: "They know which jobs have been paid and which are still pending. They know when a payment has crossed the 56-day mark and needs a follow-up. They know what their effective take-home looks like after commission and tax. They know when their contracts expire. None of this is glamorous. All of it is the difference between a career that builds and one that leaks.",
+      },
+      {
+        type: "paragraph",
+        text: "The industry will not hand you this clarity. Your agency is managing hundreds of models and dozens of clients — your individual payment is one line in a large spreadsheet. The responsibility for knowing your own financial position sits with you.",
+      },
+      {
+        type: "paragraph",
+        text: "**BOOKDU is the app that makes this manageable.** Track every payment by job and agency. Set reminders so nothing goes past 35 or 56 days without your attention. Store your contracts with expiry tracking. Log expenses as they happen and export a clean CSV at tax time. One app. Everything in one place.",
+      },
+      {
+        type: "paragraph",
+        text: "[Download BOOKDU from the App Store](https://apps.apple.com/app/bookdu) and stop carrying your career finances in your head.",
+      },
+      {
+        type: "paragraph",
+        text: "---",
+      },
+      {
+        type: "paragraph",
+        text: "*Roman Feldman is the founder of BOOKDU. He built the app after watching his daughter — a working model across three countries — chase payments with no reliable system to track what she was owed.*",
+      },
+    ],
+  },
+  {
     slug: "modeling-agency-payment-terms",
     title:
       "Modeling Agency Payment Terms: What Actually Happens to Your Money After a Job",
