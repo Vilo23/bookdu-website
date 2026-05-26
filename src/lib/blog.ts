@@ -91,6 +91,176 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "what-to-ask-before-signing-with-a-modeling-agency",
+    title:
+      "What to Ask Before Signing With a Modeling Agency (Questions That Actually Matter)",
+    description:
+      "Before you sign with a modeling agency, ask these questions. Commission, contract length, payment terms, exclusivity — here's what actually matters.",
+    date: "2026-05-25",
+    author: "Roman Feldman",
+    pillar: "Career Admin",
+    readTime: "6 min read",
+    metaTitle:
+      "What to Ask Before Signing With a Modeling Agency",
+    metaDescription:
+      "Before you sign with a modeling agency, ask these questions. Commission, contract length, payment terms, exclusivity — here's what actually matters.",
+    content: [
+      {
+        type: "paragraph",
+        text: "You've got a meeting with an agency. Maybe they reached out. Maybe you went to an open call. Either way, there's a contract on the table and someone is explaining why this is going to be great for your career.",
+      },
+      {
+        type: "paragraph",
+        text: "That feeling — the mix of excitement and urgency — is exactly when it's hardest to slow down and ask the right questions. And exactly when it matters most.",
+      },
+      {
+        type: "paragraph",
+        text: "I built BOOKDU because my daughter chased payments across three countries and had no system to track any of it. A lot of what she dealt with started before the first job — in the contract she signed without fully understanding what she was agreeing to. This post is the version of that conversation I wish she'd had before she walked into that first agency meeting.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "Commission and Fees: What You're Actually Agreeing to Pay",
+      },
+      {
+        type: "paragraph",
+        text: "The first question is simple: what is the commission rate?",
+      },
+      {
+        type: "paragraph",
+        text: "The industry standard is 20% of your gross earnings. That's what agencies in Australia, the UK, the US, and most of Europe charge. If the number you hear is higher than 25%, that's worth a direct follow-up question: why?",
+      },
+      {
+        type: "paragraph",
+        text: "But commission is only part of the picture. Some agencies also charge clients a service fee — sometimes another 20% on top of your rate — which is separate from your earnings and generally fine. What's not fine is if any of those client fees are being deducted from what you're owed. Ask specifically: \"Is my quoted rate the rate I'm paid before your commission, or is it a net figure after other deductions?\"",
+      },
+      {
+        type: "paragraph",
+        text: "If you're working with a mother agency — the agency that first signed you and places you with local agencies in other markets — they typically earn 5–10% of your gross. In most Western markets, this comes out of the local agency's 20%, split roughly 50/50. Your take doesn't change. In some Asian markets, it can work differently, with the mother agency's cut added on top. If you're going to work internationally, ask: \"How does commission work if I'm placed in another market through you?\"",
+      },
+      {
+        type: "paragraph",
+        text: "One more thing on fees. Legitimate agencies do not charge you upfront to represent you. Not for portfolio shoots through their in-house photographer. Not for a spot on their website. Not for comp cards you didn't ask for. If any fee is presented as a condition of representation, that's a reason to walk away.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "Contract Length, Exclusivity, and Getting Out",
+      },
+      {
+        type: "paragraph",
+        text: "Most agency contracts run 1–3 years. That's a significant chunk of a modelling career that averages fewer than 5 years total. Before you sign, you need to understand three things: how long you're in, whether you're exclusive, and how you leave.",
+      },
+      {
+        type: "paragraph",
+        text: "**Duration and probationary period.** Ask what the contract term is and whether there's a probationary period — typically 3–6 months — during which either party can exit without penalty. If there's no probationary period, that's worth noting. It means you're fully committed from day one.",
+      },
+      {
+        type: "paragraph",
+        text: "**Exclusivity.** An exclusive contract means this agency is your only representation in a specific market or globally. Non-exclusive means you can work with other agencies simultaneously. Neither is inherently better — it depends on where you are in your career and what the agency is offering in return for that exclusivity. Ask: \"Is this contract exclusive, and if so, is that for one market or worldwide?\"",
+      },
+      {
+        type: "paragraph",
+        text: "**Termination and notice.** This is the one most models tell me they wish they'd understood earlier. Every contract has a notice period — typically 30 to 90 days before the contract end date — during which you must formally notify the agency that you're not renewing. Miss that window and the contract auto-renews, often for another full term. Ask: \"What is the notice period to terminate, and when does that window open relative to the contract end date?\" Then put that date somewhere you will actually see it.",
+      },
+      {
+        type: "paragraph",
+        text: "The New York Fashion Workers Act, which came into effect in June 2025, caps contract length at 3 years in New York and prohibits auto-renewal without written consent. If you're working in the US market, that's useful context. Everywhere else, the auto-renewal clause is your responsibility to track.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "Payment Terms: When You Get Paid and What Happens When You Don't",
+      },
+      {
+        type: "paragraph",
+        text: "You do the job. Then you wait. That's the reality of modelling, and no contract changes it — but understanding the terms upfront means you're not blindsided.",
+      },
+      {
+        type: "paragraph",
+        text: "Ask: \"What are your payment terms to models after you receive payment from clients?\"",
+      },
+      {
+        type: "paragraph",
+        text: "The standard agency payment cycle works like this: the client has their own payment terms with the agency, often net 30 to net 60 days from invoice. Once the agency receives that payment, they process it to you. In fashion and editorial work, net 90 from client is common. By the time it reaches you, 60–120 days from the shoot date is normal. In some markets and for some clients, it can be longer.",
+      },
+      {
+        type: "paragraph",
+        text: "That's not the agency being slow. That's the structure of the industry. But you need to know the specific terms your agency operates on: \"Do you pay models monthly, or on receipt from the client? Is there a minimum threshold before you process a payment?\"",
+      },
+      {
+        type: "paragraph",
+        text: "Also ask about the documentation side. What paperwork do you sign on the day of a job — a voucher, a release, a confirmation — and how does that document feed into the payment process? Knowing that the voucher you sign on set is what triggers the invoice to the client means you understand why keeping a copy of every voucher matters.",
+      },
+      {
+        type: "paragraph",
+        text: "This is where having a tracking system for your own records becomes essential. Regardless of what your agency promises on timing, you should know every job you've done, the agreed rate, and the expected payment date. BOOKDU was built around exactly this — so that when a payment is 35 or 56 days overdue against expected terms, you know, rather than finding out 6 months later that something slipped through.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "Usage Rights: What Happens to the Images After the Job",
+      },
+      {
+        type: "paragraph",
+        text: "This is the question most models don't ask — and where some of the most significant money gets left on the table.",
+      },
+      {
+        type: "paragraph",
+        text: "When you're booked for a shoot, you're agreeing to a rate for your time. Separately, the client has rights to use the images they produce. Those usage rights have real commercial value, and they should be reflected in your fee.",
+      },
+      {
+        type: "paragraph",
+        text: "Ask: \"What usage is included in this booking, and what terms govern extended or additional use?\"",
+      },
+      {
+        type: "paragraph",
+        text: "Usage is typically defined by medium (print, digital, social, broadcast), territory (local, national, global), and duration (6 months, 1 year, in perpetuity). A buyout means the client pays a flat fee for unlimited use — that fee should carry a significant premium over your base day rate, often 70–100% more, because you won't see further payment no matter how widely the images are used.",
+      },
+      {
+        type: "paragraph",
+        text: "Licensed use means specific parameters apply. If the client later wants to expand beyond those parameters — from Australian use to global use, or from 12 months to 3 years — that triggers a new negotiation and additional payment. Your agency should be tracking this. But so should you.",
+      },
+      {
+        type: "paragraph",
+        text: "New AI clauses are increasingly relevant here. The NY Fashion Workers Act now requires separate written consent for any digital replica of your likeness. If you're working in markets where this hasn't been legislated yet, it's worth asking what the agency's standard position is on AI-generated content using your image.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "The Question Underneath All the Questions",
+      },
+      {
+        type: "paragraph",
+        text: "Every question in this post comes back to one thing: do you know exactly what you're agreeing to?",
+      },
+      {
+        type: "paragraph",
+        text: "Not approximately. Not based on what you think is standard. Not because the person across the table seemed trustworthy and the opportunity felt real.",
+      },
+      {
+        type: "paragraph",
+        text: "A contract is a legal document. It defines your income, your availability, your exit options, and your image rights for years. If any clause is unclear — and some will be, because contracts are written by lawyers, not for models — ask for it to be explained in plain language. If you're still not sure, get a lawyer to look at it. That cost is significantly smaller than the cost of being locked into terms you didn't understand.",
+      },
+      {
+        type: "paragraph",
+        text: "Keep a copy of every contract you sign. Track the expiry dates. Know your notice windows. Put it all in one place where you'll actually find it when you need it.",
+      },
+      {
+        type: "paragraph",
+        text: "BOOKDU stores your contracts, tracks expiry dates, and reminds you when renewal windows are approaching. It's one less thing to carry in your head. Download it from the App Store and set up your current contracts before you sign the next one — so you always know where you stand.",
+      },
+      {
+        type: "paragraph",
+        text: "---",
+      },
+      {
+        type: "paragraph",
+        text: "*Roman Feldman is the father of a working model. He built BOOKDU because he watched his daughter chase payments across three countries.*",
+      },
+    ],
+  },
+  {
     slug: "modeling-agency-payments-guide",
     title:
       "Modeling Agency Payments: The Complete Guide",
