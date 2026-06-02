@@ -91,6 +91,234 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "are-headshots-tax-deductible-models",
+    title:
+      "Are Headshots Tax Deductible? What Models Need to Know",
+    description:
+      "Are headshots tax deductible for freelance models? Here's what the rules look like in AU, UK, and US — and what to track year-round.",
+    date: "2026-06-02",
+    author: "Roman Feldman",
+    pillar: "Career Admin",
+    readTime: "5 min read",
+    metaTitle:
+      "Are Headshots Tax Deductible? A Model's Guide",
+    metaDescription:
+      "Are headshots tax deductible for freelance models? Here's what the rules look like in AU, UK, and US — and what to track year-round.",
+    content: [
+      {
+        type: "paragraph",
+        text: "You spent $600 on headshots in March. Tax time rolls around and someone in a model Facebook group says you can claim them. Someone else says you can't. Your agency has no idea. Your mum thinks it depends on whether you're registered as a business.",
+      },
+      {
+        type: "paragraph",
+        text: "Here's the actual answer: yes, headshots are generally tax deductible for working freelance models. But the details matter, and the details are different depending on where you live and how you're set up.",
+      },
+      {
+        type: "paragraph",
+        text: "This post covers the basics for models working in Australia, the UK, and the US. Read it, understand the logic, then talk to an accountant who knows freelance creative work before you file.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "Why Headshots Pass the Deduction Test",
+      },
+      {
+        type: "paragraph",
+        text: "Tax authorities in most countries use the same basic logic when deciding if an expense is deductible: the cost must be directly related to earning your income, and it must not be a private or personal expense.",
+      },
+      {
+        type: "paragraph",
+        text: "Headshots tick both boxes for a working model.",
+      },
+      {
+        type: "paragraph",
+        text: "You need current, professional images to get bookings. Agencies require them. Clients request them. Without headshots, you cannot do your job. That is the definition of a work-related expense.",
+      },
+      {
+        type: "paragraph",
+        text: "The \"personal\" counterargument — that photos of your face could be considered personal — does not hold up when the images are produced specifically for your professional portfolio and used exclusively for work purposes. The ATO, HMRC, and the IRS all follow variations of the same principle: if the expense is incurred in the course of earning assessable income, it is generally deductible.",
+      },
+      {
+        type: "paragraph",
+        text: "That said, the deduction applies to work-related photography. If you commission a personal photoshoot and decide to use a few shots professionally later, the picture gets murkier. Keep work and personal clearly separated.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "How It Works in Australia",
+      },
+      {
+        type: "paragraph",
+        text: "Australian freelance models typically operate as sole traders with an ABN. Under this structure, legitimate business expenses reduce your taxable income before you calculate how much you owe.",
+      },
+      {
+        type: "paragraph",
+        text: "Headshots commissioned for your portfolio, agency submissions, or comp cards are a deductible business expense under the ATO's rules for performing artists, which explicitly cover models. The ATO's guidance on self-employed performing artists acknowledges that portfolio and promotional costs are part of earning income in this profession.",
+      },
+      {
+        type: "paragraph",
+        text: "Other photography-related expenses that generally apply the same logic:",
+      },
+      {
+        type: "list",
+        style: "bullet",
+        items: [
+          "Comp card printing and design",
+          "Portfolio updates (not the same as casual personal photos)",
+          "Test shoots where you paid the photographer",
+          "Travel to and from a professional shoot (at the standard ATO rate per kilometre)",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "A few practical things to know for Australia:",
+      },
+      {
+        type: "paragraph",
+        text: "**GST:** If the photographer is GST-registered and you are too (you hit the $75,000 threshold), you can claim the GST credit as well. If you are not registered for GST, you just claim the full amount as a business deduction.",
+      },
+      {
+        type: "paragraph",
+        text: "**EOFY is June 30.** If you are planning a headshot session and you have the flexibility to schedule it before the end of the financial year, doing it before June 30 means the deduction hits this year's return, not next year's.",
+      },
+      {
+        type: "paragraph",
+        text: "**Keep the invoice.** Not just the bank statement. A proper tax invoice from the photographer with their ABN, the date, and the amount. If you are ever audited, a bank transaction does not tell the ATO what the payment was for.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "How It Works in the UK",
+      },
+      {
+        type: "paragraph",
+        text: "If you are a self-employed model in the UK registered for Self Assessment, the principle is the same: allowable expenses reduce your profit, which reduces your tax bill.",
+      },
+      {
+        type: "paragraph",
+        text: "HMRC's rules allow deductions for costs that are incurred \"wholly and exclusively\" for business purposes. Headshots commissioned for professional use pass this test cleanly. A session where you are photographed for personal reasons that you later decide to use professionally is less clean — \"wholly and exclusively\" is a stricter standard than the Australian equivalent.",
+      },
+      {
+        type: "paragraph",
+        text: "Practically speaking, for a working model whose portfolio is their primary business asset:",
+      },
+      {
+        type: "list",
+        style: "bullet",
+        items: [
+          "Professional headshots and portfolio photography: deductible",
+          "Comp card production: deductible",
+          "Travel to the shoot (mileage at the approved HMRC rate, or public transport): deductible",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "UK tax year runs April 6 to April 5. Your Self Assessment return for the 2025-26 tax year covers expenses incurred between April 6 2025 and April 5 2026. Keep your receipts organised by tax year, not calendar year — it makes filing significantly easier.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "How It Works in the US",
+      },
+      {
+        type: "paragraph",
+        text: "US freelance models file a Schedule C with their personal tax return. Schedule C is where you report self-employment income and deduct business expenses. Net profit after deductions is what you pay income tax and self-employment tax on.",
+      },
+      {
+        type: "paragraph",
+        text: "Headshots are a legitimate Schedule C deduction under the IRS's \"ordinary and necessary\" business expense standard. An ordinary expense is one that is common and accepted in your field. A necessary expense is one that is helpful and appropriate for your business. Professional photography for a model's portfolio is both.",
+      },
+      {
+        type: "paragraph",
+        text: "What you can deduct:",
+      },
+      {
+        type: "list",
+        style: "bullet",
+        items: [
+          "Photographer fees for professional headshots or portfolio shoots",
+          "Hair and makeup hired specifically for a professional shoot (separate from day-to-day grooming)",
+          "Travel to the shoot location (at the 2026 standard mileage rate of 72.5 cents per mile, or actual vehicle costs)",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "What you cannot deduct:",
+      },
+      {
+        type: "list",
+        style: "bullet",
+        items: [
+          "Day-to-day grooming costs that are personal (skincare routine, general haircuts) — the IRS does not allow deductions for expenses that serve both personal and professional purposes unless you can cleanly separate them",
+          "A general lifestyle photoshoot where some images happened to end up in your portfolio",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "One thing working models in the US consistently underestimate: the combined hit of income tax and self-employment tax. You are paying 15.3% SE tax on your net self-employment income before federal and state income tax. Deductions reduce your net income, which means they reduce both. A $600 headshot deduction does not save you $600 in tax — it saves you $600 multiplied by your combined marginal rate, which can be 35-45% for a model with a decent income year. That deduction is worth $210-270 in actual tax savings. Worth claiming.",
+      },
+      {
+        type: "paragraph",
+        text: "Set aside 25-35% of every payment into a separate account as it arrives. Use your deductions to reduce what you owe at the end of the year, not to fund your current spending.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "What to Track (and How to Make Tax Time Less Painful)",
+      },
+      {
+        type: "paragraph",
+        text: "Whether you are filing in Sydney, London, or New York, the mechanics of claiming this deduction are the same: you need documentation.",
+      },
+      {
+        type: "paragraph",
+        text: "For every work-related photography expense:",
+      },
+      {
+        type: "list",
+        style: "bullet",
+        items: [
+          "The invoice or receipt showing the amount, date, supplier name, and what was purchased",
+          "A note on what the shoot was for (portfolio, agency submission, specific client pitch)",
+          "If you travelled to the shoot: the date, start and end location, and distance or transport cost",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Models who track this as they go spend about 20 minutes at tax time pulling together their photography expenses. Models who try to reconstruct it from memory in June (or April, or whenever their deadline hits) lose deductions because they cannot find the receipts or cannot remember what a payment was for.",
+      },
+      {
+        type: "paragraph",
+        text: "BOOKDU's expense tracking lets you log costs as they happen, photograph receipts on the spot, and export a categorised CSV when your accountant asks for it. Not a substitute for an accountant — just the thing that means your accountant has clean, organised data to work with instead of a shoebox of invoices and a lot of guesswork.",
+      },
+      {
+        type: "paragraph",
+        text: "The other thing worth tracking: contract details and payment timelines. Tax preparation is significantly easier when you can match income to jobs and know exactly what has been paid and what is still outstanding. If you are approaching tax time without that clarity, that is a separate problem worth solving before next year.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "A Note on Getting This Right",
+      },
+      {
+        type: "paragraph",
+        text: "Tax rules change. They also vary by country, state, and individual circumstance. The information in this post reflects the general principles for freelance models in Australia, the UK, and the United States as of mid-2026.",
+      },
+      {
+        type: "paragraph",
+        text: "This is general information, not tax advice. Before you lodge your return, talk to an accountant who works with freelancers or performing artists. An hour with the right accountant will almost certainly save you more than it costs — both in deductions you might miss and in mistakes you might make. The principles here will give you a solid starting point for that conversation.",
+      },
+      {
+        type: "paragraph",
+        text: "---",
+      },
+      {
+        type: "paragraph",
+        text: "If you want a cleaner picture of your income and expenses before that conversation happens, BOOKDU tracks your freelance model finances in one place. Payments, contracts, expenses, receipts. Download it from the App Store.",
+      },
+    ],
+  },
+  {
     slug: "what-to-ask-before-signing-with-a-modeling-agency",
     title:
       "What to Ask Before Signing With a Modeling Agency (Questions That Actually Matter)",
