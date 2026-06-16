@@ -91,6 +91,210 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "mother-agency-vs-main-agency",
+    title:
+      "Mother Agency vs Main Agency: What Every Model Needs to Know About Who Gets Paid",
+    description:
+      "Two agencies, two commission cuts, one model. Here's exactly how the mother agency vs main agency split works — and what it means for your income.",
+    date: "2026-06-15",
+    author: "Roman Feldman",
+    pillar: "Your Money",
+    readTime: "6 min read",
+    metaTitle:
+      "Mother Agency vs Main Agency: Who Gets Your Money?",
+    metaDescription:
+      "Two agencies, two commission cuts, one model. Here's exactly how the mother agency vs main agency split works — and what it means for your income.",
+    content: [
+      {
+        type: "paragraph",
+        text: "You finish a 2-day campaign shoot in Milan. The client pays $8,000. By the time the money reaches your account, you're looking at something closer to $4,500. You knew about agency commission. But you didn't know there were two agencies taking a cut.",
+      },
+      {
+        type: "paragraph",
+        text: "That gap — the one nobody explains — is what this post is about.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "What a Mother Agency Is (and Why You Might Have One Without Knowing It)",
+      },
+      {
+        type: "paragraph",
+        text: "A mother agency is the agency that found you first. They scouted you, developed your book, taught you how to move at a casting, and then placed you with agencies in other markets. Paris. New York. Tokyo. Sydney. They're the ones who believed in you before anyone else did.",
+      },
+      {
+        type: "paragraph",
+        text: "The relationship continues long after they've placed you. In most cases, your mother agency earns a percentage of everything you earn — regardless of which market you're working in, regardless of which agency booked the job. They didn't do the booking. But they built the foundation that made the booking possible. That's the logic. That's the deal.",
+      },
+      {
+        type: "paragraph",
+        text: "Main agencies — or local agencies, or booking agencies, depending on what part of the industry you're talking to — are the ones who actually manage your day-to-day career in a specific market. They hold your local contract. They pitch you to clients. They negotiate rates. They send you to castings. When a job comes in, they're the ones doing the work.",
+      },
+      {
+        type: "paragraph",
+        text: "Both are legitimate. Both earn their cut. The problem is most models don't understand what each relationship costs until they're staring at a pay advice wondering where half their rate went.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "How the Commission Split Actually Works",
+      },
+      {
+        type: "paragraph",
+        text: "Standard agency commission is 20% of your gross rate. That's the number that's been true for decades. The NY Fashion Workers Act, which came into effect in June 2025, capped it at 20% in New York specifically. Most professional markets sit at or around that number.",
+      },
+      {
+        type: "paragraph",
+        text: "In Western markets — Australia, the UK, the US, most of Europe — the mother agency commission typically comes out of the local agency's 20%, not on top of it. So the split might look like this: local agency takes 10%, mother agency takes 10%. Your take stays at 80%. The two agencies negotiate that division between themselves.",
+      },
+      {
+        type: "paragraph",
+        text: "That's how it's supposed to work. And in the markets above, it mostly does.",
+      },
+      {
+        type: "paragraph",
+        text: "But in some markets — parts of Asia, certain newer markets, arrangements made outside the standard structures — the mother agency commission can be charged separately. On top of the local agency's 20%. That means you could be looking at a combined commission of 30–35% before tax, before expenses, before anything else.",
+      },
+      {
+        type: "paragraph",
+        text: "A $10,000 booking where two agencies each take 15–20% isn't a $8,000 payday. It's closer to $6,000–7,000. Then the tax owed on that, depending on your country, takes another 25–35%. The headline number and the number that lands in your account are genuinely different things.",
+      },
+      {
+        type: "paragraph",
+        text: "This is not an argument against mother agencies. The models who have strong mother agency relationships often have better long-term career trajectories, more consistent international placements, and someone actually fighting for their interests across markets. It's an argument for knowing the numbers before you sign anything — and for tracking them carefully once you're working.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "The Contract Clause That Catches Models Out",
+      },
+      {
+        type: "paragraph",
+        text: "Your mother agency relationship is governed by a contract. So is your relationship with every local agency you work with. The problem is these contracts are often signed at different times, sometimes years apart, and the commission structures embedded in them don't always match up neatly.",
+      },
+      {
+        type: "paragraph",
+        text: "Here's what to look for.",
+      },
+      {
+        type: "paragraph",
+        text: "In your mother agency contract: the commission percentage, how it's calculated (gross rate or net after local agency commission), which markets it applies to, and the duration. Mother agency contracts can run 3–5 years, sometimes longer. Some auto-renew. If you don't give notice within the window specified — often 60–90 days before expiry — you're in for another term.",
+      },
+      {
+        type: "paragraph",
+        text: "In your local agency contract: the commission rate, whether any portion goes to a mother agency, payment terms, exclusivity, and notice periods. If a local agency signs you without knowing you have a mother agency arrangement, or vice versa, you can end up in a situation where the commission conversation becomes uncomfortable after the fact.",
+      },
+      {
+        type: "paragraph",
+        text: "The models who navigate this cleanly are the ones who read both contracts before they sign either, understand exactly what percentage of every booking goes where, and track the expiry dates so they're never caught by an auto-renewal they didn't intend.",
+      },
+      {
+        type: "paragraph",
+        text: "Tracking multiple contract expiry dates across different markets is harder than it sounds when you're also managing bookings, castings, travel, and the rest of it. Tools like BOOKDU store contract PDFs and flag expiry dates before they sneak up on you — which is genuinely useful when you're working across 2 or 3 markets simultaneously and trying to hold it all in your head.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "What the Money Actually Looks Like",
+      },
+      {
+        type: "paragraph",
+        text: "Let's work through a realistic example, because abstract percentages are easy to ignore and real numbers aren't.",
+      },
+      {
+        type: "paragraph",
+        text: "You do a national print campaign in Australia. Rate: $5,000.",
+      },
+      {
+        type: "list",
+        style: "bullet",
+        items: [
+          "Local agency commission (20%): $1,000",
+          "Mother agency commission (10%, coming from the local agency's cut, Western market structure): included in the $1,000 above",
+          "Your gross income: $4,000",
+          "Tax owing (sole trader in Australia, rough estimate): $1,000–1,400",
+          "Expenses for that job (travel, grooming prep): $200",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "**What actually stays:** roughly $2,400–2,800.",
+      },
+      {
+        type: "paragraph",
+        text: "From $5,000 to $2,600. That's not unusual. That's what working as a model frequently looks like when you account for the full picture.",
+      },
+      {
+        type: "paragraph",
+        text: "Now run the same calculation but in a market where the mother agency commission is charged on top of the local agency's cut — and you didn't know that when you signed.",
+      },
+      {
+        type: "list",
+        style: "bullet",
+        items: [
+          "Local agency commission (20%): $1,000",
+          "Mother agency commission (15%, charged separately): $750",
+          "Your gross income: $3,250",
+          "Tax owing: ~$800–1,100",
+          "Expenses: $200",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "**What actually stays:** roughly $1,950–2,250. From $5,000.",
+      },
+      {
+        type: "paragraph",
+        text: "The difference between knowing your commission structure and not knowing it is real money. It's not a mistake made by careless models. It's a mistake made by models who weren't told, by agencies who didn't make it explicit, in a system that isn't designed around transparency.",
+      },
+      {
+        type: "paragraph",
+        text: "This is precisely why knowing what you're owed — and tracking it accurately — matters more in modelling than in most professions. You can earn well and still feel like the money never shows up. Usually that's because nobody showed you where it went.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "How to Track It When You're Working Across Multiple Markets",
+      },
+      {
+        type: "paragraph",
+        text: "You do not need complicated software to manage this. You need clarity and consistency.",
+      },
+      {
+        type: "paragraph",
+        text: "For every booking, know 4 numbers before the job happens: your gross rate, your local agency commission percentage, your mother agency commission percentage (and whether it's included in the local agency cut or on top of it), and your expected net payment. Write it down. Not in your head. Not in an email thread you'll lose.",
+      },
+      {
+        type: "paragraph",
+        text: "Know the payment timeline. From shoot date to client invoice to agency payment to your account, 60–120 days is normal in most markets. If you're working across 3 markets with 2 different agency structures, you could have payments in various stages of that cycle at any given time. Without a system, it's easy to lose track of which ones have arrived and which are still outstanding.",
+      },
+      {
+        type: "paragraph",
+        text: "Know your contract expiry dates. In every market. For both your local agency and your mother agency. Auto-renewals are standard practice — they're not a trap, they're just how contracts work — but you need to know the dates so you can make an active decision rather than a passive one.",
+      },
+      {
+        type: "paragraph",
+        text: "BOOKDU is built specifically for models tracking payments across agencies. You can log each job against the right agency, set payment reminders at 35 and 56 days, store your contract PDFs, and see everything in one place instead of scattered across email, spreadsheets, and memory. It won't negotiate your commission structure for you. But it will make sure you always know what you're waiting on and when to follow up.",
+      },
+      {
+        type: "paragraph",
+        text: "---",
+      },
+      {
+        type: "paragraph",
+        text: "I built BOOKDU because I watched my daughter work across agencies in multiple countries and lose track of what was owed, what was paid, and what contracts were about to expire. The mother agency and main agency structure is a legitimate part of how this industry works. The gap between what a booking looks like on paper and what arrives in your account is real, and it doesn't shrink just because you understand it. But it stops being a surprise. And surprises are what cost you.",
+      },
+      {
+        type: "paragraph",
+        text: "Track the numbers. Know the structure. Know what you signed.",
+      },
+      {
+        type: "paragraph",
+        text: "**BOOKDU is available now on the App Store.** It tracks your payments, contracts, expenses, and schedule — one app, one place, no more carrying it all in your head.",
+      },
+    ],
+  },
+  {
     slug: "how-to-read-a-modeling-voucher",
     title:
       "How to Read a Modeling Voucher (And Why It Could Be Worth Thousands)",
