@@ -4,7 +4,7 @@ import CTA from "@/components/sections/CTA";
 import { AppStoreBadge } from "@/components/AppStoreBadge";
 
 export const metadata: Metadata = {
-  title: "Just Got Signed? A Money Primer for New Models | BOOKDU",
+  title: "Just Got Signed? A Money Primer for New Models",
   description:
     "New to modeling and confused about how the money side works? A short primer on vouchers, commission, payment timelines, and tracking from day one. Free on iOS.",
   keywords: [

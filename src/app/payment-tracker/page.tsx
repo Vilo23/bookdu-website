@@ -4,7 +4,7 @@ import CTA from "@/components/sections/CTA";
 import { AppStoreBadge } from "@/components/AppStoreBadge";
 
 export const metadata: Metadata = {
-  title: "Model Payment Tracker — Track Multiple Agencies | BOOKDU",
+  title: "Model Payment Tracker — Track Multiple Agencies",
   description: "The payment tracker built for fashion models working across multiple agencies. Track what's owed, what's overdue, and what hit your account. Free on iOS.",
   keywords: [
     "fashion model payment tracker",

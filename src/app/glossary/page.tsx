@@ -4,7 +4,7 @@ import CTA from "@/components/sections/CTA";
 import { getAllTerms } from "@/lib/glossary";
 
 export const metadata: Metadata = {
-  title: "Modeling & Model Finance Glossary | BOOKDU",
+  title: "Modeling & Model Finance Glossary",
   description:
     "Plain-English definitions of every term working models need to know — vouchers, day rates, exclusivity, buyouts, agency commission, and more.",
   keywords: [
