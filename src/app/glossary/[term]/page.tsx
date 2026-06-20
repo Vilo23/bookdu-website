@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const title = `${t.term} — Modeling Glossary | BOOKDU`;
   const description = t.shortDefinition.slice(0, 155);
   return {
-    title,
+    title: { absolute: title },
     description,
     alternates: { canonical: `/glossary/${t.slug}` },
     openGraph: {

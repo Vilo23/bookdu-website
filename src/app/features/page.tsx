@@ -5,7 +5,7 @@ import { AppStoreBadge } from "@/components/AppStoreBadge";
 import FeaturesContent from "./FeaturesContent";
 
 export const metadata: Metadata = {
-  title: "Fashion Model Payment, Expense & Tax Tracker | BOOKDU",
+  title: "Fashion Model Payment, Expense & Tax Tracker",
   description: "Track payments across multiple agencies, log tax-ready expenses, store contracts, and estimate tax. Built for working fashion models. Free on iOS.",
   keywords: [
     "fashion model payment tracker",

@@ -4,7 +4,7 @@ import CTA from "@/components/sections/CTA";
 import { AppStoreBadge } from "@/components/AppStoreBadge";
 
 export const metadata: Metadata = {
-  title: "Expense Tracker for Fashion Models — Tax-Ready Categories | BOOKDU",
+  title: "Expense Tracker for Fashion Models — Tax-Ready Categories",
   description: "Track model-specific expenses — agency fees, test shoots, travel, gym, hair, skincare. Tax-ready CSV export. Built for working models.",
   keywords: [
     "model expense tracker",

@@ -4,7 +4,7 @@ import CTA from "@/components/sections/CTA";
 import { AppStoreBadge } from "@/components/AppStoreBadge";
 
 export const metadata: Metadata = {
-  title: "Model Tax Australia: ABN, GST, BAS, Super & Deductions | BOOKDU",
+  title: "Model Tax Australia: ABN, GST, BAS, Super & Deductions",
   description:
     "The complete model tax guide for Australia — ABN setup, sole trader basics, GST and BAS thresholds, super for self-employed models, and what working models can claim on tax.",
   keywords: [
@@ -206,7 +206,7 @@ export default function ModelTaxAustraliaPage() {
           </ul>
 
           <p className="text-sm text-text-muted border-t border-border pt-6">
-            <strong>Reviewed by:</strong> [Australian registered tax agent — pending] · <strong>Last updated:</strong> 2 May 2026 · <strong>Disclaimer:</strong> This page is general information for working models in Australia, not personal tax advice. Tax rules change and circumstances vary — always confirm with a registered tax agent (TPB) for your situation.
+            <strong>Last updated:</strong> 2 May 2026 · <strong>Disclaimer:</strong> This page is general information for working models in Australia, not personal tax advice. Tax rules change and circumstances vary — always confirm with a registered tax agent (TPB) for your situation.
           </p>
         </div>
       </article>
