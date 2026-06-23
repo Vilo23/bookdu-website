@@ -91,6 +91,195 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "modeling-agency-scams-how-to-spot",
+    title:
+      "Modeling Agency Scams: How to Spot Them Before They Cost You",
+    description:
+      "Legitimate agencies make money when you do. Here's how to spot the ones that make money from you instead — before you sign anything.",
+    date: "2026-06-22",
+    author: "Roman Feldman",
+    pillar: "Career Admin",
+    readTime: "6 min read",
+    metaTitle:
+      "Modeling Agency Scams: How to Spot Them",
+    metaDescription:
+      "Legitimate agencies make money when you do. Here's how to spot the ones that make money from you instead — before you sign anything.",
+    content: [
+      {
+        type: "paragraph",
+        text: "You get a message. Someone saw your Instagram, your portfolio, a photo a friend posted. They represent an agency. They love your look. There's real work available. They just need you to come in, sign some paperwork, and get started with a professional portfolio shoot — which they can arrange, for a fee.",
+      },
+      {
+        type: "paragraph",
+        text: "Stop. Read this first.",
+      },
+      {
+        type: "paragraph",
+        text: "Modeling agency scams have been around as long as the industry itself. The tactics evolve — what used to happen through classified ads now happens through DMs — but the underlying structure never changes. Someone positions themselves as the gatekeeper to a career you want. They charge you for access. Then they disappear, or string you along with nothing.",
+      },
+      {
+        type: "paragraph",
+        text: "This is not a small problem. The FTC receives thousands of complaints annually about talent and modeling agency fraud. Most victims are young, new to the industry, and have no reference point for what legitimate looks like. Some lose hundreds of dollars. Some lose thousands. Most lose time they cannot get back.",
+      },
+      {
+        type: "paragraph",
+        text: "Here is what four decades of watching this industry has taught me about the difference between agencies that earn their commission and operations that earn from their models.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "The One Rule That Separates Real Agencies from Scams",
+      },
+      {
+        type: "paragraph",
+        text: "Legitimate modeling agencies make money when you make money.",
+      },
+      {
+        type: "paragraph",
+        text: "That is it. That is the entire framework. Everything else follows from this single principle.",
+      },
+      {
+        type: "paragraph",
+        text: "A real agency earns commission — typically 20%, sometimes up to 25% in certain markets — on work they book for you. If they do not book you work, they earn nothing. Their financial incentive is perfectly aligned with yours. They want you working because that is how they get paid.",
+      },
+      {
+        type: "paragraph",
+        text: "A scam operation inverts this. They make money from you directly, regardless of whether you ever work. They do this by charging for things legitimate agencies provide as part of representation: portfolio shoots, comp cards, website listings, training courses, registration fees, application processing. The moment an agency asks you to pay them for anything before they have booked you a single job, you are looking at a warning sign.",
+      },
+      {
+        type: "paragraph",
+        text: "The FTC is explicit on this point. Legitimate talent agencies and modeling agencies do not charge upfront fees to represent you. They cannot afford to, because they are genuinely trying to build their roster with people they believe they can place.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "Red Flags That Are Worth Taking Seriously",
+      },
+      {
+        type: "paragraph",
+        text: "None of these individually is definitive. Some legitimate operations have quirks. But if you are seeing two or three of these in the same conversation, slow down.",
+      },
+      {
+        type: "paragraph",
+        text: "**Unsolicited contact with immediate enthusiasm.** You were discovered through Instagram, at a shopping centre, at a bus stop. The scout loves your look, there is definitely work available, they just need you to come in. Real agencies do scout — it happens — but real scouts do not pressure you to move quickly and do not promise work before a single conversation has happened.",
+      },
+      {
+        type: "paragraph",
+        text: "**Upfront fees of any kind.** Portfolio development fees. Registration fees. Administrative fees. Website listing fees. The framing varies, the problem does not. No money should move from you to an agency before they have placed you in work. After that, commission comes out of your earnings. You never write a cheque.",
+      },
+      {
+        type: "paragraph",
+        text: "**In-house photography at inflated prices.** This is the most common mechanism. The agency tells you they need updated photos before they can submit you for jobs — and they happen to have a photographer who can do it. The shoot costs $800. The photos are mediocre. The work never materialises. The photographer is the agency's revenue model. Real agencies will direct you to photographers they trust in the market, sometimes at a negotiated rate, but they do not require you to use their photographer.",
+      },
+      {
+        type: "paragraph",
+        text: "**Guaranteed work.** No legitimate agency can promise you bookings. The industry does not work that way. Clients choose models. Castings are competitive. A good agency improves your odds significantly — but anyone guaranteeing you a certain number of jobs or a minimum income before they have seen you in front of a client is telling you what you want to hear, not what is true.",
+      },
+      {
+        type: "paragraph",
+        text: "**High-pressure timelines.** \"This opportunity won't be available next week.\" \"We're building our books right now and only have a few spots left.\" \"If you want to be considered for the campaign, we need your decision today.\" Urgency that comes from a third party's schedule, not a real booking, is a manipulation tactic. Legitimate agencies understand that signing with representation is a significant decision. They give you time.",
+      },
+      {
+        type: "paragraph",
+        text: "**Commission rates above 25%.** Standard commission in most markets is 20%. Up to 25% is not unheard of in smaller markets or for newer models. Above that, ask specific questions about what additional services justify the higher rate. If the answer is vague, that tells you something.",
+      },
+      {
+        type: "paragraph",
+        text: "**No verifiable track record.** Every legitimate agency has a public roster, a client list, a social presence, models you can look up. If you cannot find evidence that they have actually placed working models with actual clients — published work, credits, a legitimate website with named talent — you are not dealing with a real agency.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "How to Verify an Agency Before You Sign Anything",
+      },
+      {
+        type: "paragraph",
+        text: "This process takes about an hour. It is worth doing for any agency you are seriously considering.",
+      },
+      {
+        type: "paragraph",
+        text: "**Search the agency name with \"scam,\" \"fraud,\" and \"complaint.\"** Start broad. Industry forums, Reddit (r/modeling is useful here), and the Better Business Bureau in the US hold a lot of community knowledge. Models talk. If an operation has a pattern, it usually surfaces somewhere.",
+      },
+      {
+        type: "paragraph",
+        text: "**Look up the principals.** Find the names of the owners and bookers. Search them individually. Do they have a verifiable history in the industry? LinkedIn, industry press, credits — real people in this business leave a trail.",
+      },
+      {
+        type: "paragraph",
+        text: "**Ask for references — specifically, working models they currently represent.** A real agency will not hesitate. A scam will give you excuses: privacy concerns, the models are traveling, they'll have someone reach out to you. Push back. If they cannot put you in touch with a single working model, that is your answer.",
+      },
+      {
+        type: "paragraph",
+        text: "**Check for industry association membership.** In the US, legitimate agencies are often licensed through state labor departments. In the UK, the BSMA (British Style Modeling Association) and similar bodies provide some oversight. Association membership is not a guarantee of legitimacy, but absence of any verifiable industry connection is a flag.",
+      },
+      {
+        type: "paragraph",
+        text: "**Cross-reference the clients they claim to work with.** If an agency tells you they have a relationship with a particular brand or publication, call that brand's casting department and ask. Real relationships are verifiable. Invented ones are not.",
+      },
+      {
+        type: "paragraph",
+        text: "If you are tracking your career across agencies — keeping notes on who you have spoken with, what they promised, what you were asked to pay — BOOKDU's contract and notes features are useful for keeping that information in one place rather than scattered across your inbox and memory. Especially when you are evaluating multiple agencies at once, having a clear record of what each one actually said matters.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "What Legitimate Representation Actually Looks Like",
+      },
+      {
+        type: "paragraph",
+        text: "A good agency relationship feels like a business partnership, because that is what it is.",
+      },
+      {
+        type: "paragraph",
+        text: "You bring your look, your professionalism, and your availability. They bring their client relationships, their negotiation experience, and their market knowledge. Neither party is doing the other a favour. You both win when the work happens.",
+      },
+      {
+        type: "paragraph",
+        text: "In practice, this means:",
+      },
+      {
+        type: "list",
+        style: "bullet",
+        items: [
+          "They submit you for jobs that are appropriate to your look and experience level. Not every job. The right jobs.",
+          "They negotiate your rate. Not just accept whatever the client offers.",
+          "They brief you properly before castings and jobs. Not just send you an address.",
+          "They pay you accurately and on time. The industry standard is 60-90 days from invoice date — slow, but that is the system. What they should not do is add unexplained deductions or provide pay statements that do not add up.",
+          "They answer your questions. About rates, about usage, about the job. If a booker makes you feel like asking questions is a problem, that is worth noticing.",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Commission comes out of your earnings on the back end. You should receive a clear pay statement showing gross fee, commission deducted, and net payment. If you are working across multiple agencies — which is common in commercial and e-commerce markets — you need to be tracking what each agency owes you and what has actually been paid.",
+      },
+      {
+        type: "paragraph",
+        text: "That part of the business, the payment tracking side, is exactly what BOOKDU was built to handle. Download it from the App Store and set up your agencies, your jobs, and your payment reminders so you always know where you stand.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "The Short Version",
+      },
+      {
+        type: "paragraph",
+        text: "Legitimate agencies make money when you do. Any agency asking you to pay upfront — for anything — before they have placed you in work is not a legitimate agency. Verify before you sign. Ask for references. Search the name. Call the clients they claim to work with.",
+      },
+      {
+        type: "paragraph",
+        text: "The modeling industry has real opportunities in it. It also has people who have built businesses around the hope of those opportunities. Knowing the difference is not cynicism. It is how you protect the career you are actually trying to build.",
+      },
+      {
+        type: "paragraph",
+        text: "---",
+      },
+      {
+        type: "paragraph",
+        text: "*Roman Feldman is the founder of BOOKDU. He built the app after watching his daughter chase payments and manage contracts across three countries with nothing but a spreadsheet and her inbox.*",
+      },
+    ],
+  },
+  {
     slug: "mother-agency-vs-main-agency",
     title:
       "Mother Agency vs Main Agency: What Every Model Needs to Know About Who Gets Paid",
