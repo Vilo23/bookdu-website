@@ -91,6 +91,225 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "child-model-finance-parent-guide",
+    title:
+      "The Parent's Guide to Child Model Finances: What You Need to Track From Day One",
+    description:
+      "Your child booked their first job. Here's what you need to track — payments, contracts, tax, and the money that slips through the cracks.",
+    date: "2026-07-06",
+    author: "Roman Feldman",
+    pillar: "Your Money",
+    readTime: "6 min read",
+    metaTitle:
+      "Child Model Finance: A Parent's Guide | BOOKDU",
+    metaDescription:
+      "Your child booked their first job. Here's what you need to track — payments, contracts, tax, and the money that slips through the cracks.",
+    content: [
+      {
+        type: "paragraph",
+        text: "Your child just booked their first job. There's a fitting Thursday, the shoot is Saturday, and the agency said they'll be in touch about the rate. You said yes. You signed something. You're proud.",
+      },
+      {
+        type: "paragraph",
+        text: "Then three months go by and you realise you have no idea if you've been paid.",
+      },
+      {
+        type: "paragraph",
+        text: "This happens constantly. Not because parents are careless — because nobody hands you a manual when your kid enters the industry. The agency does their part. The client does their part. But keeping track of what's owed, what's landed, and what's quietly sitting unpaid in someone's accounts department? That's on you.",
+      },
+      {
+        type: "paragraph",
+        text: "This is what I wish someone had told me before my daughter booked her first job.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "The Money Doesn't Come When You Expect It",
+      },
+      {
+        type: "paragraph",
+        text: "The biggest shock for most parents managing a child model's career is the gap between the shoot date and the pay date. A job done in March might not pay until June. Sometimes later.",
+      },
+      {
+        type: "paragraph",
+        text: "Here's why: the agency invoices the client after the job. The client's accounts payable department processes that invoice on their own schedule — usually net 30, sometimes net 60, occasionally net 90. The agency then collects the payment, deducts their commission, and pays your child's account. Every step in that chain takes time.",
+      },
+      {
+        type: "paragraph",
+        text: "60 to 120 days between shoot and payment is normal. It's not a red flag. It's how the industry works.",
+      },
+      {
+        type: "paragraph",
+        text: "The problem isn't the wait. The problem is when you lose track of what's waiting. When you have 4 jobs across 2 agencies and you can't remember which ones have paid and which ones haven't, money starts to fall through the cracks. Not because anyone is stealing it — because you stopped watching.",
+      },
+      {
+        type: "paragraph",
+        text: "This is the core of what financial management looks like for a child model's career. Not budgeting. Not investing. Just knowing what you're owed and whether it arrived.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "What You Actually Need to Track",
+      },
+      {
+        type: "paragraph",
+        text: "Most parents start with a spreadsheet or a folder of emails. That works for the first few jobs. Then the bookings stack up, the agencies multiply, and the system falls apart.",
+      },
+      {
+        type: "paragraph",
+        text: "Here's what needs to be tracked for every single job:",
+      },
+      {
+        type: "paragraph",
+        text: "**The basics:**",
+      },
+      {
+        type: "list",
+        style: "bullet",
+        items: [
+          "Job date and client name",
+          "Agency the booking came through",
+          "Agreed rate (and whether that's a day rate, half-day, or hourly)",
+          "Usage terms — is this a buyout or licensed use?",
+          "Expected payment date (usually 60-90 days from shoot, ask your agency for their standard terms)",
+          "Actual payment date",
+          "Amount received vs amount agreed",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "**The contracts:**",
+      },
+      {
+        type: "list",
+        style: "bullet",
+        items: [
+          "Which agency contract is active",
+          "Expiry date",
+          "Notice period required to terminate or renew",
+          "Any exclusivity terms",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "**The expenses:**",
+      },
+      {
+        type: "list",
+        style: "bullet",
+        items: [
+          "Travel to castings and jobs",
+          "Grooming costs required for work",
+          "Comp cards and portfolio updates",
+          "Any agency advances (these get deducted from future payments — track them separately)",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "That last category matters more than most parents realise. Some agencies advance costs upfront — portfolio shoots, comp card printing, digital fees. These advances are recouped from the model's earnings before any payment comes through. If you're not tracking them, you'll receive a payment that's smaller than expected and have no idea why.",
+      },
+      {
+        type: "paragraph",
+        text: "BOOKDU was built to hold all of this in one place. I built it because my daughter was working across agencies in multiple countries and we were managing her career in a combination of email threads, notes, and memory. Money was falling through the cracks — not because the agencies were doing anything wrong, but because we had no system. One app, one place, everything tracked.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "The Tax Situation Nobody Explains",
+      },
+      {
+        type: "paragraph",
+        text: "This is where parents get caught the hardest.",
+      },
+      {
+        type: "paragraph",
+        text: "In Australia, the UK, and the US, a child model working as a freelancer is operating as a business. The money that comes in is taxable income. Nothing is withheld at source. The agency pays the full amount, and it's on you to account for it correctly.",
+      },
+      {
+        type: "paragraph",
+        text: "**Australia:** Your child will likely need an ABN if they're earning above the tax-free threshold ($18,200 for the 2025-26 year). Income earned by minors is generally taxed at the same adult rates — and the penalty rates for minors on unearned income don't apply to earned income from modelling work. Keep receipts for every deductible expense. A good accountant familiar with the entertainment industry is worth the cost.",
+      },
+      {
+        type: "paragraph",
+        text: "**United Kingdom:** Income earned by a child is assessed the same way as adult income for self-assessment purposes. Children have the same personal allowance (£12,570 for 2025-26). If earnings stay below that threshold, no tax is owed — but the record-keeping requirement still applies. If your child earns above it, you'll need to register them for Self Assessment.",
+      },
+      {
+        type: "paragraph",
+        text: "**United States:** Child performers and models are generally treated as self-employed for federal tax purposes. A 1099-NEC will arrive if earnings from a single agency or client exceed $600 in a year. Self-employment tax applies on net earnings above $400. Quarterly estimated payments may be required. Set aside 25-30% of every payment into a separate account from day one.",
+      },
+      {
+        type: "paragraph",
+        text: "**The practical rule across all three:** Track every payment, keep every receipt, talk to an accountant before the first tax deadline. The models — and the parents of models — who get into trouble financially aren't the ones who earn too little. They're the ones who earn reasonably well, don't set anything aside, and then face a tax bill they weren't expecting.",
+      },
+      {
+        type: "paragraph",
+        text: "One more thing specific to the US: depending on the state, child performer labour laws may require a portion of earnings to be set aside in a Coogan Account — a blocked trust account the child can access at 18. California, New York, Louisiana, and several other states have Coogan laws. Check your state's requirements before the first payment arrives.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "Contract Terms Parents Need to Understand",
+      },
+      {
+        type: "paragraph",
+        text: "Agencies sign children to the same types of contracts they offer adults. The terms matter.",
+      },
+      {
+        type: "paragraph",
+        text: "**Duration:** Most contracts run 1-3 years. Know the exact end date. Set a reminder 90 days before it arrives. Many contracts include auto-renewal clauses — if you don't send written notice before the deadline, you're in for another term.",
+      },
+      {
+        type: "paragraph",
+        text: "**Notice period:** Typically 30-90 days. If you want to leave an agency or renegotiate terms, you need to give proper notice within the right window. Missing that window by a week can lock you in for another year.",
+      },
+      {
+        type: "paragraph",
+        text: "**Exclusivity:** Some contracts prevent your child from signing with competing agencies in the same market. Understand what's exclusive before you sign anything. If the exclusivity clause is too broad for your child's career goals, it's negotiable — but only before you sign.",
+      },
+      {
+        type: "paragraph",
+        text: "**Usage rights:** A single day's shoot can produce images that a brand uses for years across global campaigns. The rate for that job should reflect the usage. \"Buyout\" means the client pays once and uses the images indefinitely. Licensed use means additional payment if usage extends beyond the original scope. Read this clause carefully for every job.",
+      },
+      {
+        type: "paragraph",
+        text: "**Commission:** Standard agency commission is 20% of gross earnings. Above 25% warrants questions. Any agency asking for upfront fees to represent your child — for portfolios, registration, or any other reason — is not a legitimate agency. That's FTC guidance, and it applies in the UK and Australia too.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "Building a System That Keeps Up",
+      },
+      {
+        type: "paragraph",
+        text: "Your child's career can move fast. One month there are no bookings. The next there are seven, across three clients, through two agencies, with payments expected at different points over the next four months.",
+      },
+      {
+        type: "paragraph",
+        text: "The parents who stay on top of it aren't doing anything magical. They have a system. It might be a detailed spreadsheet. It might be BOOKDU. Whatever it is, it covers the same basics: every job logged, every payment tracked, every contract dated, every expense recorded.",
+      },
+      {
+        type: "paragraph",
+        text: "The goal isn't to become a financial administrator. The goal is to never wonder whether you got paid for a job. To know, at any moment, what's been earned, what's been received, and what's still waiting.",
+      },
+      {
+        type: "paragraph",
+        text: "The money your child earns belongs to them. Keeping track of it is how you protect it.",
+      },
+      {
+        type: "paragraph",
+        text: "---",
+      },
+      {
+        type: "paragraph",
+        text: "*Roman Feldman is the father of a working model. He built BOOKDU because he watched his daughter chase payments across three countries and decided someone had to fix the problem.*",
+      },
+      {
+        type: "paragraph",
+        text: "*BOOKDU tracks payments, contracts, expenses, and calendar across all your agencies in one app. [Download it from the App Store.](https://apps.apple.com/app/bookdu)*",
+      },
+    ],
+  },
+  {
     slug: "modeling-agency-scams-how-to-spot",
     title:
       "Modeling Agency Scams: How to Spot Them Before They Cost You",
