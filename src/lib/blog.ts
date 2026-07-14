@@ -91,6 +91,221 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "how-to-budget-as-a-model-irregular-income",
+    title:
+      "How to Budget as a Model When Your Income Has No Pattern",
+    description:
+      "Modeling income doesn't come in steady paychecks. Here's a practical budgeting framework built for how models actually get paid.",
+    date: "2026-07-13",
+    author: "Roman Feldman",
+    pillar: "Your Money",
+    readTime: "6 min read",
+    metaTitle:
+      "How to Budget as a Model With Irregular Income",
+    metaDescription:
+      "Modeling income doesn't come in steady paychecks. Here's a practical budgeting framework built for how models actually get paid.",
+    content: [
+      {
+        type: "paragraph",
+        text: "I built BOOKDU because I watched my daughter chase payments across three countries. What I didn't expect to learn was how much of the financial stress wasn't about the chasing. It was about the gap between knowing money was coming and not knowing when.",
+      },
+      {
+        type: "paragraph",
+        text: "That gap is where budgeting falls apart for most models.",
+      },
+      {
+        type: "paragraph",
+        text: "A $10,000 month followed by a $1,200 month isn't failure. It's modeling. The industry runs on project work, seasonal bookings, and payment cycles that can stretch 60 to 90 days from shoot to bank account. Trying to budget the way a salaried employee budgets — dividing annual income by 12 and working from there — doesn't hold up when your income looks nothing like that.",
+      },
+      {
+        type: "paragraph",
+        text: "This is a practical guide for how to budget as a model with irregular income. No generic advice about cutting coffee. Actual numbers-based thinking for how this career actually works.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "Stop Budgeting Off Your Best Month",
+      },
+      {
+        type: "paragraph",
+        text: "This is the most common mistake, and it's an easy one to make. You have a strong month — a commercial campaign, a fashion week run, a catalog job that pays well — and suddenly that number starts to feel normal. You adjust your life to it. Then a quieter month arrives and everything is too tight.",
+      },
+      {
+        type: "paragraph",
+        text: "The fix is simple but requires discipline: budget off your average, not your peak.",
+      },
+      {
+        type: "paragraph",
+        text: "Add up your net income (after agency commission, after tax set-aside) from the last 12 months. Divide by 12. That's your monthly budget baseline. If you haven't been working that long, use 6 months or start conservatively and revise upward as you gather more data.",
+      },
+      {
+        type: "paragraph",
+        text: "A few things to be honest about when you run this number:",
+      },
+      {
+        type: "paragraph",
+        text: "**Commission comes out first.** Standard agency commission is 20%. On a $5,000 booking, you're working with $4,000 before tax. Some markets and contract structures differ, but always run your numbers from the net figure, not the gross.",
+      },
+      {
+        type: "paragraph",
+        text: "**Tax comes out next.** This varies significantly by country. In the US, freelance models can owe 30-50% of net self-employment income once you factor in self-employment tax on top of income tax. In Australia as a sole trader, the rate depends on your total earnings but budgeting 30% aside from every payment is a reasonable starting point. In the UK, self-assessment rates vary by income band. The point is: the number that hits your bank account is not the number you have available to spend. If you haven't sat with an accountant to understand your specific tax position, that should be the first thing you do this year.",
+      },
+      {
+        type: "paragraph",
+        text: "What's left after commission and tax is your actual income. Budget from there.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "Build a Baseline, Not a Ceiling",
+      },
+      {
+        type: "paragraph",
+        text: "Once you know your monthly average, use it to build a floor — the minimum your life costs — not a spending target.",
+      },
+      {
+        type: "paragraph",
+        text: "List your non-negotiables:",
+      },
+      {
+        type: "list",
+        style: "bullet",
+        items: [
+          "Rent or housing",
+          "Utilities",
+          "Food (realistic, not aspirational)",
+          "Transport",
+          "Phone",
+          "Health insurance (especially if you're US-based and self-employed)",
+          "Any debt repayments",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "This is your baseline. It's the number you need covered every single month regardless of what bookings come in. For most working models in major markets, this sits somewhere between $2,000 and $4,000 depending on city and lifestyle.",
+      },
+      {
+        type: "paragraph",
+        text: "Now compare it to your monthly average. If your average consistently covers the baseline with something left over, you're in workable shape. If they're close together, you don't have much buffer. If the average is below the baseline, that's information you need to act on — whether it's negotiating rates, expanding your market, or adjusting your living costs.",
+      },
+      {
+        type: "paragraph",
+        text: "The goal isn't to restrict yourself. It's to know your number so you can make decisions with clear eyes.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "The 4-Account System",
+      },
+      {
+        type: "paragraph",
+        text: "Managing irregular income from a single bank account is hard. You're constantly trying to mentally separate what's yours from what's the tax authority's, what's an emergency buffer from what's available to spend. Most people give up on that mental accounting and just spend what's there.",
+      },
+      {
+        type: "paragraph",
+        text: "A cleaner approach uses four accounts with distinct purposes.",
+      },
+      {
+        type: "paragraph",
+        text: "**Account 1: Operating.** This is where money comes in and from which fixed living costs go out. When income arrives, you move set percentages to the other three accounts immediately — before you spend anything.",
+      },
+      {
+        type: "paragraph",
+        text: "**Account 2: Tax.** Move your tax estimate here the moment income arrives. 25-30% is a reasonable starting point for most markets; adjust based on your accountant's guidance. Don't touch this money. It is not your money. Treat the balance like it doesn't exist until you file.",
+      },
+      {
+        type: "paragraph",
+        text: "**Account 3: Business expenses.** Agency fees, portfolio updates, comp cards, professional travel, equipment, subscriptions. Keeping this separate makes expense tracking cleaner and tax time significantly less painful. When you're pulling together deductions at year end, you're looking at one account, not reconstructing a year's worth of transactions from a single mixed account.",
+      },
+      {
+        type: "paragraph",
+        text: "**Account 4: Buffer.** A 3-month living expense buffer is the goal. Build it slowly — 10% of income per month until you hit the target, then stop contributing and let it sit. This is the account that makes quiet months survivable without panic.",
+      },
+      {
+        type: "paragraph",
+        text: "You don't need to set this up perfectly before you start. Open the accounts, set up the transfers, and start the habit. The percentages can be refined as you understand your actual tax position better.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "Track Every Payment Before It Arrives",
+      },
+      {
+        type: "paragraph",
+        text: "Budgeting off averages and separating accounts handles the structural problem. But the day-to-day problem for models is simpler: you often don't know what's coming in or when.",
+      },
+      {
+        type: "paragraph",
+        text: "You did a job six weeks ago. The voucher was signed on set. Your agency has it. But you don't know if the client has paid the agency yet, or when the agency's payment run is, or whether the job got flagged for a usage revision that's holding things up.",
+      },
+      {
+        type: "paragraph",
+        text: "That uncertainty makes budgeting harder than it needs to be. If you know you have $8,000 outstanding across three agencies with expected payment in the next 30-60 days, you can make very different decisions than if you're just hoping something arrives soon.",
+      },
+      {
+        type: "paragraph",
+        text: "This is where BOOKDU is useful. Logging each job as it's confirmed — payment amount, agency, expected payment window — means you're looking at your outstanding balance in real time, not guessing. The 35-day and 56-day payment reminders flag when something is getting late. You're not chasing. You're just aware.",
+      },
+      {
+        type: "paragraph",
+        text: "Awareness is underrated. A model who knows their outstanding balance, their average monthly net, and their baseline costs is working with actual information. That's a different financial life than one where money arrives unpredictably and budgeting is just hoping for the best.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "What to Do in a Lean Month",
+      },
+      {
+        type: "paragraph",
+        text: "Quiet months happen. Seasonal work means summer and late autumn can be slow in some markets. January is notoriously thin after fashion month commitments dry up. A job falls through. A campaign gets delayed.",
+      },
+      {
+        type: "paragraph",
+        text: "A few things that help:",
+      },
+      {
+        type: "paragraph",
+        text: "**Don't raid the tax account.** This feels obvious but it's the most common financial mistake in freelance work across every creative field. The tax account exists for one reason. A lean month is not a reason.",
+      },
+      {
+        type: "paragraph",
+        text: "**Review your outstanding balance before you panic.** If you have confirmed work that's been invoiced but not paid, that money is coming. The timeline might be uncomfortable but it's not gone. Knowing the difference between \"I'm broke\" and \"I'm waiting to be paid\" changes the psychological experience significantly.",
+      },
+      {
+        type: "paragraph",
+        text: "**Cut discretionary spending temporarily, not permanently.** A lean month warrants a temporary cut to non-essential spending, not a permanent restructure of your life. The buffer account exists for this reason. Use it if needed. Rebuild it when work picks up.",
+      },
+      {
+        type: "paragraph",
+        text: "**Look at the trailing average, not the current month.** One slow month doesn't change your 12-month average much. Two or three in a row is a signal to examine what's happening — new market, shift in booking patterns, worth discussing with your agency.",
+      },
+      {
+        type: "paragraph",
+        text: "The goal is to make lean months manageable, not invisible. You can't eliminate the irregularity. You can build enough structure around it that it doesn't destabilize everything.",
+      },
+      {
+        type: "paragraph",
+        text: "---",
+      },
+      {
+        type: "paragraph",
+        text: "The models I've seen handle their finances well aren't the highest earners. They're the ones who built systems early — who knew their numbers, separated their accounts, and tracked what was coming before it arrived. The income stays irregular. The financial life doesn't have to.",
+      },
+      {
+        type: "paragraph",
+        text: "BOOKDU tracks your payments, outstanding balances, expenses, and contracts in one place. If you're managing income across multiple agencies and multiple markets, it keeps the financial picture clear so you can budget from real information. Download it from the App Store.",
+      },
+      {
+        type: "paragraph",
+        text: "---",
+      },
+      {
+        type: "paragraph",
+        text: "*Roman Feldman is the founder of BOOKDU. He built the app because he watched his daughter chase payments across three countries.*",
+      },
+    ],
+  },
+  {
     slug: "child-model-finance-parent-guide",
     title:
       "The Parent's Guide to Child Model Finances: What You Need to Track From Day One",
