@@ -91,6 +91,224 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "track-modeling-expenses",
+    title:
+      "How to Track Modeling Expenses (Before Tax Season Destroys You)",
+    description:
+      "Most models leave real money on the table at tax time. Here's exactly how to track modeling expenses — and what actually counts as a deduction.",
+    date: "2026-07-20",
+    author: "Roman Feldman",
+    pillar: "Career Admin",
+    readTime: "7 min read",
+    metaTitle:
+      "How to Track Modeling Expenses | BOOKDU",
+    metaDescription:
+      "Most models leave real money on the table at tax time. Here's exactly how to track modeling expenses — and what actually counts as a deduction.",
+    content: [
+      {
+        type: "paragraph",
+        text: "You finished a solid year. Multiple agencies, jobs across a few countries, maybe a campaign or two that felt like a turning point. Then tax season arrives and someone asks: \"Do you have your business expense records?\"",
+      },
+      {
+        type: "paragraph",
+        text: "You have a folder somewhere. Maybe a notes app. A few receipts in your camera roll. A vague memory of the flight you took in March.",
+      },
+      {
+        type: "paragraph",
+        text: "That's not a record. That's a guess. And guessing at tax time costs you real money.",
+      },
+      {
+        type: "paragraph",
+        text: "This is the part of modeling nobody explains upfront — the fact that you're running a small business from the moment your first booking is confirmed. And like any business, yours has legitimate expenses that reduce the income you're taxed on. But only if you tracked them.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "What Actually Counts as a Modeling Business Expense",
+      },
+      {
+        type: "paragraph",
+        text: "Before anything else: what you can claim varies by country. Australia, the UK, the US, and EU member states each have their own rules. This isn't a substitute for talking to an accountant — especially if you work across multiple markets — but here's what consistently applies across most freelance model jurisdictions.",
+      },
+      {
+        type: "paragraph",
+        text: "**Portfolio and promotion costs** are almost universally deductible. The test shoots you paid for. Comp cards. Digitals. If you spent money creating or updating your professional portfolio, that's a business expense.",
+      },
+      {
+        type: "paragraph",
+        text: "**Agency commissions** are deductible in most markets. You're paying someone to help you earn income, which is exactly the kind of expense tax authorities recognise. Keep a record of every commission deducted — your remittance statements from agencies should show this.",
+      },
+      {
+        type: "paragraph",
+        text: "**Travel to and from bookings** is deductible — flights, trains, taxis, rideshares, public transport. The rule in most countries is that the travel has to be for work, not commuting to a regular workplace. For models, almost every job is in a different location, so this is generally a strong category. Keep the receipts.",
+      },
+      {
+        type: "paragraph",
+        text: "**Accommodation for work travel** follows similar logic. If you're staying overnight because a job requires it, that cost is legitimate. If you extended the trip for personal reasons, you need to split the cost — only the work portion is deductible.",
+      },
+      {
+        type: "paragraph",
+        text: "**Grooming and appearance maintenance** is where things get more complex. In Australia and the UK, you can generally claim grooming costs that are directly work-related — but \"directly work-related\" is the key phrase and authorities interpret it narrowly. In the US, the IRS has historically been strict about personal appearance expenses. Talk to your accountant about what's defensible in your specific market. Document the connection to work when it exists.",
+      },
+      {
+        type: "paragraph",
+        text: "**Professional development** — workshops, industry events, subscriptions to trade publications, coaching — typically qualifies if it relates to maintaining or developing your professional skills.",
+      },
+      {
+        type: "paragraph",
+        text: "**Phone and internet** can be claimed to the extent you use them for work. Most people use their phone for both personal and professional purposes, so you're claiming a portion, not the full amount. Keep track of the work-related usage pattern so you can justify the split.",
+      },
+      {
+        type: "paragraph",
+        text: "**Work-specific clothing** is a common question. The rule is stricter than most people expect: clothing has to be either a uniform, protective gear, or something that couldn't reasonably be worn outside of work. A beautiful outfit you wore to a client event but could also wear to dinner generally doesn't qualify. Costumes and clearly work-specific wardrobe pieces are a different story.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "The Real Cost of Not Tracking",
+      },
+      {
+        type: "paragraph",
+        text: "Here's what actually happens when models don't track expenses.",
+      },
+      {
+        type: "paragraph",
+        text: "You get to the end of the financial year. Your accountant asks for your expenses. You spend two or three evenings scrolling through 12 months of bank statements trying to reconstruct what was work and what wasn't. You miss things. You find receipts you can't explain. You claim what you can remember and leave the rest.",
+      },
+      {
+        type: "paragraph",
+        text: "The models who track consistently don't do this. They hand over a categorised list, a CSV, or a folder of receipts sorted by month. Their accountant does less work, their bill is lower, and they claim more — because they captured everything, not just what they remembered.",
+      },
+      {
+        type: "paragraph",
+        text: "The difference between thorough tracking and rough memory can easily be several thousand dollars in deductible expenses. On a tax rate of 30-40%, that's real money coming back to you. Or not.",
+      },
+      {
+        type: "paragraph",
+        text: "There's also a second cost: the mental load. Carrying the vague anxiety of knowing you should be keeping better records, but not quite having a system, is its own kind of drain. You know it's there. It's the financial equivalent of a half-finished task that never fully leaves your head.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "How to Actually Build the Habit",
+      },
+      {
+        type: "paragraph",
+        text: "The problem with expense tracking isn't that people don't want to do it. It's that the friction is too high in the moment.",
+      },
+      {
+        type: "paragraph",
+        text: "You've just landed after a long-haul flight. Your rideshare receipt is in your email. You'll file it later. Later becomes never.",
+      },
+      {
+        type: "paragraph",
+        text: "The system that works is the one you'll actually use. Here's what that looks like in practice.",
+      },
+      {
+        type: "paragraph",
+        text: "**Log expenses as they happen.** Not at the end of the week. Not on Sunday night. When the expense occurs. A flight confirmation arrives in your inbox — you record it immediately. A receipt from a grooming appointment — photograph it on the spot. The moment you step away from a transaction, you're relying on memory, and memory fails.",
+      },
+      {
+        type: "paragraph",
+        text: "**Categorise as you go.** Travel. Accommodation. Portfolio. Grooming. Professional development. Commissions. Pick a category system that matches your tax return structure and stick to it. The categories make the year-end export meaningful.",
+      },
+      {
+        type: "paragraph",
+        text: "**Photograph every physical receipt.** Paper receipts fade. They get lost in coat pockets and bags. Take the photo the same day. If you're claiming it, you need to be able to prove it existed.",
+      },
+      {
+        type: "paragraph",
+        text: "**Keep business and personal finances separate.** A dedicated business bank account or a card you use only for work expenses makes the year-end process dramatically simpler. Your bank statement becomes a near-complete expense record rather than something you have to pick through line by line.",
+      },
+      {
+        type: "paragraph",
+        text: "**Record the business purpose.** Especially for anything that could be personal or professional. \"Dinner with [photographer] re: March campaign\" is a note that justifies a meal deduction. \"Dinner\" tells you nothing.",
+      },
+      {
+        type: "paragraph",
+        text: "BOOKDU has expense tracking built into the same place you track payments and contracts. You can log expenses by category, photograph receipts directly into the app, and export everything as a CSV when your accountant needs it. If you're already using it to track what agencies owe you, it makes sense to track what the business costs you in the same place.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "Multi-Country Work: The Extra Layer",
+      },
+      {
+        type: "paragraph",
+        text: "If you work across more than one country — which is increasingly common, and the default for many models working in London, Paris, Milan, New York, and Sydney across a single year — your expense tracking needs to account for which country each expense belongs to.",
+      },
+      {
+        type: "paragraph",
+        text: "This matters because income earned in each country is typically taxed in that country, and the expenses that offset that income need to be allocated accordingly. A flight from Sydney to London for a booking in London is a UK business expense. A flight back home is an Australian one. The split isn't always clean, but the principle is consistent.",
+      },
+      {
+        type: "paragraph",
+        text: "Multi-currency expense tracking also means keeping records of exchange rates at the time of the transaction, not just the amounts in local currency. Your home country tax authority wants to see everything in your home currency. Conversion records become part of your documentation.",
+      },
+      {
+        type: "paragraph",
+        text: "None of this is insurmountable. But it does mean that \"rough memory at year-end\" doesn't work as a strategy when you're working internationally. The volume and complexity of transactions is too high. You need a real system before you start, not after you realise you should have had one.",
+      },
+      {
+        type: "paragraph",
+        text: "For specific rules in your markets, the Australian Tax Office has a dedicated guide for performers that covers models. HMRC in the UK has guidance for self-employed individuals in the entertainment industry. The IRS Publication 535 covers business expenses for US self-employed filers. These are the authoritative sources — read them, and have your accountant apply them to your specific situation.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "What to Hand Your Accountant",
+      },
+      {
+        type: "paragraph",
+        text: "The goal of all this is to make one annual moment as simple as possible: the moment you hand your records to an accountant.",
+      },
+      {
+        type: "paragraph",
+        text: "What a good set of records looks like:",
+      },
+      {
+        type: "list",
+        style: "bullet",
+        items: [
+          "A categorised list of all business expenses for the year",
+          "Receipts to support each one (digital copies are fine in most jurisdictions)",
+          "Bank or card statements covering the business account",
+          "Remittance statements from each agency showing commission deducted",
+          "Any agency contracts that affect how income is classified",
+          "A note on which country each significant expense relates to (for multi-market workers)",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "If you have all of that, your accountant can do their job efficiently. You'll pay less for the work, claim more of what you're legitimately owed, and start the next financial year without anything hanging over you.",
+      },
+      {
+        type: "paragraph",
+        text: "---",
+      },
+      {
+        type: "paragraph",
+        text: "I built BOOKDU because my daughter was working across agencies in three countries and tracking everything in her notes app and inbox. She wasn't losing money because she wasn't working hard — she was losing it because the admin side had no system. Expense tracking was one of the first things we built properly into the app, alongside payment tracking and contract storage.",
+      },
+      {
+        type: "paragraph",
+        text: "If you want to try it: [BOOKDU is on the App Store](https://apps.apple.com/app/bookdu/id6741441863). Log a few expenses, see how the categories work, export a CSV and see what your year looks like when it's actually organised.",
+      },
+      {
+        type: "paragraph",
+        text: "Your accountant will notice the difference. So will your tax return.",
+      },
+      {
+        type: "paragraph",
+        text: "---",
+      },
+      {
+        type: "paragraph",
+        text: "*Roman Feldman is the father of a working model. He built BOOKDU because he watched his daughter chase payments across three countries.*",
+      },
+    ],
+  },
+  {
     slug: "how-to-budget-as-a-model-irregular-income",
     title:
       "How to Budget as a Model When Your Income Has No Pattern",
