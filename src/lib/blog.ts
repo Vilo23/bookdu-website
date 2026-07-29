@@ -91,6 +91,234 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "modeling-tax-deductions-freelance-guide",
+    title:
+      "Modeling Tax Deductions: What You Can Actually Claim (By Country)",
+    description:
+      "A country-by-country guide to modeling tax deductions for freelance models in AU, UK, US, and EU. Know what you can claim before tax time.",
+    date: "2026-07-27",
+    author: "Roman Feldman",
+    pillar: "Career Admin",
+    readTime: "5 min read",
+    metaTitle:
+      "Modeling Tax Deductions: What You Can Claim",
+    metaDescription:
+      "A country-by-country guide to modeling tax deductions for freelance models in AU, UK, US, and EU. Know what you can claim before tax time.",
+    content: [
+      {
+        type: "paragraph",
+        text: "You finished a strong year. Jobs across multiple agencies, maybe a few different markets, income coming in across months with different rates and different clients. Then tax time arrives and you realise you have no idea what you spent, what you can claim, or how much you actually owe.",
+      },
+      {
+        type: "paragraph",
+        text: "That is not a you problem. It is a nobody-told-you problem.",
+      },
+      {
+        type: "paragraph",
+        text: "Modeling agencies will sign you, brief you on castings, and take their 20%. They will not sit you down and explain that you are running a business from day one — with all the tax obligations that come with it. That part you figure out yourself, usually the hard way.",
+      },
+      {
+        type: "paragraph",
+        text: "This guide exists so you don't have to.",
+      },
+      {
+        type: "paragraph",
+        text: "What follows is a country-by-country breakdown of the modeling tax deductions available to freelance models in Australia, the UK, the US, and the EU. It is not legal advice. It is not a replacement for your accountant. But it is the grounding you need before you walk into that conversation — so you know what questions to ask and what to bring.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "Why Tax Hits Models Harder Than Most Freelancers",
+      },
+      {
+        type: "paragraph",
+        text: "Before the deductions: the context.",
+      },
+      {
+        type: "paragraph",
+        text: "When you work as a freelance model — which most working models do, regardless of whether they have agency representation — you are operating as an independent contractor. No employer is withholding tax on your behalf. Every dollar that lands in your account has tax owing on it. The question is how much.",
+      },
+      {
+        type: "paragraph",
+        text: "The numbers are uncomfortable. A $10,000 booking sounds significant. After 20% agency commission, you are at $8,000. After income tax and self-employment obligations — depending on your country and income bracket — you might take home $4,500 to $5,500. That is still meaningful income. But if you spent it as though you had $10,000, you are now behind.",
+      },
+      {
+        type: "paragraph",
+        text: "Modeling tax deductions exist to reduce the taxable portion of that income. They do not eliminate your tax bill. They bring it down to reflect the real cost of doing business as a model — because there are real costs, and you should be claiming every legitimate one.",
+      },
+      {
+        type: "paragraph",
+        text: "Keep records as you go. Receipts, invoices, bank statements, mileage logs. The expense you cannot prove is the expense you cannot claim.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "Australia: Sole Traders, ABNs, and the EOFY Scramble",
+      },
+      {
+        type: "paragraph",
+        text: "Most Australian models operate as sole traders with an Australian Business Number. If your annual turnover crosses $75,000, GST registration is compulsory. Below that threshold, it is optional.",
+      },
+      {
+        type: "paragraph",
+        text: "Tax year ends June 30. The scramble is real. The preparation does not have to be.",
+      },
+      {
+        type: "paragraph",
+        text: "**What you can claim in Australia:**",
+      },
+      {
+        type: "list",
+        style: "bullet",
+        items: [
+          "**Travel and transport.** Getting to and from castings, jobs, and agency meetings is a business expense. This includes public transport, taxis, rideshares, and mileage if you drive. Note: travel from home to your first job of the day and back from your last is generally not deductible (the ATO treats this as private travel). Travel between jobs on the same day is.",
+          "**Comp cards and portfolio costs.** Printing, photography for your book, website hosting — if it is directly related to presenting yourself professionally to clients, it is claimable.",
+          "**Phone and internet.** The work-use portion only. If you use your phone 60% for work, claim 60%. The ATO will ask how you calculated this, so keep a log for at least four weeks to establish your pattern.",
+          "**Agency commissions.** The 20% your agency takes comes off your gross income. This is deductible.",
+          "**Professional development.** Acting classes, movement workshops, runway coaching — anything that directly maintains or improves your professional skills is deductible.",
+          "**Grooming, where it applies.** This one is tight. The ATO allows deductions for grooming and appearance costs only when they are required by the work and not also private in nature. Haircuts are generally not deductible. Specific styling for a job — where the cost was incurred for that job — may be. When in doubt, ask your accountant.",
+          "**Superannuation contributions.** If you are a sole trader, super is not compulsory — but concessional (pre-tax) contributions up to $30,000 per year are tax-deductible and reduce your taxable income. This is one of the most underused strategies available to self-employed models.",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "The ATO's performing artists guide covers models specifically. Read it, or have your accountant walk you through it. It is more useful than most general freelancer tax content.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "United Kingdom: Self Assessment and the April Deadline",
+      },
+      {
+        type: "paragraph",
+        text: "UK-based freelance models register as self-employed and file a Self Assessment tax return. Tax year runs April 6 to April 5. The filing deadline is January 31 following the end of the tax year.",
+      },
+      {
+        type: "paragraph",
+        text: "VAT registration is required once your taxable turnover exceeds approximately £90,000 in a rolling 12-month period.",
+      },
+      {
+        type: "paragraph",
+        text: "**What you can claim in the UK:**",
+      },
+      {
+        type: "list",
+        style: "bullet",
+        items: [
+          "**Travel costs.** Train, tube, bus, and taxi fares for work-related journeys. Mileage if you use your own vehicle (HMRC approved mileage rates apply). Same caveat as Australia: your regular commute from home is generally not claimable.",
+          "**Portfolio and promotional materials.** Comp cards, printing, photography for your book, professional headshots.",
+          "**Agency fees.** Deductible as a cost of business.",
+          "**Equipment and professional subscriptions.** Cameras, ring lights for self-tapes, industry subscriptions. Claim the work-use proportion for anything with mixed personal use.",
+          "**Accountancy fees.** Yes — the cost of your accountant is itself deductible. Worth noting.",
+          "**Clothing.** This is the UK version of the grooming trap. HMRC is strict: clothing that can be worn privately is not deductible. A costume worn only for a specific job may be. Everyday clothing that happens to be worn on a shoot is not. The rule of thumb: if you would wear it outside work, you cannot claim it.",
+          "**Home office.** If you use part of your home exclusively for work — editing self-tapes, managing bookings, accounting — you can claim a portion of your household costs. HMRC's flat rate simplified expenses option ($6/week at time of writing) avoids the need to calculate the precise proportion.",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "National Insurance contributions are also owed — Class 2 (flat rate, if profits exceed the Small Profits Threshold) and Class 4 (percentage of profits above the Lower Profits Limit). These are separate from income tax but calculated through Self Assessment.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "United States: The Self-Employment Tax Nobody Talks About Enough",
+      },
+      {
+        type: "paragraph",
+        text: "The US system has an extra layer that catches a lot of models off guard: self-employment tax.",
+      },
+      {
+        type: "paragraph",
+        text: "As an independent contractor, you pay both the employee and employer portions of Social Security and Medicare. That is 15.3% on 92.35% of your net self-employment income, before income tax enters the picture. Combined federal obligations — self-employment tax plus income tax — can bring your total federal liability to 30-50% of gross income, depending on your bracket.",
+      },
+      {
+        type: "paragraph",
+        text: "The practical rule: set aside 25-35% of every payment into a separate account the moment it arrives. Not after you spend it. The moment it arrives.",
+      },
+      {
+        type: "paragraph",
+        text: "Quarterly estimated tax payments are due April 15, June 15, September 15, and January 15. If you owe more than $1,000 at filing, the IRS charges underpayment penalties. Pay quarterly.",
+      },
+      {
+        type: "paragraph",
+        text: "**What you can claim in the US (Schedule C):**",
+      },
+      {
+        type: "list",
+        style: "bullet",
+        items: [
+          "**Portfolio and comp card costs.** Fully deductible as a business expense.",
+          "**Agency commissions.** Deductible.",
+          "**Travel.** Flights, accommodation, and transport for work-related trips. Mileage at the IRS standard rate (72.5 cents per mile for 2026). Meals at 50% when traveling for business.",
+          "**Wardrobe required for work.** The IRS standard is clothing that is unsuitable for everyday wear and required as a condition of your work. Costumes and uniforms yes. A dress you wore on a shoot and could wear elsewhere no.",
+          "**Home office.** Either the simplified method ($5 per square foot, up to 300 sq ft, maximum $1,500) or actual expenses calculated proportionally. Space must be used regularly and exclusively for business.",
+          "**Phone and internet.** Work-use proportion only. Keep records.",
+          "**Health insurance premiums.** If you are self-employed and not eligible for coverage through a spouse's employer plan, you can deduct 100% of health insurance premiums from your taxable income.",
+          "**Retirement contributions.** A SEP-IRA allows contributions of up to 25% of net self-employment income, capped at $72,000 for 2026. A Solo 401(k) allows up to $23,500 in employee deferrals plus employer contributions. Both reduce taxable income directly. This is one of the highest-leverage tax strategies available to self-employed models in the US.",
+          "**Multi-state filing.** If you worked in multiple states, you likely owe taxes in each one. Keep records of which work was performed where.",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "The Section 199A qualified business income deduction may also allow you to deduct up to 20% of net self-employment income if your total income falls below the threshold (approximately $203,000 for single filers as of 2026). Ask your accountant whether you qualify.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "EU and Other Markets: Know the Local Rules",
+      },
+      {
+        type: "paragraph",
+        text: "Tax structures across Europe vary enough that a single guide cannot cover them accurately. What is consistent:",
+      },
+      {
+        type: "paragraph",
+        text: "Most models working through agencies in EU markets operate under local employment or freelancer law, which varies significantly by country. French models, for example, have specific regulatory protections around retouching disclosures and minimum BMI standards — the legal context is different from the UK or US.",
+      },
+      {
+        type: "paragraph",
+        text: "If you are working across multiple EU markets, or moving between countries for fashion weeks and campaigns, you may have tax obligations in more than one country. Tax treaties between countries typically prevent double taxation, but you need a local accountant familiar with creative industry freelancing to navigate this correctly.",
+      },
+      {
+        type: "paragraph",
+        text: "Do not guess. The cost of getting it wrong is higher than the cost of professional advice.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "Track Expenses as You Go, Not at the End",
+      },
+      {
+        type: "paragraph",
+        text: "The single most common tax mistake working models make is not failing to know the deductions. It is failing to have records when it matters.",
+      },
+      {
+        type: "paragraph",
+        text: "A deduction you cannot prove is a deduction you cannot claim. And the gap between what you spent and what you can document is often significant — hundreds, sometimes thousands of dollars — by the time EOFY arrives.",
+      },
+      {
+        type: "paragraph",
+        text: "The models who handle tax well are not the ones with the most sophisticated accountants. They are the ones who log expenses as they occur, keep receipts, and know at any point in the year roughly what their deductible spend looks like.",
+      },
+      {
+        type: "paragraph",
+        text: "BOOKDU's expense tracking lets you log and categorise expenses from your phone as they happen — with receipt photos, categories mapped to common freelancer deductions, and CSV export your accountant can work with directly. It is not a replacement for professional tax advice. It is the system that makes that advice faster, cheaper, and more useful.",
+      },
+      {
+        type: "paragraph",
+        text: "---",
+      },
+      {
+        type: "paragraph",
+        text: "Talk to an accountant who works with freelancers or creative industry professionals in your country. Bring them clean records. Ask specifically about self-employment tax obligations, quarterly payment requirements, and the deductions relevant to your market.",
+      },
+      {
+        type: "paragraph",
+        text: "You did the work. Track the money. Download BOOKDU on the App Store and start logging expenses before the next tax year gets away from you.",
+      },
+    ],
+  },
+  {
     slug: "track-modeling-expenses",
     title:
       "How to Track Modeling Expenses (Before Tax Season Destroys You)",
