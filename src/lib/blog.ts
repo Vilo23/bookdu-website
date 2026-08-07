@@ -91,6 +91,204 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "model-contract-management",
+    title:
+      "Model Contract Management: How to Stay on Top of What You've Signed",
+    description:
+      "Working across multiple agencies? Here's how to manage your modeling contracts so nothing auto-renews without you knowing — and nothing expires unnoticed.",
+    date: "2026-08-03",
+    author: "Roman Feldman",
+    pillar: "Career Admin",
+    readTime: "7 min read",
+    metaTitle:
+      "Model Contract Management: Stay on Top of What You've Signed",
+    metaDescription:
+      "Working across multiple agencies? Here's how to manage your modeling contracts so nothing auto-renews without you knowing — and nothing expires unnoticed.",
+    content: [
+      {
+        type: "paragraph",
+        text: "You signed with your first agency at 18. Then you moved markets and signed with a second. Then a third reached out and the terms looked good, so you signed that one too. Three contracts. Three sets of terms. Three expiry dates somewhere in three different PDFs buried in three email threads from three different years.",
+      },
+      {
+        type: "paragraph",
+        text: "Sound familiar?",
+      },
+      {
+        type: "paragraph",
+        text: "Model contract management is one of those things nobody teaches you. Your agency sends the contract, you read it (maybe), you sign it, and then it lives in your inbox until something goes wrong. The problem is that \"something going wrong\" in modeling contracts tends to involve money, your ability to work with other agencies, or a renewal you didn't mean to agree to.",
+      },
+      {
+        type: "paragraph",
+        text: "Here's what I've learned from years of watching models navigate this — and what the ones who handle it well actually do differently.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "Why Contracts Get Away From You",
+      },
+      {
+        type: "paragraph",
+        text: "The modeling industry has a structure that makes contract management uniquely difficult. Most working models aren't signed to one agency. They're signed to one in their home market, another in the city they work in most, and often one or two in international markets they travel to. Each of those contracts has its own terms, its own duration, its own notice period for termination, and its own exclusivity clause.",
+      },
+      {
+        type: "paragraph",
+        text: "The industry standard for contract duration runs from one to three years. That sounds like a long time until you realise how quickly the first year disappears when you're doing castings, traveling, and actually working. The notice period to terminate — the window you have to signal you don't want to renew — is typically 30 to 90 days before the contract expires. Miss that window, and the contract auto-renews. That's not a rare edge case. It happens constantly, to models at every level.",
+      },
+      {
+        type: "paragraph",
+        text: "Auto-renewal isn't necessarily sinister. It's standard practice across many industries. But when you're managing multiple contracts with different expiry dates, across agencies in different countries, with different terms you signed at different points in your career — that 60-day notice window can disappear before you notice it's coming.",
+      },
+      {
+        type: "paragraph",
+        text: "The other layer of complexity is exclusivity. Most agency contracts include some form of it, whether it's market-specific (you can't sign with another agency in the same city) or category-specific (you can't do certain types of work for agencies in their network without their involvement). If you're building a career across markets, understanding exactly what each contract permits — and what it restricts — is genuinely important. Not paranoia. Just professionalism.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "What's Actually in Your Contract That Matters",
+      },
+      {
+        type: "paragraph",
+        text: "Commission is the obvious one. The industry standard is 20%. If you're seeing anything above 25%, that's worth asking about. Some markets and some model categories run differently, but 20% is the number most working models are on.",
+      },
+      {
+        type: "paragraph",
+        text: "Beyond commission, here are the clauses that tend to matter most in practice:",
+      },
+      {
+        type: "paragraph",
+        text: "**Duration and renewal terms.** How long is the contract? What triggers renewal — does it auto-renew, and if so for how long? When do you need to give notice to prevent renewal?",
+      },
+      {
+        type: "paragraph",
+        text: "**Exclusivity scope.** Is the exclusivity market-specific? Category-specific? Worldwide? Can you work directly with clients outside of the agency's existing client list? This clause varies more than almost any other, and the variation matters.",
+      },
+      {
+        type: "paragraph",
+        text: "**Notice period for termination.** Different from the renewal question. If you want to exit the contract mid-term (or at the end), how much notice do you need to give?",
+      },
+      {
+        type: "paragraph",
+        text: "**Expense deductions.** What expenses can the agency charge back against your earnings? Messengering, comp cards, travel advances — these can add up, and they're deducted before you see your payment.",
+      },
+      {
+        type: "paragraph",
+        text: "**Morality and appearance clauses.** These are more common than people realise. They can include requirements around weight, grooming standards, social media conduct, and public behaviour. Worth reading carefully, particularly the social media provisions, which have become more expansive in recent years.",
+      },
+      {
+        type: "paragraph",
+        text: "**AI and digital likeness.** This is the newest and most important clause to understand in 2026. The New York Fashion Workers Act (effective June 2025) requires separate written consent for any digital replica use — so if your contract was signed before then and includes broad digital usage rights, it's worth knowing what you actually agreed to. The landscape is shifting fast. Any new contract should be explicit about what the agency can and cannot do with digital replicas of your likeness.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "The System That Actually Works",
+      },
+      {
+        type: "paragraph",
+        text: "Models who stay on top of their contracts aren't doing anything complicated. They've just built one habit: everything lives in one place, with the expiry date noted next to it.",
+      },
+      {
+        type: "paragraph",
+        text: "That's it. Not a complex spreadsheet. Not a legal filing system. One place, one date per contract.",
+      },
+      {
+        type: "paragraph",
+        text: "The practical version of this:",
+      },
+      {
+        type: "paragraph",
+        text: "Store the PDF. Not in your email. Not in a folder on your desktop. In a system you'll actually be able to find in two years, on a different laptop, when you're between markets and your old agency calls about a renewal you forgot was coming.",
+      },
+      {
+        type: "paragraph",
+        text: "Record the expiry date. And set a reminder 90 days before it — not 30. Ninety days gives you time to think, ask questions, get a lawyer to look at the renewal terms if you want to, and make an actual decision rather than a reactive one.",
+      },
+      {
+        type: "paragraph",
+        text: "Note the notice period. If your contract requires 60 days notice to terminate, your reminder should fire at 90 days and your decision deadline is 60 days. If it requires 30 days, you have a bit more runway. Either way, know the number before you need it.",
+      },
+      {
+        type: "paragraph",
+        text: "Flag the exclusivity terms. Just a one-line note: \"Paris agency — exclusive in France, no restrictions elsewhere.\" Then when someone in Germany wants to sign you, you already know you don't need to check.",
+      },
+      {
+        type: "paragraph",
+        text: "BOOKDU has contract storage built in specifically for this — you can upload the PDF, set the expiry date, and get reminded before the renewal window closes. But even if you use a different system, the principle is the same. A contract you can't find is a contract that's going to cause problems.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "What To Do Before You Sign",
+      },
+      {
+        type: "paragraph",
+        text: "A lot of contract management happens before there's anything to manage. The decisions you make when you're signing are the ones you'll be living with for the next one to three years.",
+      },
+      {
+        type: "paragraph",
+        text: "Read the whole thing. I know. It's 12 pages of legal language and you're excited about the agency and the contract arrived at 9pm the night before a fitting. Read it anyway. Or at minimum, read the sections on duration, notice period, exclusivity, commission, and expenses. Those five sections cover the vast majority of the issues that come up later.",
+      },
+      {
+        type: "paragraph",
+        text: "Ask questions before signing, not after. If something isn't clear, ask. A legitimate agency expects questions. \"Can you explain the exclusivity clause in more detail?\" is a professional question. \"What's the process if I want to exit the contract before the term ends?\" is a professional question. Any agency that treats these as red flags is telling you something worth knowing before you sign.",
+      },
+      {
+        type: "paragraph",
+        text: "Consider getting a lawyer to look at it. Not for every contract at every stage of your career. But for your first major contract in a new market, for any contract with unusual terms, for anything with a worldwide exclusivity clause — yes. The cost of an hour of a lawyer's time is nothing compared to the cost of being locked into terms you didn't fully understand.",
+      },
+      {
+        type: "paragraph",
+        text: "Don't sign under time pressure. \"Sign today or we'll go with someone else\" is a high-pressure tactic. Legitimate agencies give you time to review. If you're genuinely being pushed to sign without reading, that's information about how this agency operates.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "When Things Get Complicated",
+      },
+      {
+        type: "paragraph",
+        text: "Even when you've done everything right, contracts sometimes get complicated. A contract auto-renews and you missed the window. An agency folds. A dispute arises over what \"exclusive\" actually meant in a specific situation.",
+      },
+      {
+        type: "paragraph",
+        text: "A few things worth knowing:",
+      },
+      {
+        type: "paragraph",
+        text: "Most agency contracts don't include formal dispute resolution clauses. If something goes wrong, you're usually in direct negotiation with the agency first, and then whatever legal recourse applies in the relevant jurisdiction. Get everything in writing. Follow up calls with emails summarising what was agreed.",
+      },
+      {
+        type: "paragraph",
+        text: "If a contract auto-renews and you genuinely didn't intend for it to, contact the agency directly and politely. Agencies are running businesses and managing relationships — they generally don't want to hold an unwilling model to a renewal any more than you want to be held. Direct, professional communication resolves most of these situations.",
+      },
+      {
+        type: "paragraph",
+        text: "If you're in a genuine dispute, organisations like the Model Alliance (US) or your country's relevant creative industry union can provide guidance. In New York, the Fashion Workers Act now provides specific protections worth being aware of.",
+      },
+      {
+        type: "paragraph",
+        text: "And if a contract has terms you don't understand, the time to get clarity is before it becomes a problem. Reading it in response to a dispute is significantly harder than reading it when you have time to think.",
+      },
+      {
+        type: "paragraph",
+        text: "---",
+      },
+      {
+        type: "paragraph",
+        text: "Model contract management doesn't require a legal degree. It requires knowing what you signed, where it is, when it expires, and what notice you need to give. That's the whole system.",
+      },
+      {
+        type: "paragraph",
+        text: "BOOKDU lets you store your contracts, track expiry dates, and set reminders before the renewal window closes. Download it from the App Store, and stop carrying your contract deadlines in your head.",
+      },
+      {
+        type: "paragraph",
+        text: "*Roman Feldman is the father of a working model. He built BOOKDU because he watched his daughter chase payments across three countries.*",
+      },
+    ],
+  },
+  {
     slug: "modeling-tax-deductions-freelance-guide",
     title:
       "Modeling Tax Deductions: What You Can Actually Claim (By Country)",
