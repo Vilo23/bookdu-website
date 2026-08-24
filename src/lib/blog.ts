@@ -91,6 +91,209 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "modeling-agency-contract-expiry",
+    title:
+      "Modeling Agency Contract Expiry: What Happens If You Miss the Date",
+    description:
+      "Miss your modeling agency contract expiry and it can auto-renew without you realising. Here's what to track and when to act.",
+    date: "2026-08-24",
+    author: "Roman Feldman",
+    pillar: "Career Admin",
+    readTime: "7 min read",
+    metaTitle:
+      "Modeling Agency Contract Expiry: Don't Miss the Date",
+    metaDescription:
+      "Miss your modeling agency contract expiry and it can auto-renew without you realising. Here's what to track and when to act.",
+    content: [
+      {
+        type: "paragraph",
+        text: "I've spoken to a lot of models over the years — through building BOOKDU, through my daughter's career, through the community that's grown around both. And one story comes up more than almost any other.",
+      },
+      {
+        type: "paragraph",
+        text: "A model wraps up a contract year, assumes things are done, moves on. Signs with a new agency in a new market. Then gets a call from the old agency saying the contract is still active. That the notice period wasn't given in time. That the new agency arrangement might be a problem.",
+      },
+      {
+        type: "paragraph",
+        text: "It's not a rare situation. It happens because contract expiry dates are easy to lose track of, notice periods are easy to forget, and auto-renewal clauses are easy to miss on the first read — or the second.",
+      },
+      {
+        type: "paragraph",
+        text: "This post is about how to make sure it doesn't happen to you.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "What \"Expiry\" Actually Means in a Modeling Contract",
+      },
+      {
+        type: "paragraph",
+        text: "A contract expiry date sounds final. It isn't always.",
+      },
+      {
+        type: "paragraph",
+        text: "Most agency contracts don't just expire on a set date and dissolve. They have a notice period attached. That notice period is the window of time before expiry during which you have to actively communicate your intention not to renew. Miss that window and the contract rolls over — sometimes for the same term again.",
+      },
+      {
+        type: "paragraph",
+        text: "A typical setup looks like this: a 12-month contract, with a 60-day notice period before expiry. That means if your contract runs out on the first of October, you needed to give written notice by the first of August. If August passes without that notice, and October comes and goes, your contract has likely auto-renewed through to the following October. You've committed to another year without doing anything.",
+      },
+      {
+        type: "paragraph",
+        text: "The notice period varies. Thirty days is common at the shorter end. Ninety days exists, especially in some European markets. Some contracts specify \"calendar days,\" some \"business days\" — which changes the calculation. Some require notice by registered post or email to a specific address. The method matters.",
+      },
+      {
+        type: "paragraph",
+        text: "The point is: the date on the front of the contract is not the date you need to act by. The real deadline is the expiry date minus the notice period. That's the date worth tracking.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "Auto-Renewal: The Clause Most Models Don't Notice Until It's Too Late",
+      },
+      {
+        type: "paragraph",
+        text: "Auto-renewal clauses are standard in agency contracts. They are not a trap — they are a normal mechanism for continuing a working relationship that's going well. The problem isn't that they exist. It's that they operate silently unless you do something to stop them.",
+      },
+      {
+        type: "paragraph",
+        text: "From what we hear from models, the clause usually sits near the end of the contract, often in the same section as termination terms. It tends to read something like: \"This agreement shall automatically renew for successive periods of [X months] unless either party provides written notice of termination no less than [X days] prior to the expiry of the then-current term.\"",
+      },
+      {
+        type: "paragraph",
+        text: "That sentence is doing a lot of work quietly. Read it carefully and it tells you three things: when the contract ends, how long the renewal will be, and when you need to act to prevent it.",
+      },
+      {
+        type: "paragraph",
+        text: "What it doesn't do is remind you. No one sends a notification. No agency is going to email you in August to say your October contract is about to renew. Some might, out of good practice, but you cannot count on it. The tracking is on you.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "What Happens Across Different Markets",
+      },
+      {
+        type: "paragraph",
+        text: "The contract terms models encounter vary depending on which market they're working in. This matters if you're based in one country and signed with agencies in others — which describes a lot of working models.",
+      },
+      {
+        type: "paragraph",
+        text: "**Australia:** Agency agreements here tend toward 12-month terms. Notice periods of 30-60 days are common. Because most Australian models operate as sole traders with an ABN, the contract is a commercial agreement between two businesses. Neither party has an employment law safety net. The contract terms are what govern the relationship.",
+      },
+      {
+        type: "paragraph",
+        text: "**United Kingdom:** Similar commercial structure. Contracts range from 6 months to 2 years. Worth knowing that a legitimate UK agency cannot legally charge you a fee to represent you — any upfront cost is a red flag.",
+      },
+      {
+        type: "paragraph",
+        text: "**United States:** Since the New York Fashion Workers Act came into effect in June 2025, agency contracts in New York are capped at a maximum of three years. Crucially, auto-renewal without written consent is no longer permitted under that Act. This is a meaningful protection for models working in the New York market specifically. Outside New York, standard commercial contract terms apply.",
+      },
+      {
+        type: "paragraph",
+        text: "**EU markets (France, Italy, Germany, Spain):** Contract terms and local labour classifications vary more significantly across European markets. In some jurisdictions, depending on the nature of the arrangement, models may have protections closer to those of employees. If you're signed with agencies across multiple EU countries, it's worth understanding each market's rules separately rather than assuming they're uniform.",
+      },
+      {
+        type: "paragraph",
+        text: "The consistent thread across all markets: know what your contract says, know when it expires, know when you need to act.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "What to Check in Your Contract Right Now",
+      },
+      {
+        type: "paragraph",
+        text: "If you have an agency contract — or multiple — here's what's worth locating and recording:",
+      },
+      {
+        type: "paragraph",
+        text: "**The expiry date.** The actual end date of the current term. This should be in the first few clauses, usually under \"Term\" or \"Duration.\"",
+      },
+      {
+        type: "paragraph",
+        text: "**The notice period.** How many days' notice you need to give to exit or not renew. Note whether it's calendar or business days.",
+      },
+      {
+        type: "paragraph",
+        text: "**Your real action date.** Subtract the notice period from the expiry date. That's the date that actually matters.",
+      },
+      {
+        type: "paragraph",
+        text: "**The notice method.** Does it need to be in writing? By email? Sent to a specific address? Some contracts specify that verbal notice doesn't count. If yours does, make sure you comply with the form it requires.",
+      },
+      {
+        type: "paragraph",
+        text: "**Exclusivity terms.** What can you and can't you do while the contract is active? Can you work with other agencies in other markets? Are there restrictions on taking direct bookings?",
+      },
+      {
+        type: "paragraph",
+        text: "**Post-termination restrictions.** Some contracts include non-compete or non-solicitation clauses that apply after the contract ends. These vary in enforceability depending on the jurisdiction, but it's worth knowing what's in there.",
+      },
+      {
+        type: "paragraph",
+        text: "**AI and digital likeness clauses.** This is newer territory, but contracts increasingly include language about digital replicas and AI-generated images. Under the NY Fashion Workers Act, separate written consent is required for any digital replica use. If your contract is from the last year or two, check what it says. If it's older, it may not address this at all — which is its own issue to be aware of.",
+      },
+      {
+        type: "paragraph",
+        text: "This is one of the things BOOKDU was built to help with. You can store your contract PDFs in the app, log the expiry date, and set a reminder that fires before your notice period runs out. You're not relying on memory or a sticky note. The reminder arrives and you act.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "When You Want to Leave and the Date Has Passed",
+      },
+      {
+        type: "paragraph",
+        text: "This is the harder situation. You've missed the notice window. The contract has auto-renewed. You want to move to a different agency, or you want to work independently for a while.",
+      },
+      {
+        type: "paragraph",
+        text: "First: read the contract carefully again, specifically the early termination clause if one exists. Some contracts allow for early exit with longer notice or a buyout. Some don't allow it at all without both parties agreeing. The contract tells you your options.",
+      },
+      {
+        type: "paragraph",
+        text: "Second: talk to the agency directly. A lot of these situations resolve through a straightforward conversation. Agencies are not generally in the business of holding models to contracts against their will — that's not a working relationship. If the professional relationship is over in practice, there's often a path to formally ending it. Get any agreement in writing.",
+      },
+      {
+        type: "paragraph",
+        text: "Third: if the terms are genuinely restrictive and the agency is not willing to negotiate, that's when you get proper legal advice. This is especially true if significant earnings, exclusivity, or AI likeness rights are involved. The cost of a few hours with a lawyer familiar with entertainment or talent contracts is worth it against the cost of the wrong decision.",
+      },
+      {
+        type: "paragraph",
+        text: "What you don't want to do is just ignore a contract you think has lapsed when it hasn't. Signing with a new agency while technically still under an exclusive agreement with another can create real complications — for you and for the new agency.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "The One Habit That Prevents All of This",
+      },
+      {
+        type: "paragraph",
+        text: "Track your contract expiry dates the same way you track payment due dates. They are both time-sensitive obligations that have real consequences if you miss them.",
+      },
+      {
+        type: "paragraph",
+        text: "Write the expiry date down. Calculate the notice deadline. Set a reminder at least two weeks before that deadline so you have time to act, not just be notified. Store a copy of the contract somewhere you can actually find it when you need to reference it — not buried in an email thread from eighteen months ago.",
+      },
+      {
+        type: "paragraph",
+        text: "The models who stay on top of this stuff aren't doing anything complicated. They just know where things stand. That's it.",
+      },
+      {
+        type: "paragraph",
+        text: "BOOKDU tracks payment due dates, job status, and contract expiry dates in one place. If you're managing multiple agency relationships across different markets, having a single system for all of it matters. Download it from the App Store and start by logging your current contracts and the dates that matter.",
+      },
+      {
+        type: "paragraph",
+        text: "---",
+      },
+      {
+        type: "paragraph",
+        text: "*Roman Feldman is the father of a working model. He built BOOKDU because he watched his daughter chase payments across three countries.*",
+      },
+    ],
+  },
+  {
     slug: "model-contract-management",
     title:
       "Model Contract Management: How to Stay on Top of What You've Signed",
