@@ -91,6 +91,200 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "admin-side-of-modeling",
+    title:
+      "The Admin Side of Modeling Nobody Talks About",
+    description:
+      "The unglamorous truth about modeling: the admin load is real, relentless, and nobody prepares you for it. Here's what it actually looks like.",
+    date: "2026-09-07",
+    author: "Roman Feldman",
+    pillar: "Model Life",
+    readTime: "6 min read",
+    metaTitle:
+      "The Admin Side of Modeling Nobody Talks About",
+    metaDescription:
+      "The unglamorous truth about modeling: the admin load is real, relentless, and nobody prepares you for it. Here's what it actually looks like.",
+    content: [
+      {
+        type: "paragraph",
+        text: "My daughter came home from her third trip to Europe with a folder of papers, three agency app logins she couldn't remember, a list of jobs she'd done between February and June, and no clear idea which of them had actually paid her.",
+      },
+      {
+        type: "paragraph",
+        text: "She's organised. She's professional. She'd been doing this for two years at that point.",
+      },
+      {
+        type: "paragraph",
+        text: "Nobody had told her how to manage this part. Not her first agency. Not the bookers who sent her abroad. Not anyone who had ever sat across from her and explained what running this kind of career actually looks like from the inside.",
+      },
+      {
+        type: "paragraph",
+        text: "That was the moment I started building BOOKDU. But this post isn't about the app. It's about the problem.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "What the Admin Side of Modeling Actually Involves",
+      },
+      {
+        type: "paragraph",
+        text: "Let's be specific, because \"admin\" is a word that sounds boring and small. What it actually covers is not small.",
+      },
+      {
+        type: "paragraph",
+        text: "On any given week, a working model might be tracking payment status across 2 or 3 agencies in different countries, each with different payment terms. They might be waiting on a job from March that still hasn't come through because the client's accounts payable department runs on net 90. They might have a contract coming up for renewal that they signed 11 months ago and haven't thought about since. They might have a fitting receipt, two travel receipts, and a parking charge that all need to go somewhere for tax time.",
+      },
+      {
+        type: "paragraph",
+        text: "And they're doing all of this between castings, on trains, in the notes app on their phone, or not at all.",
+      },
+      {
+        type: "paragraph",
+        text: "Here's what the admin side of modeling actually involves:",
+      },
+      {
+        type: "paragraph",
+        text: "**Payment tracking.** Knowing what you're owed, from whom, for which job, by when. Not in theory. In practice, right now, with actual numbers.",
+      },
+      {
+        type: "paragraph",
+        text: "**Contract management.** Knowing what you've signed, when it expires, what the notice period is, and whether it auto-renews if you don't act. Exclusive contracts. Mother agency agreements. Usage rights clauses. These are legal documents and they have real consequences.",
+      },
+      {
+        type: "paragraph",
+        text: "**Calendar management.** The difference between confirmed and unconfirmed is enormous when you're trying to plan your life. An option on a date is not a booking. But it's also not nothing. Managing that uncertainty — across multiple agencies, across markets — is its own skill.",
+      },
+      {
+        type: "paragraph",
+        text: "**Expense tracking.** Travel, accommodation, comp cards, grooming, professional development. In most markets, these are deductible. But only if you've kept records. And only if you remember which of the three countries you were in when you bought that train ticket.",
+      },
+      {
+        type: "paragraph",
+        text: "**Tax.** If you're a freelance model, nobody is withholding tax for you. You are running a business. That means quarterly estimates in the US, BAS lodgements in Australia, Self Assessment in the UK, and variations on all of that if you work across markets. The models who get into trouble aren't the ones who earn too little. They're the ones who earned well in year one and didn't set anything aside.",
+      },
+      {
+        type: "paragraph",
+        text: "That's the admin side of modeling. It's a significant amount of work, and it's not something that gets easier if you ignore it.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "Why Nobody Prepares You for It",
+      },
+      {
+        type: "paragraph",
+        text: "When you sign with an agency, you get a lot of guidance about the look, the walk, the portfolio, the professional presentation. What you rarely get is a clear explanation of how you'll be paid, by when, based on what documentation, and what you need to track to protect yourself if something goes wrong.",
+      },
+      {
+        type: "paragraph",
+        text: "This isn't because agencies are withholding information. It's because the industry evolved before the gig economy made \"independent contractor\" a normal way to work. The structures — net 30, net 60, net 90 payment cycles; agency-to-model payment flows; market-specific commission arrangements — were built at a time when the assumption was that someone would handle this for you. A manager, an accountant, a parent.",
+      },
+      {
+        type: "paragraph",
+        text: "For most working models today, that assumption doesn't hold. You're doing it yourself, often from a country you haven't lived in before, often before you've had any experience running a business.",
+      },
+      {
+        type: "paragraph",
+        text: "The result is that the admin side of modeling is learned the hard way. Your first missed payment. Your first contract that auto-renewed. Your first tax bill you hadn't budgeted for. Your first moment of sitting with a pile of receipts in April and having no idea what's deductible and what isn't.",
+      },
+      {
+        type: "paragraph",
+        text: "What we hear from models, consistently, is that the financial and administrative side of the career is the thing they wished someone had explained at the start. Not the glamour side. The paperwork side.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "The Mental Load Nobody Counts",
+      },
+      {
+        type: "paragraph",
+        text: "There's a version of this that goes beyond paperwork.",
+      },
+      {
+        type: "paragraph",
+        text: "When you're carrying your entire career admin in your head — what's been paid, what hasn't, what's confirmed, what's on option, when your contract ends, how many expenses you've racked up this quarter — it takes up space. Constant, low-level space.",
+      },
+      {
+        type: "paragraph",
+        text: "You're on a shoot and your brain is running a background calculation: did March pay? Did they transfer it to the right account? When does my contract with the London agency expire? I need to get that receipt.",
+      },
+      {
+        type: "paragraph",
+        text: "That mental load is real and it compounds over time. The more agencies you work with, the more markets you operate in, the more jobs you complete in a given year, the heavier it gets. And it rarely gets lighter on its own.",
+      },
+      {
+        type: "paragraph",
+        text: "The models who seem to have it together aren't necessarily the most naturally organised people. They've just found a system — any system — that gets this information out of their head and into somewhere reliable. A good spreadsheet does it for some people. BOOKDU does it for others. The specific tool matters less than the habit of using one.",
+      },
+      {
+        type: "paragraph",
+        text: "What doesn't work is carrying it all in your head and hoping nothing slips.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "The Payment Timeline Is the Hardest Part",
+      },
+      {
+        type: "paragraph",
+        text: "If I had to pick the single most confusing and stressful element of the admin side of modeling, it's the gap between doing a job and getting paid for it.",
+      },
+      {
+        type: "paragraph",
+        text: "In most markets, the payment cycle works like this: you do the job, the agency invoices the client, the client pays the agency on their terms (often net 30-60, sometimes net 90 in high fashion), and then the agency pays you, minus commission. The whole process, start to finish, can take 60 to 120 days. Six months is not unheard of.",
+      },
+      {
+        type: "paragraph",
+        text: "This is normal. This is how the industry has always worked. That doesn't mean it's easy to manage — especially when you're doing multiple jobs across multiple agencies and trying to track what's been paid and what hasn't.",
+      },
+      {
+        type: "paragraph",
+        text: "The problem isn't that payments are slow. The problem is that without a system, slow payments become invisible. You're not following up because you're not sure exactly what you're owed. You're not sure what you're owed because you haven't tracked it. And somewhere in that gap, money slips through.",
+      },
+      {
+        type: "paragraph",
+        text: "What we hear from models who've started tracking their payments properly — using any system — is that they almost always find jobs they'd half-forgotten about. Jobs from three, four, six months ago that they'd mentally written off. Some of them had actually been paid and they didn't know it. Some of them hadn't. Both of those are problems, and both of them are solved by tracking.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "What a System Actually Looks Like",
+      },
+      {
+        type: "paragraph",
+        text: "You don't need anything sophisticated. You need something consistent.",
+      },
+      {
+        type: "paragraph",
+        text: "At minimum: a record of every job you complete, the agency it came through, the agreed rate, the date you did the work, and the expected payment date based on that agency's terms. Then a way to flag anything that's overdue and follow up.",
+      },
+      {
+        type: "paragraph",
+        text: "A spreadsheet can do this. It won't remind you when something's 35 days late. It won't store your contracts or track expiry dates. It won't let you photograph a receipt on set and have it categorised for tax. But it's a thousand times better than nothing.",
+      },
+      {
+        type: "paragraph",
+        text: "BOOKDU was built to do all of those things in one place — because my daughter needed something she could run from her phone in three different time zones without setting it up fresh every time she landed somewhere new. But whatever you use, use something.",
+      },
+      {
+        type: "paragraph",
+        text: "The models who stay on top of their finances aren't the ones who chase the hardest. They're the ones who always know where things stand.",
+      },
+      {
+        type: "paragraph",
+        text: "The admin side of modeling is unglamorous. It's not what anyone gets into this industry for. But it's as much a part of the job as any casting, any shoot, any fitting. And the models who treat it that way — who build a system and stick to it — are the ones who tend to still be working, and still getting paid what they're owed, five years in.",
+      },
+      {
+        type: "paragraph",
+        text: "---",
+      },
+      {
+        type: "paragraph",
+        text: "BOOKDU tracks your payments, contracts, expenses, and calendar in one app — built for models who work across agencies and countries. Download it from the App Store.",
+      },
+    ],
+  },
+  {
     slug: "modeling-agency-contract-expiry",
     title:
       "Modeling Agency Contract Expiry: What Happens If You Miss the Date",
