@@ -91,6 +91,199 @@ export interface BlogPost {
 
 const posts: BlogPost[] = [
   {
+    slug: "how-to-manage-multiple-modeling-agencies",
+    title:
+      "How to Manage Multiple Modeling Agencies Without Losing Your Mind (or Your Money)",
+    description:
+      "Working with 2, 3, or 4 agencies across different markets? Here's how to stay organised, get paid, and not lose track of anything.",
+    date: "2026-08-17",
+    author: "Roman Feldman",
+    pillar: "Model Life",
+    readTime: "7 min read",
+    metaTitle:
+      "How to Manage Multiple Modeling Agencies",
+    metaDescription:
+      "Working with 2, 3, or 4 agencies across different markets? Here's how to stay organised, get paid, and not lose track of anything.",
+    content: [
+      {
+        type: "paragraph",
+        text: "You are working with an agency in Sydney, one in London, and you just signed with a new boutique in Milan. Three agencies. Three markets. Three sets of people booking you, negotiating your rates, and eventually — eventually — paying you.",
+      },
+      {
+        type: "paragraph",
+        text: "On paper, this is the goal. More representation means more work, more markets, more income. In practice, it is a logistics problem that nobody prepares you for. Castings come in from different time zones. Payment timelines vary by country and by client. Contracts expire on different dates. And somewhere in all of it, you are supposed to actually show up, do the work, and look like you have it together.",
+      },
+      {
+        type: "paragraph",
+        text: "Most working models figure this out through trial and error. An overdue payment slips through because it was mixed in with emails from a different agency. A contract auto-renews because the notice period passed while you were traveling for work. A confirmed job gets double-booked because two agencies both thought a date was clear.",
+      },
+      {
+        type: "paragraph",
+        text: "None of this is inevitable. It just requires a system. Here is what actually works.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "Understand How Each Agency Operates Before You Commit",
+      },
+      {
+        type: "paragraph",
+        text: "Every agency runs differently. Payment terms, commission structures, communication preferences, how they handle conflicts between bookings — all of this varies. Before you sign with an agency (or expand from one to three), you need to know how they actually work, not just how they present themselves.",
+      },
+      {
+        type: "paragraph",
+        text: "The questions worth asking upfront:",
+      },
+      {
+        type: "list",
+        style: "bullet",
+        items: [
+          "What are your standard payment terms? How long after the client pays do I receive my money?",
+          "How do you handle conflicts when two agencies want to book me for the same date?",
+          "What is your process for updating me on confirmed versus provisional bookings?",
+          "What is the commission rate, and does it differ by job type or market?",
+          "What is the notice period in the contract, and does it auto-renew?",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "The 20% commission is standard across most markets. Mother agency arrangements typically add 5-10% on top. In some Asian markets, that can be charged separately rather than shared from the local agency's cut — meaning you could lose 30-35% of gross before tax. Know this before you walk into a new market.",
+      },
+      {
+        type: "paragraph",
+        text: "Payment timelines are the other thing most models learn the hard way. The gap between shoot date and pay date is commonly 60-120 days. That is not the agency being slow. That is the agency waiting on the client, who is running their own accounts payable cycle. Understanding this by market — not just assuming it will work the same everywhere — saves a lot of confusion later.",
+      },
+      {
+        type: "paragraph",
+        text: "Once you know how each agency operates, you can build a system that accounts for their differences rather than assuming they all work the same way.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "Build a Single System That Covers All of Them",
+      },
+      {
+        type: "paragraph",
+        text: "The mistake most models make when working with multiple agencies is managing each one separately. One email thread for Sydney, one spreadsheet tab for London, a notes app for whatever Milan sent this week. This is how things fall through the cracks.",
+      },
+      {
+        type: "paragraph",
+        text: "What you actually need is one place that holds everything across all agencies. Not because that is more elegant — because when you are traveling between markets, you cannot afford to open four different systems to figure out if you have been paid for a job you did six weeks ago.",
+      },
+      {
+        type: "paragraph",
+        text: "The basics of that system:",
+      },
+      {
+        type: "paragraph",
+        text: "**Payments.** Every job that generates income should be logged the moment it is booked: which agency, what job, the gross fee, the date the invoice was raised, and the expected pay date based on that agency's terms. Then you track what comes in and flag anything that does not arrive when it should. At 35 days overdue you follow up politely. At 56 days you follow up more firmly. After 90 days, something is wrong and it needs escalation.",
+      },
+      {
+        type: "paragraph",
+        text: "**Contracts.** Every signed contract should be stored somewhere you can actually find it, with the expiry date and notice period noted separately. Not in the email thread it arrived in. Somewhere you will see it again before it matters. Auto-renewal is the single most common contract trap working models fall into — not because agencies are being sneaky, but because a notice period passed while you were on a job in another country and nobody flagged it.",
+      },
+      {
+        type: "paragraph",
+        text: "**Calendar.** Confirmed bookings and provisional holds need to live in one place, with a clear distinction between the two. A provisional hold from Milan is not the same as a confirmed booking from Sydney. If you treat them the same when scheduling, you will double-book yourself.",
+      },
+      {
+        type: "paragraph",
+        text: "BOOKDU was built specifically to hold all of this in one app — payment tracking across agencies, contract storage with expiry dates, and a calendar that distinguishes confirmed from unconfirmed. It is not a budgeting app or a general finance tool. It tracks the things that are specific to how modeling actually works.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "Get Ahead of Payment Timelines by Market",
+      },
+      {
+        type: "paragraph",
+        text: "Payment timelines are not uniform across markets, and understanding the differences stops a lot of unnecessary anxiety.",
+      },
+      {
+        type: "paragraph",
+        text: "In Australia, the standard client payment terms lean toward 30-60 days. In the US and UK, 60-day terms are common in commercial work, with fashion clients often running net 90. Some European markets are slower. Japanese clients are generally reliable but the cycle can be long.",
+      },
+      {
+        type: "paragraph",
+        text: "When you are working across multiple markets through multiple agencies, you can have money owed to you at very different stages of its journey. A US job from two months ago might still be sitting with the client. An Australian job from last month might have already been paid to the agency and is now in their next disbursement cycle. A job you just finished in Milan will not pay for another three to four months at best.",
+      },
+      {
+        type: "paragraph",
+        text: "None of this is wrong. It is just the reality of international freelance work in this industry. The models who manage it well are not the ones who chase hardest — they are the ones who always know where things stand. You cannot chase what you do not know is owed. You cannot plan cash flow around money you have not tracked.",
+      },
+      {
+        type: "paragraph",
+        text: "The practical version of this: when a job is confirmed, log the expected pay window immediately based on what you know about that agency and market. Treat that date as your baseline. Anything past it becomes something to follow up on, calmly and professionally.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "Communicate Like a Professional, Not Like You're Guessing",
+      },
+      {
+        type: "paragraph",
+        text: "When you are working with three agencies across three countries, each one thinks it has your full attention. Part of managing multiple agencies well is making sure none of them feel like an afterthought — while also not letting any one of them make decisions that affect your other relationships without your input.",
+      },
+      {
+        type: "paragraph",
+        text: "A few things that make this easier:",
+      },
+      {
+        type: "paragraph",
+        text: "**Be explicit about conflicts.** If you have a provisional hold from one agency and another agency wants to book you for the same period, tell both agencies immediately. Do not sit on it hoping one of them will cancel. Clear communication now is infinitely better than a conflict a week before the job.",
+      },
+      {
+        type: "paragraph",
+        text: "**Know how each agency handles first options.** Most reputable agencies will not intentionally double-book you. But if two agencies both think a date is clear because you communicated with them separately rather than tracking it centrally, that is your system failing, not theirs.",
+      },
+      {
+        type: "paragraph",
+        text: "**Keep your master calendar updated as the single source of truth.** Every confirmed booking, every provisional hold, every blocked date — it all goes in one place, and that place is what you reference before you agree to anything new.",
+      },
+      {
+        type: "paragraph",
+        text: "**Respond to each agency with the same professionalism you would expect from them.** You are running a business across multiple markets. The relationship with each agency is a professional partnership. Treat it that way regardless of which market is paying the most at any given time.",
+      },
+      {
+        type: "heading",
+        level: "h2",
+        text: "The Thing Nobody Tells You About Scaling Across Markets",
+      },
+      {
+        type: "paragraph",
+        text: "A $10,000 booking sounds like a great problem to have. After 20% commission to the agency, 25-35% set aside for tax depending on the country, and expenses, you might take home $4,000. That is still real money. But if you do not know the number going in — if you are working from the headline figure rather than the actual — you will make financial decisions based on income that does not exist yet.",
+      },
+      {
+        type: "paragraph",
+        text: "This is more complicated when you are earning across multiple currencies from multiple agencies, all on different payment timelines. What is owed, what has been paid, and what you will actually receive are three different numbers. The models who handle this well are not doing anything complicated. They just know their numbers. They track the gross, they know the commission, they have a clear picture of what is coming and when.",
+      },
+      {
+        type: "paragraph",
+        text: "As your representation grows, that picture gets harder to hold in your head. Three agencies across three markets means you could have 15 or 20 jobs at various stages of payment at any given time. The mental load of that is not trivial. It is genuinely hard to carry, and it takes up space that should be going toward the actual work.",
+      },
+      {
+        type: "paragraph",
+        text: "The answer is not to be more disciplined. The answer is to build a system that carries it for you.",
+      },
+      {
+        type: "paragraph",
+        text: "---",
+      },
+      {
+        type: "paragraph",
+        text: "BOOKDU tracks payments, contracts, and your calendar across every agency in one app. Payment reminders at 35 and 56 days. Contract storage with expiry dates. A calendar that knows the difference between confirmed and provisional. Download it from the App Store.",
+      },
+      {
+        type: "paragraph",
+        text: "---",
+      },
+      {
+        type: "paragraph",
+        text: "*Roman Feldman is the father of a working model. He built BOOKDU because he watched his daughter chase payments across three countries.*",
+      },
+    ],
+  },
+  {
     slug: "admin-side-of-modeling",
     title:
       "The Admin Side of Modeling Nobody Talks About",
